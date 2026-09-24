@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0" name="viewport"/>
+  <title>Sprinkled — The Art of Pure Terroir Spices | 100% Pure Vegetarian</title>
+  
+  <!-- Typography & Icons -->
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="theme-styles.css"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: '#f97316',
+            'primary-container': '#ea580c',
+            secondary: '#121212',
+            'secondary-container': '#1e1e1e',
+            'accent-gold': '#fb923c',
+            surface: '#ffffff',
+            'surface-container': '#fbf9f6',
+            'on-surface': '#121212',
+            'on-surface-variant': '#555555'
+          },
+          fontFamily: {
+            display: ['Playfair Display', 'serif'],
+            body: ['Plus Jakarta Sans', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+  <script src="store-engine.js" defer></script>
+</head>
+<body class="bg-surface text-on-surface antialiased font-body selection:bg-orange-500 selection:text-white">
+
+  <!-- ========================================== -->
+  <!-- 1. TOP PROMO STRIP (MOBILE RESPONSIVE) -->
+  <!-- ========================================== -->
+  <div class="bg-black text-white py-2 px-3 sm:px-8 text-xs flex items-center justify-between border-b border-white/10 z-40 relative">
+    
+    <!-- Social Media Links (Tablet & Desktop) -->
+    <div class="hidden md:flex items-center gap-3.5 text-white/80">
+      <a href="#" class="hover:text-orange-400 transition-colors"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#" class="hover:text-orange-400 transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#" class="hover:text-orange-400 transition-colors"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="#" class="hover:text-orange-400 transition-colors"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+
+    <!-- Center Shipping Promo Announcement -->
+    <div class="flex-1 text-center font-bold tracking-wider uppercase text-[10px] sm:text-xs text-orange-300 flex items-center justify-center gap-1.5 sm:gap-2 px-2">
+      <span class="inline-block w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-orange-500 animate-pulse flex-shrink-0"></span>
+      <span>FREE EXPRESS SHIPPING ON ORDERS OVER ₹999 · 100% PURE VEG</span>
+    </div>
+
+    <!-- Right Contact Links -->
+    <div class="hidden sm:flex items-center gap-4 text-[11px] font-semibold">
+      <a href="story.html" class="hover:text-orange-400 text-white/90 transition-colors">OUR STORY</a>
+      <span class="text-white/30">|</span>
+      <a href="tel:+919685140374" class="hidden lg:flex items-center gap-1.5 hover:text-orange-400 text-white">
+        <span class="material-symbols-outlined text-[14px]">call</span>
+        +91 9685140374
+      </a>
+      <a href="shop.html" class="px-2.5 py-1 bg-orange-500 text-white rounded-full font-bold uppercase tracking-wider text-[10px] hover:bg-orange-600 transition-colors">
+        Shop Vault
+      </a>
+    </div>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- 2. GLASSMORPHISM NAVBAR (STICKY FROSTED) -->
+  <!-- ========================================== -->
+  <header class="glass-nav sticky top-0 z-40 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 py-3 sm:py-3.5 flex items-center justify-between gap-3 sm:gap-6">
+      
+      <!-- Brand Logo -->
+      <a href="index.html" class="flex items-center gap-2.5 sm:gap-3 group flex-shrink-0">
+        <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-2xl bg-black text-white flex items-center justify-center font-display font-bold text-lg sm:text-xl shadow-md border-2 border-orange-500 group-hover:scale-105 transition-transform">
+          <span class="text-orange-400 font-extrabold">S</span>
+        </div>
+        <div class="flex flex-col">
+          <div class="flex items-center gap-1.5 sm:gap-2">
+            <span class="font-display text-xl sm:text-2xl font-bold tracking-tight text-gray-950 leading-none">Sprinkled</span>
+            <span class="px-1.5 py-0.5 bg-orange-100 text-orange-950 text-[8px] sm:text-[9px] font-extrabold rounded-full uppercase tracking-wider border border-orange-200">100% Veg</span>
+          </div>
+          <span class="text-[9px] sm:text-[10px] tracking-[0.16em] sm:tracking-[0.2em] uppercase text-gray-500 font-semibold mt-0.5">The Art of Pure Terroir Spices</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Navigation Links -->
+      <nav class="hidden lg:flex items-center gap-7 text-xs font-bold uppercase tracking-wider text-gray-800">
+        <a href="index.html" class="text-orange-600 border-b-2 border-orange-500 pb-1">Home</a>
+        <a href="shop.html" class="hover:text-orange-600 transition-colors pb-1">All Spices</a>
+        <a href="shop.html" class="hover:text-orange-600 transition-colors pb-1">Single Terroirs</a>
+        <a href="shop.html" class="hover:text-orange-600 transition-colors pb-1">Gift Vaults</a>
+        <a href="story.html" class="hover:text-orange-600 transition-colors pb-1">Provenance</a>
+      </nav>
+
+      <!-- Center Search Bar (Pill Glass, Tablet & Desktop) -->
+      <div class="hidden md:flex flex-1 max-w-xs lg:max-w-sm mx-2">
+        <div class="relative w-full flex items-center">
+          <input type="text" placeholder="Search saffron, pepper, cardamom..." class="w-full bg-white/90 backdrop-blur-sm border border-gray-300/80 rounded-full pl-4 pr-10 py-2 text-xs text-gray-900 focus:outline-none focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 shadow-inner transition-all"/>
+          <a href="shop.html" class="absolute right-1 w-7 h-7 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center transition-colors shadow-sm">
+            <span class="material-symbols-outlined text-sm">search</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Action Utilities -->
+      <div class="flex items-center gap-2 sm:gap-3 flex-shrink-0">
+        <a href="shop.html" class="hidden sm:flex items-center justify-center w-9 h-9 rounded-full bg-white/80 hover:bg-orange-50 text-gray-700 hover:text-orange-600 border border-gray-200 shadow-sm transition-all" title="Wishlist">
+          <span class="material-symbols-outlined text-lg">favorite_border</span>
+        </a>
+
+        <!-- Cart Button -->
+        <button onclick="toggleCartDrawer(true)" class="bg-black hover:bg-gray-900 text-white px-3 sm:px-4 py-2 sm:py-2.5 rounded-full flex items-center gap-2 shadow-md hover:shadow-orange-500/20 border border-white/10 transition-all font-semibold">
+          <span class="material-symbols-outlined text-base sm:text-lg text-orange-400">shopping_cart</span>
+          <span class="cart-header-btn-text text-[11px] sm:text-xs tracking-wider font-bold">₹1,248 (2)</span>
+        </button>
+
+        <!-- Mobile Menu Trigger -->
+        <button id="mobile-menu-trigger" class="lg:hidden p-2 rounded-xl bg-gray-100 text-gray-800 hover:bg-orange-50 flex items-center justify-center" aria-label="Open Navigation Menu">
+          <span class="material-symbols-outlined text-xl sm:text-2xl">menu</span>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Search Bar (Visible on Mobile Screens under Header) -->
+    <div class="px-4 pb-2.5 pt-1 md:hidden">
+      <div class="relative w-full flex items-center">
+        <input type="text" placeholder="Search pure spices, saffron, peppers..." class="w-full bg-white border border-gray-200 rounded-full pl-4 pr-10 py-2 text-xs text-gray-900 focus:outline-none focus:border-orange-500 shadow-inner"/>
+        <a href="shop.html" class="absolute right-1 w-7 h-7 bg-orange-500 text-white rounded-full flex items-center justify-center shadow-sm">
+          <span class="material-symbols-outlined text-sm">search</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================== -->
+  <!-- SLIDE-OVER LUXURY CART DRAWER -->
+  <!-- ========================================== -->
+  <div id="cart-drawer" class="fixed inset-0 z-50 pointer-events-none opacity-0 transition-opacity duration-300">
+    <div onclick="toggleCartDrawer(false)" class="absolute inset-0 bg-black/60 backdrop-blur-sm"></div>
+    <div id="cart-drawer-panel" class="absolute top-0 right-0 w-full sm:w-[420px] h-full bg-white shadow-2xl flex flex-col justify-between transform translate-x-full transition-transform duration-300 ease-in-out border-l border-gray-200">
+      <div class="p-4 sm:p-5 border-b border-gray-100 flex items-center justify-between bg-gray-50">
+        <div class="flex items-center gap-2">
+          <div class="w-8 h-8 rounded-full bg-orange-500 text-white flex items-center justify-center shadow-sm">
+            <span class="material-symbols-outlined text-lg">shopping_bag</span>
+          </div>
+          <h3 class="font-bold text-base text-gray-900">Your Spices Cart</h3>
+        </div>
+        <button onclick="toggleCartDrawer(false)" class="text-gray-400 hover:text-gray-700 p-1">
+          <span class="material-symbols-outlined text-2xl">close</span>
+        </button>
+      </div>
+
+      <!-- Free shipping progress bar -->
+      <div class="px-4 sm:px-5 py-3 bg-orange-50/70 border-b border-orange-100">
+        <p id="shipping-progress-msg" class="text-xs text-gray-800 mb-1.5 font-medium"></p>
+        <div class="w-full h-2 bg-gray-200 rounded-full overflow-hidden">
+          <div id="shipping-progress-bar" class="h-full bg-orange-500 transition-all duration-300 rounded-full" style="width: 0%"></div>
+        </div>
+      </div>
+
+      <!-- Cart Items List -->
+      <div id="cart-drawer-items" class="p-4 sm:p-5 flex-1 overflow-y-auto space-y-3"></div>
+
+      <!-- Cart Footer -->
+      <div class="p-4 sm:p-5 bg-gray-50 border-t border-gray-100 space-y-3">
+        <div class="flex justify-between items-center">
+          <span class="text-xs uppercase font-bold text-gray-500 tracking-wider">Subtotal</span>
+          <span class="cart-subtotal-val font-display text-2xl text-gray-900 font-bold">₹0.00</span>
+        </div>
+        <button onclick="alert('Order Placed Successfully! Your climate-sealed Sprinkled pure vegetarian spices will be dispatched via express courier.')" class="w-full text-center bg-black hover:bg-orange-600 text-white py-3.5 rounded-xl font-bold text-xs uppercase tracking-widest transition-all shadow-lg border border-orange-500/30">
+          Proceed to Checkout →
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Drawer -->
+  <div id="mobile-nav-drawer" class="fixed inset-0 z-50 pointer-events-none opacity-0 transition-opacity duration-300">
+    <div id="mobile-nav-close" class="absolute inset-0 bg-black/60 backdrop-blur-sm"></div>
+    <div id="mobile-nav-panel" class="absolute top-0 left-0 w-72 h-full bg-white shadow-2xl p-6 flex flex-col justify-between transform -translate-x-full transition-transform duration-300 ease-in-out">
+      <div class="space-y-6">
+        <div class="flex items-center justify-between pb-4 border-b border-gray-100">
+          <div class="flex items-center gap-2">
+            <div class="w-8 h-8 rounded-xl bg-black text-white flex items-center justify-center font-display font-bold text-sm border border-orange-500">
+              <span class="text-orange-400">S</span>
+            </div>
+            <span class="font-display font-bold text-lg text-gray-950">Sprinkled</span>
+          </div>
+          <button onclick="document.getElementById('mobile-nav-close').click()" class="text-gray-400 hover:text-gray-800">
+            <span class="material-symbols-outlined text-2xl">close</span>
+          </button>
+        </div>
+        <div class="flex flex-col space-y-3 text-sm font-bold uppercase tracking-wider text-gray-800">
+          <a href="index.html" class="text-orange-600 py-1.5 border-b border-orange-100">Home</a>
+          <a href="shop.html" class="hover:text-orange-600 py-1.5 border-b border-gray-50">Shop Spices</a>
+          <a href="shop.html" class="hover:text-orange-600 py-1.5 border-b border-gray-50">Single Terroirs</a>
+          <a href="shop.html" class="hover:text-orange-600 py-1.5 border-b border-gray-50">Gift Vaults</a>
+          <a href="story.html" class="hover:text-orange-600 py-1.5">Our Provenance</a>
+        </div>
+      </div>
+      <div class="pt-6 border-t border-gray-100 text-xs text-gray-500 space-y-2">
+        <p class="font-bold text-gray-900">Sprinkled Artisanal Spices</p>
+        <p class="text-[11px] text-emerald-700 font-semibold">🌱 100% Pure Vegetarian Certified</p>
+        <p class="text-[11px] text-gray-600">Tel: +91 9685140374</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- 3. HERO SECTION (FLAGSHIP AMBER JARS ON STONE) -->
+  <!-- ========================================== -->
+  <section class="max-w-7xl mx-auto px-3 sm:px-8 pt-3 sm:pt-4 pb-8 sm:pb-12">
+    <div class="hero-shadow-container relative w-full min-h-[440px] sm:min-h-[520px] lg:h-[580px] bg-black rounded-2xl sm:rounded-3xl overflow-hidden flex items-center">
+      
+      <!-- Hero Background Photo as Requested -->
+      <img src="assets/hero_spices_banner.jpg" alt="Sprinkled Artisanal Spices Heritage Jars" class="absolute inset-0 w-full h-full object-cover object-center"/>
+      
+      <!-- Lightened Gradient Overlay (30% less dark for bright image clarity) -->
+      <div class="absolute inset-0 bg-gradient-to-r from-black/55 via-black/35 to-transparent pointer-events-none"></div>
+      
+      <!-- Hero Text & CTA Content -->
+      <div class="relative z-10 w-full px-5 sm:px-12 lg:px-16 py-8">
+        <div class="max-w-xl text-white space-y-3.5 sm:space-y-5">
+          
+          <h1 class="font-display text-3xl sm:text-5xl lg:text-6xl font-bold leading-tight drop-shadow-[0_3px_10px_rgba(0,0,0,0.85)] text-white">
+            The Art of Pure Terroir Spices
+          </h1>
+          
+          <p class="text-xs sm:text-base text-gray-100 leading-relaxed font-normal drop-shadow-[0_2px_6px_rgba(0,0,0,0.85)] max-w-lg">
+            Single-estate royal harvests, stone-milled in micro-batches and sealed in climate-protected amber glass jars.
+          </p>
+          
+          <!-- CTA Buttons -->
+          <div class="pt-2 sm:pt-3 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4">
+            <a href="shop.html" class="bg-orange-500 hover:bg-orange-600 text-white px-6 sm:px-8 py-3 sm:py-3.5 rounded-xl text-xs font-extrabold uppercase tracking-widest shadow-xl hover:shadow-orange-500/30 transition-all border border-orange-300/30 text-center inline-flex items-center justify-center gap-2">
+              <span>Explore Spices Vault</span>
+              <span class="material-symbols-outlined text-sm">east</span>
+            </a>
+            <a href="story.html" class="border-2 border-white/80 hover:bg-white hover:text-black text-white px-6 sm:px-7 py-2.5 sm:py-3 rounded-xl text-xs font-bold uppercase tracking-widest transition-all backdrop-blur-sm text-center">
+              Our Provenance
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================== -->
+  <!-- 4. 4-ITEM VALUE TRUST STRIP -->
+  <!-- ========================================== -->
+  <section class="max-w-7xl mx-auto px-3 sm:px-8 pb-8 sm:pb-12">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-6">
+      
+      <div class="bg-white rounded-xl sm:rounded-2xl p-3.5 sm:p-5 border border-gray-200/80 shadow-sm flex items-center gap-3 sm:gap-4 hover:border-orange-300 transition-colors">
+        <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-orange-50 text-orange-600 flex items-center justify-center flex-shrink-0">
+          <span class="material-symbols-outlined text-xl sm:text-2xl">local_shipping</span>
+        </div>
+        <div>
+          <h4 class="text-[11px] sm:text-xs font-bold uppercase tracking-wider text-gray-900">Free Shipping</h4>
+          <p class="text-[10px] sm:text-[11px] text-gray-500">Orders above ₹999</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl sm:rounded-2xl p-3.5 sm:p-5 border border-gray-200/80 shadow-sm flex items-center gap-3 sm:gap-4 hover:border-orange-300 transition-colors">
+        <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center flex-shrink-0">
+          <span class="material-symbols-outlined text-xl sm:text-2xl">eco</span>
+        </div>
+        <div>
+          <h4 class="text-[11px] sm:text-xs font-bold uppercase tracking-wider text-gray-900">100% Pure Veg</h4>
+          <p class="text-[10px] sm:text-[11px] text-gray-500">Dedicated satvic facility</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl sm:rounded-2xl p-3.5 sm:p-5 border border-gray-200/80 shadow-sm flex items-center gap-3 sm:gap-4 hover:border-orange-300 transition-colors">
+        <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-rose-50 text-rose-600 flex items-center justify-center flex-shrink-0">
+          <span class="material-symbols-outlined text-xl sm:text-2xl">science</span>
+        </div>
+        <div>
+          <h4 class="text-[11px] sm:text-xs font-bold uppercase tracking-wider text-gray-900">Stone Milled</h4>
+          <p class="text-[10px] sm:text-[11px] text-gray-500">&lt;32°C micro-batches</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl sm:rounded-2xl p-3.5 sm:p-5 border border-gray-200/80 shadow-sm flex items-center gap-3 sm:gap-4 hover:border-orange-300 transition-colors">
+        <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-indigo-50 text-indigo-600 flex items-center justify-center flex-shrink-0">
+          <span class="material-symbols-outlined text-xl sm:text-2xl">verified</span>
+        </div>
+        <div>
+          <h4 class="text-[11px] sm:text-xs font-bold uppercase tracking-wider text-gray-900">Lab Certified</h4>
+          <p class="text-[10px] sm:text-[11px] text-gray-500">Zero adulteration</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================== -->
+  <!-- 5. BESTSELLING PRODUCT SHOWCASE (MOBILE 2-CARD GRID + HOLD TO VIEW INFO) -->
+  <!-- ========================================== -->
+  <section class="py-10 sm:py-14 px-3 sm:px-8 bg-[#fbf9f6] border-y border-gray-200/60">
+    <div class="max-w-7xl mx-auto">
+      
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-6 sm:mb-10">
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="text-xs font-bold uppercase tracking-widest text-orange-600">Single-Origin Terroirs</span>
+            <span class="text-[10px] text-gray-400 bg-white px-2 py-0.5 rounded-full border border-gray-200 flex items-center gap-1">
+              <span class="material-symbols-outlined text-xs text-orange-500">touch_app</span> Press & hold card for notes
+            </span>
+          </div>
+          <h2 class="font-display text-2xl sm:text-4xl font-bold text-gray-950 mt-1">Bestselling Single Terroirs</h2>
+        </div>
+        <a href="shop.html" class="mt-3 sm:mt-0 px-4 sm:px-5 py-2 sm:py-2.5 rounded-full bg-white border border-gray-300 text-xs font-bold uppercase tracking-wider text-gray-900 hover:text-orange-600 hover:border-orange-500 inline-flex items-center gap-1.5 shadow-sm transition-all self-start sm:self-auto">
+          <span>View All 12 Terroirs</span>
+          <span class="material-symbols-outlined text-sm">east</span>
+        </a>
+      </div>
+
+      <!-- 2 Cards per row on Mobile (Amazon Style), 4 on Desktop -->
+      <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
+        
+        <!-- Product 1: Kashmiri Mogra Saffron -->
+        <div class="product-card bg-white p-2.5 sm:p-4 flex flex-col justify-between relative shadow-sm cursor-pointer select-none"
+             data-title="Kashmiri Mogra Saffron (Grade 1)"
+             data-terroir="Pampore High Valley · Kashmir"
+             data-full-desc="Handpicked all-red supreme grade stigmas from the high-altitude fields of Pampore. Lab-certified >8.5% natural crocin content delivers radiant golden saffron strands, exquisite floral aromatics, and rich therapeutic purity."
+             data-weight="5g Luxury Tin · Harvest 2024">
+          <span class="absolute top-2.5 left-2.5 sm:top-4 sm:left-4 px-1.5 sm:px-2.5 py-0.5 sm:py-1 bg-black text-orange-400 text-[8px] sm:text-[10px] font-extrabold uppercase rounded-full shadow-md z-10 border border-orange-500/40">-20%</span>
+          
+          <div>
+            <div class="product-image-frame w-full h-32 sm:h-48 md:h-56 rounded-lg sm:rounded-xl bg-white mb-2 sm:mb-4 border border-gray-100 flex items-center justify-center p-1 sm:p-2">
+              <img src="assets/product_saffron.jpg" alt="Sprinkled Kashmiri Saffron" class="w-full h-full object-contain"/>
+            </div>
+
+            <p class="text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-orange-600 truncate">Pampore Valley · Kashmir</p>
+            <h3 class="font-bold text-xs sm:text-base text-gray-900 mt-0.5 sm:mt-1 leading-snug line-clamp-2">Kashmiri Mogra Saffron (Grade 1)</h3>
+            
+            <div class="flex items-center gap-1 mt-1">
+              <span class="text-orange-500 text-[10px] sm:text-xs font-bold">★★★★★</span>
+              <span class="text-[9px] sm:text-[11px] text-gray-400 font-semibold">(184)</span>
+            </div>
+            
+            <!-- Short concise description snippet -->
+            <p class="text-[10px] sm:text-xs text-gray-500 mt-1 sm:mt-2 line-clamp-1">All-red handpicked stigmas with >8.5% crocin.</p>
+          </div>
+
+          <div class="mt-3 sm:mt-5 pt-2 sm:pt-3.5 border-t border-gray-100 flex items-center justify-between gap-1">
+            <div>
+              <span class="text-[10px] sm:text-xs text-gray-400 line-through block sm:inline">₹1,100</span>
+              <span class="text-xs sm:text-lg font-bold text-gray-950 sm:ml-1">₹899</span>
+            </div>
+            <button onclick="addToCart({id:'kashmiri-saffron', name:'Kashmiri Mogra Saffron', price:899.00, originalPrice:1100.00, terroir:'Pampore, Kashmir', weight:'5g Luxury Tin', image:'assets/product_saffron.jpg'})" class="px-2.5 sm:px-5 py-1.5 sm:py-2.5 bg-orange-500 hover:bg-orange-600 text-white text-[10px] sm:text-xs font-bold uppercase rounded-lg sm:rounded-xl tracking-wider transition-all shadow-sm">
+              + Add
+            </button>
+          </div>
+        </div>
+
+        <!-- Product 2: Tellicherry Black Pepper -->
+        <div class="product-card bg-white p-2.5 sm:p-4 flex flex-col justify-between relative shadow-sm cursor-pointer select-none"
+             data-title="Tellicherry Extra Bold Black Pepper"
+             data-terroir="Wayanad Coast · Kerala"
+             data-full-desc="4.25mm jumbo sun-cured black peppercorns harvested from old-growth vines in Wayanad. Delivers an initial rush of pine, citrus, and sweet floral terpenes before unfolding into deep, resonant gastronomic heat."
+             data-weight="85g Glass Jar · Lot 14">
+          <span class="absolute top-2.5 left-2.5 sm:top-4 sm:left-4 px-1.5 sm:px-2.5 py-0.5 sm:py-1 bg-black text-orange-400 text-[8px] sm:text-[10px] font-extrabold uppercase rounded-full shadow-md z-10 border border-orange-500/40">-17%</span>
+          
+          <div>
+            <div class="product-image-frame w-full h-32 sm:h-48 md:h-56 rounded-lg sm:rounded-xl bg-white mb-2 sm:mb-4 border border-gray-100 flex items-center justify-center p-1 sm:p-2">
+              <img src="assets/product_pepper.jpg" alt="Sprinkled Tellicherry Pepper" class="w-full h-full object-contain"/>
+            </div>
+
+            <p class="text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-orange-600 truncate">Wayanad · Kerala</p>
+            <h3 class="font-bold text-xs sm:text-base text-gray-900 mt-0.5 sm:mt-1 leading-snug line-clamp-2">Tellicherry Extra Bold Black Pepper</h3>
+            
+            <div class="flex items-center gap-1 mt-1">
+              <span class="text-orange-500 text-[10px] sm:text-xs font-bold">★★★★★</span>
+              <span class="text-[9px] sm:text-[11px] text-gray-400 font-semibold">(210)</span>
+            </div>
+            
+            <p class="text-[10px] sm:text-xs text-gray-500 mt-1 sm:mt-2 line-clamp-1">4.25mm jumbo peppercorns with pine and citrus heat.</p>
+          </div>
+
+          <div class="mt-3 sm:mt-5 pt-2 sm:pt-3.5 border-t border-gray-100 flex items-center justify-between gap-1">
+            <div>
+              <span class="text-[10px] sm:text-xs text-gray-400 line-through block sm:inline">₹420</span>
+              <span class="text-xs sm:text-lg font-bold text-gray-950 sm:ml-1">₹349</span>
+            </div>
+            <button onclick="addToCart({id:'tellicherry-pepper', name:'Tellicherry Extra Bold Black Pepper', price:349.00, originalPrice:420.00, terroir:'Wayanad, Kerala', weight:'85g Glass Jar', image:'assets/product_pepper.jpg'})" class="px-2.5 sm:px-5 py-1.5 sm:py-2.5 bg-orange-500 hover:bg-orange-600 text-white text-[10px] sm:text-xs font-bold uppercase rounded-lg sm:rounded-xl tracking-wider transition-all shadow-sm">
+              + Add
+            </button>
+          </div>
+        </div>
+
+        <!-- Product 3: Kashmiri Red Chilli -->
+        <div class="product-card bg-white p-2.5 sm:p-4 flex flex-col justify-between relative shadow-sm cursor-pointer select-none"
+             data-title="Kashmiri Degi Red Chilli Powder"
+             data-terroir="Himalayan Foothills · Kashmir"
+             data-full-desc="Finely stone-milled under 32°C from stemless, sun-cured Kashmiri whole chillies. Renowned for its radiant natural crimson red pigmentation and gentle, sweet warmth (1,500 SHU) with zero artificial coloring."
+             data-weight="100g Glass Jar · Satvic Milled">
+          <span class="absolute top-2.5 left-2.5 sm:top-4 sm:left-4 px-1.5 sm:px-2.5 py-0.5 sm:py-1 bg-black text-orange-400 text-[8px] sm:text-[10px] font-extrabold uppercase rounded-full shadow-md z-10 border border-orange-500/40">-25%</span>
+          
+          <div>
+            <div class="product-image-frame w-full h-32 sm:h-48 md:h-56 rounded-lg sm:rounded-xl bg-white mb-2 sm:mb-4 border border-gray-100 flex items-center justify-center p-1 sm:p-2">
+              <img src="assets/product_chilli.jpg" alt="Sprinkled Kashmiri Red Chilli" class="w-full h-full object-contain"/>
+            </div>
+
+            <p class="text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-orange-600 truncate">Himalayan Foothills · Kashmir</p>
+            <h3 class="font-bold text-xs sm:text-base text-gray-900 mt-0.5 sm:mt-1 leading-snug line-clamp-2">Kashmiri Degi Red Chilli Powder</h3>
+            
+            <div class="flex items-center gap-1 mt-1">
+              <span class="text-orange-500 text-[10px] sm:text-xs font-bold">★★★★★</span>
+              <span class="text-[9px] sm:text-[11px] text-gray-400 font-semibold">(142)</span>
+            </div>
+            
+            <p class="text-[10px] sm:text-xs text-gray-500 mt-1 sm:mt-2 line-clamp-1">Silky crimson powder providing brilliant red color & sweet heat.</p>
+          </div>
+
+          <div class="mt-3 sm:mt-5 pt-2 sm:pt-3.5 border-t border-gray-100 flex items-center justify-between gap-1">
+            <div>
+              <span class="text-[10px] sm:text-xs text-gray-400 line-through block sm:inline">₹399</span>
+              <span class="text-xs sm:text-lg font-bold text-gray-950 sm:ml-1">₹299</span>
+            </div>
+            <button onclick="addToCart({id:'kashmiri-chilli', name:'Kashmiri Degi Red Chilli Powder', price:299.00, originalPrice:399.00, terroir:'Kashmir Valley', weight:'100g Glass Jar', image:'assets/product_chilli.jpg'})" class="px-2.5 sm:px-5 py-1.5 sm:py-2.5 bg-orange-500 hover:bg-orange-600 text-white text-[10px] sm:text-xs font-bold uppercase rounded-lg sm:rounded-xl tracking-wider transition-all shadow-md">
+              + Add
+            </button>
+          </div>
+        </div>
+
+        <!-- Product 4: Alleppey Green Cardamom -->
+        <div class="product-card bg-white p-2.5 sm:p-4 flex flex-col justify-between relative shadow-sm cursor-pointer select-none"
+             data-title="Alleppey Extra Bold Green Cardamom"
+             data-terroir="Cardamom Hills · Alleppey"
+             data-full-desc="8mm jumbo emerald green pods cultivated in the high-mist rainforest slopes of Alleppey. Packed with dark essential oil-rich seeds bursting with refreshing eucalyptus, floral camphor, and sweet citrus notes."
+             data-weight="100g Glass Jar · First Pick">
+          <span class="absolute top-2.5 left-2.5 sm:top-4 sm:left-4 px-1.5 sm:px-2.5 py-0.5 sm:py-1 bg-black text-orange-400 text-[8px] sm:text-[10px] font-extrabold uppercase rounded-full shadow-md z-10 border border-orange-500/40">-15%</span>
+          
+          <div>
+            <div class="product-image-frame w-full h-32 sm:h-48 md:h-56 rounded-lg sm:rounded-xl bg-white mb-2 sm:mb-4 border border-gray-100 flex items-center justify-center p-1 sm:p-2">
+              <img src="assets/product_cardamom.jpg" alt="Sprinkled Green Cardamom" class="w-full h-full object-contain"/>
+            </div>
+
+            <p class="text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-orange-600 truncate">Cardamom Hills · Alleppey</p>
+            <h3 class="font-bold text-xs sm:text-base text-gray-900 mt-0.5 sm:mt-1 leading-snug line-clamp-2">Alleppey Extra Bold Green Cardamom</h3>
+            
+            <div class="flex items-center gap-1 mt-1">
+              <span class="text-orange-500 text-[10px] sm:text-xs font-bold">★★★★★</span>
+              <span class="text-[9px] sm:text-[11px] text-gray-400 font-semibold">(98)</span>
+            </div>
+            
+            <p class="text-[10px] sm:text-xs text-gray-500 mt-1 sm:mt-2 line-clamp-1">8mm plump emerald pods bursting with camphor & citrus oils.</p>
+          </div>
+
+          <div class="mt-3 sm:mt-5 pt-2 sm:pt-3.5 border-t border-gray-100 flex items-center justify-between gap-1">
+            <div>
+              <span class="text-[10px] sm:text-xs text-gray-400 line-through block sm:inline">₹530</span>
+              <span class="text-xs sm:text-lg font-bold text-gray-950 sm:ml-1">₹450</span>
+            </div>
+            <button onclick="addToCart({id:'alleppey-cardamom', name:'Alleppey Extra Bold Green Cardamom', price:450.00, originalPrice:530.00, terroir:'Alleppey, Kerala', weight:'100g Glass Jar', image:'assets/product_cardamom.jpg'})" class="px-2.5 sm:px-5 py-1.5 sm:py-2.5 bg-orange-500 hover:bg-orange-600 text-white text-[10px] sm:text-xs font-bold uppercase rounded-lg sm:rounded-xl tracking-wider transition-all shadow-md">
+              + Add
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================== -->
+  <!-- 6. MASTER RESERVE & GIFT VAULT -->
+  <!-- ========================================== -->
+  <section class="py-12 sm:py-16 px-3 sm:px-8 bg-white">
+    <div class="max-w-7xl mx-auto">
+      
+      <!-- Featured Teakwood Gift Vault Box Banner -->
+      <div class="hero-shadow-container bg-gradient-to-r from-gray-950 via-gray-900 to-black rounded-2xl sm:rounded-3xl overflow-hidden border border-gray-800 grid grid-cols-1 lg:grid-cols-12 items-center">
+        
+        <div class="lg:col-span-7 p-6 sm:p-12 lg:p-14 space-y-4 sm:space-y-5 text-white">
+          <div class="inline-flex items-center gap-2 px-3 py-1 sm:px-3.5 sm:py-1.5 bg-orange-500 text-gray-950 text-[10px] font-extrabold uppercase tracking-widest rounded-full shadow-lg">
+            <span>🎁 Handcrafted Limited Edition Master Vault</span>
+          </div>
+          
+          <h3 class="font-display text-2xl sm:text-4xl lg:text-5xl font-bold leading-tight text-white">
+            Grand Terroir 6-Jar Teakwood Curation Vault
+          </h3>
+          
+          <p class="text-xs sm:text-sm text-gray-300 leading-relaxed font-light max-w-lg">
+            An heirloom brass-latched dark teakwood case containing 6 flagship single-estate harvests: Kashmiri Mogra Saffron, Tellicherry TGSEB Pepper, Alleppey Cardamom, Salem Turmeric, Royal Fried Rice Kit Botanicals, and Degi Chilli.
+          </p>
+          
+          <div class="flex items-baseline gap-3 pt-1 sm:pt-2">
+            <span class="font-display text-2xl sm:text-4xl font-extrabold text-orange-400">₹2,899</span>
+            <span class="text-xs sm:text-sm text-gray-500 line-through">₹3,500</span>
+            <span class="text-[11px] sm:text-xs font-bold text-emerald-400 uppercase">Save ₹601 · Free Express Shipping</span>
+          </div>
+          
+          <div class="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4">
+            <button onclick="addToCart({id:'teakwood-vault', name:'Grand Terroir 6-Jar Teakwood Vault', price:2899.00, originalPrice:3500.00, terroir:'Multi-Estate Grand Cru', weight:'6 x 85g Glass Jars + Brass Spoon', image:'assets/hero_banner_3.jpg'})" class="bg-orange-500 hover:bg-orange-600 text-white px-7 sm:px-8 py-3 sm:py-3.5 rounded-xl text-xs font-extrabold uppercase tracking-widest transition-all shadow-xl hover:shadow-orange-500/30 text-center">
+              + Add Gift Vault to Cart
+            </button>
+            <a href="shop.html" class="border border-white/40 hover:bg-white hover:text-gray-950 text-white px-6 py-3.5 rounded-xl text-xs font-bold uppercase tracking-widest transition-all text-center">
+              View Specifications
+            </a>
+          </div>
+        </div>
+
+        <!-- Teakwood Vault Image Frame -->
+        <div class="lg:col-span-5 h-64 sm:h-80 lg:h-full overflow-hidden bg-gray-950 flex items-center justify-center p-4">
+          <img src="assets/hero_banner_3.jpg" alt="Sprinkled 6-Jar Teakwood Vault" class="w-full h-full object-cover rounded-xl"/>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================== -->
+  <!-- 7. FLOATING WHATSAPP SUPPORT BUTTON -->
+  <!-- ========================================== -->
+  <a href="https://wa.me/919685140374?text=Hi%20Sprinkled%20team,%20I%20have%20an%20inquiry%20about%20your%20single-estate%20pure%20vegetarian%20spices." target="_blank" class="whatsapp-floating-btn" title="Chat on WhatsApp (+91 9685140374)">
+    <i class="fa-brands fa-whatsapp text-2xl"></i>
+  </a>
+
+  <!-- ========================================== -->
+  <!-- 8. FOOTER (RESPONSIVE) -->
+  <!-- ========================================== -->
+  <footer class="bg-black text-white pt-12 sm:pt-16 pb-10 sm:pb-12 px-5 sm:px-12 border-t border-gray-900">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 pb-10 sm:pb-12 border-b border-gray-900">
+      
+      <!-- Brand Info -->
+      <div class="space-y-3 sm:space-y-4">
+        <div class="flex items-center gap-3">
+          <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-2xl bg-orange-500 text-white flex items-center justify-center font-display font-bold text-lg sm:text-xl shadow-md border border-white/20">
+            <span class="font-extrabold text-black">S</span>
+          </div>
+          <span class="font-display text-xl sm:text-2xl font-bold text-white">Sprinkled</span>
+        </div>
+        <p class="text-xs text-gray-400 leading-relaxed">
+          The art of pure terroir spices. Direct single-estate harvests, stone-milled in micro-batches and packed in climate-sealed glass jars.
+        </p>
+        <p class="text-[11px] font-bold text-orange-400 uppercase tracking-wider">
+          🌱 100% Pure Vegetarian Certified
+        </p>
+      </div>
+
+      <!-- Links -->
+      <div class="space-y-3 text-xs">
+        <h4 class="font-bold text-orange-400 uppercase tracking-wider">Maison Catalog</h4>
+        <ul class="space-y-2 text-gray-300">
+          <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+          <li><a href="shop.html" class="hover:text-white transition-colors">Shop All Single Terroirs</a></li>
+          <li><a href="shop.html" class="hover:text-white transition-colors">Gift Vault Collections</a></li>
+          <li><a href="story.html" class="hover:text-white transition-colors">Provenance & Farmgate Story</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="space-y-3 text-xs text-gray-300">
+        <h4 class="font-bold text-orange-400 uppercase tracking-wider">Customer Concierge</h4>
+        <p>Support Hotline: <a href="tel:+919685140374" class="text-white font-bold hover:text-orange-400 transition-colors">+91 9685140374</a></p>
+        <p>Email: <span class="text-white">concierge@sprinkled.com</span></p>
+        <p>Dispatch: Mumbai & New Delhi Climate Hubs</p>
+        <p class="text-gray-400 text-[11px]">Mon–Sat: 9:00 AM – 8:00 PM IST</p>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="space-y-3 text-xs">
+        <h4 class="font-bold text-orange-400 uppercase tracking-wider">Tasting Club</h4>
+        <p class="text-gray-400">Receive private harvest reserve notifications and seasonal single-estate arrivals.</p>
+        <div class="flex gap-2">
+          <input type="email" placeholder="Your email address" class="w-full bg-gray-900 border border-gray-800 px-3.5 py-2.5 rounded-xl text-xs text-white focus:outline-none focus:border-orange-400"/>
+          <button onclick="alert('Welcome to the Sprinkled Tasting Club!')" class="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2.5 rounded-xl font-bold uppercase tracking-wider text-[11px] transition-colors flex-shrink-0">Join</button>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="max-w-7xl mx-auto pt-6 sm:pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-500 text-center sm:text-left gap-2 sm:gap-0">
+      <p>© 2026 Sprinkled Artisanal Spices Pvt. Ltd. All rights reserved.</p>
+      <p class="font-medium text-gray-400">Pure Vegetarian Gastronomic Standard</p>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>VAANIKA — Artisanal Spices</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-bright":"#fff8f4","on-primary-container":"#c8767c","inverse-on-surface":"#f6efec","primary-container":"#4a121a","primary":"#2e0007","surface-variant":"#e7e1de","outline":"#867273","error":"#ba1a1a","on-secondary":"#ffffff","primary-fixed-dim":"#ffb2b7","tertiary-fixed-dim":"#ffb3b6","on-secondary-container":"#6d3a00","secondary-container":"#fea047","on-secondary-fixed":"#2e1500","primary-fixed":"#ffdadb","inverse-surface":"#32302e","secondary":"#8f4e00","surface-container-low":"#f9f2ef","secondary-fixed-dim":"#ffb77a","error-container":"#ffdad6","surface-dim":"#dfd9d5","surface-container-high":"#ede7e3","background":"#fff8f4","surface-container-lowest":"#ffffff","on-tertiary":"#ffffff","tertiary-fixed":"#ffdada","surface-container-highest":"#e7e1de","on-tertiary-fixed":"#3d050e","on-error-container":"#93000a","outline-variant":"#d8c1c1","on-primary-fixed":"#3b0710","inverse-primary":"#ffb2b7","on-secondary-fixed-variant":"#6d3a00","secondary-fixed":"#ffdcc2","surface-container":"#f3ede9","tertiary":"#2e0006","on-surface":"#1d1b19","on-surface-variant":"#534343","surface":"#fff8f4","on-background":"#1d1b19","on-primary":"#ffffff","on-error":"#ffffff","tertiary-container":"#4c1018","surface-tint":"#90494f","on-primary-fixed-variant":"#733239","on-tertiary-container":"#cb757a","on-tertiary-fixed-variant":"#753137"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"gutter":"1.5rem","space-xl":"4rem","margin":"1.25rem","gutter-desktop":"2.5rem","space-md":"1.25rem","margin-desktop":"4rem","space-lg":"2.25rem","space-xs":"0.375rem","space-sm":"0.75rem"},"fontFamily":{"label-caps":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"display-hero-mobile":["Playfair Display"],"body-sm":["Plus Jakarta Sans"],"headline-md":["Playfair Display"],"label-sm":["Plus Jakarta Sans"],"display-hero":["Playfair Display"],"body-md":["Plus Jakarta Sans"],"subheading":["Playfair Display"],"headline-sm":["Playfair Display"],"headline-lg":["Playfair Display"],"headline-lg-mobile":["Playfair Display"]},"fontSize":{"label-caps":["11px",{"lineHeight":"16px","letterSpacing":"0.14em","fontWeight":"600"}],"body-lg":["17px",{"lineHeight":"28px","letterSpacing":"0em","fontWeight":"400"}],"display-hero-mobile":["38px",{"lineHeight":"46px","letterSpacing":"-0.01em","fontWeight":"400"}],"body-sm":["13px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"400"}],"headline-md":["32px",{"lineHeight":"40px","letterSpacing":"0em","fontWeight":"500"}],"label-sm":["12px",{"lineHeight":"18px","letterSpacing":"0.04em","fontWeight":"500"}],"display-hero":["64px",{"lineHeight":"72px","letterSpacing":"-0.02em","fontWeight":"400"}],"body-md":["15px",{"lineHeight":"24px","letterSpacing":"0.005em","fontWeight":"400"}],"subheading":["19px",{"lineHeight":"28px","letterSpacing":"0.02em","fontWeight":"400"}],"headline-sm":["24px",{"lineHeight":"32px","letterSpacing":"0.01em","fontWeight":"600"}],"headline-lg":["44px",{"lineHeight":"52px","letterSpacing":"-0.01em","fontWeight":"400"}],"headline-lg-mobile":["30px",{"lineHeight":"38px","letterSpacing":"0em","fontWeight":"400"}]}}}};</script><link rel="stylesheet" href="../theme-styles.css"/>
+<script src="../theme-manager.js"></script>
+</head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed"><header class="fixed top-0 left-0 right-0 w-full z-50 bg-surface/85 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between"><a class="flex flex-col text-left group" data-path="shop" href="#"><span class="font-headline-sm text-headline-sm tracking-wider text-primary uppercase" class="brand-dynamic-name">VAANIKA</span><span class="font-label-caps text-label-caps text-secondary uppercase tracking-[0.2em]">Artisanal Spices</span></a><nav class="hidden md:flex items-center gap-space-lg" data-active-classes="text-primary font-semibold"><a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors uppercase tracking-[0.14em]" data-path="shop" href="#">Shop</a><a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors uppercase tracking-[0.14em]" data-path="collections" href="#">Collections</a><a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors uppercase tracking-[0.14em]" data-path="recipes" href="#">Recipes</a><a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors uppercase tracking-[0.14em]" data-path="our-story" href="#">Our Story</a></nav><div class="flex items-center gap-space-md"><button aria-label="Search Catalogue" class="text-on-surface-variant hover:text-primary transition-colors p-space-xs" type="button"><span class="material-symbols-outlined text-[22px]">search</span></button><a aria-label="View Cart" class="relative text-on-surface-variant hover:text-primary transition-colors p-space-xs" data-path="cart" href="#"><span class="material-symbols-outlined text-[22px]">shopping_bag</span><span class="absolute 0 top-1 right-0 w-4 h-4 bg-secondary-container text-on-secondary-container text-[10px] font-bold rounded-full flex items-center justify-center leading-none">2</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-space-xs"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface"><div class="flex flex-col w-full">
+<!-- BREADCRUMB & CONTEXT BANNER -->
+<section class="w-full bg-surface-container-low py-space-sm px-6 lg:px-12">
+<div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-space-sm">
+<nav aria-label="Breadcrumb" class="flex items-center gap-space-xs font-label-caps text-label-caps text-on-surface-variant uppercase tracking-[0.14em]">
+<a class="hover:text-primary transition-colors" href="#">Home</a>
+<span class="text-outline-variant">/</span>
+<a class="hover:text-primary transition-colors" href="#">Contact &amp; Concierge</a>
+<span class="text-outline-variant">/</span>
+<span class="text-primary font-semibold">Private Client Care</span>
+</nav>
+<div class="inline-flex items-center gap-2 px-space-sm py-1 bg-surface rounded-full shadow-sm">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-caps text-label-caps uppercase text-secondary tracking-[0.16em]">Botanical Concierge • Active Dispatch Desk</span>
+</div>
+</div>
+</section>
+<!-- CONTACT HERO (EDITORIAL SPLIT) -->
+<section class="w-full py-space-xl px-6 lg:px-12 relative overflow-hidden bg-surface">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
+<div class="lg:col-span-7 flex flex-col space-y-space-md">
+<div class="inline-flex items-center gap-2">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-[0.2em]">GET IN TOUCH • BOTANICAL CONCIERGE</span>
+<span class="h-px w-12 bg-secondary-container"></span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary max-w-xl">
+          We’d love to hear from you.
+        </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl leading-relaxed">
+          Questions about your order, single-lot terroirs, culinary monographs, or corporate gifting? Our tasting chamber and client concierge are at your dedicated service.
+        </p>
+<!-- Quick Stats Bento -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm pt-space-sm">
+<div class="p-space-md bg-surface-container rounded-xl flex flex-col justify-between">
+<span class="material-symbols-outlined text-secondary text-[24px] mb-space-xs">nest_clock_farsight_analog</span>
+<div>
+<span class="font-headline-sm text-headline-sm text-primary block">&lt; 2 Hours</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Average response cadence</span>
+</div>
+</div>
+<div class="p-space-md bg-surface-container rounded-xl flex flex-col justify-between">
+<span class="material-symbols-outlined text-secondary text-[24px] mb-space-xs">support_agent</span>
+<div>
+<span class="font-headline-sm text-headline-sm text-primary block">Direct Desk</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">WhatsApp &amp; telephone liaisons</span>
+</div>
+</div>
+<div class="p-space-md bg-surface-container rounded-xl flex flex-col justify-between">
+<span class="material-symbols-outlined text-secondary text-[24px] mb-space-xs">verified_user</span>
+<div>
+<span class="font-headline-sm text-headline-sm text-primary block">100% Origin</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Single-estate lot validation</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Hero Visual Frame -->
+<div class="lg:col-span-5 relative">
+<div class="relative rounded-xl overflow-hidden shadow-xl aspect-[4/5] bg-surface-container-high">
+<img class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" data-alt="Editorial close-up still life of artisanal amber glass spice jars with wooden lids labeled Star Anise, Ceylon Cinnamon, and Kashmiri Chilli resting on rustic black slate with whole spices, cinnamon barks, red dried chillies, and an antique brass mortar and pestle in soft atmospheric natural kitchen lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0HlTDc5c7RM1YLSgll76mE1d19EWEYFjNmd4B_jwTaiE49fqToPOBzfg307OCNBeZsC0LtRegj8ELpr8vylRvHKD7-lwKVRc2cFKovnm0Z8eNgei11mdNOYHkecLMFbiZro8WCud20-U916gQbJ1T4EWIawCYvl8vQ7FtQn1wUm3eF4IIzjYh4IX9qt_QRHORtLnYOJRpsFT43qoNJjhtAiwtKsYZkFhgkJedQM752O1Qou9iQ6T6"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-0 left-0 right-0 p-space-md text-surface-bright">
+<span class="font-label-caps text-label-caps uppercase text-secondary-fixed-dim tracking-[0.16em] block">Atelier Dispatch</span>
+<p class="font-subheading text-subheading italic text-surface-bright">Vaanika Curatorial Laboratory, New Delhi</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4 CONTACT CHANNEL CARDS -->
+<section class="w-full py-space-lg px-6 lg:px-12 bg-surface-container-low">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-lg gap-space-sm">
+<div>
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-[0.2em] block mb-1">Direct Channels</span>
+<h2 class="font-headline-md text-headline-md text-primary">How May We Assist You?</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-md">
+          Select an atelier department below to fast-track your correspondence to the appropriate botanical curator.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- 01 Order Support -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow">
+<div>
+<div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed font-semibold mb-space-md font-label-caps text-label-caps">
+              01
+            </div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-space-xs">Order Support</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+              Need help with an existing dispatch, climate-safe transit status, or delivery modifications?
+            </p>
+</div>
+<a class="inline-flex items-center gap-2 font-label-caps text-label-caps text-primary hover:text-secondary uppercase tracking-[0.14em] transition-colors" href="#order-lookup">
+<span>Get Order Help</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<!-- 02 Product & Terroir -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow">
+<div>
+<div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed font-semibold mb-space-md font-label-caps text-label-caps">
+              02
+            </div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-space-xs">Product &amp; Terroir</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+              Inquiries regarding volatile oil certificates, seasonal harvesting, or botanical culinary pairings?
+            </p>
+</div>
+<button class="inline-flex items-center gap-2 font-label-caps text-label-caps text-primary hover:text-secondary uppercase tracking-[0.14em] transition-colors text-left" onclick="selectReason('Product &amp; Terroir Question')" type="button">
+<span>Ask About Botanicals</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+<!-- 03 Culinary & Partnerships -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow">
+<div>
+<div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed font-semibold mb-space-md font-label-caps text-label-caps">
+              03
+            </div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-space-xs">Culinary &amp; Trade</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+              Restaurateurs, Michelin-starred chefs, private clubs, and high-volume master kitchens.
+            </p>
+</div>
+<button class="inline-flex items-center gap-2 font-label-caps text-label-caps text-primary hover:text-secondary uppercase tracking-[0.14em] transition-colors text-left" onclick="selectReason('Culinary Partnership')" type="button">
+<span>Discuss Partnership</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+<!-- 04 Private Client Concierge -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow">
+<div>
+<div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed font-semibold mb-space-md font-label-caps text-label-caps">
+              04
+            </div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-space-xs">Bespoke Curation</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+              Bespoke brass chest gifting, wedding favours, and private annual harvest reservations.
+            </p>
+</div>
+<button class="inline-flex items-center gap-2 font-label-caps text-label-caps text-primary hover:text-secondary uppercase tracking-[0.14em] transition-colors text-left" onclick="selectReason('Wholesale &amp; Corporate Gifting')" type="button">
+<span>Send A Message</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- ORDER SUPPORT SHORTCUT (LIVE LOOKUP) -->
+<section class="w-full py-space-xl px-6 lg:px-12 bg-surface" id="order-lookup">
+<div class="max-w-4xl mx-auto bg-surface-container p-space-lg md:p-space-xl rounded-xl shadow-sm">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md mb-space-lg">
+<div>
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-[0.2em] block mb-1">Live Allocation Registry</span>
+<h2 class="font-headline-md text-headline-md text-primary">Need Help With An Order?</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm">
+          Enter your harvest allocation identifier to retrieve dispatch status and temperature telemetry.
+        </p>
+</div>
+<!-- Quick Search Bar -->
+<form class="flex flex-col sm:flex-row gap-space-xs mb-space-md" id="orderLookupForm" onsubmit="handleOrderLookup(event)">
+<input class="flex-1 px-space-md py-3 bg-surface-container-lowest text-on-surface font-body-md text-body-md rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary-container" id="orderIdentifierInput" placeholder="Order identifier (e.g., #SPC-10284)" type="text"/>
+<button class="bg-primary hover:bg-primary-container text-on-primary font-label-caps text-label-caps uppercase tracking-[0.14em] px-space-lg py-3 rounded-lg transition-colors flex items-center justify-center gap-2" type="submit">
+<span>Find My Order</span>
+<span class="material-symbols-outlined text-[18px]">east</span>
+</button>
+</form>
+<!-- Prefill Hint Tag -->
+<div class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface-variant mb-space-lg">
+<span>Try prefilled demo ledger:</span>
+<button class="px-2 py-0.5 bg-surface-container-highest text-primary font-mono text-xs rounded hover:bg-secondary-fixed transition-colors font-medium" onclick="fillDemoOrder('#SPC-10284')" type="button">
+          #SPC-10284
+        </button>
+</div>
+<!-- Rich Order Tracking Card (Dynamically Toggled) -->
+<div class="hidden bg-surface-container-lowest p-space-lg rounded-xl shadow-sm space-y-space-md transition-all" id="orderResultFound">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between pb-space-md border-b border-surface-container gap-space-xs">
+<div>
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-primary">Allocation #SPC-10284</span>
+<span class="px-2 py-0.5 bg-secondary-fixed text-on-secondary-fixed font-label-caps text-label-caps rounded uppercase">Climate Air In Transit</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Dispatched via BlueDart ClimateAir #BD-882910</p>
+</div>
+<div class="text-left sm:text-right">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-wider block">Estimated Delivery</span>
+<span class="font-headline-sm text-headline-sm text-primary">12–14 Oct, 2026</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Temperature-Stabilized Coir Box</span>
+</div>
+</div>
+<!-- Order Items Detail -->
+<div class="py-space-xs space-y-3">
+<div class="font-label-caps text-label-caps uppercase text-on-surface-variant tracking-wider">Reserved Botanical Lots</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm font-body-sm text-body-sm">
+<div class="p-space-sm bg-surface-container-low rounded-lg">
+<span class="font-semibold text-primary block">Kashmiri Red Chilli (100g × 2)</span>
+<span class="text-on-surface-variant text-xs">Pampore Estate • Late Autumn Harvest</span>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg">
+<span class="font-semibold text-primary block">Salem Curcumin Turmeric (100g)</span>
+<span class="text-on-surface-variant text-xs">Tamil Nadu • Curcumin 5.2% Certified</span>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg">
+<span class="font-semibold text-primary block">Tellicherry Garbled Peppercorns (100g)</span>
+<span class="text-on-surface-variant text-xs">Malabar Coast • Grade TGSEB Bold</span>
+</div>
+</div>
+</div>
+<div class="flex flex-wrap items-center justify-between pt-space-xs gap-space-sm">
+<div class="font-body-sm text-body-sm text-on-surface-variant">
+            Settlement Total: <span class="font-semibold text-primary">₹1,132.11 (Paid via UPI)</span>
+</div>
+<div class="flex flex-wrap gap-2">
+<button class="px-space-md py-2 bg-secondary text-on-secondary font-label-caps text-label-caps rounded uppercase hover:bg-on-secondary-container transition-colors" onclick="alert('Connecting to BlueDart ClimateAir cold-chain telemetry relay... Current payload temperature: 21.4°C.')" type="button">
+              Track Real-Time Telemetry
+            </button>
+<button class="px-space-md py-2 bg-surface-container text-primary font-label-caps text-label-caps rounded uppercase hover:bg-surface-variant transition-colors" onclick="selectReason('Shipping &amp; Climate Packaging')" type="button">
+              Modify Address
+            </button>
+</div>
+</div>
+</div>
+<!-- Order Not Found Notice -->
+<div class="hidden p-space-md bg-error-container text-on-error-container rounded-xl font-body-md text-body-md flex items-center gap-3" id="orderResultNotFound">
+<span class="material-symbols-outlined text-error text-[24px]">error</span>
+<span>Order not located in the active dispatch ledger. Please verify your allocation code or submit an inquiry with concierge below.</span>
+</div>
+</div>
+</section>
+<!-- TWO-COLUMN INTERACTIVE CONTACT FORM & DIRECT COORDINATES -->
+<section class="w-full py-space-xl px-6 lg:px-12 bg-surface-container-low" id="inquiry-desk">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-space-xl">
+<!-- LEFT: DIRECT COORDINATES & ATELIER INFO -->
+<div class="lg:col-span-5 flex flex-col justify-between space-y-space-lg">
+<div class="space-y-space-md">
+<div>
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-[0.2em] block mb-1">Direct Channels</span>
+<h2 class="font-headline-md text-headline-md text-primary">Reach Us Directly</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Our atelier liaisons are stationed at our New Delhi reserve. Direct voice channels and WhatsApp concierge lines operate 6 days a week.
+          </p>
+<div class="space-y-space-md pt-space-xs">
+<div class="flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center shrink-0 text-secondary">
+<span class="material-symbols-outlined text-[20px]">mail</span>
+</div>
+<div>
+<span class="font-label-caps text-label-caps uppercase text-secondary tracking-wider block">Electronic Correspondence</span>
+<a class="font-headline-sm text-headline-sm text-primary hover:text-secondary transition-colors block" href="mailto:hello@vaanikaspices.com">
+                  hello@vaanikaspices.com
+                </a>
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="mailto:concierge@vaanikaspices.com">
+                  concierge@vaanikaspices.com (Private Clients)
+                </a>
+</div>
+</div>
+<div class="flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center shrink-0 text-secondary">
+<span class="material-symbols-outlined text-[20px]">call</span>
+</div>
+<div>
+<span class="font-label-caps text-label-caps uppercase text-secondary tracking-wider block">Telephone Concierge</span>
+<span class="font-headline-sm text-headline-sm text-primary block">+91 (011) 4982 0140</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">+91 98201 49822 (Mobile &amp; Trade)</span>
+</div>
+</div>
+<div class="flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center shrink-0 text-secondary">
+<span class="material-symbols-outlined text-[20px]">schedule</span>
+</div>
+<div>
+<span class="font-label-caps text-label-caps uppercase text-secondary tracking-wider block">Concierge Hours</span>
+<span class="font-body-md text-body-md text-primary font-medium block">Monday – Saturday</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">09:30 AM – 06:30 PM IST (Excluding National Gazetted Holidays)</span>
+</div>
+</div>
+<div class="p-space-md bg-surface-container rounded-xl flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="w-3 h-3 rounded-full bg-emerald-600 animate-ping"></span>
+<div>
+<span class="font-label-caps text-label-caps uppercase text-primary font-semibold block">WhatsApp Concierge</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Instant response for order amendments</span>
+</div>
+</div>
+<a class="px-space-sm py-1.5 bg-primary text-on-primary font-label-caps text-label-caps rounded uppercase hover:bg-primary-container transition-colors inline-flex items-center gap-1" href="https://wa.me/919820149822?text=Hello%20Vaanika%20Concierge,%20I%20have%20an%20inquiry%20regarding%20my%20order" rel="noopener noreferrer" target="_blank">
+<span>Active Now</span>
+<span class="material-symbols-outlined text-[14px]">arrow_outward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Provenance Security Badge -->
+<div class="p-space-md bg-surface-container rounded-xl">
+<div class="flex items-center gap-2 text-secondary mb-1">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span class="font-label-caps text-label-caps uppercase tracking-wider">The Vaanika Assurance</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            UV-filtering amber glass transit replacement guarantee. Should your package incur climate damage or seal compromise, an unadulterated replacement lot is dispatched via cold-chain courier within 24 hours.
+          </p>
+</div>
+</div>
+<!-- RIGHT: PREMIUM INTERACTIVE FORM -->
+<div class="lg:col-span-7 bg-surface-container-lowest p-space-lg md:p-space-xl rounded-xl shadow-md relative">
+<!-- Main Form Container -->
+<div id="contactFormContainer">
+<div class="mb-space-lg">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-[0.2em] block mb-1">Inquiry Ledger</span>
+<h2 class="font-headline-md text-headline-md text-primary">Send Us A Message</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+              Our master botanists and customer care liaisons review every dispatch query directly.
+            </p>
+</div>
+<form class="space-y-space-md" id="vaanikaContactForm" novalidate="" onsubmit="handleFormSubmit(event)">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<!-- First Name -->
+<div>
+<label class="block font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider mb-2" for="firstName">
+                  First Name <span class="text-error">*</span>
+</label>
+<input class="w-full px-space-md py-3 bg-surface-container-low text-on-surface font-body-md text-body-md rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" id="firstName" placeholder="e.g., Tara" required="" type="text"/>
+<span class="hidden text-error text-xs mt-1 block" id="firstNameError">Please enter your first name.</span>
+</div>
+<!-- Last Name -->
+<div>
+<label class="block font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider mb-2" for="lastName">
+                  Last Name <span class="text-error">*</span>
+</label>
+<input class="w-full px-space-md py-3 bg-surface-container-low text-on-surface font-body-md text-body-md rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" id="lastName" placeholder="e.g., Sengupta" required="" type="text"/>
+<span class="hidden text-error text-xs mt-1 block" id="lastNameError">Please enter your last name.</span>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<!-- Email Address -->
+<div>
+<label class="block font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider mb-2" for="emailAddress">
+                  Email Address <span class="text-error">*</span>
+</label>
+<input class="w-full px-space-md py-3 bg-surface-container-low text-on-surface font-body-md text-body-md rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" id="emailAddress" placeholder="name@domain.com" required="" type="email"/>
+<span class="hidden text-error text-xs mt-1 block" id="emailError">Please provide a valid correspondence email.</span>
+</div>
+<!-- Mobile Number -->
+<div>
+<label class="block font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider mb-2" for="mobileNumber">
+                  Mobile Number <span class="text-on-surface-variant text-xs">(Optional)</span>
+</label>
+<div class="flex">
+<span class="inline-flex items-center px-3 bg-surface-container text-on-surface-variant font-body-sm text-body-sm rounded-l-lg select-none">
+                    +91
+                  </span>
+<input class="w-full px-space-md py-3 bg-surface-container-low text-on-surface font-body-md text-body-md rounded-r-lg focus:outline-none focus:ring-2 focus:ring-primary" id="mobileNumber" placeholder="98200 00000" type="tel"/>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<!-- Reason For Contact -->
+<div>
+<label class="block font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider mb-2" for="contactReason">
+                  Reason for Contact <span class="text-error">*</span>
+</label>
+<select class="w-full px-space-md py-3 bg-surface-container-low text-on-surface font-body-md text-body-md rounded-lg focus:outline-none focus:ring-2 focus:ring-primary appearance-none cursor-pointer" id="contactReason" required="">
+<option disabled="" selected="" value="">Select Inquiry Scope</option>
+<option value="Order Support">Order Support &amp; Dispatch Status</option>
+<option value="Product &amp; Terroir Question">Product &amp; Terroir Question</option>
+<option value="Shipping &amp; Climate Packaging">Shipping &amp; Climate Packaging</option>
+<option value="Returns &amp; Replacements">Returns &amp; Replacements</option>
+<option value="Culinary Partnership">Culinary Partnership &amp; Chef Allotment</option>
+<option value="Wholesale &amp; Corporate Gifting">Wholesale &amp; Corporate Gifting</option>
+<option value="General Inquiry">General Atelier Inquiry</option>
+</select>
+<span class="hidden text-error text-xs mt-1 block" id="reasonError">Please select an inquiry topic.</span>
+</div>
+<!-- Order Allocation Number -->
+<div>
+<label class="block font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider mb-2" for="orderReference">
+                  Order Allocation ID <span class="text-on-surface-variant text-xs">(Optional)</span>
+</label>
+<input class="w-full px-space-md py-3 bg-surface-container-low text-on-surface font-body-md text-body-md rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" id="orderReference" placeholder="#SPC-XXXXX" type="text"/>
+</div>
+</div>
+<!-- Message Area -->
+<div>
+<label class="block font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider mb-2" for="inquiryMessage">
+                Inquiry Detail <span class="text-error">*</span>
+</label>
+<textarea class="w-full px-space-md py-3 bg-surface-container-low text-on-surface font-body-md text-body-md rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" id="inquiryMessage" placeholder="Tell us how we can assist your culinary journey or harvest queries..." required="" rows="4"></textarea>
+<div class="flex justify-between items-center mt-1">
+<span class="hidden text-error text-xs" id="messageError">Please compose an inquiry of at least 20 characters.</span>
+<span class="text-on-surface-variant text-xs ml-auto font-mono" id="charCount">0 / 1000</span>
+</div>
+</div>
+<!-- Submit Button -->
+<button class="w-full py-4 bg-primary hover:bg-primary-container text-on-primary font-label-caps text-label-caps uppercase tracking-[0.2em] rounded-lg transition-all flex items-center justify-center gap-3 shadow-md" type="submit">
+<span>Transmit Correspondence</span>
+<span class="material-symbols-outlined text-[18px]">send</span>
+</button>
+</form>
+</div>
+<!-- Success Confirmation Card (Hidden by default) -->
+<div class="hidden py-space-lg flex flex-col items-center text-center space-y-space-md" id="contactSuccessState">
+<div class="w-16 h-16 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed mb-space-xs">
+<span class="material-symbols-outlined text-[36px]">check_circle</span>
+</div>
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-[0.2em]">Inquiry Inscribed</span>
+<h3 class="font-headline-md text-headline-md text-primary" id="confirmationTitle">
+            Thank you for reaching out.
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md leading-relaxed">
+            Your inquiry has been inscribed under Ticket <strong class="text-primary font-mono" id="ticketNumber">#VNK-8421</strong>. A concierge liaison will review your dispatch request and respond directly within 2 business hours.
+          </p>
+<div class="p-space-md bg-surface-container rounded-xl w-full max-w-md text-left font-body-sm text-body-sm text-on-surface-variant space-y-1">
+<div><span class="font-semibold text-primary">Assigned Curator:</span> Ananya Sharma (Botanical Care Desk)</div>
+<div><span class="font-semibold text-primary">Correspondence:</span> <span id="confirmedEmail">user@example.com</span></div>
+<div><span class="font-semibold text-primary">Estimated Response:</span> Prior to 18:00 IST Today</div>
+</div>
+<button class="mt-space-md px-space-lg py-3 bg-surface-container text-primary hover:bg-surface-variant font-label-caps text-label-caps rounded uppercase tracking-wider transition-colors inline-flex items-center gap-2" onclick="resetContactForm()" type="button">
+<span class="material-symbols-outlined text-[16px]">refresh</span>
+<span>Send Another Inquiry</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- FREQUENTLY INQUIRED (ACCORDIONS) -->
+<section class="w-full py-space-xl px-6 lg:px-12 bg-surface">
+<div class="max-w-4xl mx-auto">
+<div class="text-center mb-space-xl">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-[0.2em] block mb-1">Knowledge Archives</span>
+<h2 class="font-headline-md text-headline-md text-primary mb-space-xs">Common Questions</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Immediate answers to queries regarding climate transit, shelf-life, and laboratory certifications.
+        </p>
+</div>
+<div class="space-y-space-sm" id="accordionParent">
+<!-- Accordion 1 -->
+<div class="bg-surface-container-low rounded-xl overflow-hidden">
+<button class="w-full p-space-md md:p-space-lg flex items-center justify-between text-left font-headline-sm text-headline-sm text-primary hover:bg-surface-container transition-colors" onclick="toggleAccordion(1)" type="button">
+<span>Where is my harvest allocation currently located?</span>
+<span class="material-symbols-outlined text-secondary transition-transform duration-300" id="chevron-1">expand_more</span>
+</button>
+<div class="hidden px-space-md md:px-space-lg pb-space-lg font-body-md text-body-md text-on-surface-variant leading-relaxed" id="content-1">
+            All Vaanika orders leave our New Delhi archival cellar through our temperature-monitored BlueDart ClimateAir courier network. Once sealed in our nitrogen-flushed amber flacons, you receive an automated SMS and email dispatch bulletin carrying your telemetry lookup code. You may also enter your order identifier into the lookup module above at any moment.
+          </div>
+</div>
+<!-- Accordion 2 -->
+<div class="bg-surface-container-low rounded-xl overflow-hidden">
+<button class="w-full p-space-md md:p-space-lg flex items-center justify-between text-left font-headline-sm text-headline-sm text-primary hover:bg-surface-container transition-colors" onclick="toggleAccordion(2)" type="button">
+<span>How long does delivery take across metropolitan India?</span>
+<span class="material-symbols-outlined text-secondary transition-transform duration-300" id="chevron-2">expand_more</span>
+</button>
+<div class="hidden px-space-md md:px-space-lg pb-space-lg font-body-md text-body-md text-on-surface-variant leading-relaxed" id="content-2">
+            Standard climate-safe surface shipping takes 2–4 business days across major hubs (Mumbai, Bengaluru, Delhi NCR, Kolkata, Chennai, Hyderabad). For temperature-sensitive botanical lots such as fresh-ground turmeric and saffron stigmata, cold-chain air express guarantees delivery in 1–2 business days.
+          </div>
+</div>
+<!-- Accordion 3 -->
+<div class="bg-surface-container-low rounded-xl overflow-hidden">
+<button class="w-full p-space-md md:p-space-lg flex items-center justify-between text-left font-headline-sm text-headline-sm text-primary hover:bg-surface-container transition-colors" onclick="toggleAccordion(3)" type="button">
+<span>Can I alter or amend my order after confirmation?</span>
+<span class="material-symbols-outlined text-secondary transition-transform duration-300" id="chevron-3">expand_more</span>
+</button>
+<div class="hidden px-space-md md:px-space-lg pb-space-lg font-body-md text-body-md text-on-surface-variant leading-relaxed" id="content-3">
+            Yes, amendments to recipient addresses, customized gift inscription cards, or item lot additions can be executed within 4 hours of order placement. Once the nitrogen-sealing protocol commences in our vault, the manifest is locked to preserve volatile oil integrity. Contact the WhatsApp concierge directly for priority assistance.
+          </div>
+</div>
+<!-- Accordion 4 -->
+<div class="bg-surface-container-low rounded-xl overflow-hidden">
+<button class="w-full p-space-md md:p-space-lg flex items-center justify-between text-left font-headline-sm text-headline-sm text-primary hover:bg-surface-container transition-colors" onclick="toggleAccordion(4)" type="button">
+<span>What is your provenance and replacement guarantee?</span>
+<span class="material-symbols-outlined text-secondary transition-transform duration-300" id="chevron-4">expand_more</span>
+</button>
+<div class="hidden px-space-md md:px-space-lg pb-space-lg font-body-md text-body-md text-on-surface-variant leading-relaxed" id="content-4">
+            We offer an absolute 100% replacement guarantee. Should your package arrive with damaged pharmaceutical glass, broken wax seals, or if the volatile aromatic potency does not match our gas-chromatography analysis sheet, our concierge desk dispatches a fresh single-estate allotment immediately without requiring returns.
+          </div>
+</div>
+<!-- Accordion 5 -->
+<div class="bg-surface-container-low rounded-xl overflow-hidden">
+<button class="w-full p-space-md md:p-space-lg flex items-center justify-between text-left font-headline-sm text-headline-sm text-primary hover:bg-surface-container transition-colors" onclick="toggleAccordion(5)" type="button">
+<span>How should I store single-estate botanicals at home?</span>
+<span class="material-symbols-outlined text-secondary transition-transform duration-300" id="chevron-5">expand_more</span>
+</button>
+<div class="hidden px-space-md md:px-space-lg pb-space-lg font-body-md text-body-md text-on-surface-variant leading-relaxed" id="content-5">
+            Retain spices within their provided amber glass jars with the silicone-rimmed walnut wooden caps tightly sealed. Store away from direct sunlight, stove-side steam, or damp measuring spoons. Whole spices retain peak volatile oils for 18–24 months; single-estate stone-ground spices are best enjoyed within 9 months of grind date.
+          </div>
+</div>
+<!-- Accordion 6 -->
+<div class="bg-surface-container-low rounded-xl overflow-hidden">
+<button class="w-full p-space-md md:p-space-lg flex items-center justify-between text-left font-headline-sm text-headline-sm text-primary hover:bg-surface-container transition-colors" onclick="toggleAccordion(6)" type="button">
+<span>Do you provide bespoke curations for restaurants and weddings?</span>
+<span class="material-symbols-outlined text-secondary transition-transform duration-300" id="chevron-6">expand_more</span>
+</button>
+<div class="hidden px-space-md md:px-space-lg pb-space-lg font-body-md text-body-md text-on-surface-variant leading-relaxed" id="content-6">
+            Yes. Our Private Client atelier crafts hand-hammered pure brass spice chests, wax-sealed custom monogrammed glass vials, and personalized tasting parchment cards for royal weddings, luxury hotels, and corporate gifting. Please select “Wholesale &amp; Corporate Gifting” above for a bespoke dossier.
+          </div>
+</div>
+</div>
+<div class="mt-space-lg text-center">
+<a class="inline-flex items-center gap-2 font-label-caps text-label-caps text-primary hover:text-secondary uppercase tracking-[0.14em]" href="#">
+<span>View All 24 Knowledgebase Questions</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- BULK & BESPOKE BUSINESS DISPATCH -->
+<section class="w-full py-space-xl px-6 lg:px-12 bg-primary text-surface-bright">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
+<div class="lg:col-span-8 space-y-space-md">
+<span class="font-label-caps text-label-caps text-secondary-fixed-dim uppercase tracking-[0.2em] block">HOSPITALITY &amp; PRIVATE LABELLING</span>
+<h2 class="font-headline-lg text-headline-lg text-surface-bright max-w-2xl">
+          Buying In Bulk or Private Labelling?
+        </h2>
+<p class="font-body-lg text-body-lg text-surface-variant max-w-2xl leading-relaxed">
+          Supplying Michelin-starred dining rooms, boutique heritage hotels, bespoke culinary studios, and corporate artisanal gifting with custom single-lot packaging.
+        </p>
+<!-- Feature Pills -->
+<div class="flex flex-wrap gap-2 pt-space-xs">
+<span class="px-3 py-1.5 bg-primary-container text-surface-bright rounded-full text-xs font-body-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary-fixed">inventory_2</span>
+            Custom Laser-Etched Wooden Chests
+          </span>
+<span class="px-3 py-1.5 bg-primary-container text-surface-bright rounded-full text-xs font-body-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary-fixed">scale</span>
+            Wholesale Lot Allocations (from 5kg)
+          </span>
+<span class="px-3 py-1.5 bg-primary-container text-surface-bright rounded-full text-xs font-body-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary-fixed">biotech</span>
+            Lot-Specific Gas Chromatography Lab Reports
+          </span>
+</div>
+</div>
+<div class="lg:col-span-4 flex flex-col items-start lg:items-end justify-center">
+<button class="px-space-lg py-4 bg-secondary-container hover:bg-secondary-fixed text-on-secondary-container font-label-caps text-label-caps uppercase tracking-[0.16em] rounded-lg transition-colors flex items-center gap-2 shadow-lg" onclick="selectReason('Wholesale &amp; Corporate Gifting')" type="button">
+<span>Inquire About Bulk &amp; Trade</span>
+<span class="material-symbols-outlined text-[18px]">east</span>
+</button>
+</div>
+</div>
+</section>
+<!-- BOTANICAL ATELIER & TASTING ROOM (COME SAY HELLO) -->
+<section class="w-full py-space-xl px-6 lg:px-12 bg-surface">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
+<!-- Address & Details -->
+<div class="lg:col-span-5 space-y-space-md">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-[0.2em] block mb-1">PHYSICAL ATELIER</span>
+<h2 class="font-headline-md text-headline-md text-primary">Come Say Hello.</h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Visit our sensory apothecary and private spice archive in Delhi NCR by prior appointment. Experience olfactory flights of single-origin harvests and meet our master blenders.
+          </p>
+<div class="p-space-lg bg-surface-container rounded-xl space-y-space-sm">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[22px] shrink-0 mt-0.5">location_on</span>
+<div>
+<strong class="font-headline-sm text-headline-sm text-primary block">Vaanika Botanical Reserve &amp; Lab</strong>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-relaxed">
+                  402, Nilgiri Heritage Enclave, Opposite Botanical Gardens Gate 2, New Delhi, Delhi NCR – 110001, India
+                </p>
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest block mt-2">
+                  Coordinates: 28.6139° N, 77.2090° E
+                </span>
+</div>
+</div>
+<div class="flex items-start gap-space-sm pt-space-xs border-t border-surface-variant">
+<span class="material-symbols-outlined text-secondary text-[22px] shrink-0 mt-0.5">timer</span>
+<div>
+<strong class="font-body-md text-body-md text-primary font-medium block">Sensory Tasting Hours</strong>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Tuesday – Sunday | 11:00 AM – 05:00 PM<br/>
+<em class="text-xs text-secondary">Strictly by patron reservation or invitation letter</em>
+</p>
+</div>
+</div>
+</div>
+<a class="inline-flex items-center gap-2 font-label-caps text-label-caps text-primary hover:text-secondary uppercase tracking-[0.14em]" href="https://maps.google.com" rel="noopener noreferrer" target="_blank">
+<span>Open in Google Maps / Directions</span>
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</a>
+</div>
+<!-- Styled Map Visual Preview Box -->
+<div class="lg:col-span-7">
+<div class="relative rounded-xl overflow-hidden shadow-lg h-96 bg-surface-container-high">
+<div class="w-full h-full bg-cover bg-center" data-location="Nilgiri Heritage Enclave, New Delhi, India" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA-Yo92jewq9bZUj0jaYowYUpQOilNnwnd77Fp7hXtqMv8b0Tudcgl0MZMo5hZ1zxZs9F_6SgxDwyESyqiVSGEoVIN9VI2yEBGSDw7Cus5WbhXrQeNiGNwiZUdf5CC9w4BxgJYESdsoUB3D0rmKAD-xrX1MUYniWJWCaa9uvOT5r9DQbtL6XuXEn1pVjuxDojaK3xV7czQ8Rmi74GE-r35hbug_MjBc0pA0x731-yKF9s04VhrPP78a')"></div>
+<!-- Scrim & Coordinates Overlay -->
+<div class="absolute inset-0 bg-primary/20 pointer-events-none"></div>
+<div class="absolute top-4 left-4 p-space-sm bg-surface/90 backdrop-blur-md rounded-lg shadow-sm">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary animate-ping"></span>
+<span class="font-label-caps text-label-caps uppercase text-primary font-bold">New Delhi Atelier Desk</span>
+</div>
+<span class="font-mono text-xs text-on-surface-variant block mt-0.5">Lat 28.6139 • Lon 77.2090</span>
+</div>
+<div class="absolute bottom-4 right-4">
+<a class="px-space-md py-2 bg-primary text-on-primary font-label-caps text-label-caps uppercase rounded-lg shadow-md hover:bg-primary-container transition-colors inline-flex items-center gap-2" href="https://maps.google.com" rel="noopener noreferrer" target="_blank">
+<span>Navigate To Archive</span>
+<span class="material-symbols-outlined text-[16px]">near_me</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SOCIAL CURATION GRID: "FOLLOW THE FLAVOUR" -->
+<section class="w-full py-space-xl px-6 lg:px-12 bg-surface-container-low">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-lg gap-space-sm">
+<div>
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-[0.2em] block mb-1">Visual Chronicle</span>
+<h2 class="font-headline-md text-headline-md text-primary">Follow The Flavour</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-md">
+          Dispatches from high-altitude spice terraces, harvest mornings, and test-kitchen recipes. Tag <span class="font-semibold text-primary">@vaanikaspices</span>.
+        </p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-space-sm">
+<!-- 1: Saffron Picking -->
+<a class="group relative aspect-square rounded-lg overflow-hidden bg-surface-container shadow-sm" href="#">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Delicate hands handpicking vibrant crimson saffron crocus flowers during dawn in a misty mountain field of Pampore, Kashmir, warm morning golden hour glow." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCaevRZxrkgpt4p5Xv1ldQ3ZRIZ97ZL2ghSmPzU4Ksap2knE_xy07c5qjg7t0L2GtbpdTju2VKeBstT0yh9Ts1qVV2cEzhNBhupxu5jZVkBDhdTKnI8SmAoA94gYMh8QwdQNcxC-GbRIeg19c9lRxxWFn98xzfta5JGtm0WssDvBxNqyTLzV-NJnfpf-eb6ITEt31vH0iIqOKtaMC_te7hQ-w99kJCW16qkYNYi_YyBiSl9-qxet6o"/>
+<div class="absolute inset-0 bg-primary/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center text-surface-bright">
+<span class="material-symbols-outlined text-[28px]">photo_camera</span>
+</div>
+</a>
+<!-- 2: Mortar Stone Grinding -->
+<a class="group relative aspect-square rounded-lg overflow-hidden bg-surface-container shadow-sm" href="#">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Top-down close up of heavy black granite mortar grinding aromatic coarse black peppercorns, cardamom pods and cinnamon fragments with spice dust scattering." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjiVhuxjqUPq7oioB3tzI2onpoNPfEt8u7PaRTmGIdJtC9fNIVF7kaOaBIIXxZ5uhFhA3mjyb_TUe7He3AZA78gw-jFIWIAUUof5JgFrNJfREPQffnkontpHMhxSy7Oqb29WLUKXLWDwEsB6GJc2kIsC3VcSvtjhtvvd14pc3dfPPlXXJYZCsI1dJH1lISevF6LVBhFoRYYknyodQ0LNqMkQ0x0nsxKsUDqobPxKWQzXPL0t7Hw2tT"/>
+<div class="absolute inset-0 bg-primary/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center text-surface-bright">
+<span class="material-symbols-outlined text-[28px]">photo_camera</span>
+</div>
+</a>
+<!-- 3: Awadhi Dum Biryani Handi -->
+<a class="group relative aspect-square rounded-lg overflow-hidden bg-surface-container shadow-sm" href="#">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Artisanal brass handi pot with fragrant saffron rice, long basmati grains, whole spices and steam rising gently in a dark luxury culinary dining setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4bI9Ka_GWvLkPF0IFA0yDKG4RnapQ0d7Rt_KjqjzbIDD4j7piEQGt6MWIQlape2ODEAi1dwwcNO1ie0S-TCidNYzVCEXFvqpsby3W2Pj-hslN0jVR5Cq74bNz5R-5saXFDHSZvSZgppUDcWwOntFaQWcP7dO_gp1h_frYM6oEJBr9n82w3gdorV650uCm3jUODxVgmnsBgm8SFPvkokHkOZcSaD3ZVahhGZZuV_QAkDQSv3c9Y_8K"/>
+<div class="absolute inset-0 bg-primary/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center text-surface-bright">
+<span class="material-symbols-outlined text-[28px]">photo_camera</span>
+</div>
+</a>
+<!-- 4: Amber Glass Jars in Apothecary -->
+<a class="group relative aspect-square rounded-lg overflow-hidden bg-surface-container shadow-sm" href="#">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Row of apothecary amber glass bottles with printed botanical labels and wooden lids on a dark slate tasting counter with warm spotlight illumination." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-SJkf4j4ykamGrqtd8032vp4Vx0fW5s-hMam7MjMqaXkA920w2cPEjtt-GDNGYaPWR3CNEk2mGPflaS8GJbjVT1e3WZMtAgtxnjc1upsaATElUK0qYX0LmVJZSQdjdifh3ZH6R7_g4dj4HLXmx84o3ZNfndmYPvVTR3j2LYcLK1w0nhgbVUPvkgZuu_mj9kXt7puwPk0Qadny2NKxutD5_r3cKLfrOsgwpV7K2lcZGGP85PL2m5uq"/>
+<div class="absolute inset-0 bg-primary/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center text-surface-bright">
+<span class="material-symbols-outlined text-[28px]">photo_camera</span>
+</div>
+</a>
+<!-- 5: Cardamom Pods on Bamboo -->
+<a class="group relative aspect-square rounded-lg overflow-hidden bg-surface-container shadow-sm" href="#">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Vibrant green Malabar cardamom pods spread out evenly to dry on traditional handwoven bamboo mats under shaded canopy sunlight in Kerala hills." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVCaiq0cpEro0y48KB9roV-Jy2Qvs0jwcNC5Mz8koxTJjYAoU1-PHz_y-hqgyobWo9NzKi7TLpE1M6uAzk3vZucXF9UHA6qsZA7TJJpuFcw9gzE3Ht1TSnZgZprXdhXJFjTjDi83EvRW4x8qRy3fqkgrfYUjLtfaX1wzPwDUKJTO_gwSmhrW--rgSIS2V6T48lKhCjBM0394APDxO1kfFn5dMQ3wMeb7P6ezBeWpoxqgA6NYJ3Dur8"/>
+<div class="absolute inset-0 bg-primary/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center text-surface-bright">
+<span class="material-symbols-outlined text-[28px]">photo_camera</span>
+</div>
+</a>
+<!-- 6: Ghee Drizzled Paneer -->
+<a class="group relative aspect-square rounded-lg overflow-hidden bg-surface-container shadow-sm" href="#">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Warm golden spiced clarified ghee being poured from a small brass pitcher over charred clay-oven paneer cubes coated in deep red Kashmiri degi mirch." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8K7GmrIKIjJioTEhCXF5ZrGiqy6Vno3BTyN5FvDGxo0FxaU_RpvuewKLbeFiZW69Kd4NBmKBlYBvUo6xVcfz_KYaPpyig3Z4vzu1B3TWqygDZ0NXuoJe2Gc44CTfPwjDYqdUw0aeXQ-nehDSR4Z9664rOz3DkyfHIFuZEtbnkzM_W4-AzQyN5ov4NYu2h7Yu2CHoF-_UQL8ZFTOP8gIlX9zIEIyn2CA5F-fpVq5DZcFcpuA0fwn8x"/>
+<div class="absolute inset-0 bg-primary/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center text-surface-bright">
+<span class="material-symbols-outlined text-[28px]">photo_camera</span>
+</div>
+</a>
+</div>
+<div class="mt-space-lg text-center">
+<a class="inline-flex items-center gap-2 font-label-caps text-label-caps text-primary hover:text-secondary uppercase tracking-[0.16em]" href="https://instagram.com" rel="noopener noreferrer" target="_blank">
+<span>Join Our Instagram Community (@vaanikaspices)</span>
+<span class="material-symbols-outlined text-[16px]">arrow_outward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- LUXURY BANNER STRIP -->
+<section class="w-full py-space-lg px-6 lg:px-12 bg-surface-container-high border-t border-surface-variant/40">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-space-md text-center md:text-left">
+<div>
+<span class="font-headline-sm text-headline-sm text-primary block">Bring Better Flavour Home.</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Handcrafted in micro-batches with zero synthetic additives.</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<a class="px-space-md py-2.5 bg-primary text-on-primary hover:bg-primary-container font-label-caps text-label-caps uppercase rounded-lg transition-colors" href="#">
+          Explore All Botanicals
+        </a>
+<a class="px-space-md py-2.5 bg-surface text-primary hover:bg-surface-container font-label-caps text-label-caps uppercase rounded-lg transition-colors" href="#">
+          Harvest Calendar
+        </a>
+</div>
+</div>
+</section>
+<!-- CLIENT-SIDE INTERACTIVITY SCRIPT -->
+<script>
+    function toggleAccordion(id) {
+      const content = document.getElementById('content-' + id);
+      const chevron = document.getElementById('chevron-' + id);
+      if (!content || !chevron) return;
+      const isHidden = content.classList.contains('hidden');
+
+      // Close all others
+      for (let i = 1; i <= 6; i++) {
+        const c = document.getElementById('content-' + i);
+        const ch = document.getElementById('chevron-' + i);
+        if (c && ch) {
+          c.classList.add('hidden');
+          ch.classList.remove('rotate-180');
+        }
+      }
+
+      if (isHidden) {
+        content.classList.remove('hidden');
+        chevron.classList.add('rotate-180');
+      }
+    }
+
+    function selectReason(reason) {
+      const dropdown = document.getElementById('contactReason');
+      if (dropdown) {
+        dropdown.value = reason;
+      }
+      const inquiryDesk = document.getElementById('inquiry-desk');
+      if (inquiryDesk) {
+        inquiryDesk.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    function fillDemoOrder(id) {
+      const input = document.getElementById('orderIdentifierInput');
+      if (input) {
+        input.value = id;
+        handleOrderLookup(new Event('submit'));
+      }
+    }
+
+    function handleOrderLookup(e) {
+      if (e && e.preventDefault) e.preventDefault();
+      const input = document.getElementById('orderIdentifierInput');
+      const val = input ? input.value.trim().toUpperCase() : '';
+      const foundBox = document.getElementById('orderResultFound');
+      const notFoundBox = document.getElementById('orderResultNotFound');
+
+      if (!foundBox || !notFoundBox) return;
+
+      if (val === '#SPC-10284' || val === 'SPC-10284' || val === '10284') {
+        foundBox.classList.remove('hidden');
+        notFoundBox.classList.add('hidden');
+      } else {
+        foundBox.classList.add('hidden');
+        notFoundBox.classList.remove('hidden');
+      }
+    }
+
+    // Character counter for message textarea
+    const textarea = document.getElementById('inquiryMessage');
+    const charCounter = document.getElementById('charCount');
+    if (textarea && charCounter) {
+      textarea.addEventListener('input', function() {
+        charCounter.textContent = this.value.length + ' / 1000';
+      });
+    }
+
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      let hasError = false;
+
+      const firstName = document.getElementById('firstName');
+      const lastName = document.getElementById('lastName');
+      const email = document.getElementById('emailAddress');
+      const reason = document.getElementById('contactReason');
+      const message = document.getElementById('inquiryMessage');
+
+      const fnErr = document.getElementById('firstNameError');
+      const lnErr = document.getElementById('lastNameError');
+      const emErr = document.getElementById('emailError');
+      const rsErr = document.getElementById('reasonError');
+      const msgErr = document.getElementById('messageError');
+
+      // First Name
+      if (!firstName.value.trim()) {
+        fnErr.classList.remove('hidden');
+        hasError = true;
+      } else {
+        fnErr.classList.add('hidden');
+      }
+
+      // Last Name
+      if (!lastName.value.trim()) {
+        lnErr.classList.remove('hidden');
+        hasError = true;
+      } else {
+        lnErr.classList.add('hidden');
+      }
+
+      // Email
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!email.value.trim() || !emailRegex.test(email.value.trim())) {
+        emErr.classList.remove('hidden');
+        hasError = true;
+      } else {
+        emErr.classList.add('hidden');
+      }
+
+      // Reason
+      if (!reason.value) {
+        rsErr.classList.remove('hidden');
+        hasError = true;
+      } else {
+        rsErr.classList.add('hidden');
+      }
+
+      // Message
+      if (!message.value.trim() || message.value.trim().length < 20) {
+        msgErr.classList.remove('hidden');
+        hasError = true;
+      } else {
+        msgErr.classList.add('hidden');
+      }
+
+      if (!hasError) {
+        const formContainer = document.getElementById('contactFormContainer');
+        const successState = document.getElementById('contactSuccessState');
+        const confirmationTitle = document.getElementById('confirmationTitle');
+        const confirmedEmail = document.getElementById('confirmedEmail');
+
+        confirmationTitle.textContent = 'Thank you for reaching out, ' + firstName.value.trim() + '.';
+        confirmedEmail.textContent = email.value.trim();
+
+        formContainer.classList.add('hidden');
+        successState.classList.remove('hidden');
+      }
+    }
+
+    function resetContactForm() {
+      const form = document.getElementById('vaanikaContactForm');
+      if (form) form.reset();
+      const formContainer = document.getElementById('contactFormContainer');
+      const successState = document.getElementById('contactSuccessState');
+      if (formContainer && successState) {
+        formContainer.classList.remove('hidden');
+        successState.classList.add('hidden');
+      }
+      if (charCounter) charCounter.textContent = '0 / 1000';
+    }
+  </script>
+</div></main><footer class="w-full bg-primary text-surface-bright pt-space-xl pb-space-lg"><div class="max-w-7xl mx-auto px-6 lg:px-12"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-space-lg mb-space-xl"><div class="lg:col-span-4 flex flex-col items-start"><div class="font-headline-md text-headline-md tracking-wider uppercase text-surface-bright mb-space-xs">VAANIKA</div><div class="font-label-caps text-label-caps text-secondary-fixed-dim uppercase tracking-[0.2em] mb-space-md">Terroir • Provenance • Alchemy</div><p class="font-body-sm text-body-sm text-surface-variant max-w-sm leading-relaxed mb-space-md">Curating micro-batch harvests, single-estate botanical marvels, and heritage aromatic treasures directly from ancestral Indian cultivators.</p><div class="flex items-center gap-space-sm text-surface-variant"><span class="material-symbols-outlined text-[18px] text-secondary-fixed">verified</span><span class="font-label-caps text-label-caps text-surface-variant uppercase tracking-widest">Single-Estate Authenticity Guaranteed</span></div></div><div class="lg:col-span-2 flex flex-col"><h3 class="font-label-caps text-label-caps uppercase tracking-[0.16em] text-secondary-fixed mb-space-md">Provenance &amp; Lore</h3><ul class="space-y-space-sm font-body-sm text-body-sm"><li class="flex items-center"><a class="text-surface-variant hover:text-surface-bright transition-colors" data-path="our-story" href="#">Our Story</a></li><li class="flex items-center"><a class="text-surface-variant hover:text-surface-bright transition-colors" data-path="cultivator-charter" href="#">Cultivator Charter</a></li><li class="flex items-center"><a class="text-surface-variant hover:text-surface-bright transition-colors" data-path="harvest-calendar" href="#">Harvest Calendar</a></li><li class="flex items-center"><a class="text-surface-variant hover:text-surface-bright transition-colors" data-path="terroir-index" href="#">Terroir Index</a></li></ul></div><div class="lg:col-span-2 flex flex-col"><h3 class="font-label-caps text-label-caps uppercase tracking-[0.16em] text-secondary-fixed mb-space-md">Concierge</h3><ul class="space-y-space-sm font-body-sm text-body-sm"><li class="flex items-center"><a class="text-surface-variant hover:text-surface-bright transition-colors" data-path="contact" href="#">Contact Concierge</a></li><li class="flex items-center"><a class="text-surface-variant hover:text-surface-bright transition-colors" data-path="private-client-inquiries" href="#">Private Curation</a></li><li class="flex items-center"><a class="text-surface-variant hover:text-surface-bright transition-colors" data-path="care-storage" href="#">Care &amp; Storage</a></li><li class="flex items-center"><a class="text-surface-variant hover:text-surface-bright transition-colors" data-path="shipping-returns" href="#">White-Glove Shipping</a></li></ul></div><div class="lg:col-span-4 flex flex-col"><h3 class="font-label-caps text-label-caps uppercase tracking-[0.16em] text-secondary-fixed mb-space-sm">The Spice Dispatch</h3><p class="font-body-sm text-body-sm text-surface-variant mb-space-md leading-relaxed">Receive private allotments, seasonal harvest bulletins, and master recipes from our culinary atelier.</p><form class="flex flex-col gap-space-xs w-full"><div class="flex w-full"><input class="w-full bg-primary-container text-surface-bright placeholder-surface-variant/70 font-body-sm text-body-sm px-space-md py-space-sm focus:outline-none focus:bg-tertiary-container transition-colors" placeholder="Enter your correspondence email" type="email"/><button class="bg-secondary-container text-on-secondary-container px-space-md py-space-sm font-label-caps text-label-caps uppercase tracking-wider hover:bg-secondary-fixed transition-colors flex items-center justify-center" type="submit"><span class="material-symbols-outlined text-[18px]">east</span></button></div><span class="font-label-sm text-label-sm text-surface-variant/80 mt-space-xs">Limited dispatches. Unwavering discretion.</span></form></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md text-surface-variant"><div class="font-body-sm text-body-sm">© 2025 Vaanika Artisanal Spices Ltd. All privileges reserved.</div><div class="flex items-center gap-space-md font-label-caps text-label-caps uppercase tracking-[0.14em]"><a class="text-surface-variant hover:text-surface-bright transition-colors" data-path="privacy-policy" href="#">Privacy</a><a class="text-surface-variant hover:text-surface-bright transition-colors" data-path="terms-of-service" href="#">Terms</a><a class="text-surface-variant hover:text-surface-bright transition-colors" data-path="origin-compliance" href="#">Provenance Standards</a></div></div></div></footer></body></html>

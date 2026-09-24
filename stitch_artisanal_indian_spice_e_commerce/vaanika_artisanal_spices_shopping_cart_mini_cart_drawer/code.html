@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-primary-fixed-variant": "#733239",
+          "on-tertiary-container": "#cb757a",
+          "tertiary-container": "#4c1018",
+          "inverse-primary": "#ffb2b7",
+          "surface": "#fff8f4",
+          "on-error-container": "#93000a",
+          "secondary-fixed-dim": "#ffb77a",
+          "on-secondary-fixed": "#2e1500",
+          "on-background": "#1d1b19",
+          "on-error": "#ffffff",
+          "surface-container-low": "#f9f2ef",
+          "surface-container": "#f3ede9",
+          "surface-bright": "#fff8f4",
+          "error-container": "#ffdad6",
+          "on-tertiary-fixed-variant": "#753137",
+          "tertiary-fixed": "#ffdada",
+          "surface-container-highest": "#e7e1de",
+          "secondary-fixed": "#ffdcc2",
+          "on-primary": "#ffffff",
+          "on-tertiary-fixed": "#3d050e",
+          "on-primary-fixed": "#3b0710",
+          "on-secondary": "#ffffff",
+          "tertiary-fixed-dim": "#ffb3b6",
+          "error": "#ba1a1a",
+          "on-surface": "#1d1b19",
+          "secondary": "#8f4e00",
+          "on-secondary-fixed-variant": "#6d3a00",
+          "surface-container-lowest": "#ffffff",
+          "primary": "#2e0007",
+          "outline-variant": "#d8c1c1",
+          "primary-fixed": "#ffdadb",
+          "tertiary": "#2e0006",
+          "inverse-on-surface": "#f6efec",
+          "surface-container-high": "#ede7e3",
+          "on-tertiary": "#ffffff",
+          "inverse-surface": "#32302e",
+          "on-secondary-container": "#6d3a00",
+          "primary-fixed-dim": "#ffb2b7",
+          "surface-tint": "#90494f",
+          "secondary-container": "#fea047",
+          "on-primary-container": "#c8767c",
+          "background": "#fff8f4",
+          "outline": "#867273",
+          "surface-variant": "#e7e1de",
+          "on-surface-variant": "#534343",
+          "surface-dim": "#dfd9d5",
+          "primary-container": "#4a121a"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-xs": "0.375rem",
+          "gutter-desktop": "2.5rem",
+          "space-md": "1.25rem",
+          "space-lg": "2.25rem",
+          "margin": "1.25rem",
+          "margin-desktop": "4rem",
+          "space-xl": "4rem",
+          "space-sm": "0.75rem",
+          "gutter": "1.5rem"
+        },
+        "fontFamily": {
+          "display-hero-mobile": [
+            "Playfair Display"
+          ],
+          "label-caps": [
+            "Plus Jakarta Sans"
+          ],
+          "body-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "subheading": [
+            "Playfair Display"
+          ],
+          "body-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg": [
+            "Playfair Display"
+          ],
+          "display-hero": [
+            "Playfair Display"
+          ],
+          "headline-sm": [
+            "Playfair Display"
+          ],
+          "headline-lg-mobile": [
+            "Playfair Display"
+          ],
+          "body-md": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-md": [
+            "Playfair Display"
+          ],
+          "label-sm": [
+            "Plus Jakarta Sans"
+          ]
+        },
+        "fontSize": {
+          "display-hero-mobile": [
+            "38px",
+            {
+              "lineHeight": "46px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "400"
+            }
+          ],
+          "label-caps": [
+            "11px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.14em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-lg": [
+            "17px",
+            {
+              "lineHeight": "28px",
+              "letterSpacing": "0em",
+              "fontWeight": "400"
+            }
+          ],
+          "subheading": [
+            "19px",
+            {
+              "lineHeight": "28px",
+              "letterSpacing": "0.02em",
+              "fontWeight": "400"
+            }
+          ],
+          "body-sm": [
+            "13px",
+            {
+              "lineHeight": "20px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-lg": [
+            "44px",
+            {
+              "lineHeight": "52px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "400"
+            }
+          ],
+          "display-hero": [
+            "64px",
+            {
+              "lineHeight": "72px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-sm": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-lg-mobile": [
+            "30px",
+            {
+              "lineHeight": "38px",
+              "letterSpacing": "0em",
+              "fontWeight": "400"
+            }
+          ],
+          "body-md": [
+            "15px",
+            {
+              "lineHeight": "24px",
+              "letterSpacing": "0.005em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-md": [
+            "32px",
+            {
+              "lineHeight": "40px",
+              "letterSpacing": "0em",
+              "fontWeight": "500"
+            }
+          ],
+          "label-sm": [
+            "12px",
+            {
+              "lineHeight": "18px",
+              "letterSpacing": "0.04em",
+              "fontWeight": "500"
+            }
+          ]
+        }
+      },
+    },
+  }</script><link rel="stylesheet" href="../theme-styles.css"/>
+<script src="../theme-manager.js"></script>
+</head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary"><header class="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between"><div class="flex items-center gap-6"><a class="flex items-center gap-3 group" data-path="shop" href="#"><img alt="A refined, minimalist luxury wordmark and insignia for 'MASALA VAULT' artisanal Indian spices, featuring an elegant monogram emblem with botanical spice star anise/clove motifs and timeless serif lettering.. Brand logo. - Primary color: #4a121a
+- Font: playfairDisplay
+- Mode: light
+- Roundness: rounded-lg
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1U7umTVxr7A_QAstDKrJBl6jpxejtiF_7gLzXm0ixYON8uRvVXETcymHjliPJZT2Eh7qznUdVBFBY4fEyUn8PxUOggGZsHwyePDfLOBxq2ZPam4Dl2CmjnobTD2rfV_2Wlw5jMu0caGvHAAFWIQ9xwcnskkoqvKSi54JrUngvSVhmkEUBvGZP6dtTuqeYaDYjhzkkhMcy8TtmuZAW4mJsX3tO5DP879AVnvZt1jX3SYk2y3A-yHyVwkkw"/><span class="font-headline-sm text-headline-sm tracking-tight text-primary uppercase" class="brand-dynamic-name">Vaanika</span></a></div><nav class="hidden md:flex items-center gap-8" data-active-classes="bg-primary-container text-on-primary font-medium"><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface transition-colors" data-path="shop" href="#">Shop</a><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface transition-colors" data-path="collections" href="#">Collections</a><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface transition-colors" data-path="recipes" href="#">Recipes</a><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface transition-colors" data-path="our-story" href="#">Our Story</a></nav><div class="flex items-center gap-4 lg:gap-6"><button aria-label="Search" class="p-2 text-on-surface-variant hover:text-on-surface transition-colors flex items-center justify-center" type="button"><span class="material-symbols-outlined text-[20px]">search</span></button><a aria-label="Account" class="p-2 text-on-surface-variant hover:text-on-surface transition-colors flex items-center justify-center" data-path="account" href="#"><span class="material-symbols-outlined text-[20px]">person</span></a><a aria-label="Cart" class="relative flex items-center justify-center p-2 text-on-surface-variant hover:text-on-surface transition-colors" data-path="cart" href="#"><span class="material-symbols-outlined text-[20px]">shopping_bag</span><span class="absolute -top-0.5 -right-0.5 flex h-4 min-w-[16px] px-1 items-center justify-center rounded-full bg-secondary-container text-on-secondary-container font-label-caps text-[10px] leading-none font-semibold">3</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface"><div class="flex flex-col w-full">
+<style>
+    :root {
+      --color-primary: var(--primary-container-color, #4a121a);
+      --color-primary-dark: #2e0007;
+      --color-background: var(--background-color, #fff8f4);
+      --color-surface: var(--surface-container-lowest-color, #ffffff);
+      --color-surface-alt: #f3ede9;
+      --color-surface-container: #ede7e3;
+      --color-text: #1d1b19;
+      --color-text-muted: #534343;
+      --color-border: #e8dfd8;
+      --color-accent: #8f4e00;
+      --color-accent-gold: #fea047;
+      --color-success: #1e4620;
+      --color-success-bg: #e7f4e8;
+      --color-error: #ba1a1a;
+      --color-error-bg: #ffdad6;
+    }
+
+    .border-hairline {
+      border: 1px solid var(--color-border);
+    }
+    .border-b-hairline {
+      border-bottom: 1px solid var(--color-border);
+    }
+    .border-t-hairline {
+      border-top: 1px solid var(--color-border);
+    }
+    .transition-drawer {
+      transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.45s ease;
+    }
+  </style>
+<!-- Notification Toast Container -->
+<div class="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none flex items-center gap-4 px-6 py-3.5 bg-primary text-on-primary shadow-2xl rounded" id="toast">
+<span class="material-symbols-outlined text-[18px] text-secondary-container">inventory_2</span>
+<span class="font-body-sm text-body-sm font-medium" id="toast-message">Cart updated</span>
+<button class="hidden underline font-label-caps text-label-caps uppercase tracking-wider text-secondary-container hover:text-white pointer-events-auto ml-2" id="toast-undo">Undo</button>
+</div>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 w-full py-8 lg:py-14">
+<!-- Breadcrumb & Top Bar -->
+<div class="flex flex-wrap items-center justify-between gap-4 pb-8 border-b-hairline">
+<nav class="flex items-center gap-2 font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant">
+<a class="hover:text-primary transition-colors" data-path="home" href="#">Home</a>
+<span class="text-outline-variant text-[10px]">/</span>
+<span class="text-primary font-bold">Shopping Cart</span>
+</nav>
+<div class="flex items-center gap-3">
+<button class="inline-flex items-center gap-2 font-label-caps text-label-caps uppercase tracking-wider px-3.5 py-1.5 rounded-sm bg-surface-container hover:bg-surface-container-high transition-colors text-on-surface" id="btn-open-drawer-alt" type="button">
+<span class="material-symbols-outlined text-[16px]">dock_to_right</span>
+          Quick Drawer Preview
+        </button>
+<button class="font-label-caps text-label-caps uppercase tracking-wider text-on-surface-variant hover:text-error transition-colors" id="btn-toggle-empty" type="button">
+          Reset / Preview Empty
+        </button>
+</div>
+</div>
+<!-- Editorial Header Section -->
+<div class="pt-8 pb-10">
+<span class="font-label-caps text-label-caps uppercase tracking-[0.2em] text-secondary font-semibold block mb-2">Estate Cellar &amp; Dispatch</span>
+<div class="flex flex-col md:flex-row md:items-baseline justify-between gap-4">
+<h1 class="font-headline-lg text-headline-lg lg:text-display-hero text-primary tracking-tight">
+          Your Spice Vault <span class="font-headline-md text-headline-md text-on-surface-variant font-normal tracking-normal" id="cart-item-count-headline">(3 Items)</span>
+</h1>
+<p class="font-subheading text-subheading text-on-surface-variant italic max-w-md">
+          Terroir-authenticated harvests preserved in amber apothecary glass. Review your selections prior to climate-sealed dispatch.
+        </p>
+</div>
+</div>
+<!-- MAIN INTERACTIVE CART WORKSPACE -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start" id="cart-active-state">
+<!-- LEFT COLUMN: Items & Progression (Approx 68%) -->
+<div class="lg:col-span-8 flex flex-col gap-6">
+<!-- Climate-Safe Free Shipping Milestone Bar -->
+<div class="p-5 lg:p-6 bg-surface-container rounded-sm border-hairline relative overflow-hidden">
+<div class="flex items-center justify-between mb-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]" id="shipping-milestone-icon">local_shipping</span>
+<p class="font-body-md text-body-md font-medium text-on-surface" id="shipping-milestone-text">
+                You're <span class="font-bold text-primary" id="shipping-amount-remaining">₹0</span> away from complimentary climate-safe express dispatch.
+              </p>
+</div>
+<span class="font-label-caps text-label-caps tracking-widest text-secondary font-semibold" id="shipping-percentage-label">0%</span>
+</div>
+<!-- Progress Track -->
+<div class="w-full h-2 bg-surface-container-highest rounded-full overflow-hidden relative">
+<div class="h-full bg-secondary-container transition-all duration-500 ease-out" id="shipping-progress-fill" style="width: 0%;"></div>
+</div>
+<p class="mt-2.5 font-label-sm text-label-sm text-on-surface-variant/80 flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[14px]">thermostat</span>
+            Insulated cold-chain handling calibrated to retain essential volatile oils across all Indian states.
+          </p>
+</div>
+<!-- CART ITEMS CONTAINER -->
+<div class="bg-surface border-hairline rounded-sm divide-y divide-outline-variant/30" id="cart-items-wrapper">
+<!-- Dynamically Injected by JS -->
+</div>
+<!-- Secondary Batch Actions -->
+<div class="flex flex-wrap items-center justify-between gap-4 pt-2">
+<a class="inline-flex items-center gap-2 font-label-caps text-label-caps uppercase tracking-widest text-primary hover:text-secondary transition-colors font-semibold" data-path="shop" href="#">
+<span class="material-symbols-outlined text-[16px]">west</span> Continue Exploring Harvests
+          </a>
+<div class="flex items-center gap-4">
+<button class="text-on-surface-variant hover:text-error text-body-sm font-body-sm transition-colors flex items-center gap-1" id="btn-clear-cart" type="button">
+<span class="material-symbols-outlined text-[16px]">delete_sweep</span> Clear Cart
+            </button>
+</div>
+</div>
+<!-- SAVED FOR LATER SECTION -->
+<div class="mt-8 pt-8 border-t-hairline" id="saved-section">
+<div class="flex items-center justify-between mb-4">
+<h2 class="font-headline-sm text-headline-sm text-primary">Saved for Later <span class="text-body-md font-body-md font-normal text-on-surface-variant" id="saved-count-label">(1)</span></h2>
+<span class="font-label-caps text-label-caps tracking-widest text-on-surface-variant uppercase">Reserved In Vault</span>
+</div>
+<div class="bg-surface border-hairline rounded-sm divide-y divide-outline-variant/30" id="saved-items-wrapper">
+<!-- Saved Item Sample -->
+<div class="p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4" id="saved-item-101">
+<div class="flex items-center gap-4">
+<div class="w-16 h-20 bg-surface-container overflow-hidden rounded flex-shrink-0 relative">
+<img class="w-full h-full object-cover" data-alt="Warm moody macro photo of an apothecary amber glass jar filled with deeply aromatic royal Awadhi garam masala blend, garnished with mace blade and star anise, soft diffused atelier lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbdybkTmwGS1FkjC5Uv0HD_DnM_3MtIUlYBmAUiAtf2o0li6jAHdsJrJC_2701JR6XHDANadzvcjgqfOgL6oLjNaWCUUO7vYQiSABA-RGpc7KY4cq1nm8gv7OdIydKjRQMygdA_IX8rr6zWFjCzZ0KBQjTkOrU1jwZ5XdIzhJ3C0cj4HQWwOrx57p2zqUod2n_AxLscc6VfjXhszD7oawCQgHByt12hpbkj_jwvG04vcywdtu3Bz_E"/>
+</div>
+<div>
+<span class="font-label-caps text-label-caps uppercase text-secondary font-semibold">Estate Vault Recipe #09</span>
+<h4 class="font-headline-sm text-body-lg text-on-surface font-semibold">Royal Awadhi Garam Masala</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">75g Archival Tin • Aged 6 Months</p>
+<span class="font-body-md text-body-md font-medium text-primary mt-1 block">₹480.00</span>
+</div>
+</div>
+<div class="flex items-center gap-3 sm:self-center">
+<button class="px-4 py-2 border-hairline bg-surface hover:bg-surface-container text-on-surface font-label-caps text-label-caps uppercase tracking-wider transition-colors" onclick="moveSavedToCart(101)">
+                  Move to Bag
+                </button>
+<button class="p-2 text-on-surface-variant hover:text-error transition-colors" onclick="removeSaved(101)" title="Delete">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: Sticky Order Summary & Direct Settlement (Approx 32%) -->
+<div class="lg:col-span-4 sticky top-24">
+<div class="bg-surface border-hairline rounded-sm p-6 sm:p-7 shadow-sm">
+<div class="border-b-hairline pb-4 mb-5">
+<span class="font-label-caps text-label-caps tracking-[0.16em] uppercase text-on-surface-variant font-bold">Consolidated Valuation</span>
+<h3 class="font-headline-md text-headline-md text-primary mt-1">Order Summary</h3>
+</div>
+<!-- Promo Code Accordion Form -->
+<div class="mb-6">
+<details class="group cursor-pointer" id="voucher-details">
+<summary class="flex items-center justify-between text-body-sm font-body-sm font-medium text-primary hover:text-secondary list-none">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">redeem</span>
+                  Harvest Voucher / Guild Code
+                </span>
+<span class="material-symbols-outlined text-[16px] group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="pt-3">
+<div class="flex gap-2">
+<input class="w-full uppercase font-body-sm text-body-sm px-3 py-2 bg-surface-container border-hairline focus:outline-none focus:border-primary" id="promo-input" placeholder="Enter code (e.g. SPICE10)" type="text"/>
+<button class="px-4 py-2 bg-primary text-on-primary font-label-caps text-label-caps uppercase tracking-wider hover:bg-primary-container transition-colors" id="promo-apply-btn" type="button">
+                    Apply
+                  </button>
+</div>
+<div class="mt-2 text-label-sm font-label-sm hidden" id="promo-feedback"></div>
+</div>
+</details>
+<!-- Applied Voucher Tag -->
+<div class="hidden mt-3 p-2.5 bg-surface-container-high rounded flex items-center justify-between border-hairline" id="applied-voucher-chip">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-success text-[18px]">verified</span>
+<div>
+<span class="font-label-caps text-label-caps uppercase text-primary font-bold">SPICE10</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">10% Guild Allocation Discount</span>
+</div>
+</div>
+<button class="text-on-surface-variant hover:text-error text-label-caps font-label-caps uppercase tracking-wider" id="promo-remove-btn">Remove</button>
+</div>
+</div>
+<!-- Financial Totals Ledger -->
+<div class="space-y-3.5 border-b-hairline pb-5 text-body-md font-body-md">
+<div class="flex justify-between items-center text-on-surface-variant">
+<span>Bag Subtotal</span>
+<span class="font-medium text-on-surface" id="summary-subtotal">₹1,198.00</span>
+</div>
+<div class="hidden justify-between items-center text-success" id="summary-discount-row">
+<span class="flex items-center gap-1">
+<span>Promotional Concession</span>
+<span class="material-symbols-outlined text-[14px]">stars</span>
+</span>
+<span id="summary-discount">- ₹0.00</span>
+</div>
+<div class="flex justify-between items-center text-on-surface-variant">
+<div class="flex items-center gap-1.5">
+<span>Climate-Safe Express</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[14px]" title="Temperature protected express logistics">info</span>
+</div>
+<span class="font-medium text-on-surface" id="summary-shipping">Calculated</span>
+</div>
+<div class="flex justify-between items-center text-on-surface-variant">
+<span>Estimated Tax (5% GST)</span>
+<span class="font-medium text-on-surface" id="summary-tax">₹59.90</span>
+</div>
+</div>
+<!-- Grand Total -->
+<div class="py-5 flex items-baseline justify-between">
+<div>
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant block">Payable Balance</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Inclusive of all agricultural tariffs</span>
+</div>
+<div class="text-right">
+<span class="font-headline-lg text-headline-lg text-primary block leading-none" id="summary-grand-total">₹1,257.90</span>
+</div>
+</div>
+<!-- Primary CTA Button -->
+<button class="w-full py-4 px-6 bg-primary text-on-primary hover:bg-primary-container font-label-caps text-label-caps uppercase tracking-[0.2em] font-semibold text-center transition-all flex items-center justify-center gap-3 shadow-md group" id="btn-proceed-checkout" type="button">
+<span>Proceed to Secure Checkout</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">east</span>
+</button>
+<!-- Accepted Settlement Methods -->
+<div class="mt-6 pt-5 border-t-hairline flex flex-col items-center gap-2">
+<span class="font-label-caps text-[10px] tracking-widest uppercase text-on-surface-variant/80">Secured via Direct Indian Banking &amp; Cards</span>
+<div class="flex items-center justify-center gap-3 text-on-surface-variant">
+<span class="px-2 py-1 bg-surface-container rounded text-label-sm font-label-sm font-semibold tracking-wider">UPI</span>
+<span class="px-2 py-1 bg-surface-container rounded text-label-sm font-label-sm font-semibold tracking-wider">VISA</span>
+<span class="px-2 py-1 bg-surface-container rounded text-label-sm font-label-sm font-semibold tracking-wider">MASTERCARD</span>
+<span class="px-2 py-1 bg-surface-container rounded text-label-sm font-label-sm font-semibold tracking-wider">RUPAY</span>
+<span class="px-2 py-1 bg-surface-container rounded text-label-sm font-label-sm font-semibold tracking-wider">NETBANKING</span>
+</div>
+</div>
+<!-- Terroir Archival Badges -->
+<div class="mt-6 p-4 bg-surface-container-low rounded-sm space-y-3">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-[20px] shrink-0 mt-0.5">verified_user</span>
+<div>
+<h5 class="font-label-caps text-label-caps uppercase font-bold text-on-surface">Amber Glass Preserved</h5>
+<p class="font-body-sm text-body-sm text-on-surface-variant">UV-impermeable pharmaceutical amber glassware guarding botanical volatility.</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-[20px] shrink-0 mt-0.5">assignment_turned_in</span>
+<div>
+<h5 class="font-label-caps text-label-caps uppercase font-bold text-on-surface">Lab-Verified Curcumin &amp; Piperine</h5>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Every jar carries a batch certificate verifying high volatile oil content.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- EMPTY CART STATE VIEW (Hidden by default, shown when cart empty) -->
+<div class="hidden py-16 flex-col items-center text-center max-w-2xl mx-auto" id="cart-empty-state">
+<div class="w-24 h-24 rounded-full bg-surface-container flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined text-[44px]">all_inclusive</span>
+</div>
+<span class="font-label-caps text-label-caps uppercase tracking-[0.25em] text-secondary font-bold">Cellar Archive Vacant</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mt-2 mb-4">Your Spice Vault is Empty</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg mb-8 leading-relaxed">
+        No single-estate lots have been selected. Discover exceptional heirloom chillies, stone-milled Salem haldi, and high-altitude forest harvests.
+      </p>
+<div class="flex flex-col sm:flex-row gap-4 w-full justify-center">
+<a class="px-8 py-4 bg-primary text-on-primary font-label-caps text-label-caps uppercase tracking-widest hover:bg-primary-container transition-colors shadow" data-path="shop" href="#">
+          Explore Single-Origin Spices →
+        </a>
+<button class="px-8 py-4 border-hairline bg-surface hover:bg-surface-container font-label-caps text-label-caps uppercase tracking-widest text-on-surface transition-colors" id="btn-restore-samples">
+          Reload Curated Vault Reserve
+        </button>
+</div>
+</div>
+<!-- COMPLEMENTARY CELLAR HARVESTS (Cross-sell grid) -->
+<div class="mt-20 pt-12 border-t-hairline">
+<div class="flex flex-col sm:flex-row sm:items-end justify-between mb-8">
+<div>
+<span class="font-label-caps text-label-caps uppercase tracking-[0.2em] text-secondary font-semibold">Gourmand Pairings</span>
+<h3 class="font-headline-md text-headline-md text-primary mt-1">You May Also Complement</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 sm:mt-0">Curated to harmonize with your active cellar collection</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6" id="cross-sell-grid">
+<!-- Rec Card 1 -->
+<div class="bg-surface border-hairline rounded-sm p-4 flex flex-col justify-between group hover:shadow-lg transition-all duration-300">
+<div>
+<div class="relative w-full aspect-[4/5] bg-surface-container overflow-hidden rounded-sm mb-4">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Close up photography of whole heirloom Nagaur cumin seeds on rustic dark stone slate with brass measuring spoon, warm golden ambient sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOmqUohbR_Oly3B_JwfhvoiJ14fCRR-kPOhd9lt_WHuJDofXdjMeoXaFMmgI1ModMUUVc2HN2hyMvnUeA0EnhUBmgMgdKOm3FQEYZ-5asN3tnQ6zrilzt76C2JE730NmH8QzW9AlcY8WC8KTJkMdnWB5sGH8zXYLkIWmgMoTER80ZMEmXnAK5qV1ZHp9mF6dNUoR9d2q4YhvGL9pYr45b6mqtPXExAQm4_my19hmvQsku7WG3Ic0TO"/>
+<span class="absolute top-2 left-2 px-2 py-1 bg-surface/90 backdrop-blur-sm text-primary font-label-caps text-[10px] tracking-wider uppercase font-semibold">Nagaur • 2.8% Oil</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary group-hover:text-secondary transition-colors">Nagaur Cumin Seeds</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">Sun-ripened arid desert terroir offering profound earthiness and nutty warmth.</p>
+</div>
+<div class="pt-4 mt-4 border-t-hairline flex items-center justify-between">
+<span class="font-headline-sm text-body-lg font-bold text-on-surface">₹220.00</span>
+<button class="px-3.5 py-2 bg-surface-container hover:bg-primary hover:text-on-primary transition-colors text-on-surface font-label-caps text-label-caps uppercase tracking-wider flex items-center gap-1.5" onclick="quickAddCrossSell('Nagaur Cumin Seeds', 220, 'Nagaur, Rajasthan', 'placeholder', 'Close up photography of whole heirloom Nagaur cumin seeds on rustic dark stone slate with brass measuring spoon, warm golden ambient sunlight')">
+<span class="material-symbols-outlined text-[16px]">add</span> Add
+            </button>
+</div>
+</div>
+<!-- Rec Card 2 -->
+<div class="bg-surface border-hairline rounded-sm p-4 flex flex-col justify-between group hover:shadow-lg transition-all duration-300">
+<div>
+<div class="relative w-full aspect-[4/5] bg-surface-container overflow-hidden rounded-sm mb-4">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Green cardamom pods freshly harvested in Kerala hills, 8mm bold jumbo pods resting on an antique parchment paper with botanical labels" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKB-ETzEhlUTlPpQKjJp1M8RbYIR0MSL5crnvL51Cc7fyulKgTCoA1NPj-sWzVlk5tkEX_Pegwfr9QNLySvmkwC_E-dn2W1L4sdmr3Ac0Etd9Lf5xXPduPr_wF_zZX3WSoOsKvpW1JNukGYXpZrEeGmiTZpp7K5VhgoWwKmbQ9KXEhpcm75-YxkvLSC6T14VtzgfaNY2mdsCSmSr3_r2QexEdBK7qqfisJJLTC3_wNNF8aIx-uOq1s"/>
+<span class="absolute top-2 left-2 px-2 py-1 bg-surface/90 backdrop-blur-sm text-primary font-label-caps text-[10px] tracking-wider uppercase font-semibold">Alleppey 8mm+</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary group-hover:text-secondary transition-colors">Alleppey Green Cardamom</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">High-altitude Cardamom Hills pods packed with menthol sweetness and eucalyptus camphor.</p>
+</div>
+<div class="pt-4 mt-4 border-t-hairline flex items-center justify-between">
+<span class="font-headline-sm text-body-lg font-bold text-on-surface">₹650.00</span>
+<button class="px-3.5 py-2 bg-surface-container hover:bg-primary hover:text-on-primary transition-colors text-on-surface font-label-caps text-label-caps uppercase tracking-wider flex items-center gap-1.5" onclick="quickAddCrossSell('Alleppey Green Cardamom', 650, 'Idukki, Kerala', 'placeholder', 'Green cardamom pods freshly harvested in Kerala hills, 8mm bold jumbo pods resting on an antique parchment paper with botanical labels')">
+<span class="material-symbols-outlined text-[16px]">add</span> Add
+            </button>
+</div>
+</div>
+<!-- Rec Card 3 -->
+<div class="bg-surface border-hairline rounded-sm p-4 flex flex-col justify-between group hover:shadow-lg transition-all duration-300">
+<div>
+<div class="relative w-full aspect-[4/5] bg-surface-container overflow-hidden rounded-sm mb-4">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Real Ceylon cinnamon quills tightly rolled on wooden apothecary bench alongside brass mortar and pestle, cinematic dramatic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1E9IJZjFkAkrnXa_o2qHoUGTWPhcl93W6aCNm4PD5S32pY0emb6X7q16g0pFUti727X_SESRNfO3GHCG5gWSfqRDvfx6qR0ocD9CjWSjsBwBFH_1WaXG5joykj6F7FmaA4faxq4i80YNa0_Uu7udthZYmbiWfsl3wUFD-N8vbpGq0NN5rRNJVOzL_lb2m53lJsyIFBV22M3RIdnPNI7CwuDQMPCn3TVaZLFKxuXu90DU3McTHi2I7"/>
+<span class="absolute top-2 left-2 px-2 py-1 bg-surface/90 backdrop-blur-sm text-primary font-label-caps text-[10px] tracking-wider uppercase font-semibold">True Alba Grade</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary group-hover:text-secondary transition-colors">Ceylon Cinnamon Quills</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">Ultra-fine paper-thin multi-layered quills featuring delicate floral sweetness with near-zero coumarin.</p>
+</div>
+<div class="pt-4 mt-4 border-t-hairline flex items-center justify-between">
+<span class="font-headline-sm text-body-lg font-bold text-on-surface">₹520.00</span>
+<button class="px-3.5 py-2 bg-surface-container hover:bg-primary hover:text-on-primary transition-colors text-on-surface font-label-caps text-label-caps uppercase tracking-wider flex items-center gap-1.5" onclick="quickAddCrossSell('Ceylon Cinnamon Quills', 520, 'Southern Terroir', 'placeholder', 'Real Ceylon cinnamon quills tightly rolled on wooden apothecary bench alongside brass mortar and pestle, cinematic dramatic lighting')">
+<span class="material-symbols-outlined text-[16px]">add</span> Add
+            </button>
+</div>
+</div>
+<!-- Rec Card 4 -->
+<div class="bg-surface border-hairline rounded-sm p-4 flex flex-col justify-between group hover:shadow-lg transition-all duration-300">
+<div>
+<div class="relative w-full aspect-[4/5] bg-surface-container overflow-hidden rounded-sm mb-4">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Vibrant scarlet smoked Kashmiri chilli flakes overflowing from small ceramic dish with whole dried chillies beside it, warm kitchen scene" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEfc9rTQ68gXB9dh4Fln-on9Ysrqcq4LgprzjQJMcmdsFTR_dp_PdRq6lODM5JuHgI0XylWk0PQ8xKbAX7aiYW6sRRJilmM8X_t3olW_0DvFLLmkyUvCPiIr8YaumA8OAw2IMvYlUqmUK4GBYqywB_wA1qluuPPWYcxiKZLrincRD5hzNFRJWQnvrAOyvBvtAGsVRMzBnOA984LViwsXE-WBiIY38VOZpzgvmi9tD8TCZ_xXKHnHhZ"/>
+<span class="absolute top-2 left-2 px-2 py-1 bg-surface/90 backdrop-blur-sm text-primary font-label-caps text-[10px] tracking-wider uppercase font-semibold">Oak Wood Smoked</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary group-hover:text-secondary transition-colors">Smoked Kashmiri Flakes</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">Mild fruity heat slow-cured over Himalayan applewood embers for gentle umami depth.</p>
+</div>
+<div class="pt-4 mt-4 border-t-hairline flex items-center justify-between">
+<span class="font-headline-sm text-body-lg font-bold text-on-surface">₹260.00</span>
+<button class="px-3.5 py-2 bg-surface-container hover:bg-primary hover:text-on-primary transition-colors text-on-surface font-label-caps text-label-caps uppercase tracking-wider flex items-center gap-1.5" onclick="quickAddCrossSell('Smoked Kashmiri Flakes', 260, 'Pampore Reserve', 'placeholder', 'Vibrant scarlet smoked Kashmiri chilli flakes overflowing from small ceramic dish with whole dried chillies beside it, warm kitchen scene')">
+<span class="material-symbols-outlined text-[16px]">add</span> Add
+            </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- SLIDE-OUT MINI-CART DRAWER (Right aligned drawer) -->
+<div class="fixed inset-0 bg-inverse-surface/60 backdrop-blur-sm z-50 opacity-0 pointer-events-none transition-opacity duration-300" id="drawer-backdrop"></div>
+<aside aria-label="Quick Cart Drawer" class="fixed top-0 right-0 h-full w-full max-w-md bg-surface z-50 shadow-2xl flex flex-col transform translate-x-full transition-drawer" id="mini-cart-drawer">
+<!-- Drawer Header -->
+<div class="p-6 border-b-hairline flex items-center justify-between bg-surface-bright">
+<div>
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary font-bold">Cellar Archive</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Your Harvest Basket</h3>
+</div>
+<button aria-label="Close Drawer" class="p-2 text-on-surface-variant hover:text-primary transition-colors" id="btn-close-drawer" type="button">
+<span class="material-symbols-outlined text-[24px]">close</span>
+</button>
+</div>
+<!-- Free Shipping Indicator Mini -->
+<div class="px-6 py-3 bg-surface-container border-b-hairline text-center font-label-sm text-label-sm text-on-surface-variant">
+<span id="drawer-shipping-notice">Complimentary Express unlocks at ₹1,000</span>
+</div>
+<!-- Drawer Items List -->
+<div class="flex-1 overflow-y-auto divide-y divide-outline-variant/30 p-6 space-y-4" id="drawer-items-list">
+<!-- Injected by JavaScript -->
+</div>
+<!-- Drawer Footer / Financials -->
+<div class="p-6 border-t-hairline bg-surface-bright space-y-4">
+<div class="space-y-1.5 text-body-sm font-body-sm">
+<div class="flex justify-between text-on-surface-variant">
+<span>Subtotal</span>
+<span class="font-medium text-on-surface" id="drawer-subtotal">₹0.00</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>Dispatch Estimate</span>
+<span id="drawer-shipping">Free</span>
+</div>
+</div>
+<div class="pt-3 border-t-hairline flex justify-between items-baseline">
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-primary font-bold">Total Estimate</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold" id="drawer-total">₹0.00</span>
+</div>
+<div class="grid grid-cols-2 gap-3 pt-2">
+<button class="py-3 px-4 border-hairline bg-surface hover:bg-surface-container font-label-caps text-label-caps uppercase tracking-wider text-primary text-center transition-colors" id="btn-drawer-view-cart" type="button">
+          View Full Vault
+        </button>
+<button class="py-3 px-4 bg-primary text-on-primary hover:bg-primary-container font-label-caps text-label-caps uppercase tracking-wider text-center transition-colors" id="btn-drawer-checkout" type="button">
+          Checkout →
+        </button>
+</div>
+</div>
+</aside>
+<!-- MOBILE STICKY BAR FOR IMMEDIATE DISPATCH -->
+<div class="lg:hidden fixed bottom-0 left-0 w-full bg-surface border-t-hairline p-4 z-40 shadow-[0_-4px_12px_rgba(0,0,0,0.06)] flex items-center justify-between">
+<div>
+<span class="font-label-caps text-[10px] tracking-widest uppercase text-on-surface-variant block">Consolidated Total</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold leading-tight" id="mobile-bottom-total">₹1,257.90</span>
+</div>
+<button class="py-3 px-6 bg-primary text-on-primary font-label-caps text-label-caps uppercase tracking-widest hover:bg-primary-container transition-colors flex items-center gap-2" id="btn-mobile-checkout">
+<span>Checkout</span>
+<span class="material-symbols-outlined text-[16px]">east</span>
+</button>
+</div>
+<!-- Reactive Logic & Cart State Engine -->
+<script>
+    // Primary Cart State
+    const SHIPPING_THRESHOLD = 1000;
+    const FLAT_SHIPPING_FEE = 99;
+    const GST_RATE = 0.05;
+
+    let cartData = [
+      {
+        id: 1,
+        name: "Kashmiri Red Chilli Powder",
+        botanical: "Capsicum annuum var. longum",
+        lot: "Lot 2026-KR04 &bull; Pampore Hills",
+        spec: "100g Amber Apothecary Glass",
+        price: 249,
+        quantity: 2,
+        image: "placeholder",
+        imageAlt: "Aesthetic amber glass apothecary spice jar of vibrant red Kashmiri chilli powder on stone slate with brass measuring tools and dried chillies"
+      },
+      {
+        id: 2,
+        name: "Salem Turmeric Powder",
+        botanical: "Curcuma longa (Curcumin 4.8%)",
+        lot: "Harvest 2025-SL09 &bull; Tamil Nadu",
+        spec: "100g High-Barrier Amber Jar",
+        price: 280,
+        quantity: 1,
+        image: "placeholder",
+        imageAlt: "Rich deep golden yellow Salem turmeric powder in dark amber glass container beside fresh raw rhizomes in warm atelier lighting"
+      },
+      {
+        id: 3,
+        name: "Malabar Black Peppercorns",
+        botanical: "Piper nigrum &bull; Tellicherry Extra Bold",
+        lot: "Reserve 2026-WB01 &bull; Wayanad Canopy",
+        spec: "100g Whole Botanical Jar",
+        price: 420,
+        quantity: 1,
+        image: "placeholder",
+        imageAlt: "Large fragrant Tellicherry black peppercorns in apothecary glass bottle resting beside a solid bronze pestle on dark slate counter"
+      }
+    ];
+
+    let savedData = [
+      {
+        id: 101,
+        name: "Royal Awadhi Garam Masala",
+        spec: "75g Archival Tin &bull; Aged 6 Months",
+        price: 480
+      }
+    ];
+
+    let appliedPromo = null; // { code: 'SPICE10', discountPercent: 0.10 }
+    let lastDeletedItem = null;
+    let toastTimeout = null;
+
+    // Render Logic
+    function renderCart() {
+      const itemsWrapper = document.getElementById("cart-items-wrapper");
+      const activeState = document.getElementById("cart-active-state");
+      const emptyState = document.getElementById("cart-empty-state");
+      const headlineCount = document.getElementById("cart-item-count-headline");
+
+      const totalItemCount = cartData.reduce((acc, it) => acc + it.quantity, 0);
+      headlineCount.textContent = `(${totalItemCount} ${totalItemCount === 1 ? 'Item' : 'Items'})`;
+      
+      // Update shell header count badge if accessible
+      const cartBadge = document.querySelector('header [data-path="cart"] span:last-child');
+      if (cartBadge) {
+        cartBadge.textContent = totalItemCount;
+      }
+
+      if (cartData.length === 0) {
+        activeState.classList.add("hidden");
+        emptyState.classList.remove("hidden");
+        emptyState.classList.add("flex");
+        renderDrawer();
+        return;
+      } else {
+        activeState.classList.remove("hidden");
+        emptyState.classList.add("hidden");
+        emptyState.classList.remove("flex");
+      }
+
+      // Populate Items HTML
+      itemsWrapper.innerHTML = cartData.map(item => {
+        const lineTotal = item.price * item.quantity;
+        return `
+          <div class="p-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 hover:bg-surface-container-low/30 transition-colors" id="cart-item-${item.id}">
+            <!-- Thumbnail + Details -->
+            <div class="flex items-start gap-4 sm:gap-6 flex-1 min-w-0">
+              <div class="w-20 h-24 sm:w-24 sm:h-28 bg-surface-container rounded-sm overflow-hidden flex-shrink-0 relative">
+                <img src="${item.image}" data-alt="${item.imageAlt}" class="w-full h-full object-cover">
+              </div>
+              <div class="flex flex-col min-w-0">
+                <span class="font-label-caps text-[10px] tracking-wider uppercase text-secondary font-bold truncate">${item.lot}</span>
+                <h3 class="font-headline-sm text-body-lg text-primary font-semibold tracking-tight truncate">${item.name}</h3>
+                <span class="font-body-sm text-body-sm text-on-surface-variant/90 italic truncate">${item.botanical}</span>
+                <span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">${item.spec}</span>
+                
+                <div class="flex items-center gap-4 mt-3">
+                  <button onclick="saveForLater(${item.id})" class="font-label-caps text-label-caps uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors underline underline-offset-4">
+                    Save For Later
+                  </button>
+                  <button onclick="removeItem(${item.id})" class="font-label-caps text-label-caps uppercase tracking-wider text-on-surface-variant hover:text-error transition-colors flex items-center gap-1">
+                    <span class="material-symbols-outlined text-[14px]">delete</span> Remove
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Price & Stepper Control -->
+            <div class="flex items-center justify-between w-full sm:w-auto sm:justify-end gap-6 pt-3 sm:pt-0 border-t sm:border-t-0 border-outline-variant/30">
+              <!-- Stepper -->
+              <div class="flex items-center border-hairline bg-surface rounded-sm">
+                <button onclick="updateQty(${item.id}, -1)" class="w-9 h-9 flex items-center justify-center text-on-surface hover:bg-surface-container transition-colors text-body-lg" aria-label="Decrease quantity">
+                  &minus;
+                </button>
+                <span class="w-10 text-center font-body-md text-body-md font-semibold text-primary select-none">${item.quantity}</span>
+                <button onclick="updateQty(${item.id}, 1)" class="w-9 h-9 flex items-center justify-center text-on-surface hover:bg-surface-container transition-colors text-body-lg" aria-label="Increase quantity">
+                  &#43;
+                </button>
+              </div>
+
+              <!-- Price breakdown -->
+              <div class="text-right min-w-[90px]">
+                <span class="font-headline-sm text-headline-sm text-primary font-bold block">₹${lineTotal.toFixed(2)}</span>
+                <span class="font-label-sm text-label-sm text-on-surface-variant block">₹${item.price.toFixed(2)} ea</span>
+              </div>
+            </div>
+          </div>
+        `;
+      }).join('');
+
+      recalculateTotals();
+      renderDrawer();
+    }
+
+    // Mathematical Recalculation Engine
+    function recalculateTotals() {
+      const subtotal = cartData.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+      
+      // Free Shipping Milestone
+      const shippingAmountRemaining = Math.max(0, SHIPPING_THRESHOLD - subtotal);
+      const shippingProgressPercent = Math.min(100, Math.round((subtotal / SHIPPING_THRESHOLD) * 100));
+      
+      const milestoneText = document.getElementById("shipping-milestone-text");
+      const milestoneIcon = document.getElementById("shipping-milestone-icon");
+      const progressBar = document.getElementById("shipping-progress-fill");
+      const progressLabel = document.getElementById("shipping-percentage-label");
+
+      if (subtotal >= SHIPPING_THRESHOLD) {
+        milestoneText.innerHTML = `<span class="text-success font-semibold flex items-center gap-1.5"><span class="material-symbols-outlined text-[18px]">verified</span> Complimentary Climate-Safe Express Dispatch Unlocked!</span>`;
+        milestoneIcon.classList.remove("text-secondary");
+        milestoneIcon.classList.add("text-success");
+        progressBar.style.width = "100%";
+        progressBar.classList.remove("bg-secondary-container");
+        progressBar.classList.add("bg-success");
+        progressLabel.textContent = "100% REACHED";
+        progressLabel.classList.add("text-success");
+      } else {
+        milestoneText.innerHTML = `You're <span class="font-bold text-primary">₹${shippingAmountRemaining.toFixed(2)}</span> away from complimentary climate-safe express dispatch.`;
+        milestoneIcon.classList.add("text-secondary");
+        milestoneIcon.classList.remove("text-success");
+        progressBar.style.width = `${shippingProgressPercent}%`;
+        progressBar.classList.add("bg-secondary-container");
+        progressBar.classList.remove("bg-success");
+        progressLabel.textContent = `${shippingProgressPercent}%`;
+        progressLabel.classList.remove("text-success");
+      }
+
+      // Calculations
+      let discountAmount = 0;
+      if (appliedPromo) {
+        discountAmount = subtotal * appliedPromo.discountPercent;
+      }
+
+      const taxableSubtotal = Math.max(0, subtotal - discountAmount);
+      const isFreeShipping = subtotal >= SHIPPING_THRESHOLD || subtotal === 0;
+      const shippingFee = isFreeShipping ? 0 : FLAT_SHIPPING_FEE;
+      const gstAmount = taxableSubtotal * GST_RATE;
+      const grandTotal = taxableSubtotal + shippingFee + gstAmount;
+
+      // Update Order Summary UI
+      document.getElementById("summary-subtotal").textContent = `₹${subtotal.toFixed(2)}`;
+      
+      const discountRow = document.getElementById("summary-discount-row");
+      if (appliedPromo && discountAmount > 0) {
+        discountRow.classList.remove("hidden");
+        discountRow.classList.add("flex");
+        document.getElementById("summary-discount").textContent = `- ₹${discountAmount.toFixed(2)}`;
+      } else {
+        discountRow.classList.add("hidden");
+        discountRow.classList.remove("flex");
+      }
+
+      document.getElementById("summary-shipping").textContent = isFreeShipping ? "FREE" : `₹${shippingFee.toFixed(2)}`;
+      document.getElementById("summary-tax").textContent = `₹${gstAmount.toFixed(2)}`;
+      document.getElementById("summary-grand-total").textContent = `₹${grandTotal.toFixed(2)}`;
+      document.getElementById("mobile-bottom-total").textContent = `₹${grandTotal.toFixed(2)}`;
+
+      // Update Mini Drawer summary
+      document.getElementById("drawer-subtotal").textContent = `₹${subtotal.toFixed(2)}`;
+      document.getElementById("drawer-shipping").textContent = isFreeShipping ? "FREE" : `₹${shippingFee.toFixed(2)}`;
+      document.getElementById("drawer-total").textContent = `₹${grandTotal.toFixed(2)}`;
+      const drawerShippingNotice = document.getElementById("drawer-shipping-notice");
+      if (subtotal >= SHIPPING_THRESHOLD) {
+        drawerShippingNotice.innerHTML = `<span class="text-success font-semibold">✓ Free Climate-Safe Dispatch Unlocked</span>`;
+      } else {
+        drawerShippingNotice.textContent = `Add ₹${shippingAmountRemaining.toFixed(2)} more for free climate-safe dispatch`;
+      }
+    }
+
+    // Mini Cart Drawer Rendering
+    function renderDrawer() {
+      const drawerList = document.getElementById("drawer-items-list");
+      if (cartData.length === 0) {
+        drawerList.innerHTML = `
+          <div class="py-12 text-center">
+            <span class="material-symbols-outlined text-[36px] text-outline-variant">remove_shopping_cart</span>
+            <p class="font-body-md text-body-md text-on-surface-variant mt-2">Your basket is vacant</p>
+          </div>
+        `;
+        return;
+      }
+
+      drawerList.innerHTML = cartData.map(item => `
+        <div class="flex gap-4 py-3 items-center">
+          <div class="w-14 h-16 bg-surface-container rounded overflow-hidden flex-shrink-0">
+            <img src="${item.image}" data-alt="${item.imageAlt}" class="w-full h-full object-cover">
+          </div>
+          <div class="flex-1 min-w-0">
+            <h4 class="font-body-md text-body-md font-semibold text-primary truncate">${item.name}</h4>
+            <span class="font-label-sm text-label-sm text-on-surface-variant">Qty: ${item.quantity} &bull; ₹${(item.price * item.quantity).toFixed(2)}</span>
+            <div class="flex items-center gap-2 mt-1">
+              <button onclick="updateQty(${item.id}, -1)" class="text-on-surface hover:text-primary font-bold px-1.5 bg-surface-container rounded">&minus;</button>
+              <button onclick="updateQty(${item.id}, 1)" class="text-on-surface hover:text-primary font-bold px-1.5 bg-surface-container rounded">&#43;</button>
+            </div>
+          </div>
+          <button onclick="removeItem(${item.id})" class="text-on-surface-variant hover:text-error p-1">
+            <span class="material-symbols-outlined text-[18px]">close</span>
+          </button>
+        </div>
+      `).join('');
+    }
+
+    // Cart Modifications
+    function updateQty(id, change) {
+      const target = cartData.find(item => item.id === id);
+      if (!target) return;
+      target.quantity += change;
+      if (target.quantity <= 0) {
+        removeItem(id);
+      } else {
+        renderCart();
+      }
+    }
+
+    function removeItem(id) {
+      const index = cartData.findIndex(item => item.id === id);
+      if (index > -1) {
+        lastDeletedItem = { item: cartData[index], index };
+        cartData.splice(index, 1);
+        renderCart();
+        showToast("Item removed from your harvest collection", true);
+      }
+    }
+
+    function saveForLater(id) {
+      const item = cartData.find(i => i.id === id);
+      if (!item) return;
+      savedData.push({
+        id: Date.now(),
+        name: item.name,
+        spec: item.spec,
+        price: item.price
+      });
+      removeItem(id);
+      renderSaved();
+      showToast(`Saved "${item.name}" for later`);
+    }
+
+    function renderSaved() {
+      const countLabel = document.getElementById("saved-count-label");
+      const wrapper = document.getElementById("saved-items-wrapper");
+      countLabel.textContent = `(${savedData.length})`;
+
+      if (savedData.length === 0) {
+        wrapper.innerHTML = `<p class="p-4 text-on-surface-variant font-body-sm text-body-sm italic">No spices currently held in vault storage.</p>`;
+        return;
+      }
+
+      wrapper.innerHTML = savedData.map(item => `
+        <div class="p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4" id="saved-item-${item.id}">
+          <div>
+            <span class="font-label-caps text-label-caps uppercase text-secondary font-semibold">Vault Archive</span>
+            <h4 class="font-headline-sm text-body-lg text-on-surface font-semibold">${item.name}</h4>
+            <p class="font-body-sm text-body-sm text-on-surface-variant">${item.spec}</p>
+            <span class="font-body-md text-body-md font-medium text-primary mt-1 block">₹${item.price.toFixed(2)}</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <button onclick="moveSavedToCart(${item.id})" class="px-4 py-2 border-hairline bg-surface hover:bg-surface-container text-on-surface font-label-caps text-label-caps uppercase tracking-wider transition-colors">
+              Move to Bag
+            </button>
+            <button onclick="removeSaved(${item.id})" class="p-2 text-on-surface-variant hover:text-error transition-colors" title="Delete">
+              <span class="material-symbols-outlined text-[18px]">close</span>
+            </button>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function moveSavedToCart(id) {
+      const index = savedData.findIndex(i => i.id === id);
+      if (index > -1) {
+        const item = savedData[index];
+        cartData.push({
+          id: Date.now(),
+          name: item.name,
+          botanical: "Heirloom Terroir Lot",
+          lot: "Archival Vault Release",
+          spec: item.spec,
+          price: item.price,
+          quantity: 1,
+          image: "placeholder",
+          imageAlt: "Aesthetic amber glass apothecary spice jar with golden wax stamp of single origin spices"
+        });
+        savedData.splice(index, 1);
+        renderCart();
+        renderSaved();
+        showToast(`Moved ${item.name} to Cart`);
+      }
+    }
+
+    function removeSaved(id) {
+      savedData = savedData.filter(i => i.id !== id);
+      renderSaved();
+      showToast("Item cleared from saved archive");
+    }
+
+    // Quick Add Cross-Sell
+    function quickAddCrossSell(name, price, lot, imageSrc, imageAlt) {
+      const existing = cartData.find(i => i.name === name);
+      if (existing) {
+        existing.quantity += 1;
+      } else {
+        cartData.push({
+          id: Date.now(),
+          name: name,
+          botanical: "Botanical Heirloom Reserve",
+          lot: `${lot} &bull; Estate Lot`,
+          spec: "100g Fresh Mill Amber Jar",
+          price: price,
+          quantity: 1,
+          image: imageSrc,
+          imageAlt: imageAlt
+        });
+      }
+      renderCart();
+      showToast(`Added ${name} to your vault`);
+      openDrawer();
+    }
+
+    // Promo Code System
+    const promoInput = document.getElementById("promo-input");
+    const promoApplyBtn = document.getElementById("promo-apply-btn");
+    const promoFeedback = document.getElementById("promo-feedback");
+    const appliedVoucherChip = document.getElementById("applied-voucher-chip");
+    const promoRemoveBtn = document.getElementById("promo-remove-btn");
+
+    promoApplyBtn.addEventListener("click", () => {
+      const code = promoInput.value.trim().toUpperCase();
+      promoFeedback.classList.remove("hidden", "text-error", "text-success");
+      
+      if (code === "SPICE10") {
+        appliedPromo = { code: "SPICE10", discountPercent: 0.10 };
+        appliedVoucherChip.classList.remove("hidden");
+        promoFeedback.classList.add("text-success");
+        promoFeedback.textContent = "✓ Code SPICE10 activated. 10% guild deduction applied.";
+        promoInput.value = "";
+        recalculateTotals();
+      } else if (code === "") {
+        promoFeedback.classList.add("text-error");
+        promoFeedback.textContent = "Please enter an authorized voucher code.";
+      } else {
+        promoFeedback.classList.add("text-error");
+        promoFeedback.textContent = `The code "${code}" is invalid or has reached estate allocation limits.`;
+      }
+    });
+
+    promoRemoveBtn.addEventListener("click", () => {
+      appliedPromo = null;
+      appliedVoucherChip.classList.add("hidden");
+      promoFeedback.classList.add("hidden");
+      recalculateTotals();
+      showToast("Promotional voucher removed");
+    });
+
+    // Toast Engine
+    function showToast(message, allowUndo = false) {
+      const toast = document.getElementById("toast");
+      const msg = document.getElementById("toast-message");
+      const undoBtn = document.getElementById("toast-undo");
+
+      clearTimeout(toastTimeout);
+      msg.textContent = message;
+      
+      if (allowUndo) {
+        undoBtn.classList.remove("hidden");
+      } else {
+        undoBtn.classList.add("hidden");
+      }
+
+      toast.classList.remove("translate-y-24", "opacity-0");
+      toast.classList.add("translate-y-0", "opacity-100");
+
+      toastTimeout = setTimeout(() => {
+        toast.classList.add("translate-y-24", "opacity-0");
+        toast.classList.remove("translate-y-0", "opacity-100");
+      }, 4000);
+    }
+
+    document.getElementById("toast-undo").addEventListener("click", () => {
+      if (lastDeletedItem) {
+        cartData.splice(lastDeletedItem.index, 0, lastDeletedItem.item);
+        lastDeletedItem = null;
+        renderCart();
+        showToast("Restored spice harvest to cart");
+      }
+    });
+
+    // Drawer Toggle Logic
+    const drawerBackdrop = document.getElementById("drawer-backdrop");
+    const miniCartDrawer = document.getElementById("mini-cart-drawer");
+    const btnCloseDrawer = document.getElementById("btn-close-drawer");
+    const btnOpenDrawerAlt = document.getElementById("btn-open-drawer-alt");
+    const btnDrawerViewCart = document.getElementById("btn-drawer-view-cart");
+
+    function openDrawer() {
+      drawerBackdrop.classList.remove("opacity-0", "pointer-events-none");
+      drawerBackdrop.classList.add("opacity-100");
+      miniCartDrawer.classList.remove("translate-x-full");
+      miniCartDrawer.classList.add("translate-x-0");
+    }
+
+    function closeDrawer() {
+      drawerBackdrop.classList.add("opacity-0", "pointer-events-none");
+      drawerBackdrop.classList.remove("opacity-100");
+      miniCartDrawer.classList.add("translate-x-full");
+      miniCartDrawer.classList.remove("translate-x-0");
+    }
+
+    // Attach to App Shell's cart icon if present
+    document.querySelectorAll('[data-path="cart"]').forEach(el => {
+      el.addEventListener("click", (e) => {
+        e.preventDefault();
+        openDrawer();
+      });
+    });
+
+    btnOpenDrawerAlt.addEventListener("click", openDrawer);
+    btnCloseDrawer.addEventListener("click", closeDrawer);
+    drawerBackdrop.addEventListener("click", closeDrawer);
+    btnDrawerViewCart.addEventListener("click", closeDrawer);
+
+    // Clear Cart & Demo Empty State
+    document.getElementById("btn-clear-cart").addEventListener("click", () => {
+      if (confirm("Are you sure you wish to clear all estate items from your cart?")) {
+        cartData = [];
+        renderCart();
+        showToast("Cellar cart cleared");
+      }
+    });
+
+    document.getElementById("btn-toggle-empty").addEventListener("click", () => {
+      cartData = [];
+      renderCart();
+    });
+
+    document.getElementById("btn-restore-samples").addEventListener("click", () => {
+      cartData = [
+        {
+          id: 1,
+          name: "Kashmiri Red Chilli Powder",
+          botanical: "Capsicum annuum var. longum",
+          lot: "Lot 2026-KR04 &bull; Pampore Hills",
+          spec: "100g Amber Apothecary Glass",
+          price: 249,
+          quantity: 2,
+          image: "placeholder",
+          imageAlt: "Aesthetic amber glass apothecary spice jar of vibrant red Kashmiri chilli powder on stone slate with brass measuring tools and dried chillies"
+        },
+        {
+          id: 2,
+          name: "Salem Turmeric Powder",
+          botanical: "Curcuma longa (Curcumin 4.8%)",
+          lot: "Harvest 2025-SL09 &bull; Tamil Nadu",
+          spec: "100g High-Barrier Amber Jar",
+          price: 280,
+          quantity: 1,
+          image: "placeholder",
+          imageAlt: "Rich deep golden yellow Salem turmeric powder in dark amber glass container beside fresh raw rhizomes in warm atelier lighting"
+        },
+        {
+          id: 3,
+          name: "Malabar Black Peppercorns",
+          botanical: "Piper nigrum &bull; Tellicherry Extra Bold",
+          lot: "Reserve 2026-WB01 &bull; Wayanad Canopy",
+          spec: "100g Whole Botanical Jar",
+          price: 420,
+          quantity: 1,
+          image: "placeholder",
+          imageAlt: "Large fragrant Tellicherry black peppercorns in apothecary glass bottle resting beside a solid bronze pestle on dark slate counter"
+        }
+      ];
+      renderCart();
+      showToast("Sample cellar reserve reloaded");
+    });
+
+    // Checkout Simulation
+    const handleCheckout = () => {
+      if (cartData.length === 0) {
+        alert("Your vault is empty. Please select spices before checking out.");
+        return;
+      }
+      showToast("Redirecting to encrypted estate gateway...");
+    };
+
+    document.getElementById("btn-proceed-checkout").addEventListener("click", handleCheckout);
+    document.getElementById("btn-drawer-checkout").addEventListener("click", handleCheckout);
+    document.getElementById("btn-mobile-checkout").addEventListener("click", handleCheckout);
+
+    // Initial Execution
+    renderCart();
+    renderSaved();
+  </script>
+</div></main><footer class="w-full bg-inverse-surface text-inverse-on-surface pt-16 pb-12"><div class="max-w-7xl mx-auto px-6 lg:px-12"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-16 border-b border-outline/20"><div class="lg:col-span-4 flex flex-col gap-4"><div class="flex items-center gap-3"><span class="font-headline-sm text-headline-sm tracking-tight text-surface-container-lowest uppercase" class="brand-dynamic-name">Vaanika</span></div><p class="font-body-md text-body-md text-surface-variant max-w-sm">Purveyors of single-origin Indian botanical spices, wild-harvested terroir harvests, and time-honored artisanal culinary craft.</p><div class="flex items-center gap-2 pt-2"><span class="material-symbols-outlined text-secondary-container text-[18px]">verified</span><span class="font-label-sm text-label-sm text-surface-variant">Estates Certified Single-Origin Terroir</span></div></div><div class="lg:col-span-2 flex flex-col gap-3"><span class="font-label-caps text-label-caps uppercase text-surface-container-lowest tracking-wider">Curations</span><nav class="flex flex-col gap-2.5"><a class="font-body-sm text-body-sm text-surface-variant hover:text-surface-container-lowest transition-colors" data-path="shop" href="#">Single Estates</a><a class="font-body-sm text-body-sm text-surface-variant hover:text-surface-container-lowest transition-colors" data-path="collections" href="#">Seasonal Harvests</a><a class="font-body-sm text-body-sm text-surface-variant hover:text-surface-container-lowest transition-colors" data-path="collections" href="#">Spice Vault Blends</a><a class="font-body-sm text-body-sm text-surface-variant hover:text-surface-container-lowest transition-colors" data-path="collections" href="#">Heirloom Mortars</a></nav></div><div class="lg:col-span-2 flex flex-col gap-3"><span class="font-label-caps text-label-caps uppercase text-surface-container-lowest tracking-wider">Provenance</span><nav class="flex flex-col gap-2.5"><a class="font-body-sm text-body-sm text-surface-variant hover:text-surface-container-lowest transition-colors" data-path="our-story" href="#">Terroir Archive</a><a class="font-body-sm text-body-sm text-surface-variant hover:text-surface-container-lowest transition-colors" data-path="recipes" href="#">Culinary Notes</a><a class="font-body-sm text-body-sm text-surface-variant hover:text-surface-container-lowest transition-colors" data-path="our-story" href="#">Farmer Guilds</a><a class="font-body-sm text-body-sm text-surface-variant hover:text-surface-container-lowest transition-colors" data-path="our-story" href="#">Volatile Potency Standards</a></nav></div><div class="lg:col-span-4 flex flex-col gap-4"><span class="font-label-caps text-label-caps uppercase text-surface-container-lowest tracking-wider">The Terroir Gazette</span><p class="font-body-sm text-body-sm text-surface-variant">Seasonal reserve releases, monograph essays on spice botanicals, and exclusive estate allocations.</p><form class="flex flex-col sm:flex-row gap-2 pt-1"><input class="bg-surface-container-highest/10 border border-outline/30 px-4 py-2.5 text-surface-container-lowest placeholder:text-surface-variant/60 font-body-sm text-body-sm focus:outline-none focus:border-secondary-container flex-1" placeholder="Enter your correspondence" type="email"/><button class="bg-secondary-container text-on-secondary-container px-5 py-2.5 font-label-caps text-label-caps uppercase hover:bg-secondary-fixed-dim transition-colors" type="button">Subscribe</button></form></div></div><div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4"><p class="font-body-sm text-body-sm text-surface-variant">© 2024 Vaanika Artisanal Botanicals. Archival Provenance Guaranteed.</p><div class="flex items-center gap-6"><a class="font-body-sm text-body-sm text-surface-variant hover:text-surface-container-lowest transition-colors" data-path="privacy-policy" href="#">Privacy Policy</a><a class="font-body-sm text-body-sm text-surface-variant hover:text-surface-container-lowest transition-colors" data-path="terms-of-service" href="#">Terms of Provenance</a><a class="font-body-sm text-body-sm text-surface-variant hover:text-surface-container-lowest transition-colors" data-path="shipping-returns" href="#">Estate Logistics</a></div></div></div></footer></body></html>

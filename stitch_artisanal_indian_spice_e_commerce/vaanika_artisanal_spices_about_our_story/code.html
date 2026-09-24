@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-primary":"#ffffff","tertiary-container":"#4c1018","primary":"#2e0007","primary-container":"#4a121a","surface":"#fff8f4","on-error-container":"#93000a","surface-variant":"#e7e1de","secondary-fixed":"#ffdcc2","surface-tint":"#90494f","on-tertiary-fixed":"#3d050e","outline-variant":"#d8c1c1","on-secondary":"#ffffff","secondary-fixed-dim":"#ffb77a","on-tertiary-container":"#cb757a","surface-container":"#f3ede9","background":"#fff8f4","on-tertiary":"#ffffff","tertiary-fixed-dim":"#ffb3b6","on-background":"#1d1b19","secondary-container":"#fea047","on-secondary-fixed-variant":"#6d3a00","on-secondary-fixed":"#2e1500","surface-dim":"#dfd9d5","on-primary-container":"#c8767c","surface-bright":"#fff8f4","secondary":"#8f4e00","on-error":"#ffffff","on-primary-fixed-variant":"#733239","primary-fixed-dim":"#ffb2b7","tertiary-fixed":"#ffdada","outline":"#867273","on-surface":"#1d1b19","primary-fixed":"#ffdadb","inverse-primary":"#ffb2b7","surface-container-highest":"#e7e1de","on-tertiary-fixed-variant":"#753137","error-container":"#ffdad6","surface-container-lowest":"#ffffff","on-surface-variant":"#534343","tertiary":"#2e0006","on-primary-fixed":"#3b0710","error":"#ba1a1a","surface-container-low":"#f9f2ef","on-secondary-container":"#6d3a00","inverse-on-surface":"#f6efec","surface-container-high":"#ede7e3","inverse-surface":"#32302e"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"margin-desktop":"4rem","space-sm":"0.75rem","space-xl":"4rem","margin":"1.25rem","gutter":"1.5rem","space-lg":"2.25rem","space-xs":"0.375rem","gutter-desktop":"2.5rem","space-md":"1.25rem"},"fontFamily":{"headline-md":["Playfair Display"],"headline-lg":["Playfair Display"],"label-sm":["Plus Jakarta Sans"],"headline-sm":["Playfair Display"],"body-md":["Plus Jakarta Sans"],"display-hero-mobile":["Playfair Display"],"subheading":["Playfair Display"],"body-lg":["Plus Jakarta Sans"],"display-hero":["Playfair Display"],"headline-lg-mobile":["Playfair Display"],"label-caps":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"]},"fontSize":{"headline-md":["32px",{"lineHeight":"40px","letterSpacing":"0em","fontWeight":"500"}],"headline-lg":["44px",{"lineHeight":"52px","letterSpacing":"-0.01em","fontWeight":"400"}],"label-sm":["12px",{"lineHeight":"18px","letterSpacing":"0.04em","fontWeight":"500"}],"headline-sm":["24px",{"lineHeight":"32px","letterSpacing":"0.01em","fontWeight":"600"}],"body-md":["15px",{"lineHeight":"24px","letterSpacing":"0.005em","fontWeight":"400"}],"display-hero-mobile":["38px",{"lineHeight":"46px","letterSpacing":"-0.01em","fontWeight":"400"}],"subheading":["19px",{"lineHeight":"28px","letterSpacing":"0.02em","fontWeight":"400"}],"body-lg":["17px",{"lineHeight":"28px","letterSpacing":"0em","fontWeight":"400"}],"display-hero":["64px",{"lineHeight":"72px","letterSpacing":"-0.02em","fontWeight":"400"}],"headline-lg-mobile":["30px",{"lineHeight":"38px","letterSpacing":"0em","fontWeight":"400"}],"label-caps":["11px",{"lineHeight":"16px","letterSpacing":"0.14em","fontWeight":"600"}],"body-sm":["13px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"400"}]}}}};</script><link rel="stylesheet" href="../theme-styles.css"/>
+<script src="../theme-manager.js"></script>
+</head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed"><header class="fixed top-0 inset-x-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between gap-8"><div class="flex items-center gap-3 shrink-0"><img alt="A refined, minimalist luxury wordmark and insignia for 'MASALA VAULT' artisanal Indian spices, featuring an elegant monogram emblem with botanical spice star anise/clove motifs and timeless serif lettering.. Brand logo. - Primary color: #4a121a
+- Font: playfairDisplay
+- Mode: light
+- Roundness: rounded-lg
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1U7umTVxr7A_QAstDKrJBl6jpxejtiF_7gLzXm0ixYON8uRvVXETcymHjliPJZT2Eh7qznUdVBFBY4fEyUn8PxUOggGZsHwyePDfLOBxq2ZPam4Dl2CmjnobTD2rfV_2Wlw5jMu0caGvHAAFWIQ9xwcnskkoqvKSi54JrUngvSVhmkEUBvGZP6dtTuqeYaDYjhzkkhMcy8TtmuZAW4mJsX3tO5DP879AVnvZt1jX3SYk2y3A-yHyVwkkw"/><a class="flex flex-col" data-path="our-story" href="#"><span class="font-headline-sm text-headline-sm tracking-wider text-primary uppercase" class="brand-dynamic-name">VAANIKA</span><span class="font-label-caps text-label-caps text-secondary tracking-[0.2em] -mt-1">ARTISANAL SPICES</span></a></div><nav class="hidden md:flex items-center space-x-8 lg:space-x-10" data-active-classes="text-primary font-semibold"><a class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors py-2" data-path="shop" href="#">Shop</a><a class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors py-2" data-path="collections" href="#">Collections</a><a class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors py-2" data-path="recipes" href="#">Recipes</a><a aria-current="page" class="uppercase tracking-widest transition-colors py-2 relative after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-1 after:h-1 after:rounded-full after:bg-secondary text-primary font-semibold" data-path="our-story" href="#">Our Story</a></nav><div class="flex items-center gap-5 shrink-0"><button aria-label="Search spices and archives" class="text-on-surface-variant hover:text-primary transition-colors p-1 flex items-center justify-center" type="button"><span class="material-symbols-outlined text-[22px]">search</span></button><button aria-label="Customer portal" class="text-on-surface-variant hover:text-primary transition-colors p-1 flex items-center justify-center" type="button"><span class="material-symbols-outlined text-[22px]">account_circle</span></button><button aria-label="Shopping Cart, 4 items" class="relative text-on-surface-variant hover:text-primary transition-colors p-1 flex items-center justify-center" type="button"><span class="material-symbols-outlined text-[22px]">shopping_bag</span><span class="absolute -top-1 -right-1 bg-secondary text-on-secondary font-label-caps text-[9px] w-4 h-4 rounded-full flex items-center justify-center font-bold">4</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- 1. CINEMATIC EDITORIAL HERO -->
+<section class="relative w-full -mt-20 overflow-hidden bg-primary text-on-primary">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-center opacity-45 transform scale-105 transition-transform duration-1000 ease-out" data-alt="Moody cinematic culinary flatlay of hands grinding whole roasted artisanal Indian spices in a dark rustic granite mortar and pestle. Fine spice powder dusting, fiery red Kashmiri chillies, emerald cardamom pods, and star anise on dark aged slate in warm atmospheric chiaroscuro lighting." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDSUyH0bTyLra0qrykLSvBEyALVZTS0I9MjECpPsjpfrM2YDWe-rVZyTlxDBUzt62tLVjUoXLB4lCWfBT2z9TEt3M-dZT-5iaF1b0J8nsI7A7wQyxPPoL7HSfQoEeVuaGqrVfMtHOTBF1G1Gz1diVj2y0MUjsmaoXOCitl9la8lhQQ9GDLGe4IMWXXgdEg8aiOut_4Pc_IGYtQNr0UvqvJJ-sxeq2ImHAIhCzwGl7ruVmXyMnNMKMcy')"></div>
+<div class="absolute inset-0 bg-gradient-to-b from-primary/80 via-primary/60 to-primary"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 pt-40 pb-28 md:pt-48 md:pb-36 flex flex-col justify-between min-h-[90vh]">
+<div class="max-w-4xl space-y-6">
+<div class="inline-flex items-center gap-3">
+<span class="w-8 h-px bg-secondary-container"></span>
+<span class="font-label-caps text-label-caps text-secondary-container tracking-[0.25em] uppercase">Our Story • Provenance Monograph</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg md:text-[58px] md:leading-[68px] text-on-primary font-normal tracking-tight">
+          GOOD FOOD STARTS WITH GOOD SPICES.
+        </h1>
+<p class="font-body-lg text-body-lg text-surface-variant max-w-2xl font-light leading-relaxed">
+          We believe the difference between an ordinary meal and an unforgettable one often begins with what goes into it. Terroir-traced, stone-milled Indian botanicals harvested in rhythm with the monsoons.
+        </p>
+</div>
+<div class="pt-16 flex flex-col md:flex-row md:items-end justify-between gap-8 border-t border-primary-container/60">
+<div class="flex items-center gap-8">
+<div>
+<p class="font-label-caps text-label-caps text-secondary-container uppercase tracking-wider">Origin Coordinate</p>
+<p class="font-body-sm text-body-sm text-surface-dim">11.6854° N, 76.1320° E • Wayanad</p>
+</div>
+<div class="w-px h-8 bg-primary-container"></div>
+<div>
+<p class="font-label-caps text-label-caps text-secondary-container uppercase tracking-wider">Harvest Standard</p>
+<p class="font-body-sm text-body-sm text-surface-dim">Single-Estate • Cold Granite Ground</p>
+</div>
+</div>
+<a class="group inline-flex items-center gap-3 text-secondary-container hover:text-on-primary transition-colors cursor-pointer" href="#philosophy">
+<span class="font-label-caps text-label-caps tracking-[0.2em] uppercase">Scroll to Discover</span>
+<span class="material-symbols-outlined text-[18px] animate-bounce">arrow_downward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- 2. BRAND PHILOSOPHY -->
+<section class="w-full py-24 lg:py-32 bg-surface" id="philosophy">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+<div class="lg:col-span-4 lg:sticky lg:top-28 space-y-4">
+<span class="font-label-caps text-label-caps uppercase tracking-[0.2em] text-secondary">The House Ethos</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">
+            WE BELIEVE FLAVOUR MATTERS.
+          </h2>
+<div class="w-12 h-0.5 bg-secondary-container"></div>
+</div>
+<div class="lg:col-span-8 space-y-8 lg:pl-6">
+<p class="font-subheading text-subheading md:text-[22px] md:leading-[34px] text-primary font-normal">
+            Spices are more than ingredients. They carry memories, traditions, micro-climates, and generational stories from one hearth to another.
+          </p>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+            For generations along the Malabar Coast and through the Kashmir Himalayas, the true essence of Indian spices was protected through sacred harvest calendars and deliberate granite pulverization. Before modern industrial processing traded volatile essential oils for prolonged supermarket shelf-life, spices were living, breathing botanical treasures.
+          </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4">
+<div class="p-6 bg-surface-container-low rounded-lg space-y-2">
+<span class="font-headline-sm text-headline-sm text-primary">35°C</span>
+<p class="font-label-caps text-label-caps uppercase tracking-wider text-secondary">Thermal Grinding Ceiling</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">We never exceed room temperature during granite milling, locking in delicate terpenoids that heat degrades.</p>
+</div>
+<div class="p-6 bg-surface-container-low rounded-lg space-y-2">
+<span class="font-headline-sm text-headline-sm text-primary">+4.2%</span>
+<p class="font-label-caps text-label-caps uppercase tracking-wider text-secondary">Volatile Oil Concentration</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Laboratory chromatography confirms triple the aromatic potency of conventional industrial spice lots.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. BRAND ORIGIN (Split Editorial Layout) -->
+<section class="w-full py-20 lg:py-28 bg-surface-container">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+<div class="lg:col-span-6 relative">
+<div class="relative overflow-hidden rounded-lg shadow-xl aspect-[4/5] bg-surface-variant">
+<img class="w-full h-full object-cover" data-alt="Editorial photograph of misty spice plantations in Wayanad, Kerala with lush green foliage, cardamom canopies, and a spice master gently sorting sun-dried black peppercorns on woven bamboo sieves with warm golden natural light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYOE7wKIZ3S55YqP8J_fMu2ZK-cbvejgxZa2vUeilif5pmjW2gK8AY1H1uBgbD-WFgQbyDlFr7TWEqxb8M4TNlE6yern8DYUVLM2QTgywEViMaxqRjPc-zS0A_Mn5bNYIEw-tY6ge642y-KezbkWR01JlHK-GMxrwEUfG7cPp31nlWpV8vlTXlWNsb9LmG_f9RaLFoMFMuGpInOk6NZyIkzdvp4AWmZwgA8XNSIUWcw9GKzfovJnRg"/>
+</div>
+<div class="absolute -bottom-6 -right-6 hidden sm:block bg-primary text-on-primary p-6 rounded-lg max-w-xs shadow-xl">
+<p class="font-label-caps text-label-caps text-secondary-container uppercase tracking-wider mb-1">Pampore to Malabar</p>
+<p class="font-body-sm text-body-sm text-surface-variant">Traversing 4,200 kilometers across 6 harvest seasons to secure sovereign grower pacts.</p>
+</div>
+</div>
+<div class="lg:col-span-6 space-y-6">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-[0.2em]">Where It Began</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">
+            FROM A LOVE OF AUTHENTIC FLAVOUR.
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            The idea began with a simple inquiry: why should extraordinary, freshly gathered spices be inaccessible to the home culinarian? In 2021, our founders set out along the cardamom hills of Idukki and the saffron basins of Pampore.
+          </p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            What we discovered was a vast disparity. Exceptional harvest lots were routinely aggregated, blended with inferior grades, and irradiated for export, stripped of their vibrant essence. Vaanika was established as an antidote: a direct estate conduit bringing single-origin, uncompromising botanical lots directly to the world's most discerning kitchens.
+          </p>
+<div class="pt-4">
+<a class="inline-flex items-center gap-3 px-8 py-4 bg-primary text-on-primary font-label-caps text-label-caps uppercase tracking-[0.16em] hover:bg-primary-container transition-colors shadow-md" data-path="shop" href="#">
+<span>Explore Our Spices</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. THE SOURCE -->
+<section class="w-full py-24 lg:py-32 bg-surface">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="max-w-2xl space-y-4 mb-16">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-[0.2em]">Terroir First</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">
+          IT STARTS AT THE SOURCE.
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          We work with carefully selected sources to bring distinctive ingredients from where they grow best to the kitchens where they belong.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Principle 1 -->
+<div class="flex flex-col bg-surface-container-low rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+<div class="h-60 overflow-hidden relative bg-surface-variant">
+<img class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" data-alt="Macro close-up photograph of deep golden cured turmeric rhizomes and cracked tellicherry peppercorns showing crystalline resin and high volatile essential oil drops on an antique timber culinary slab." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHpJuLgjVEJPNt4yvg7bfGgCcOokV1RQqZaH7OFgU7AdhPS9LRzTpdEB4F0T8NevqUjamoG7QDeAYxGyg3R__jPCwQT9uz8jb_9V9KsFoLXRCdgBd9qmNPuE8LxEeUAI0GYJd8nkYWUK3STAwIprckJ5OWuUHgbOdsF0gSpLPwEBMClpR5ctflAO8nwcWWS5LrkAe8xC_fibxbBLg_W4Gx9TvDObO6vEkuCkAWdOWA_KxQQXHqBwKb"/>
+<div class="absolute top-4 left-4 bg-surface/90 backdrop-blur px-3 py-1 rounded text-primary font-label-caps text-label-caps uppercase tracking-wider">
+              Principle 01
+            </div>
+</div>
+<div class="p-8 flex-1 flex flex-col justify-between space-y-4">
+<div class="space-y-2">
+<h3 class="font-headline-sm text-headline-sm text-primary">Quality</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                We look for ingredients with exceptional aroma, vibrant spectrum saturation, and concentrated volatile oil indices verified via chromatography.
+              </p>
+</div>
+<div class="pt-4 flex items-center gap-2 text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span>Min. 3.5% Essential Oils Guarantee</span>
+</div>
+</div>
+</div>
+<!-- Principle 2 -->
+<div class="flex flex-col bg-surface-container-low rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+<div class="h-60 overflow-hidden relative bg-surface-variant">
+<img class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" data-alt="Lush cinematic panoramic view of high-altitude Cardamom Hills in Kerala with heavy morning mountain mist, shade-grown rainforest canopies, and rich red volcanic soil under soft diffused sunrise light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEpzFwg6Pe66MiOxnx69GueXlpuJ8aCPKkUytWWnzpNn6mTBij699kffhvDfMYv4cd-MhHotwQyTARIM3QIZTONe5RMERxUXcX7LC-HDVJpSNHSpsmxcpxkFULs7YSm2lOLpeHohU4_xmLr1OITbukzIE2IdCWY3n5DdYHfKq4-InGVD2bfVVVAeOev5hEjKJvOvHYRr2BZyBLDQndVe59gSbmIf4cHrbLm8HP4SUwABFkgRLVYtf9"/>
+<div class="absolute top-4 left-4 bg-surface/90 backdrop-blur px-3 py-1 rounded text-primary font-label-caps text-label-caps uppercase tracking-wider">
+              Principle 02
+            </div>
+</div>
+<div class="p-8 flex-1 flex flex-col justify-between space-y-4">
+<div class="space-y-2">
+<h3 class="font-headline-sm text-headline-sm text-primary">Origin</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                We value ingredients for the distinct character of the place where they are grown—micro-terroirs, high-elevation fog, and mineral-rich volcanic soils.
+              </p>
+</div>
+<div class="pt-4 flex items-center gap-2 text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">pin_drop</span>
+<span>100% Single-Origin Estate Traceability</span>
+</div>
+</div>
+</div>
+<!-- Principle 3 -->
+<div class="flex flex-col bg-surface-container-low rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+<div class="h-60 overflow-hidden relative bg-surface-variant">
+<img class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" data-alt="Intimate documentary photograph of third-generation Indian spice farming partners hand-inspecting wild harvested Ceylon cinnamon bark inside a sunlit wooden drying shed in rural Kerala." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHaXFgOgACiB0hE8EtyZV40OqprFBarH_KldZQczLTUuM22nnrQMvWRETN2dTWTmdKC8DLo-vknEz_NULbIYuK08jDgvVCouAEBi-ZOBhRAHuCVWiBauRtaRCoJBhO8DPfJi07_e1TUkuWyiNfjf5kVdhRZO_WiJXHcMuTBws_wcK6R4VaIAKNvrONu2hlh2Ps4hhn1EG1Nt-od69NwBNANFpemuazJh4tvw5oa1SnzjeHAjWsayUb"/>
+<div class="absolute top-4 left-4 bg-surface/90 backdrop-blur px-3 py-1 rounded text-primary font-label-caps text-label-caps uppercase tracking-wider">
+              Principle 03
+            </div>
+</div>
+<div class="p-8 flex-1 flex flex-col justify-between space-y-4">
+<div class="space-y-2">
+<h3 class="font-headline-sm text-headline-sm text-primary">Relationships</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                We believe superior products begin with long-term direct agreements, transparent farmgate bonuses, and mutual respect with heritage farming lineages.
+              </p>
+</div>
+<div class="pt-4 flex items-center gap-2 text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">handshake</span>
+<span>+35% Above Fair Trade Gate Premium</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. FROM FARM TO FLAVOUR (Timeline) -->
+<section class="w-full py-24 lg:py-32 bg-primary text-on-primary">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="text-center max-w-2xl mx-auto space-y-4 mb-20">
+<span class="font-label-caps text-label-caps text-secondary-container uppercase tracking-[0.25em]">Chain of Custody</span>
+<h2 class="font-headline-lg text-headline-lg text-on-primary tracking-tight">
+          FROM FARM TO FLAVOUR.
+        </h2>
+<p class="font-body-md text-body-md text-surface-dim">
+          A meticulous five-stage pilgrimage that safeguards botanical oils from estate branch to your culinary vessel.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-5 gap-8 relative">
+<div class="hidden md:block absolute top-7 left-12 right-12 h-px bg-primary-container z-0"></div>
+<!-- Step 1 -->
+<div class="relative z-10 flex flex-col space-y-4">
+<div class="w-14 h-14 rounded-full bg-primary-container flex items-center justify-center text-secondary-container font-headline-sm text-headline-sm shadow-md">
+            01
+          </div>
+<div class="space-y-2">
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-secondary-container">Source</span>
+<h3 class="font-subheading text-subheading text-on-primary font-normal">Peak Maturity</h3>
+<p class="font-body-sm text-body-sm text-surface-dim leading-relaxed">
+              Harvested strictly during micro-windows when sap flow and essential oil density reach peak botanical equilibrium.
+            </p>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="relative z-10 flex flex-col space-y-4">
+<div class="w-14 h-14 rounded-full bg-primary-container flex items-center justify-center text-secondary-container font-headline-sm text-headline-sm shadow-md">
+            02
+          </div>
+<div class="space-y-2">
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-secondary-container">Select</span>
+<h3 class="font-subheading text-subheading text-on-primary font-normal">Sovereign Sorting</h3>
+<p class="font-body-sm text-body-sm text-surface-dim leading-relaxed">
+              Double optical and hand triage grading for density, piperine index, and zero mold or debris tolerance.
+            </p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="relative z-10 flex flex-col space-y-4">
+<div class="w-14 h-14 rounded-full bg-primary-container flex items-center justify-center text-secondary-container font-headline-sm text-headline-sm shadow-md">
+            03
+          </div>
+<div class="space-y-2">
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-secondary-container">Craft</span>
+<h3 class="font-subheading text-subheading text-on-primary font-normal">Granite Milling</h3>
+<p class="font-body-sm text-body-sm text-surface-dim leading-relaxed">
+              Slow pulverization across riverbed granite wheels under 35°C, preventing aromatic oxidation.
+            </p>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="relative z-10 flex flex-col space-y-4">
+<div class="w-14 h-14 rounded-full bg-primary-container flex items-center justify-center text-secondary-container font-headline-sm text-headline-sm shadow-md">
+            04
+          </div>
+<div class="space-y-2">
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-secondary-container">Pack</span>
+<h3 class="font-subheading text-subheading text-on-primary font-normal">Nitrogen Inertion</h3>
+<p class="font-body-sm text-body-sm text-surface-dim leading-relaxed">
+              Purged with food-grade nitrogen inside UV-opaque apothecary amber jars to arrest oxidation entirely.
+            </p>
+</div>
+</div>
+<!-- Step 5 -->
+<div class="relative z-10 flex flex-col space-y-4">
+<div class="w-14 h-14 rounded-full bg-primary-container flex items-center justify-center text-secondary-container font-headline-sm text-headline-sm shadow-md">
+            05
+          </div>
+<div class="space-y-2">
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-secondary-container">Deliver</span>
+<h3 class="font-subheading text-subheading text-on-primary font-normal">Direct Vault Dispatch</h3>
+<p class="font-body-sm text-body-sm text-surface-dim leading-relaxed">
+              Bi-weekly small-batch fulfillment ensuring the lot arrives with the vivid aroma of recent harvest.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. QUALITY PROMISE -->
+<section class="w-full py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="text-center max-w-xl mx-auto space-y-3 mb-16">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-[0.2em]">Purity Charter</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">NOTHING UNNECESSARY.</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">We focus on what belongs in your spice jar and intentionally exclude what does not.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+<div class="p-6 bg-surface rounded-lg shadow-sm space-y-4 text-center flex flex-col items-center">
+<div class="w-12 h-12 rounded-full bg-secondary-fixed flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[24px]">eco</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary text-base">Single-Estate</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Zero fillers, zero blended lower tiers, and zero synthetic preservatives.</p>
+</div>
+<div class="p-6 bg-surface rounded-lg shadow-sm space-y-4 text-center flex flex-col items-center">
+<div class="w-12 h-12 rounded-full bg-secondary-fixed flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[24px]">lock_reset</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary text-base">Nitrogen Sealed</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Oxygen displaced immediately post-grind to capture delicate peak notes.</p>
+</div>
+<div class="p-6 bg-surface rounded-lg shadow-sm space-y-4 text-center flex flex-col items-center">
+<div class="w-12 h-12 rounded-full bg-secondary-fixed flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[24px]">science</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary text-base">Lab-Certified</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Independent gas-chromatography transparency sheets on every batch.</p>
+</div>
+<div class="p-6 bg-surface rounded-lg shadow-sm space-y-4 text-center flex flex-col items-center">
+<div class="w-12 h-12 rounded-full bg-secondary-fixed flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[24px]">ac_unit</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary text-base">Cold Milled</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Never subjected to high-friction industrial heat cycles (&lt;35°C).</p>
+</div>
+<div class="p-6 bg-surface rounded-lg shadow-sm space-y-4 text-center flex flex-col items-center">
+<div class="w-12 h-12 rounded-full bg-secondary-fixed flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[24px]">shield</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary text-base">Amber Glass</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Pharmaceutical-grade UV-filtering glass protects delicate botanical oils.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. THE PEOPLE BEHIND THE FLAVOUR -->
+<section class="w-full py-24 lg:py-32 bg-surface">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
+<div class="space-y-3">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-[0.2em]">The Curators</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">THE PEOPLE BEHIND THE FLAVOUR.</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          Meet the botanists, sourcers, generational blenders, and laboratory curators preserving India's terroir heritage.
+        </p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Member 1 -->
+<div class="space-y-4">
+<div class="aspect-[3/4] overflow-hidden rounded-lg bg-surface-variant shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Editorial portrait of Ananya Sharma, an Indian woman founder and culinary ethnographer in modern minimalist linen attire holding wild raw spice samples in a warm sunlit tasting laboratory." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUmNhcKZxhEobbFkbEugv5-r9hs32TwJz-qQwwehcgPUmHuZ2_RciCDJCpgipWMrejQWdx6JFpFaLCmJSbQfB1q6Bcm7S4SyLZegf_klNF4XrMLSf1y3J-GT-uuGp3jjYg-8GeLozSm3yZrwDNhPsxmVv5E2UyqUmTvbM67W1MFYukZ_xrjeNRbiS_uEZXvNpORbPCMkXjWzmKMwxdGe3Bu21UU5O-0OohQfyF6klopzleV4Y9jqcH"/>
+</div>
+<div class="space-y-1">
+<h3 class="font-headline-sm text-headline-sm text-primary">Ananya Sharma</h3>
+<p class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Founder • Master Curator</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant pt-1 leading-relaxed">
+              Former culinary ethnographer dedicated to revitalizing India's endangered botanical spice cultivars.
+            </p>
+</div>
+</div>
+<!-- Member 2 -->
+<div class="space-y-4">
+<div class="aspect-[3/4] overflow-hidden rounded-lg bg-surface-variant shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Editorial portrait of Devendra Patel, senior Indian agronomist with warm friendly expression wearing field jacket standing in an organic spice plantation under mountain mist." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVAzeRzbqYhmF-vCok1lZ4OYtjYF72kdj4gmlKTO1gPmoFEocWgcsYwVa3euVa_Rb9o4hTUHmdXpuURviJROrTHbakELKUT8mJ0-WCyF5PfoHqJ-aeTy2oDdUr2_JCP3LcrC8FJb9MMWvK_m5qMsXiP6TtQPPyQQPzQPqqenS2lwjTxgrJGkau4s8jAOuemR-3ooIqU13bDf0ZoHEj2fTrFOGCcnAn2vhf2TwrkCW9xCJdfIFgMjaK"/>
+</div>
+<div class="space-y-1">
+<h3 class="font-headline-sm text-headline-sm text-primary">Devendra Patel</h3>
+<p class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Head of Terroir Sourcing</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant pt-1 leading-relaxed">
+              Agronomist with 18 years living alongside sovereign farming collectives across Malabar and Kashmir.
+            </p>
+</div>
+</div>
+<!-- Member 3 -->
+<div class="space-y-4">
+<div class="aspect-[3/4] overflow-hidden rounded-lg bg-surface-variant shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Editorial portrait of Chef Vikramaditya Roy in an artisanal test kitchen evaluating aromatic roasted spices on fine ceramic tasting spoons with focused culinary intensity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYOyFRYkX04kvXfmTkbcW-of6ekpsfVHxsZGJqSvDraSbe7fNxzZ6kpLt0CP5uV9w3FFmci0mnvX4f3Q81YrFwvBANtxLfTMZ4bP7FxKSE5byShkCoSAhqDv_03CvGxda-6SMKrNn7MAAVMZhptxkYbfLcyVwyP6lZBfkuelS0T-Bg2QoodktA8Prvi3EjgRWdl678q0hGsmAim4e2j7em5-2ShZer1yqahgZ2tBwCryCHrcWUY-rq"/>
+</div>
+<div class="space-y-1">
+<h3 class="font-headline-sm text-headline-sm text-primary">Chef Vikramaditya Roy</h3>
+<p class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Flavour Sommelier</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant pt-1 leading-relaxed">
+              Classical heritage chef formulating generational Awadhi, Nizami, and Malabar botanical ratios.
+            </p>
+</div>
+</div>
+<!-- Member 4 -->
+<div class="space-y-4">
+<div class="aspect-[3/4] overflow-hidden rounded-lg bg-surface-variant shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Editorial portrait of Meera Swaminathan, an Indian biochemical scientist in modern laboratory coat analyzing chromatograph readings alongside antique apothecary glassware." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAIBpJNinBeoZZGGqqTlUndBPsHOEFro12TmBa36pUqFWjdVL_cNtvsStB2uo79BY5iRRiAYwN_EjfyYaCaGmZarvdzYK18ERx_CRgqIw7XaXFnYNQx-BY7N9BuNDLFGwZJbHBqQJc8YLxctQieTPWJbA2gsQnprvojy_Pg-E9YpXRMKJUl-iOe1gRqk6A2EboxilmgW9Sn_8hFnWIPY88c2cMgkOpJYMVxYe3_JvKjoXPtn7x5Uko"/>
+</div>
+<div class="space-y-1">
+<h3 class="font-headline-sm text-headline-sm text-primary">Meera Swaminathan</h3>
+<p class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Biochemical Integrity</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant pt-1 leading-relaxed">
+              Food scientist overseeing gas-chromatography analysis for maximum essential oil retention.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 8. OUR VALUES -->
+<section class="w-full py-24 bg-surface-container">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="max-w-xl space-y-3 mb-16">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-[0.2em]">Guiding Principles</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">WHAT WE STAND FOR.</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="p-8 bg-surface rounded-lg shadow-sm space-y-4">
+<span class="font-headline-md text-headline-md text-secondary-container">01</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Authenticity</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Respect the botanical. Respect the recipe. We never alter natural chemistry to simulate artificial pungency.
+          </p>
+</div>
+<div class="p-8 bg-surface rounded-lg shadow-sm space-y-4">
+<span class="font-headline-md text-headline-md text-secondary-container">02</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Craft</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Superior flavour requires time and restraint. We choose slow granite milling over high-output industrial speed.
+          </p>
+</div>
+<div class="p-8 bg-surface rounded-lg shadow-sm space-y-4">
+<span class="font-headline-md text-headline-md text-secondary-container">03</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Transparency</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Know exactly what enters your vessel. Every jar specifies its farm coordinate, harvest month, and oil rating.
+          </p>
+</div>
+<div class="p-8 bg-surface rounded-lg shadow-sm space-y-4">
+<span class="font-headline-md text-headline-md text-secondary-container">04</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Discovery</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Keep exploring untamed origins, forgotten heirloom varieties, and generational culinary monographs.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- 9. SPICE AS CULTURE (Magazine-Style Editorial Collage) -->
+<section class="w-full py-24 lg:py-32 bg-surface">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="text-center max-w-2xl mx-auto space-y-4 mb-20">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-[0.2em]">Terroir Atlas</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">EVERY SPICE HAS A STORY.</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Across the sub-continent, landscape shapes flavour. Each regional lot carries the soil, rain, and ancient traditions of its home.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 lg:gap-8">
+<!-- Story 1: Pampore Saffron -->
+<div class="md:col-span-7 bg-surface-container-low rounded-lg overflow-hidden flex flex-col justify-between shadow-sm">
+<div class="h-80 overflow-hidden relative bg-surface-variant">
+<img class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" data-alt="Breathtaking morning harvest of purple crocus flowers in the saffron fields of Pampore Valley Kashmir with crimson red stigmas carefully lifted under morning snow-capped Himalayan peaks." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYZkUuItmvk7tn0QqPm0rKXL-jTcTYWvEklxhnbGSn1lE-TybgRKIh7JFOSSTSw6N99JoEBOVdHvnh2rr5x0ntJ0PfNTBfBGzCQ-J6lXUPMRNvz1pebnk47-5tzrhixRI0UfC3j7oaJIS6pgFM6FiArNNI92H3zFGzNyOxDTuqajvkCwd_4RuL1Hbhv5-Dvd3GG7slnN2GtW-mM9eYkAq2gQrinpD1hr2nwnhf3XurqDugcsX8DZOq"/>
+<span class="absolute top-4 left-4 bg-primary text-on-primary px-3 py-1 text-label-caps uppercase tracking-wider rounded">
+              Pampore • 1,600m
+            </span>
+</div>
+<div class="p-8 space-y-3">
+<h3 class="font-headline-md text-headline-md text-primary">The Scarlet Threads of Kashmiri Shahi Zafraan</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Harvested during an ephemeral ten-day window in late autumn, our Grade-A Mogra saffron is prized for its high crocin concentration and deep honeyed floral aroma.
+            </p>
+</div>
+</div>
+<!-- Story 2: Tellicherry Pepper -->
+<div class="md:col-span-5 bg-surface-container-low rounded-lg overflow-hidden flex flex-col justify-between shadow-sm">
+<div class="h-80 overflow-hidden relative bg-surface-variant">
+<img class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" data-alt="Close up overhead shot of large Tellicherry Garbled Extra Bold black peppercorns on dark slate with warm timber accents and cracked berries revealing pale aromatic core." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIFwoyTjlWJjJABZuNZq2vOPjiiGMdMnYxHOGaW1eE8gXKmnXUBqswTZEdGsaAZFSExqqIztqWihPFqwwshf1ppxS0RF2igDNy45r27IJybK12BtrwiGjOuwud2bvPb4ljs70L9w4GPQv5tPBOqMFbD8jNqKXfEAZoygJsZ-WorVlWK_OMDcu3BT3r-RbIkFAMP4HbUapCQKona0Bmsb1-3tbLWxgT_pHZQcZErCacee8Z2Rz9v6PJ"/>
+<span class="absolute top-4 left-4 bg-primary text-on-primary px-3 py-1 text-label-caps uppercase tracking-wider rounded">
+              Malabar Coast
+            </span>
+</div>
+<div class="p-8 space-y-3">
+<h3 class="font-headline-sm text-headline-sm text-primary">Black Gold of the Ancient Maritime Trade</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Allowed to mature longer on the vine, our TGSEB peppercorns develop bold fruity undertones paired with a sharp, resinous piperine finish.
+            </p>
+</div>
+</div>
+<!-- Story 3: Alleppey Cardamom -->
+<div class="md:col-span-5 bg-surface-container-low rounded-lg overflow-hidden flex flex-col justify-between shadow-sm">
+<div class="h-80 overflow-hidden relative bg-surface-variant">
+<img class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" data-alt="Vibrant green plump cardamom pods drying in traditional Kerala hill curing kiln with aromatic steam and warm ambient lantern light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqrIFyMiTmC5_DixLRr9Rr4ZGoc_LQXcrBBQG1mXYKdrOkC3pA8655qxvxPFI3EIFRZMPGtaeYH7kAHhu35s0QcunTZWwOmfcJxKw8337jfUylkv9CCYU9OQvO65d3YkTfUfUSFJtsEY5OaLjEJFTxxe9WyvQxn-pVAcA_ujLZ_zpnNUTLmsoB3OLkJ-fwVJEGSvuXt2GlD4AIS2nPrAe2r8qwrDUiuehEmTl1GbXk9ptuTWin_70n"/>
+<span class="absolute top-4 left-4 bg-primary text-on-primary px-3 py-1 text-label-caps uppercase tracking-wider rounded">
+              Idukki Reserve
+            </span>
+</div>
+<div class="p-8 space-y-3">
+<h3 class="font-headline-sm text-headline-sm text-primary">Alleppey Green and the Morning Chai Ritual</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Plump 8mm+ emerald pods holding high cineole levels, delivering a distinctive eucalyptus-sweet punch essential to traditional brewing.
+            </p>
+</div>
+</div>
+<!-- Story 4: Nagaur Cumin -->
+<div class="md:col-span-7 bg-surface-container-low rounded-lg overflow-hidden flex flex-col justify-between shadow-sm">
+<div class="h-80 overflow-hidden relative bg-surface-variant">
+<img class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" data-alt="Sun-drenched golden fields of Nagaur Rajasthan during the cumin seed harvest with camel carts and earthenware jars under warm twilight skies." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDmlMKU-iLj5Tc5KoEGWOvMxWpYodwoX-bs-nZaK9ss9r93ADAALTFMPlU4_mjBysaa7y_NZPJcKYlS52dgo0lC3gEmVkyieGh30G_Nq4M42J4HdP4Y8dEHQymva7pX7N4Q0Vw3SvJQz_Hmleldp3p9qGbR-PN1PsroWTTieQ5hJugI3fja0WG4zMXG6wkAc9Y1IOqCNImR6ldvN4vhHbYQ6z9Hpl8kpub6loRLXIhZNJx1SaL1jvF"/>
+<span class="absolute top-4 left-4 bg-primary text-on-primary px-3 py-1 text-label-caps uppercase tracking-wider rounded">
+              Thar Foothills
+            </span>
+</div>
+<div class="p-8 space-y-3">
+<h3 class="font-headline-md text-headline-md text-primary">Sun-Baked Nagaur Cumin and Tandoor Embers</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Grown in arid, mineral-rich desert loam, this cumin carries an intensely warm, earthy profile with natural cuminaldehyde richness that blooms when tempered in hot ghee.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 10. RESPONSIBLE SOURCING & STEWARDSHIP -->
+<section class="w-full py-24 bg-surface-container-high">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+<div class="lg:col-span-5 space-y-6">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-[0.2em]">Regenerative Stewardship</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">
+            BETTER INGREDIENTS. BETTER RELATIONSHIPS.
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            True luxury cannot exist at the expense of growers or ecosystems. We partner with smallholder agro-forestry estates cultivating biodiversity beneath native forest umbrellas.
+          </p>
+<div class="space-y-4 pt-2">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary text-[22px] mt-0.5">currency_exchange</span>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-primary text-base">Fairer Farmgate Incomes</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">We pay 35% to 50% above local market auction averages directly into family cooperative accounts.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary text-[22px] mt-0.5">forest</span>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-primary text-base">Agro-Forestry Preservation</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Every estate must preserve multi-layered canopy ecosystems supporting pollinators and soil biomes.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary text-[22px] mt-0.5">recycling</span>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-primary text-base">100% Recyclable Jars &amp; Pouch Refills</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Zero single-use plastics. Reusable amber apothecary glass paired with compostable paper refills.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-7">
+<div class="grid grid-cols-2 gap-4">
+<div class="overflow-hidden rounded-lg shadow-md aspect-square bg-surface-variant">
+<img class="w-full h-full object-cover" data-alt="Documentary photograph of organic compost preparation on an Indian spice estate using fallen leaves, neem cakes, and traditional botanical biodynamic preparations." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnmkHZfxrns6cCr9fN_RepYKW_BFX8DryWBJeb1wcmybg0PVzkPM8B19BQUJYOUxG1Wm51Q1XJMedXNj4bd63-bE-kIkiEGO3jzGSVjlSIpo2TduM2otXweupRJTIX88sYgyNBWuG--uvIXULOQDoCPb9ij6mjQEsJ5UJcice2-EEXyVQq3DOptJ78Xc-pc5in71o3Je8BMREauq2GVXvbuGtU67N6MGjgJneavWP5faSwiQUZut6P"/>
+</div>
+<div class="overflow-hidden rounded-lg shadow-md aspect-square mt-8 bg-surface-variant">
+<img class="w-full h-full object-cover" data-alt="A smiling family of multi-generational Indian spice cultivators reviewing a vibrant green harvest of wild cinnamon and cardamom inside their estate drying verandah." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTFbtrwHjJKkeeaZcAAVeVbjNWi43tgwALgj6JOe7J3oPYEP2UfaucyGDzQEitOGZEEfOkSlSy9H01CSvuI0falpCeq_WBK3sBEsmIheqYQUdajxdLZHZyDANPoEOqWmDLQ7JdelUemHRfhgXSKN2vf8b0ScDHn5p5I_4dN1oEzrGzq_I7p2T9twcHM9tkeZqSIM3Mjy0lFiR0hbSada1eXzIa-RpVlZIawP0vjHSr5C4l_lIf_3gU"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 11. BRAND STATEMENT (Dramatic Editorial Pause) -->
+<section class="w-full py-32 lg:py-44 bg-surface text-center">
+<div class="max-w-4xl mx-auto px-6 lg:px-12 space-y-8">
+<span class="material-symbols-outlined text-secondary-container text-[40px]">spa</span>
+<h2 class="font-headline-lg text-headline-lg md:text-[50px] md:leading-[62px] text-primary tracking-tight font-normal">
+        “WE’RE HERE TO MAKE EVERYDAY COOKING TASTE A LITTLE MORE EXTRAORDINARY.”
+      </h2>
+<div class="w-16 h-0.5 bg-secondary mx-auto"></div>
+<p class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-[0.25em]">
+        The Vaanika Culinary Foundation • Established 2021
+      </p>
+</div>
+</section>
+<!-- 12. EXPLORE THE BRAND -->
+<section class="w-full py-20 lg:py-28 bg-surface-container">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="max-w-xl space-y-3 mb-16">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-[0.2em]">Next Chapters</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">EXPLORE THE ARCHIVE.</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Link 1: Shop -->
+<a class="group bg-surface rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between" data-path="shop" href="#">
+<div class="h-64 overflow-hidden relative bg-surface-variant">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Luxury lineup of amber glass spice jars filled with colorful red chillies, golden turmeric, and green cardamom neatly displayed in a minimalist pantry." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPsiUqSF2p83y7WHShyjfhXAF6-F5vUz39zqj9qvImvcPvk_KVVvpyIsr8h1fuSNc6A-LZ0gCNzg0k_4v4qYZKw50i7exRgcPe1ljq7XywKIm1WpHbzPlMGfNnA4L5LPv81ecRliUuCtez-kBjy3T21lGmyEqacKlIEaZvrZWl-itN1rHLhLLTkqhTZw1SrPEtyaiMFexj-sbHZZv7VFKMqs7YLPNd300ap9iAkmGlXM3Ef8Mgf_pO"/>
+</div>
+<div class="p-8 space-y-4">
+<div class="space-y-2">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-wider">The Cellar</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Shop Spices</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Explore our curated collection of whole, stone-ground, and rare limited-harvest estate lots.
+              </p>
+</div>
+<div class="pt-2 inline-flex items-center gap-2 font-label-caps text-label-caps text-primary group-hover:text-secondary transition-colors uppercase tracking-widest">
+<span>Shop Now</span>
+<span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+</a>
+<!-- Link 2: Recipes -->
+<a class="group bg-surface rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between" data-path="recipes" href="#">
+<div class="h-64 overflow-hidden relative bg-surface-variant">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Richly prepared Indian culinary feast featuring fragrant saffron biryani and slow-simmered rich curries styled on dark pottery plates." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkj58WRgbH5vW38vA5-_a7j5GY2huxF26Oal7Iv-hy0yFbgpp_Y-1LDL4ZPu_1elGjg_81HafJhup-a3oTwG290E8G1Ky0u-WTS4YkCjXWHlaq7LdfWBBEykwN6op1ysm4Qc5LCpaILKeUWgJE09RTpvZEf4JtB9AjYbI1zLWHbDDsxTzFZr1rZ9QJ2xBpK6rPWN7mxiD40yWiga3ROm78wOnY53Ub5nh9ig6CZNqT0jY1sVYilp5T"/>
+</div>
+<div class="p-8 space-y-4">
+<div class="space-y-2">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-wider">Culinary Monographs</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Recipes &amp; Rituals</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Step-by-step masterclasses and techniques calibrated specifically to high-potency volatile spice extracts.
+              </p>
+</div>
+<div class="pt-2 inline-flex items-center gap-2 font-label-caps text-label-caps text-primary group-hover:text-secondary transition-colors uppercase tracking-widest">
+<span>Explore Recipes</span>
+<span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+</a>
+<!-- Link 3: Sommelier Guide -->
+<a class="group bg-surface rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between" data-path="collections" href="#">
+<div class="h-64 overflow-hidden relative bg-surface-variant">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Editorial close-up of a spice sommelier wheel, botanical notes, glass pipettes and whole spice pods arranged thoughtfully on linen." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDeOlR0JlDMhsW6yYnOLwyLLSaqZCcTRMR3d0v8_z9ahuofSOdhZfsfubdD6cgj-HHT0NKreEpOmIPU4R5zCor3i5WFCyvcPWedbA-zEu33pv-yJNAwKqnUJ6_iFfJufgvj_fixrZGuaqeUKtPu6QZT_AtrB8YGBt0C_YUs0mxK4G7wCEG2GwjKAPYnyOmMW8OvwtDYan258uKb6x0Er_FR6Lip0IJdQg5l4NIcFRivlcPs9KTdUTPv"/>
+</div>
+<div class="p-8 space-y-4">
+<div class="space-y-2">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-wider">Knowledge Index</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Spice Sommelier Guide</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Learn the chemistry of piperine, heat tempering principles, and aromatic balancing pairings.
+              </p>
+</div>
+<div class="pt-2 inline-flex items-center gap-2 font-label-caps text-label-caps text-primary group-hover:text-secondary transition-colors uppercase tracking-widest">
+<span>Explore Guide</span>
+<span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+</a>
+</div>
+</div>
+</section>
+<!-- 13. NEWSLETTER SECTION -->
+<section class="w-full py-24 bg-primary text-on-primary">
+<div class="max-w-4xl mx-auto px-6 lg:px-12 text-center space-y-6">
+<span class="font-label-caps text-label-caps text-secondary-container uppercase tracking-[0.25em]">Seasonal Gazette</span>
+<h2 class="font-headline-lg text-headline-lg text-on-primary tracking-tight">
+        BRING BETTER FLAVOUR HOME.
+      </h2>
+<p class="font-body-lg text-body-lg text-surface-dim max-w-xl mx-auto">
+        Culinary monographs, grower dispatches, and seasonal micro-harvest allocations—delivered with restraint.
+      </p>
+<form class="max-w-md mx-auto pt-6 flex flex-col sm:flex-row gap-3" onsubmit="event.preventDefault(); document.getElementById('newsletter-success').classList.remove('hidden'); this.reset();">
+<input class="flex-1 px-5 py-4 bg-primary-container text-on-primary placeholder:text-surface-dim/60 font-body-sm text-body-sm rounded-none focus:outline-none focus:ring-1 focus:ring-secondary-container" placeholder="Enter your email address" required="" type="email"/>
+<button class="px-8 py-4 bg-secondary-container text-on-secondary-fixed font-label-caps text-label-caps uppercase tracking-[0.16em] hover:bg-secondary-fixed transition-colors shrink-0" type="submit">
+          Join The Table →
+        </button>
+</form>
+<div class="hidden text-secondary-fixed font-body-sm text-body-sm pt-2" id="newsletter-success">
+        Thank you for joining our private allocation register. A welcome monograph has been dispatched.
+      </div>
+<p class="font-label-sm text-label-sm text-surface-dim/60 pt-4">
+        We respect your culinary sanctuary. Zero spam, unsubscribe whenever you wish.
+      </p>
+</div>
+</section>
+</div></main><footer class="w-full bg-inverse-surface text-inverse-on-surface pt-space-xl pb-16 shadow-[0_-1px_12px_rgba(0,0,0,0.06)]"><div class="max-w-7xl mx-auto px-6 lg:px-12"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter-desktop pb-16"><div class="lg:col-span-4 space-y-4"><div class="flex items-center gap-3"><span class="font-headline-sm text-headline-sm tracking-wider text-inverse-on-surface uppercase" class="brand-dynamic-name">VAANIKA</span><span class="text-secondary font-label-caps text-label-caps tracking-widest uppercase">• Reserve</span></div><p class="font-body-md text-body-md text-surface-dim max-w-sm">Curators of rare, single-origin terroir spices. Sourced directly from heirloom heritage estates along the Western Ghats and Malabar coast.</p><div class="pt-2"><p class="font-label-caps text-label-caps text-secondary-fixed-dim uppercase tracking-wider mb-2">Estate Batch Verification</p><p class="font-body-sm text-body-sm text-surface-dim">Every vault lot is cataloged with harvest elevation, botanical cultivar, and volatile oil chromatography certificates.</p></div></div><div class="lg:col-span-2 space-y-3"><h3 class="font-label-caps text-label-caps uppercase tracking-widest text-secondary-fixed">Provenance</h3><ul class="space-y-2.5 font-body-sm text-body-sm text-surface-dim"><li><a class="hover:text-inverse-on-surface transition-colors" data-path="shop" href="#">Single Estate Lots</a></li><li><a class="hover:text-inverse-on-surface transition-colors" data-path="collections" href="#">Wayanad Harvests</a></li><li><a class="hover:text-inverse-on-surface transition-colors" data-path="collections" href="#">Idukki Reserve Cardamom</a></li><li><a class="hover:text-inverse-on-surface transition-colors" data-path="collections" href="#">Kashmir Saffron Valleys</a></li><li><a class="hover:text-inverse-on-surface transition-colors" data-path="our-story" href="#">Terroir Index</a></li></ul></div><div class="lg:col-span-2 space-y-3"><h3 class="font-label-caps text-label-caps uppercase tracking-widest text-secondary-fixed">House &amp; Heritage</h3><ul class="space-y-2.5 font-body-sm text-body-sm text-surface-dim"><li><a class="hover:text-inverse-on-surface transition-colors" data-path="our-story" href="#">Our Botanical Story</a></li><li><a class="hover:text-inverse-on-surface transition-colors" data-path="recipes" href="#">Culinary Monographs</a></li><li><a class="hover:text-inverse-on-surface transition-colors" data-path="recipes" href="#">Extraction Notes</a></li><li><a class="hover:text-inverse-on-surface transition-colors" data-path="our-story" href="#">Regenerative Agronomy</a></li><li><a class="hover:text-inverse-on-surface transition-colors" data-path="our-story" href="#">Fair Exchange Charter</a></li></ul></div><div class="lg:col-span-4 space-y-4"><h3 class="font-label-caps text-label-caps uppercase tracking-widest text-secondary-fixed">Private Concierge</h3><p class="font-body-sm text-body-sm text-surface-dim">For bespoke gastronomy procurement, sommelier tasting curation, or estate allocation inquiries:</p><div class="space-y-1 font-body-sm text-body-sm"><p class="text-inverse-on-surface font-medium">concierge@vaanikaspices.com</p><p class="text-surface-dim">+91 (0) 484 290 8118 • Cochin / New Delhi</p></div><div class="pt-2"><p class="font-label-sm text-label-sm text-surface-dim italic">Allocations dispatched bi-weekly via climate-controlled diplomatic pouch.</p></div></div></div><div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 font-body-sm text-body-sm text-surface-dim"><div class="flex items-center gap-6"><a class="hover:text-inverse-on-surface transition-colors" data-path="our-story" href="#">Lot Traceability Protocol</a><a class="hover:text-inverse-on-surface transition-colors" data-path="our-story" href="#">Privacy Governance</a><a class="hover:text-inverse-on-surface transition-colors" data-path="our-story" href="#">Terms of Allocation</a><a class="hover:text-inverse-on-surface transition-colors" data-path="our-story" href="#">Export Sanctions</a></div><p class="font-label-sm text-label-sm text-surface-dim">© 2025 Vaanika Artisanal Spices Reserve Ltd. All culinary rights reserved.</p></div></div></footer></body></html>

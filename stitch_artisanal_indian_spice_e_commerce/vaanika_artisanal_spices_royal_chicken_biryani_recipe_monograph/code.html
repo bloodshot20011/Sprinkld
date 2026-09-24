@@ -1,0 +1,1488 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "surface-variant": "#e7e1de",
+          "inverse-primary": "#ffb2b7",
+          "background": "#fff8f4",
+          "on-background": "#1d1b19",
+          "outline-variant": "#d8c1c1",
+          "tertiary-fixed": "#ffdada",
+          "on-primary-fixed-variant": "#733239",
+          "on-secondary-container": "#6d3a00",
+          "tertiary": "#2e0006",
+          "on-tertiary-container": "#cb757a",
+          "primary-container": "#4a121a",
+          "on-error-container": "#93000a",
+          "secondary-fixed-dim": "#ffb77a",
+          "on-primary-container": "#c8767c",
+          "inverse-on-surface": "#f6efec",
+          "tertiary-container": "#4c1018",
+          "on-error": "#ffffff",
+          "surface-dim": "#dfd9d5",
+          "outline": "#867273",
+          "on-primary": "#ffffff",
+          "surface-bright": "#fff8f4",
+          "surface-container": "#f3ede9",
+          "primary-fixed-dim": "#ffb2b7",
+          "surface-container-low": "#f9f2ef",
+          "secondary-container": "#fea047",
+          "secondary": "#8f4e00",
+          "on-surface-variant": "#534343",
+          "tertiary-fixed-dim": "#ffb3b6",
+          "on-surface": "#1d1b19",
+          "on-primary-fixed": "#3b0710",
+          "on-secondary": "#ffffff",
+          "surface-container-high": "#ede7e3",
+          "error-container": "#ffdad6",
+          "error": "#ba1a1a",
+          "on-secondary-fixed": "#2e1500",
+          "surface-tint": "#90494f",
+          "on-tertiary-fixed-variant": "#753137",
+          "surface": "#fff8f4",
+          "surface-container-highest": "#e7e1de",
+          "primary-fixed": "#ffdadb",
+          "secondary-fixed": "#ffdcc2",
+          "on-tertiary-fixed": "#3d050e",
+          "primary": "#2e0007",
+          "on-tertiary": "#ffffff",
+          "on-secondary-fixed-variant": "#6d3a00",
+          "inverse-surface": "#32302e",
+          "surface-container-lowest": "#ffffff"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-md": "1.25rem",
+          "space-sm": "0.75rem",
+          "space-xl": "4rem",
+          "space-lg": "2.25rem",
+          "gutter-desktop": "2.5rem",
+          "space-xs": "0.375rem",
+          "margin-desktop": "4rem",
+          "margin": "1.25rem",
+          "gutter": "1.5rem"
+        },
+        "fontFamily": {
+          "headline-lg-mobile": [
+            "Playfair Display"
+          ],
+          "display-hero": [
+            "Playfair Display"
+          ],
+          "headline-md": [
+            "Playfair Display"
+          ],
+          "display-hero-mobile": [
+            "Playfair Display"
+          ],
+          "label-caps": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg": [
+            "Playfair Display"
+          ],
+          "subheading": [
+            "Playfair Display"
+          ],
+          "label-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-sm": [
+            "Playfair Display"
+          ],
+          "body-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "body-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "body-md": [
+            "Plus Jakarta Sans"
+          ]
+        },
+        "fontSize": {
+          "headline-lg-mobile": [
+            "30px",
+            {
+              "lineHeight": "38px",
+              "letterSpacing": "0em",
+              "fontWeight": "400"
+            }
+          ],
+          "display-hero": [
+            "64px",
+            {
+              "lineHeight": "72px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-md": [
+            "32px",
+            {
+              "lineHeight": "40px",
+              "letterSpacing": "0em",
+              "fontWeight": "500"
+            }
+          ],
+          "display-hero-mobile": [
+            "38px",
+            {
+              "lineHeight": "46px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "400"
+            }
+          ],
+          "label-caps": [
+            "11px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.14em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-lg": [
+            "44px",
+            {
+              "lineHeight": "52px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "400"
+            }
+          ],
+          "subheading": [
+            "19px",
+            {
+              "lineHeight": "28px",
+              "letterSpacing": "0.02em",
+              "fontWeight": "400"
+            }
+          ],
+          "label-sm": [
+            "12px",
+            {
+              "lineHeight": "18px",
+              "letterSpacing": "0.04em",
+              "fontWeight": "500"
+            }
+          ],
+          "headline-sm": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-lg": [
+            "17px",
+            {
+              "lineHeight": "28px",
+              "letterSpacing": "0em",
+              "fontWeight": "400"
+            }
+          ],
+          "body-sm": [
+            "13px",
+            {
+              "lineHeight": "20px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "400"
+            }
+          ],
+          "body-md": [
+            "15px",
+            {
+              "lineHeight": "24px",
+              "letterSpacing": "0.005em",
+              "fontWeight": "400"
+            }
+          ]
+        }
+      }
+    }
+  }</script><link rel="stylesheet" href="../theme-styles.css"/>
+<script src="../theme-manager.js"></script>
+</head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 w-full px-gutter-desktop mx-auto flex items-center justify-between"><div class="flex items-center gap-space-md"><a class="flex flex-col" data-path="shop" href="#"><span class="font-headline-sm text-headline-sm tracking-wider uppercase text-primary font-medium" class="brand-dynamic-name">VAANIKA</span><span class="font-label-caps text-label-caps tracking-[0.22em] text-on-surface-variant uppercase -mt-1">Artisanal Spices</span></a></div><nav class="hidden md:flex items-center gap-space-lg" data-active-classes="text-primary font-semibold underline decoration-secondary decoration-2 underline-offset-8"><a class="font-label-caps text-label-caps uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors py-2" data-path="shop" href="#">Shop</a><a class="font-label-caps text-label-caps uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors py-2" data-path="collections" href="#">Collections</a><a aria-current="page" class="uppercase tracking-wider transition-colors py-2 text-primary font-semibold underline decoration-secondary decoration-2 underline-offset-8" data-path="recipes" href="#">Recipes</a><a class="font-label-caps text-label-caps uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors py-2" data-path="our-story" href="#">Our Story</a></nav><div class="flex items-center gap-space-md"><button aria-label="Search" class="text-on-surface-variant hover:text-on-surface transition-colors p-space-xs flex items-center" type="button"><span class="material-symbols-outlined text-[22px]">search</span></button><button aria-label="Cart" class="relative text-on-surface-variant hover:text-on-surface transition-colors p-space-xs flex items-center" type="button"><span class="material-symbols-outlined text-[22px]">shopping_bag</span><span class="absolute -top-0.5 -right-0.5 min-w-[18px] h-[18px] px-1 bg-secondary text-on-secondary rounded-full flex items-center justify-center font-label-caps text-[9px] font-bold leading-none">3</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-space-xs"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-background"><div class="flex flex-col w-full">
+<!-- TOP BREADCRUMB & CONTEXT -->
+<div class="w-full bg-surface-container-low py-space-sm px-gutter-desktop">
+<div class="max-w-7xl mx-auto flex items-center justify-between text-on-surface-variant">
+<nav class="flex items-center gap-space-xs text-label-sm font-label-sm tracking-wide">
+<a class="hover:text-primary transition-colors" href="#">Home</a>
+<span class="text-outline-variant">/</span>
+<a class="hover:text-primary transition-colors" href="#">Recipes</a>
+<span class="text-outline-variant">/</span>
+<a class="hover:text-primary transition-colors" href="#">Indian Provenance</a>
+<span class="text-outline-variant">/</span>
+<span class="text-primary font-medium">Royal Awadhi Subz Dum Biryani</span>
+</nav>
+<div class="hidden sm:flex items-center gap-space-xs font-label-caps text-label-caps uppercase tracking-widest text-secondary">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>Monograph Archive #07</span>
+</div>
+</div>
+</div>
+<!-- STICKY SUB-NAVIGATION -->
+<aside aria-label="Recipe Quick Navigation" class="sticky top-20 z-40 w-full bg-surface/90 backdrop-blur-md shadow-sm">
+<div class="max-w-7xl mx-auto px-gutter-desktop h-12 flex items-center justify-between overflow-x-auto no-scrollbar">
+<div class="flex items-center gap-space-md min-w-max">
+<a class="font-label-caps text-label-caps uppercase tracking-widest text-primary font-semibold py-3 relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-secondary" href="#overview">Overview</a>
+<a class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant hover:text-primary py-3 transition-colors" href="#ingredients">Ingredients</a>
+<a class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant hover:text-primary py-3 transition-colors flex items-center gap-1" href="#spices">
+<span>The Spices</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-container"></span>
+</a>
+<a class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant hover:text-primary py-3 transition-colors" href="#method">Method</a>
+<a class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant hover:text-primary py-3 transition-colors" href="#notes">Chef's Notes</a>
+<a class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant hover:text-primary py-3 transition-colors" href="#variations">Variations</a>
+<a class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant hover:text-primary py-3 transition-colors" href="#reviews">Reviews</a>
+</div>
+<div class="hidden md:flex items-center gap-space-sm pl-4">
+<button class="bg-primary-container text-on-primary font-label-caps text-label-caps tracking-widest uppercase px-space-md py-1.5 hover:bg-primary transition-all flex items-center gap-1.5" id="quickCartTrigger">
+<span class="material-symbols-outlined text-[16px]">shopping_bag</span>
+<span>Spice Kit (₹1,428)</span>
+</button>
+</div>
+</div>
+</aside>
+<!-- HERO SECTION -->
+<section class="w-full bg-surface py-space-lg px-gutter-desktop" id="overview">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-center">
+<!-- Narrative Details Column -->
+<div class="lg:col-span-6 flex flex-col justify-center pr-0 lg:pr-space-md">
+<div class="flex items-center gap-space-xs text-secondary mb-space-xs">
+<span class="font-label-caps text-label-caps uppercase tracking-[0.2em] font-semibold">Vegetarian • Main Course</span>
+<span class="text-outline-variant">•</span>
+<span class="font-label-caps text-label-caps uppercase tracking-[0.2em] text-on-surface-variant">Awadhi Dum Tradition</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary uppercase font-normal tracking-tight mb-space-sm">
+          Royal Subz Dum Biryani
+        </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-space-md leading-relaxed">
+          Fragrant aged Dehradun basmati rice layered with slow-simmered malai paneer, heirloom vegetables, Pampore saffron, golden birista onions, and aromatic stone-ground botanical spices.
+        </p>
+<!-- Meta Specification Bar -->
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-y-space-md gap-x-space-sm bg-surface-container-low p-space-md mb-space-md">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-on-surface-variant">Rating</span>
+<div class="flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-secondary text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">4.9</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">(128 reviews)</span>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-on-surface-variant">Prep / Active</span>
+<span class="font-body-md text-body-md font-medium text-on-surface mt-0.5">20 min / 45 min</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-on-surface-variant">Total Duration</span>
+<span class="font-body-md text-body-md font-medium text-on-surface mt-0.5">1 hr 5 min</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-on-surface-variant">Servings</span>
+<span class="font-body-md text-body-md font-medium text-on-surface mt-0.5">4 Gourmands</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-on-surface-variant">Complexity</span>
+<span class="font-body-md text-body-md font-medium text-on-surface mt-0.5">Intermediate Dum</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-on-surface-variant">Spice Potency</span>
+<div class="flex items-center gap-1 mt-1 text-secondary">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-surface-variant"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-surface-variant"></span>
+</div>
+</div>
+</div>
+<!-- Call to Action & Sharing -->
+<div class="flex flex-wrap items-center gap-space-sm pt-space-xs">
+<a class="bg-primary-container text-on-primary font-label-caps text-label-caps uppercase tracking-widest px-space-lg py-space-sm hover:bg-primary transition-all flex items-center gap-2" href="#spices">
+<span>Explore The Spice Lot</span>
+<span class="material-symbols-outlined text-[16px]">arrow_downward</span>
+</a>
+<button class="bg-surface-container text-on-surface font-label-caps text-label-caps uppercase tracking-wider px-space-md py-space-sm hover:bg-surface-container-high transition-colors flex items-center gap-2" id="saveRecipeBtn" onclick="toggleSaveRecipe()">
+<span class="material-symbols-outlined text-[18px]" id="saveIcon">bookmark_border</span>
+<span id="saveText">Save Recipe</span>
+</button>
+<button class="bg-surface-container text-on-surface font-label-caps text-label-caps uppercase tracking-wider px-space-md py-space-sm hover:bg-surface-container-high transition-colors flex items-center gap-2" onclick="copyRecipeLink()" title="Share Recipe">
+<span class="material-symbols-outlined text-[18px]">share</span>
+<span>Share</span>
+</button>
+</div>
+</div>
+<!-- Hero Visual Column -->
+<div class="lg:col-span-6 relative mt-space-md lg:mt-0">
+<div class="relative w-full aspect-[4/3] sm:aspect-[16/11] overflow-hidden bg-surface-container shadow-xl">
+<img alt="Royal Awadhi Subz & Paneer Dum Biryani served in an ornate brass handi, garnished with saffron strands, fried onions, and whole spices" class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmv1T7HVsBRZ-5jS66_M35_A9n3tvBiqPNscrwOpAHZ2AgL7Y71ZcSy6cNjFRlAYPJp2kqnjEM8rZuKDjuTAdwQWVPm1UoXLeQfDKklOts47Gy_KTG5Jp29hMgLf_wYAxtH4S4_TMeH9wuRcEeeh1zzHecLQOXXHK_pF_BLCW-xxyhUYoQqpbXgAhqk6Zq-uS7UWWkue-yIzOXoRvhWBaN17stp7be6Jx0ql3dn96yzYFrTlsmuGtV"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent opacity-60"></div>
+<div class="absolute bottom-4 left-4 right-4 p-space-sm bg-surface/90 backdrop-blur-md text-on-surface flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">verified</span>
+<div class="flex flex-col">
+<span class="font-label-caps text-[10px] tracking-wider uppercase text-on-surface-variant">Signature Estate Curation</span>
+<span class="font-body-sm text-body-sm font-semibold text-primary">Kashmiri Saffron &amp; Tellicherry Peppercorn Infusion</span>
+</div>
+</div>
+<span class="hidden sm:inline font-label-caps text-label-caps uppercase text-secondary font-bold tracking-widest">Single Batch</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- RECIPE NARRATIVE & AT-A-GLANCE SPECS -->
+<section class="w-full bg-surface-container-low py-space-xl px-gutter-desktop">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop">
+<!-- Food Journal Narrative -->
+<div class="lg:col-span-7 flex flex-col justify-center">
+<span class="font-label-caps text-label-caps uppercase tracking-[0.2em] text-secondary mb-space-xs">The Culinary Philosophy</span>
+<h2 class="font-headline-md text-headline-md text-primary mb-space-sm">Architecture of the Scented Dum</h2>
+<div class="space-y-space-sm font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+<p>
+            Biryani is an exercise in restraint and geological stratification. In this classical Awadhi-inspired vegetarian preparation, hand-crafted malai paneer cubes and heirloom garden vegetables act as aromatic reservoirs, marinated gently in cultured milk, stone-ground ginger-garlic, and cold-pressed mustard oil before encountering the intense warmth of aged stone-ground spices.
+          </p>
+<p>
+            Unlike heavy restaurant variants masked by artificial colourings and thick pastes, our formulation celebrates the crystalline purity of Himalayan Dehradun grains. Parboiled to exactly seventy percent elongation with crushed cardamom husks and quills of Sri Lankan cinnamon, each grain sits elevated, breathing steam through golden curtains of Pampore zafraan.
+          </p>
+</div>
+<div class="mt-space-md p-space-md bg-surface flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[28px] mt-0.5">menu_book</span>
+<div>
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-primary font-bold">Monograph Archival Record</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+              "When steam escapes the dough-sealed perimeter, the kitchen is immediately perfumed with sweet eugenol and myrcene terpenes—the signature of pure highland harvest."
+            </p>
+<span class="font-label-sm text-label-sm text-secondary tracking-wide block mt-1">— Vaanika Spice Guild Tasting Chamber, 1928 Ledger</span>
+</div>
+</div>
+</div>
+<!-- Spec & Terroir Panel -->
+<div class="lg:col-span-5 bg-surface p-space-lg flex flex-col justify-between shadow-sm">
+<div>
+<div class="flex items-center justify-between pb-space-sm">
+<h3 class="font-headline-sm text-headline-sm text-primary uppercase">At A Glance</h3>
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest font-semibold">Specs</span>
+</div>
+<div class="space-y-space-sm divide-y divide-surface-container py-space-xs">
+<div class="flex items-center justify-between py-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Serving Scaler</span>
+<div class="flex items-center gap-3 bg-surface-container-low px-2 py-1">
+<button aria-label="Decrease servings" class="w-6 h-6 flex items-center justify-center text-primary font-bold hover:bg-surface-variant transition-colors" onclick="adjustServings(-1)">-</button>
+<span class="font-body-md text-body-md font-bold text-primary min-w-[20px] text-center" id="servingsDisplay">4</span>
+<button aria-label="Increase servings" class="w-6 h-6 flex items-center justify-center text-primary font-bold hover:bg-surface-variant transition-colors" onclick="adjustServings(1)">+</button>
+</div>
+</div>
+<div class="flex items-center justify-between py-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Recommended Vessel</span>
+<span class="font-body-sm text-body-sm font-medium text-on-surface text-right">Heavy Tin-Lined Brass Handi or 6-Qt Dutch Oven</span>
+</div>
+<div class="flex items-center justify-between py-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Dum Steaming Technique</span>
+<span class="font-body-sm text-body-sm font-medium text-on-surface text-right">Atta (Wholewheat Dough) Perimeter Seal</span>
+</div>
+<div class="flex items-center justify-between py-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Terroir Focus</span>
+<span class="font-body-sm text-body-sm font-medium text-on-surface text-right">Alleppey (Cardamom) &amp; Pampore (Zafraan)</span>
+</div>
+<div class="flex items-center justify-between py-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Recommended Pairing</span>
+<span class="font-body-sm text-body-sm font-medium text-on-surface text-right">Burani Raita with Smoked Garlic &amp; Cumin</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm bg-surface-container-low p-space-sm flex items-center justify-between">
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">print</span>
+<span class="font-label-caps text-label-caps uppercase tracking-wider">Print Monograph Sheet</span>
+</div>
+<button class="text-primary font-label-caps text-label-caps uppercase font-bold hover:text-secondary transition-colors" onclick="window.print()">Print (PDF)</button>
+</div>
+</div>
+</div>
+</section>
+<!-- WHAT YOU'LL NEED (CHECKLIST INGREDIENTS) -->
+<section class="w-full bg-surface py-space-xl px-gutter-desktop" id="ingredients">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-lg">
+<div>
+<span class="font-label-caps text-label-caps uppercase tracking-[0.2em] text-secondary mb-space-xs block">Mise En Place</span>
+<h2 class="font-headline-lg text-headline-lg text-primary uppercase">What You'll Need</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md mt-2 md:mt-0">
+          Check off items as you prepare your station. Quantities adjust automatically to your active serving selection.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter-desktop">
+<!-- Category 1: The Paneer & Subz Marinade -->
+<div class="bg-surface-container-low p-space-md flex flex-col justify-between shadow-sm">
+<div>
+<div class="flex items-center gap-2 mb-space-sm pb-2">
+<span class="w-2.5 h-2.5 bg-primary"></span>
+<h3 class="font-headline-sm text-headline-sm text-primary uppercase">The Subz &amp; Paneer Base</h3>
+</div>
+<ul class="space-y-space-xs font-body-md text-body-md text-on-surface" id="chickenIngredients">
+<li class="flex items-start gap-space-xs group cursor-pointer py-1">
+<input class="mt-1 accent-primary w-4 h-4 cursor-pointer" id="ing_c1" type="checkbox"/>
+<label class="cursor-pointer group-hover:text-primary transition-colors flex-1 leading-snug" for="ing_c1">
+<span class="font-semibold text-primary"><span class="qty" data-base="100">400</span>g</span> Fresh artisanal malai paneer (large cubes)
+</label>
+</li>
+<li class="flex items-start gap-space-xs group cursor-pointer py-1">
+<input class="mt-1 accent-primary w-4 h-4 cursor-pointer" id="ing_c1b" type="checkbox"/>
+<label class="cursor-pointer group-hover:text-primary transition-colors flex-1 leading-snug" for="ing_c1b">
+<span class="font-semibold text-primary"><span class="qty" data-base="100">400</span>g</span> Baby potatoes, florets &amp; sweet green peas
+</label>
+</li>
+<li class="flex items-start gap-space-xs group cursor-pointer py-1">
+<input class="mt-1 accent-primary w-4 h-4 cursor-pointer" id="ing_c2" type="checkbox"/>
+<label class="cursor-pointer group-hover:text-primary transition-colors flex-1 leading-snug" for="ing_c2">
+<span class="font-semibold text-primary"><span class="qty" data-base="0.25">1</span> cup</span> Hung thick whole milk curd
+</label>
+</li>
+<li class="flex items-start gap-space-xs group cursor-pointer py-1">
+<input class="mt-1 accent-primary w-4 h-4 cursor-pointer" id="ing_c3" type="checkbox"/>
+<label class="cursor-pointer group-hover:text-primary transition-colors flex-1 leading-snug" for="ing_c3">
+<span class="font-semibold text-primary"><span class="qty" data-base="0.5">2</span> tbsp</span> Freshly stone-pounded ginger &amp; garlic paste
+</label>
+</li>
+<li class="flex items-start gap-space-xs group cursor-pointer py-1">
+<input class="mt-1 accent-primary w-4 h-4 cursor-pointer" id="ing_c4" type="checkbox"/>
+<label class="cursor-pointer group-hover:text-primary transition-colors flex-1 leading-snug" for="ing_c4">
+<span class="font-semibold text-primary"><span class="qty" data-base="0.625">2.5</span> tbsp</span>
+<a class="text-secondary font-medium hover:underline inline-flex items-center gap-0.5" href="#spices">Vaanika Royal Biryani Masala <span class="material-symbols-outlined text-[14px]">open_in_new</span></a>
+</label>
+</li>
+<li class="flex items-start gap-space-xs group cursor-pointer py-1">
+<input class="mt-1 accent-primary w-4 h-4 cursor-pointer" id="ing_c5" type="checkbox"/>
+<label class="cursor-pointer group-hover:text-primary transition-colors flex-1 leading-snug" for="ing_c5">
+<span class="font-semibold text-primary"><span class="qty" data-base="0.25">1</span> tsp</span>
+<a class="text-secondary font-medium hover:underline inline-flex items-center gap-0.5" href="#spices">Kashmiri Red Chilli Powder <span class="material-symbols-outlined text-[14px]">open_in_new</span></a>
+</label>
+</li>
+<li class="flex items-start gap-space-xs group cursor-pointer py-1">
+<input class="mt-1 accent-primary w-4 h-4 cursor-pointer" id="ing_c6" type="checkbox"/>
+<label class="cursor-pointer group-hover:text-primary transition-colors flex-1 leading-snug" for="ing_c6">
+<span class="font-semibold text-primary"><span class="qty" data-base="0.125">0.5</span> tsp</span> Salem Organic High-Curcumin Turmeric
+</label>
+</li>
+<li class="flex items-start gap-space-xs group cursor-pointer py-1">
+<input class="mt-1 accent-primary w-4 h-4 cursor-pointer" id="ing_c7" type="checkbox"/>
+<label class="cursor-pointer group-hover:text-primary transition-colors flex-1 leading-snug" for="ing_c7">
+<span class="font-semibold text-primary"><span class="qty" data-base="0.375">1.5</span> tsp</span> Unrefined crystalline pink sea salt
+</label>
+</li>
+<li class="flex items-start gap-space-xs group cursor-pointer py-1">
+<input class="mt-1 accent-primary w-4 h-4 cursor-pointer" id="ing_c8" type="checkbox"/>
+<label class="cursor-pointer group-hover:text-primary transition-colors flex-1 leading-snug" for="ing_c8">
+<span class="font-semibold text-primary"><span class="qty" data-base="0.5">2</span> tbsp</span> Pungent cold-pressed raw mustard oil
+</label>
+</li>
+</ul>
+</div>
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase tracking-widest mt-space-md pt-2 block">Rest time: 30 to 45 mins</span>
+</div>
+<!-- Category 2: The Aromatic Rice -->
+<div class="bg-surface-container-low p-space-md flex flex-col justify-between shadow-sm">
+<div>
+<div class="flex items-center gap-2 mb-space-sm pb-2">
+<span class="w-2.5 h-2.5 bg-secondary"></span>
+<h3 class="font-headline-sm text-headline-sm text-primary uppercase">Aromatic Grain</h3>
+</div>
+<ul class="space-y-space-xs font-body-md text-body-md text-on-surface" id="riceIngredients">
+<li class="flex items-start gap-space-xs group cursor-pointer py-1">
+<input class="mt-1 accent-primary w-4 h-4 cursor-pointer" id="ing_r1" type="checkbox"/>
+<label class="cursor-pointer group-hover:text-primary transition-colors flex-1 leading-snug" for="ing_r1">
+<span class="font-semibold text-primary"><span class="qty" data-base="100">400</span>g</span> 2-Year Aged Dehradun Long Grain Basmati Rice
+                </label>
+</li>
+<li class="flex items-start gap-space-xs group cursor-pointer py-1">
+<input class="mt-1 accent-primary w-4 h-4 cursor-pointer" id="ing_r2" type="checkbox"/>
+<label class="cursor-pointer group-hover:text-primary transition-colors flex-1 leading-snug" for="ing_r2">
+<span class="font-semibold text-primary"><span class="qty" data-base="1.25">5</span> pods</span>
+<a class="text-secondary font-medium hover:underline inline-flex items-center gap-0.5" href="#spices">Alleppey Extra Bold Green Cardamom <span class="material-symbols-outlined text-[14px]">open_in_new</span></a>
+</label>
+</li>
+<li class="flex items-start gap-space-xs group cursor-pointer py-1">
+<input class="mt-1 accent-primary w-4 h-4 cursor-pointer" id="ing_r3" type="checkbox"/>
+<label class="cursor-pointer group-hover:text-primary transition-colors flex-1 leading-snug" for="ing_r3">
+<span class="font-semibold text-primary"><span class="qty" data-base="0.5">2</span> quills</span>
+<a class="text-secondary font-medium hover:underline inline-flex items-center gap-0.5" href="#spices">Ceylon True Cinnamon Quills <span class="material-symbols-outlined text-[14px]">open_in_new</span></a>
+</label>
+</li>
+<li class="flex items-start gap-space-xs group cursor-pointer py-1">
+<input class="mt-1 accent-primary w-4 h-4 cursor-pointer" id="ing_r4" type="checkbox"/>
+<label class="cursor-pointer group-hover:text-primary transition-colors flex-1 leading-snug" for="ing_r4">
+<span class="font-semibold text-primary"><span class="qty" data-base="1">4</span> whole</span> Cloves from Zanzibar (high eugenol)
+                </label>
+</li>
+<li class="flex items-start gap-space-xs group cursor-pointer py-1">
+<input class="mt-1 accent-primary w-4 h-4 cursor-pointer" id="ing_r5" type="checkbox"/>
+<label class="cursor-pointer group-hover:text-primary transition-colors flex-1 leading-snug" for="ing_r5">
+<span class="font-semibold text-primary"><span class="qty" data-base="0.5">2</span> leaves</span> Dried Indian Malabathrum (Tej Patta)
+                </label>
+</li>
+<li class="flex items-start gap-space-xs group cursor-pointer py-1">
+<input class="mt-1 accent-primary w-4 h-4 cursor-pointer" id="ing_r6" type="checkbox"/>
+<label class="cursor-pointer group-hover:text-primary transition-colors flex-1 leading-snug" for="ing_r6">
+<span class="font-semibold text-primary"><span class="qty" data-base="0.25">1</span> tsp</span> Royal wild cumin (Shahi Jeera)
+                </label>
+</li>
+<li class="flex items-start gap-space-xs group cursor-pointer py-1">
+<input class="mt-1 accent-primary w-4 h-4 cursor-pointer" id="ing_r7" type="checkbox"/>
+<label class="cursor-pointer group-hover:text-primary transition-colors flex-1 leading-snug" for="ing_r7">
+<span class="font-semibold text-primary"><span class="qty" data-base="0.25">1</span> tbsp</span> Coarse rock salt (for boiling liquor)
+                </label>
+</li>
+</ul>
+</div>
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase tracking-widest mt-space-md pt-2 block">Water ratio: 4x grain volume</span>
+</div>
+<!-- Category 3: Dum Finishing -->
+<div class="bg-surface-container-low p-space-md flex flex-col justify-between shadow-sm">
+<div>
+<div class="flex items-center gap-2 mb-space-sm pb-2">
+<span class="w-2.5 h-2.5 bg-secondary-container"></span>
+<h3 class="font-headline-sm text-headline-sm text-primary uppercase">Dum Layering</h3>
+</div>
+<ul class="space-y-space-xs font-body-md text-body-md text-on-surface" id="dumIngredients">
+<li class="flex items-start gap-space-xs group cursor-pointer py-1">
+<input class="mt-1 accent-primary w-4 h-4 cursor-pointer" id="ing_f1" type="checkbox"/>
+<label class="cursor-pointer group-hover:text-primary transition-colors flex-1 leading-snug" for="ing_f1">
+<span class="font-semibold text-primary">Generous pinch</span> Pampore Grade 1 Saffron steeped in 1/4 cup warm whole milk
+                </label>
+</li>
+<li class="flex items-start gap-space-xs group cursor-pointer py-1">
+<input class="mt-1 accent-primary w-4 h-4 cursor-pointer" id="ing_f2" type="checkbox"/>
+<label class="cursor-pointer group-hover:text-primary transition-colors flex-1 leading-snug" for="ing_f2">
+<span class="font-semibold text-primary"><span class="qty" data-base="0.25">1</span> cup</span> Golden slow-crisped birista onions
+                </label>
+</li>
+<li class="flex items-start gap-space-xs group cursor-pointer py-1">
+<input class="mt-1 accent-primary w-4 h-4 cursor-pointer" id="ing_f3" type="checkbox"/>
+<label class="cursor-pointer group-hover:text-primary transition-colors flex-1 leading-snug" for="ing_f3">
+<span class="font-semibold text-primary"><span class="qty" data-base="0.125">0.5</span> cup</span> Torn fragrant garden mint leaves
+                </label>
+</li>
+<li class="flex items-start gap-space-xs group cursor-pointer py-1">
+<input class="mt-1 accent-primary w-4 h-4 cursor-pointer" id="ing_f4" type="checkbox"/>
+<label class="cursor-pointer group-hover:text-primary transition-colors flex-1 leading-snug" for="ing_f4">
+<span class="font-semibold text-primary"><span class="qty" data-base="0.125">0.5</span> cup</span> Freshly chopped tender coriander leaves &amp; stems
+                </label>
+</li>
+<li class="flex items-start gap-space-xs group cursor-pointer py-1">
+<input class="mt-1 accent-primary w-4 h-4 cursor-pointer" id="ing_f5" type="checkbox"/>
+<label class="cursor-pointer group-hover:text-primary transition-colors flex-1 leading-snug" for="ing_f5">
+<span class="font-semibold text-primary"><span class="qty" data-base="0.75">3</span> tbsp</span> Pure Bilona cow A2 desi ghee
+                </label>
+</li>
+<li class="flex items-start gap-space-xs group cursor-pointer py-1">
+<input class="mt-1 accent-primary w-4 h-4 cursor-pointer" id="ing_f6" type="checkbox"/>
+<label class="cursor-pointer group-hover:text-primary transition-colors flex-1 leading-snug" for="ing_f6">
+<span class="font-semibold text-primary">3 to 4 drops</span> Distilled wild screwpine (Kewra) hydro-essence
+                </label>
+</li>
+<li class="flex items-start gap-space-xs group cursor-pointer py-1">
+<input class="mt-1 accent-primary w-4 h-4 cursor-pointer" id="ing_f7" type="checkbox"/>
+<label class="cursor-pointer group-hover:text-primary transition-colors flex-1 leading-snug" for="ing_f7">
+<span class="font-semibold text-primary">1 cup</span> Wholewheat flour dough (for sealing the rim)
+                </label>
+</li>
+</ul>
+</div>
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase tracking-widest mt-space-md pt-2 block">Assembly stage: 5 minutes before flame</span>
+</div>
+</div>
+</div>
+</section>
+<!-- THE SPICES BEHIND THIS RECIPE (DIRECT ADD-TO-CART VAULT) -->
+<section class="w-full bg-surface-container py-space-xl px-gutter-desktop" id="spices">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col lg:flex-row lg:items-end justify-between mb-space-lg">
+<div class="max-w-2xl">
+<span class="font-label-caps text-label-caps uppercase tracking-[0.2em] text-secondary mb-space-xs block">The Botanical Terroir</span>
+<h2 class="font-headline-lg text-headline-lg text-primary uppercase">The Spices Behind This Recipe</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-2">
+            The extraordinary character of this biryani rests solely on single-estate botanical purity. Order the exact estate-graded jars used in our testing kitchen.
+          </p>
+</div>
+<div class="mt-space-md lg:mt-0 flex items-center">
+<button class="bg-primary text-on-primary font-label-caps text-label-caps tracking-widest uppercase px-space-lg py-space-sm hover:bg-primary-container transition-all flex items-center gap-2 shadow-md" id="addAllBtn" onclick="addAllSpicesToCart()">
+<span class="material-symbols-outlined text-[18px]">shopping_bag</span>
+<span>Add All 5 Spices to Cart — ₹1,428</span>
+<span class="bg-secondary text-on-secondary px-1.5 py-0.5 text-[9px] font-bold">SAVE 10%</span>
+</button>
+</div>
+</div>
+<!-- 5 Spice Cards Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-space-sm">
+<!-- Spice 1 -->
+<div class="bg-surface p-space-sm flex flex-col justify-between group shadow-sm hover:shadow-md transition-shadow">
+<div>
+<div class="aspect-square w-full bg-surface-container-low mb-space-sm overflow-hidden relative">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Rich amber-brown freshly stone ground royal Awadhi biryani masala in an artisanal glass jar with wooden cork lid on warm linen background." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD4ZaIxiHpKP_A7aM2pN2LnINJKct_wP85Z3jpceK2AqlI88KldY_s3wQxBto0AS__l7bNBYHq9kh7LpTB39wplWLswLHaMG48J5MerOX2TYHULq9r8XaJr8XHdtMgoApRtRLRTUJ4W9RPcJd_4kLyD4QDyXrAI7Fw1L9PsqYkpw-f6bXlyO9c_niF_YZOHgKptdbjpP1E1nA2ybe0XhfbS3owrGbVQ_D_fnoKiEbyWOfSukEMXwgIo')">
+</div>
+<span class="absolute top-2 left-2 bg-primary text-on-primary font-label-caps text-[9px] px-1.5 py-0.5 tracking-wider uppercase">Master Blend</span>
+</div>
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase tracking-widest block">Lucknow Heritage • 100g</span>
+<h4 class="font-headline-sm text-[18px] text-primary mt-1 group-hover:text-secondary transition-colors">Royal Awadhi Biryani Masala</h4>
+<p class="font-body-sm text-[12px] text-on-surface-variant mt-1 line-clamp-2">16-botanical stone ground blend with star anise, stone flower, and mace.</p>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between">
+<span class="font-body-md text-body-md font-bold text-primary">₹299</span>
+<button class="p-2 bg-surface-container hover:bg-primary hover:text-on-primary text-primary transition-colors" onclick="addSingleSpice('Royal Awadhi Biryani Masala', 299)" title="Add to basket">
+<span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+</button>
+</div>
+</div>
+<!-- Spice 2 -->
+<div class="bg-surface p-space-sm flex flex-col justify-between group shadow-sm hover:shadow-md transition-shadow">
+<div>
+<div class="aspect-square w-full bg-surface-container-low mb-space-sm overflow-hidden relative">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Intense emerald-green extra bold cardamom pods Alleppey grade 8mm plus piled in a small bronze bowl on an old rustic dark wooden surface." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBWoLcQYunIoNE2jOjikhfaMT0sCPIaeIoMOIjH9rv7HMoHkRTa7f9_bkt6S5_9eMlBEeZGA5MGngSSRw2dFK4PZohe_MUPBeKgEMimYNDmxDjyI6NTqD3ybxyji8pPmrCNi_q3hdhOwANeBhSN8tlHeEHVWJftR7tCDy9hBcElFm-g8oEUZa3e8yNnjFdRjKBo1ggHAjrTo1T9ZumpwEej_x4tdozW4IPfGEcIsvsXVM7jNsXPpGZ-')">
+</div>
+<span class="absolute top-2 left-2 bg-secondary text-on-secondary font-label-caps text-[9px] px-1.5 py-0.5 tracking-wider uppercase">8mm+ Jumbo</span>
+</div>
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase tracking-widest block">Alleppey, Kerala • 50g</span>
+<h4 class="font-headline-sm text-[18px] text-primary mt-1 group-hover:text-secondary transition-colors">Alleppey Green Cardamom</h4>
+<p class="font-body-sm text-[12px] text-on-surface-variant mt-1 line-clamp-2">High cineole content with sweet eucalyptus and pine resin aromatics.</p>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between">
+<span class="font-body-md text-body-md font-bold text-primary">₹340</span>
+<button class="p-2 bg-surface-container hover:bg-primary hover:text-on-primary text-primary transition-colors" onclick="addSingleSpice('Alleppey Green Cardamom', 340)" title="Add to basket">
+<span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+</button>
+</div>
+</div>
+<!-- Spice 3 -->
+<div class="bg-surface p-space-sm flex flex-col justify-between group shadow-sm hover:shadow-md transition-shadow">
+<div>
+<div class="aspect-square w-full bg-surface-container-low mb-space-sm overflow-hidden relative">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Thin delicate layered Ceylon cinnamon quills rolled into tight scrolls sitting on parchment paper with soft warm studio lighting." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB3ecgL9wecurCG7iGteudwtGMexv7L0FxapeZrqNcxIgc5-NB6eEwOy5RwipCV7T_vAWn6zFec6uo8aStDoqlvZU9JCth315xARxURMpkvLPGfijIIashYGIynuJ61jnSCBf_8vwm8Gj-q0lTELiXaX92hFoNq5cgHRYn9Co7PuWT-bs9mT59jRwbcwKsAkeV8Qs6iQPZ_wBbBjUvm1gnrRmwAntu-JIN7YCt9TtU6KRbkD5hMHlMB')">
+</div>
+<span class="absolute top-2 left-2 bg-surface-container-highest text-on-surface font-label-caps text-[9px] px-1.5 py-0.5 tracking-wider uppercase">C5 Grade</span>
+</div>
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase tracking-widest block">Matara Estate • 50g</span>
+<h4 class="font-headline-sm text-[18px] text-primary mt-1 group-hover:text-secondary transition-colors">Ceylon True Cinnamon Quills</h4>
+<p class="font-body-sm text-[12px] text-on-surface-variant mt-1 line-clamp-2">Ultra-fine paper bark with delicate floral warmth and zero harsh coumarin.</p>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between">
+<span class="font-body-md text-body-md font-bold text-primary">₹260</span>
+<button class="p-2 bg-surface-container hover:bg-primary hover:text-on-primary text-primary transition-colors" onclick="addSingleSpice('Ceylon True Cinnamon Quills', 260)" title="Add to basket">
+<span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+</button>
+</div>
+</div>
+<!-- Spice 4 -->
+<div class="bg-surface p-space-sm flex flex-col justify-between group shadow-sm hover:shadow-md transition-shadow">
+<div>
+<div class="aspect-square w-full bg-surface-container-low mb-space-sm overflow-hidden relative">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Glossy dark black Tellicherry garbled black peppercorns scattered on a textured grey slate stone slab with deep moody ambient lighting." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCrWrwmoZKHgb5QuHiEnxZG7VVFif_NVEh1gJ8VzoR0povh_zRfTfeV6jzDNJi6Um2UDLIWaOK6JKYir5AgHnLZes0Zj32BDEY0VYMK-aVm1rp0LBnfSISXbJtxVQuNqSj6M6ts8lB6tEcRAuh1B25KPdneUQWJD-xuRGGEROYMGjpWdyb3xuZiVGaKfIJK5HRjuKm7P3e2cyMg9ErCPQNIFPtAdYhHKUn9k2KldK7k8zzjOyIRoXsl')">
+</div>
+<span class="absolute top-2 left-2 bg-surface-variant text-on-surface-variant font-label-caps text-[9px] px-1.5 py-0.5 tracking-wider uppercase">TGSEB Lot</span>
+</div>
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase tracking-widest block">Wayanad Reserve • 100g</span>
+<h4 class="font-headline-sm text-[18px] text-primary mt-1 group-hover:text-secondary transition-colors">Malabar Tellicherry Peppercorns</h4>
+<p class="font-body-sm text-[12px] text-on-surface-variant mt-1 line-clamp-2">Extra-bold berry ripeness providing robust citrus-forward heat.</p>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between">
+<span class="font-body-md text-body-md font-bold text-primary">₹280</span>
+<button class="p-2 bg-surface-container hover:bg-primary hover:text-on-primary text-primary transition-colors" onclick="addSingleSpice('Malabar Tellicherry Peppercorns', 280)" title="Add to basket">
+<span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+</button>
+</div>
+</div>
+<!-- Spice 5 -->
+<div class="bg-surface p-space-sm flex flex-col justify-between group shadow-sm hover:shadow-md transition-shadow">
+<div>
+<div class="aspect-square w-full bg-surface-container-low mb-space-sm overflow-hidden relative">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Deep ruby red vibrant Kashmiri chilli powder in a terracotta bowl with dried whole wrinkled red chillies beside it on marble." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBTf4T5bEzh_3bOu3-zB5LndTs6GJDzmB3-k3krd25E5BkuHeIxZgePmp1jscNcqLOc-oEoiyCjBLLSRK8rc_vOKjlgls-KIv507zXeIgPxyh6e-6J4hFojo7n-IV0ulE39W7yN4FKWdneOlK_WEbEeDTPW-lauBBuk0ogRTsmKhy-fRQXz9rRciiHQ9cWMe6knpXmoZQi6z5AdFDL5qJMn6qqarDZq7tKBddFlMwZnbHDGRxMgQCUL')">
+</div>
+<span class="absolute top-2 left-2 bg-primary-container text-on-primary font-label-caps text-[9px] px-1.5 py-0.5 tracking-wider uppercase">Vibrant Crimson</span>
+</div>
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase tracking-widest block">Pampore Valley • 100g</span>
+<h4 class="font-headline-sm text-[18px] text-primary mt-1 group-hover:text-secondary transition-colors">Kashmiri Red Chilli Powder</h4>
+<p class="font-body-sm text-[12px] text-on-surface-variant mt-1 line-clamp-2">Lustrous crimson color with gentle natural heat and sweet sun-dried fruit notes.</p>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between">
+<span class="font-body-md text-body-md font-bold text-primary">₹249</span>
+<button class="p-2 bg-surface-container hover:bg-primary hover:text-on-primary text-primary transition-colors" onclick="addSingleSpice('Kashmiri Red Chilli Powder', 249)" title="Add to basket">
+<span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- HOW TO MAKE IT (NUMBERED CULINARY STEPS) -->
+<section class="w-full bg-surface py-space-xl px-gutter-desktop" id="method">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-xl">
+<div>
+<span class="font-label-caps text-label-caps uppercase tracking-[0.2em] text-secondary mb-space-xs block">Sequential Technique</span>
+<h2 class="font-headline-lg text-headline-lg text-primary uppercase">How To Make It</h2>
+</div>
+<div class="mt-2 md:mt-0 flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px] text-secondary">timer</span>
+<span>Active Kitchen Time: 45 Minutes • Slow Steam: 20 Minutes</span>
+</div>
+</div>
+<div class="space-y-space-xl">
+<!-- STEP 01 (With Image: IMAGE_29) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-center">
+<div class="lg:col-span-6 order-2 lg:order-1 flex flex-col justify-center">
+<div class="flex items-center gap-3 mb-space-xs">
+<span class="font-display-hero text-headline-lg font-bold text-outline-variant/60">01</span>
+<span class="bg-surface-container px-2 py-0.5 font-label-caps text-label-caps uppercase text-secondary font-semibold">15 Min Prep • 30 Min Rest</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-space-xs">Marinade &amp; Botanical Infusion</h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed mb-space-sm">
+              In an unreactive heavy earthenware or glass bowl, thoroughly blend the hung curd, freshly crushed ginger and garlic, cold-pressed mustard oil, pink salt, Salem turmeric, Kashmiri red chilli powder, and 2 tablespoons of Vaanika Royal Biryani Masala.
+            </p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Gently fold in the fresh malai paneer cubes, par-boiled baby potatoes, cauliflower florets, and tender green peas, ensuring each piece is luxuriously cloaked in the spice marinade. Cover and let rest at cool room temperature for 30 to 45 minutes to allow the aromatic botanical oleoresins to infuse deeply.
+            </p>
+</div>
+<div class="lg:col-span-6 order-1 lg:order-2">
+<div class="aspect-[16/11] overflow-hidden bg-surface-container shadow-md">
+<img alt="Chef hands gently folding marinated malai paneer cubes and heirloom vegetables in rich golden spices and hung curd in a brass bowl." class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApUeWiVE-8ybvSIrWprwjRA8pNgzZ2FSTJZGohswR43M0jRTfYKuyhcgIPTwHcIYC29RGMGwBNE6cdkThHhguCLsaWDCsxjHKPhCcXJJRDmNYh8sbh-P3XCUEX9103CzCejD71soiohWgiSfJex6AYZSiWzVfaaZtFPyPZKa5CEPiE4FDP5FqGzca9Y04KXeiMsfB1FUEH-hhiRRCw_R1u0ZThLKWlg1dzp6c5zmfxBM4H2xSeS0O9"/>
+</div>
+</div>
+</div>
+<!-- STEP 02 & 03 SPLIT (STEP 03 WITH IMAGE_28) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-center">
+<div class="lg:col-span-6">
+<div class="aspect-[16/11] overflow-hidden bg-surface-container shadow-md">
+<img alt="Aged basmati rice gently boiling in a copper pan with floating whole green cardamom pods, cinnamon quills, and bay leaves releasing fragrant steam." class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGyV9_8QXxrz5F4ipq2-8lVni6RCCC2oThKxGUxoQvFoOMx8kzMPEH7X0V6co7wVU7S2WvuK3kowBZNdlSDLyLXRubC9t5qFmXR4N8_ECBHrl6cJXmGpj7znYH0nc8nkS35X8ITY4Qn2kqQKob9RUhek7jrBgD-7Z9jUFfZRm5Rw_dgtTsqwYEzB-aY7MI9C-1yeP0gdFvc-njZSX5XdT15Zh9ZHQNpHjPSMk4nqcdlAkn712hGV_G"/>
+</div>
+</div>
+<div class="lg:col-span-6 flex flex-col justify-center">
+<div class="flex items-center gap-3 mb-space-xs">
+<span class="font-display-hero text-headline-lg font-bold text-outline-variant/60">02 &amp; 03</span>
+<span class="bg-surface-container px-2 py-0.5 font-label-caps text-label-caps uppercase text-secondary font-semibold">Parboiling Precision</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-space-xs">Grain Hydration &amp; Whole Spice Parboiling</h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed mb-space-sm">
+<strong>Step 02:</strong> Rinse the 2-year-old Dehradun basmati rice gently in cold running water three times until the runoff is clear of loose surface starch. Soak in cool mountain water for precisely 30 minutes, no longer, to avoid grain fractures.
+            </p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+<strong>Step 03:</strong> Bring 3 litres of fresh water to a rolling boil in a wide copper pan. Add rock salt (the water should taste seasoned like clean sea broth), whole green cardamom pods, cinnamon quills, cloves, shahi jeera, and tej patta. Tip the drained rice into the bubbling water. Cook over high flame for exactly 6 to 7 minutes until the grain has lengthened gracefully and snaps into three pieces when pressed—seventy percent cooked. Drain immediately through a wide perforated colander and spread over a parchment tray to halt residual cooking.
+            </p>
+</div>
+</div>
+<!-- STEPS 04 TO 08 (GRID OF ARCHITECTURAL CARDS) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter-desktop pt-space-md">
+<!-- Step 04 -->
+<div class="bg-surface-container-low p-space-md flex flex-col justify-between shadow-sm">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-display-hero text-headline-md font-bold text-outline-variant/60">04</span>
+<span class="font-label-caps text-label-caps text-secondary uppercase font-semibold">6 Minutes</span>
+</div>
+<h4 class="font-headline-sm text-[20px] text-primary mb-2">The Ghee Searing &amp; Subz Korma Base</h4>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                In your primary heavy brass handi, warm 2 tablespoons of desi ghee. Introduce the marinated vegetables and paneer in a gentle layer over medium-high heat. Sear for 3 to 4 minutes until the yogurt and spices caramelize into a rich, fragrant korma base.
+              </p>
+</div>
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase tracking-widest pt-space-sm block">Delicate Heat Searing</span>
+</div>
+<!-- Step 05 -->
+<div class="bg-surface-container-low p-space-md flex flex-col justify-between shadow-sm">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-display-hero text-headline-md font-bold text-outline-variant/60">05</span>
+<span class="font-label-caps text-label-caps text-secondary uppercase font-semibold">5 Minutes</span>
+</div>
+<h4 class="font-headline-sm text-[20px] text-primary mb-2">Architectural Dum Stratification</h4>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Evenly distribute the spiced paneer, vegetables, and rich korma gravy across the bottom of the handi. Layer fifty percent of the warm parboiled basmati rice over the base. Scatter half of the golden birista onions, freshly hand-torn mint, coriander, and a dusting of biryani masala. Crown with remaining basmati.
+              </p>
+</div>
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase tracking-widest pt-space-sm block">Layering: 2 Tier Alternation</span>
+</div>
+<!-- Step 06 -->
+<div class="bg-surface-container-low p-space-md flex flex-col justify-between shadow-sm">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-display-hero text-headline-md font-bold text-outline-variant/60">06</span>
+<span class="font-label-caps text-label-caps text-secondary uppercase font-semibold">2 Minutes</span>
+</div>
+<h4 class="font-headline-sm text-[20px] text-primary mb-2">Saffron Infusion &amp; Ghee Glaze</h4>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Drizzle the steeped golden Pampore saffron milk in deliberate concentric spirals across the white surface of the rice. Drizzle melted A2 cow ghee over the rice edges to cascade down the pot perimeter, finishing with 3 delicate drops of wild screwpine (kewra) essence and the rest of the golden birista.
+              </p>
+</div>
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase tracking-widest pt-space-sm block">Aroma Sealant Layer</span>
+</div>
+<!-- Step 07 -->
+<div class="bg-surface-container-low p-space-md flex flex-col justify-between shadow-sm">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-display-hero text-headline-md font-bold text-outline-variant/60">07</span>
+<span class="font-label-caps text-label-caps text-secondary uppercase font-semibold">20 Minutes</span>
+</div>
+<h4 class="font-headline-sm text-[20px] text-primary mb-2">Sealed Hermetic Dum Cooking</h4>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Roll the soft wholewheat dough into a long rope and press firmly along the rim of the brass pot. Press the heavy lid downward to create an absolute airtight seal. Place the pot on high flame for 3 minutes until internal steam builds, then transfer immediately atop a heavy cast iron tawa (griddle) over lowest simmer for 18 minutes.
+              </p>
+</div>
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase tracking-widest pt-space-sm block">Indirect Radiant Heat</span>
+</div>
+<!-- Step 08 -->
+<div class="bg-surface-container-low p-space-md flex flex-col justify-between shadow-sm md:col-span-2 lg:col-span-2">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-display-hero text-headline-md font-bold text-outline-variant/60">08</span>
+<span class="font-label-caps text-label-caps text-secondary uppercase font-semibold">10 Min Rest • Unveiling</span>
+</div>
+<h4 class="font-headline-sm text-[20px] text-primary mb-2">The Flavour Rest &amp; Master Reveal</h4>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Extinguish the flame and let the sealed handi rest undisturbed for 10 full minutes. This rest is essential—it allows the trapped botanical vapour pressure to equilibrate and re-hydrate every individual rice grain without breaking. Slice through the crisp dough seal with a warm knife at the dining table. Use a wide, flat brass perforated ladle (kafgeer) to gently lift from the deep base, presenting the marbled amber and ivory grains onto warm bone china.
+              </p>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between">
+<span class="font-label-caps text-[10px] text-secondary uppercase tracking-widest font-bold">Culinary Mastery Achieved</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Serve alongside chilled smoked burani raita.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CHEF'S NOTES & CULINARY SECRETS -->
+<section class="w-full bg-surface-container-low py-space-xl px-gutter-desktop" id="notes">
+<div class="max-w-7xl mx-auto">
+<div class="max-w-2xl mb-space-lg">
+<span class="font-label-caps text-label-caps uppercase tracking-[0.2em] text-secondary mb-space-xs block">Technical Mastery</span>
+<h2 class="font-headline-lg text-headline-lg text-primary uppercase">Chef's Notes &amp; Guild Secrets</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-2">
+          Small adjustments in moisture kinetics separate pedestrian rice preparations from regal Awadhi dum perfection.
+        </p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter-desktop">
+<div class="bg-surface p-space-md shadow-sm flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-secondary text-[24px] mb-space-xs">hourglass_bottom</span>
+<h4 class="font-headline-sm text-[18px] text-primary uppercase mb-2">1. The 70% Grain Rule</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              If basmati is cooked beyond 70% in water, it will absorb the vegetable korma pan gravy too quickly and dissolve into mash under steam pressure. Test by snapping: it must split cleanly into three parts with a firm chalky core.
+            </p>
+</div>
+<span class="font-label-caps text-[9px] text-secondary uppercase tracking-widest mt-4 block">Structural Integrity</span>
+</div>
+<div class="bg-surface p-space-md shadow-sm flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-secondary text-[24px] mb-space-xs">local_fire_department</span>
+<h4 class="font-headline-sm text-[18px] text-primary uppercase mb-2">2. Indirect Tawa Buffer</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Direct gas flame against modern cookware creates localized scorching at the bottom layer. Always position a seasoned 5mm cast iron tawa between the open burner and your handi during the low-heat 18-minute dum cycle.
+            </p>
+</div>
+<span class="font-label-caps text-[9px] text-secondary uppercase tracking-widest mt-4 block">Heat Distribution</span>
+</div>
+<div class="bg-surface p-space-md shadow-sm flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-secondary text-[24px] mb-space-xs">spa</span>
+<h4 class="font-headline-sm text-[18px] text-primary uppercase mb-2">3. Bruise, Never Crush</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              When adding fresh mint leaves to the dum layers, hand-tear or gently bruise them. Cutting with a dull steel blade oxidizes chlorophyll, imparting a bitter, vegetal astringency rather than crisp sweet menthol top notes.
+            </p>
+</div>
+<span class="font-label-caps text-[9px] text-secondary uppercase tracking-widest mt-4 block">Enzyme Care</span>
+</div>
+<div class="bg-surface p-space-md shadow-sm flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-secondary text-[24px] mb-space-xs">cloud_sync</span>
+<h4 class="font-headline-sm text-[18px] text-primary uppercase mb-2">4. Rest Before Lifting</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Never cut the dough seal immediately after killing the flame. The internal steam vacuum will collapse fragile starch lattices. The mandatory 10-minute resting period allows basmati starches to firm and temper.
+            </p>
+</div>
+<span class="font-label-caps text-[9px] text-secondary uppercase tracking-widest mt-4 block">Thermodynamics</span>
+</div>
+</div>
+</div>
+</section>
+<!-- MAKE IT YOUR OWN (SUBSTITUTIONS & DIETARY VARIATIONS) -->
+<section class="w-full bg-surface py-space-xl px-gutter-desktop" id="variations">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-lg">
+<div>
+<span class="font-label-caps text-label-caps uppercase tracking-[0.2em] text-secondary mb-space-xs block">Adaptations</span>
+<h2 class="font-headline-lg text-headline-lg text-primary uppercase">Make It Your Own</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md mt-2 md:mt-0">
+          Our spice architecture is calibrated to accommodate varied proteins and dietary standards without compromising aromatic balance.
+        </p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter-desktop">
+<!-- Variation 1: Protein -->
+<div class="bg-surface-container-low p-space-md flex flex-col justify-between shadow-sm">
+<div>
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-wider block mb-1">Protein Shift</span>
+<h4 class="font-headline-sm text-[18px] text-primary uppercase mb-2">Soya Chaap &amp; Lotus Stem</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Substitute malai paneer with <strong>400g grilled soya chaap chunks</strong> and <strong>200g sliced Kashmiri nadru (lotus stem)</strong> for dense, fibrous absorption of the Awadhi spice bouquet.
+            </p>
+</div>
+<div class="mt-space-sm pt-space-xs border-t-0 bg-surface p-2 text-primary font-label-caps text-[10px] tracking-wider uppercase">
+            Alternative: Smoked Tofu
+          </div>
+</div>
+<!-- Variation 2: Low Carb Rice -->
+<div class="bg-surface-container-low p-space-md flex flex-col justify-between shadow-sm">
+<div>
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-wider block mb-1">Grain Adaptation</span>
+<h4 class="font-headline-sm text-[18px] text-primary uppercase mb-2">Brown Basmati Option</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              For whole-grain dietary regimes, use <strong>Himalayan Brown Basmati</strong>. Increase soaking to 2 hours and boil for 18 minutes to reach the 70% threshold. Requires 5 additional minutes of dum steaming.
+            </p>
+</div>
+<div class="mt-space-sm pt-space-xs bg-surface p-2 text-primary font-label-caps text-[10px] tracking-wider uppercase">
+            Glycemic Index: Reduced by 35%
+          </div>
+</div>
+<!-- Variation 3: Vegan Fat -->
+<div class="bg-surface-container-low p-space-md flex flex-col justify-between shadow-sm">
+<div>
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-wider block mb-1">Plant-Based Fat</span>
+<h4 class="font-headline-sm text-[18px] text-primary uppercase mb-2">Strict Vegan Adaptation</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Replace cow ghee with <strong>cold-pressed coconut oil</strong> or cold-pressed mustard oil. Substitute hung dairy curd in the marinade with cashew-cream curd blended with 1 tsp fresh lemon juice.
+            </p>
+</div>
+<div class="mt-space-sm pt-space-xs bg-surface p-2 text-primary font-label-caps text-[10px] tracking-wider uppercase">
+            Zero Dairy Oleoresins
+          </div>
+</div>
+<!-- Variation 4: Herb Palette -->
+<div class="bg-surface-container-low p-space-md flex flex-col justify-between shadow-sm">
+<div>
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-wider block mb-1">Herb Modulation</span>
+<h4 class="font-headline-sm text-[18px] text-primary uppercase mb-2">Sun-Dried Spearmint</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              In cold seasons when fresh mint lacks oil potency, rehydrate <strong>2 tbsp of sun-dried Kashmiri spearmint</strong> in warm rose water for 10 minutes, using it sparingly between rice strata.
+            </p>
+</div>
+<div class="mt-space-sm pt-space-xs bg-surface p-2 text-primary font-label-caps text-[10px] tracking-wider uppercase">
+            Heightened Menthol Concentration
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- NUTRITIONAL PROFILE & ARCHIVAL STORAGE ADVICE -->
+<section class="w-full bg-surface-container py-space-xl px-gutter-desktop">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop">
+<!-- Nutrition Breakdown -->
+<div class="lg:col-span-6 bg-surface p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<span class="font-label-caps text-label-caps uppercase tracking-[0.2em] text-secondary mb-space-xs block">Lab Analysis</span>
+<h3 class="font-headline-sm text-headline-sm text-primary uppercase mb-space-sm">Nutritional Monograph</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+            Calculated per typical gourmet serving (approx. 380g cooked weight) using the royal subz &amp; paneer formulation.
+          </p>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-sm text-center mb-space-md">
+<div class="bg-surface-container-low p-space-sm">
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase tracking-wider block">Energy</span>
+<span class="font-headline-sm text-headline-sm font-bold text-primary">510</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant">kcal</span>
+</div>
+<div class="bg-surface-container-low p-space-sm">
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase tracking-wider block">Protein</span>
+<span class="font-headline-sm text-headline-sm font-bold text-primary">24g</span>
+<span class="font-label-sm text-[11px] text-secondary">Malai Paneer</span>
+</div>
+<div class="bg-surface-container-low p-space-sm">
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase tracking-wider block">Complex Carbs</span>
+<span class="font-headline-sm text-headline-sm font-bold text-primary">62g</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant">Aged Starch</span>
+</div>
+<div class="bg-surface-container-low p-space-sm">
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase tracking-wider block">Lipids</span>
+<span class="font-headline-sm text-headline-sm font-bold text-primary">18g</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant">A2 Ghee / Oils</span>
+</div>
+</div>
+<div class="space-y-2 font-body-sm text-body-sm text-on-surface-variant">
+<div class="flex justify-between py-1 bg-surface-container-low px-3">
+<span>Dietary Fiber</span>
+<span class="font-semibold text-primary">4.2 g</span>
+</div>
+<div class="flex justify-between py-1 bg-surface px-3">
+<span>Naturally Occurring Curcumin</span>
+<span class="font-semibold text-primary">180 mg</span>
+</div>
+<div class="flex justify-between py-1 bg-surface-container-low px-3">
+<span>Sodium Content</span>
+<span class="font-semibold text-primary">640 mg</span>
+</div>
+</div>
+</div>
+<span class="font-label-sm text-[11px] text-on-surface-variant mt-space-md block">
+          *Values verified under certified culinary laboratory assay standards.
+        </span>
+</div>
+<!-- Storage & Reheating Monograph -->
+<div class="lg:col-span-6 bg-surface p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<span class="font-label-caps text-label-caps uppercase tracking-[0.2em] text-secondary mb-space-xs block">Preservation Protocol</span>
+<h3 class="font-headline-sm text-headline-sm text-primary uppercase mb-space-sm">Care, Storage &amp; Reheating</h3>
+<div class="space-y-space-md">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[22px] mt-0.5">ac_unit</span>
+<div>
+<h4 class="font-body-md text-body-md font-bold text-primary uppercase">Airtight Refrigeration (Up to 3 Days)</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-relaxed">
+                  Allow biryani to cool completely at room temperature for no longer than 60 minutes. Transfer gently to an airtight glass container to prevent volatile spice terpenes from diffusing throughout your refrigeration unit.
+                </p>
+</div>
+</div>
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[22px] mt-0.5">waves</span>
+<div>
+<h4 class="font-body-md text-body-md font-bold text-primary uppercase">The Skillet Steam Revival (Recommended)</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-relaxed">
+                  Avoid microwave ovens which rupture grain cell walls into rubbery fragments. Instead, spread cold biryani in a wide pan, flick 2 tablespoons of warm water or saffron milk across the top, seal tightly with foil and a lid, and warm over low flame for 7 minutes.
+                </p>
+</div>
+</div>
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[22px] mt-0.5">inventory_2</span>
+<div>
+<h4 class="font-body-md text-body-md font-bold text-primary uppercase">Cryo-Freezing Notes</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-relaxed">
+                  You may freeze vacuum-sealed portions for up to 1 month. Thaw overnight in refrigerator chambers before applying the skillet steam revival method.
+                </p>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-space-md p-space-xs bg-surface-container-low text-secondary font-label-caps text-[10px] tracking-widest uppercase flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span>Zero artificial stabilizers or synthetic tenderizers employed</span>
+</div>
+</div>
+</div>
+</section>
+<!-- WHAT HOME COOKS SAY (COMMUNITY REVIEWS) -->
+<section class="w-full bg-surface py-space-xl px-gutter-desktop" id="reviews">
+<div class="max-w-7xl mx-auto">
+<!-- Reviews Header & Score Bar -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between mb-space-lg">
+<div>
+<span class="font-label-caps text-label-caps uppercase tracking-[0.2em] text-secondary mb-space-xs block">Epicurean Community</span>
+<h2 class="font-headline-lg text-headline-lg text-primary uppercase">What Home Cooks Say</h2>
+<div class="flex items-center gap-space-sm mt-2">
+<div class="flex items-center text-secondary">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-headline-sm text-headline-sm font-bold text-primary">4.9</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">based on 128 verified cooks</span>
+</div>
+</div>
+<div class="mt-space-md lg:mt-0 flex items-center gap-space-sm">
+<button class="bg-primary-container text-on-primary font-label-caps text-label-caps uppercase tracking-widest px-space-lg py-space-sm hover:bg-primary transition-all flex items-center gap-2 shadow-sm" onclick="openReviewModal()">
+<span class="material-symbols-outlined text-[16px]">edit_note</span>
+<span>Write A Review</span>
+</button>
+</div>
+</div>
+<!-- Review Filter Tabs -->
+<div class="flex items-center gap-space-xs mb-space-md overflow-x-auto no-scrollbar pb-2">
+<button class="review-tab active bg-primary text-on-primary font-label-caps text-label-caps uppercase tracking-wider px-space-md py-1.5 transition-colors" onclick="filterReviews('all', this)">All Reviews (128)</button>
+<button class="review-tab bg-surface-container text-on-surface font-label-caps text-label-caps uppercase tracking-wider px-space-md py-1.5 hover:bg-surface-container-high transition-colors" onclick="filterReviews('photos', this)">With Kitchen Photos (42)</button>
+<button class="review-tab bg-surface-container text-on-surface font-label-caps text-label-caps uppercase tracking-wider px-space-md py-1.5 hover:bg-surface-container-high transition-colors" onclick="filterReviews('helpful', this)">Most Helpful</button>
+</div>
+<!-- Reviews Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter-desktop" id="reviewsGrid">
+<!-- Review 1 -->
+<div class="bg-surface-container-low p-space-md flex flex-col justify-between shadow-sm">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<div class="flex items-center text-secondary">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase">3 days ago</span>
+</div>
+<h4 class="font-body-md text-body-md font-bold text-primary mb-1">The 70% parboil method transformed my biryani forever.</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-space-sm">
+              "I have always struggled with clumpy, gummy rice in home dum cooking. Following the exact timing with Vaanika's Ceylon Cinnamon and Green Cardamom gave an aroma throughout our apartment block that had neighbors asking. Absolute museum quality."
+            </p>
+</div>
+<div class="pt-space-xs flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm font-semibold text-primary">Dr. Vikramaditya Rao</span>
+<span class="font-label-caps text-[9px] text-secondary uppercase">Verified Patron • Bangalore</span>
+</div>
+<button class="flex items-center gap-1 text-on-surface-variant hover:text-primary text-[11px] transition-colors">
+<span class="material-symbols-outlined text-[14px]">thumb_up</span>
+<span>24</span>
+</button>
+</div>
+</div>
+<!-- Review 2 -->
+<div class="bg-surface-container-low p-space-md flex flex-col justify-between shadow-sm">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<div class="flex items-center text-secondary">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase">1 week ago</span>
+</div>
+<h4 class="font-body-md text-body-md font-bold text-primary mb-1">Subtle, regal, and devoid of artificial greasiness.</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-space-sm">
+              "Most restaurant biryanis leave a heavy cloying oil film on the palate. Here, the Awadhi masala brings warmth from stone flower and mace that feels royal yet light. We served 6 guests and every grain was eaten."
+            </p>
+</div>
+<div class="pt-space-xs flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm font-semibold text-primary">Meera Sengupta</span>
+<span class="font-label-caps text-[9px] text-secondary uppercase">Verified Patron • Kolkata</span>
+</div>
+<button class="flex items-center gap-1 text-on-surface-variant hover:text-primary text-[11px] transition-colors">
+<span class="material-symbols-outlined text-[14px]">thumb_up</span>
+<span>18</span>
+</button>
+</div>
+</div>
+<!-- Review 3 -->
+<div class="bg-surface-container-low p-space-md flex flex-col justify-between shadow-sm">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<div class="flex items-center text-secondary">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase">2 weeks ago</span>
+</div>
+<h4 class="font-body-md text-body-md font-bold text-primary mb-1">Worth ordering the full spice kit together.</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-space-sm">
+              "The Tellicherry peppercorns and Alleppey cardamom pods in this kit are massive. You don't realize how stale supermarket spices are until you crack open these estate jars. Marinated overnight in the fridge—unbelievable tenderness."
+            </p>
+</div>
+<div class="pt-space-xs flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm font-semibold text-primary">Kabir Mehta</span>
+<span class="font-label-caps text-[9px] text-secondary uppercase">Verified Patron • New Delhi</span>
+</div>
+<button class="flex items-center gap-1 text-on-surface-variant hover:text-primary text-[11px] transition-colors">
+<span class="material-symbols-outlined text-[14px]">thumb_up</span>
+<span>31</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FREQUENTLY ASKED QUESTIONS (ACCORDION) -->
+<section class="w-full bg-surface-container-low py-space-xl px-gutter-desktop">
+<div class="max-w-4xl mx-auto">
+<div class="text-center mb-space-lg">
+<span class="font-label-caps text-label-caps uppercase tracking-[0.2em] text-secondary mb-space-xs block">Clarity &amp; Technique</span>
+<h2 class="font-headline-lg text-headline-lg text-primary uppercase">Frequently Inquired</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl mx-auto mt-2">
+          Practical advice from our master culinary botanists on executing this monograph recipe at home.
+        </p>
+</div>
+<div class="space-y-space-xs" id="faqAccordion">
+<!-- FAQ 1 -->
+<div class="bg-surface shadow-sm overflow-hidden">
+<button class="w-full p-space-md text-left flex items-center justify-between hover:bg-surface-container-low transition-colors" onclick="toggleFaq(this)">
+<span class="font-headline-sm text-[18px] text-primary">Can I adapt this recipe with other vegetables or plant proteins?</span>
+<span class="material-symbols-outlined text-secondary transform transition-transform duration-300">expand_more</span>
+</button>
+<div class="faq-content max-h-0 overflow-hidden transition-all duration-300 px-space-md bg-surface">
+<p class="font-body-md text-body-md text-on-surface-variant pb-space-md leading-relaxed">
+              Yes, exceptionally well. We suggest thick hand-cut malai paneer cubes, baby potatoes par-boiled in salted turmeric broth, Kashmiri lotus root (nadru), and grilled soya chaap chunks. Because vegetables release moisture during dum steaming, ensure you reduce your korma base slightly before assembling the layers.
+            </p>
+</div>
+</div>
+<!-- FAQ 2 -->
+<div class="bg-surface shadow-sm overflow-hidden">
+<button class="w-full p-space-md text-left flex items-center justify-between hover:bg-surface-container-low transition-colors" onclick="toggleFaq(this)">
+<span class="font-headline-sm text-[18px] text-primary">How long should the paneer and vegetables marinate?</span>
+<span class="material-symbols-outlined text-secondary transform transition-transform duration-300">expand_more</span>
+</button>
+<div class="faq-content max-h-0 overflow-hidden transition-all duration-300 px-space-md bg-surface">
+<p class="font-body-md text-body-md text-on-surface-variant pb-space-md leading-relaxed">
+              30 to 45 minutes at cool room temperature is optimal for vegetarian ingredients. Paneer absorbs spices quickly without needing prolonged breakdown, while the cultured hung curd infuses the fragrant terpenes of our Awadhi Biryani Masala throughout the vegetables.
+            </p>
+</div>
+</div>
+<!-- FAQ 3 -->
+<div class="bg-surface shadow-sm overflow-hidden">
+<button class="w-full p-space-md text-left flex items-center justify-between hover:bg-surface-container-low transition-colors" onclick="toggleFaq(this)">
+<span class="font-headline-sm text-[18px] text-primary">What pot is best if I do not possess a traditional tin-lined brass handi?</span>
+<span class="material-symbols-outlined text-secondary transform transition-transform duration-300">expand_more</span>
+</button>
+<div class="faq-content max-h-0 overflow-hidden transition-all duration-300 px-space-md bg-surface">
+<p class="font-body-md text-body-md text-on-surface-variant pb-space-md leading-relaxed">
+              A standard 5.5 to 6.5-quart enameled cast iron Dutch oven (such as Le Creuset or Staub) is an outstanding alternative. Its dense iron walls hold uniform thermodynamic inertia. If using a Dutch oven with a very heavy lid, you do not even need an atta dough seal—a double layer of heavy aluminum foil tucked under the lid works flawlessly.
+            </p>
+</div>
+</div>
+<!-- FAQ 4 -->
+<div class="bg-surface shadow-sm overflow-hidden">
+<button class="w-full p-space-md text-left flex items-center justify-between hover:bg-surface-container-low transition-colors" onclick="toggleFaq(this)">
+<span class="font-headline-sm text-[18px] text-primary">How spicy is this recipe for delicate palates?</span>
+<span class="material-symbols-outlined text-secondary transform transition-transform duration-300">expand_more</span>
+</button>
+<div class="faq-content max-h-0 overflow-hidden transition-all duration-300 px-space-md bg-surface">
+<p class="font-body-md text-body-md text-on-surface-variant pb-space-md leading-relaxed">
+              This recipe leans on aromatic depth rather than raw capsicum heat. Our Kashmiri Red Chilli is graded for vivid natural color and fruitiness with mild warmth (1,500 SHU). The warmth comes from Tellicherry black pepper and cloves. If cooking for young children, reduce the black pepper by half and omit fresh slit green chillies.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- MORE RECIPES TO TRY (RELATED MONOGRAPHS) -->
+<section class="w-full bg-surface py-space-xl px-gutter-desktop">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-lg">
+<div>
+<span class="font-label-caps text-label-caps uppercase tracking-[0.2em] text-secondary mb-space-xs block">Curated Pairings</span>
+<h2 class="font-headline-lg text-headline-lg text-primary uppercase">More Recipes To Master</h2>
+</div>
+<a class="font-label-caps text-label-caps uppercase tracking-widest text-primary hover:text-secondary flex items-center gap-1 mt-2 md:mt-0 transition-colors" href="../vaanika_artisanal_spices_recipes_culinary_monographs/code.html">
+<span>View Complete Monograph Library</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter-desktop">
+<!-- Recipe Card 1 -->
+<div class="group bg-surface-container-low overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div>
+<div class="aspect-[4/3] w-full overflow-hidden relative bg-surface-container">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Charred artisanal Paneer Tikka cubes on iron skewers seasoned with red spices and fresh mint chutney on an old wooden plank." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCU1P2hqxMWoIqdELmWFQD7LVCqObCWfP56L2zi8R19WA4ky5Gi3YNEkAz--L9Jwx5DIOAaR4ZlbFNjQOMTvoaJDsog2HGDCXKYK1sW4qgHT55fUWCoYceNhARP6PW9yBbKfUZqWOQ16kVarfQohXxHIoyMeyiqjnmpODhIb5Lijst7UBatrbzRQ1zCXEzn0tayKpYuBxBLH4B8sNkzOUXWS9364MBAC1eW35ysyRTuxTPyqGktv8MN')">
+</div>
+<span class="absolute top-2 left-2 bg-surface/90 backdrop-blur-sm text-primary font-label-caps text-[9px] px-2 py-0.5 uppercase tracking-wider">Appetizer • 30 Min</span>
+</div>
+<div class="p-space-sm">
+<span class="font-label-caps text-[10px] text-secondary uppercase tracking-widest block">Monograph #04</span>
+<h4 class="font-headline-sm text-[18px] text-primary mt-1 group-hover:text-secondary transition-colors">Tandoori Paneer Tikka</h4>
+<p class="font-body-sm text-[12px] text-on-surface-variant mt-1 line-clamp-2">Smoked over wood coals with Nagaur fenugreek leaves and mustard marinade.</p>
+</div>
+</div>
+<div class="p-space-sm pt-0">
+<a class="font-label-caps text-label-caps uppercase tracking-wider text-primary group-hover:text-secondary flex items-center gap-1 transition-colors" href="#">
+<span>View Recipe</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Recipe Card 2 -->
+<div class="group bg-surface-container-low overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div>
+<div class="aspect-[4/3] w-full overflow-hidden relative bg-surface-container">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Rich crimson Kashmiri Dum Aloo in an antique copper bowl garnished with fresh coriander and ginger juliennes." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAVuEns9igmL6nM3rJMSQlmeBBI1TXmwSXZoVOwD20BiWAYoIeXHpxTFXD7IByT_HBJUyWJU4T6pA4kHlrsjbtHbKR-Kx2jhTdr1nORwLM-KG_foDycj5TzaEAjnwzsu3phwOFN24OPN_K2rIfo9E6-rnl3na89gGtU6sW1km4jV8x2mwLeihZ-eeZ5SloGVSdPoBDlD4GMNfnGxJc_GyFbMOEMOQyeR_VcQ6AjR-suZ1bNtAuHN84_')">
+</div>
+<span class="absolute top-2 left-2 bg-surface/90 backdrop-blur-sm text-primary font-label-caps text-[9px] px-2 py-0.5 uppercase tracking-wider">Heritage • 50 Min</span>
+</div>
+<div class="p-space-sm">
+<span class="font-label-caps text-[10px] text-secondary uppercase tracking-widest block">Monograph #11</span>
+<h4 class="font-headline-sm text-[18px] text-primary mt-1 group-hover:text-secondary transition-colors">Kashmiri Dum Aloo Rogan Josh</h4>
+<p class="font-body-sm text-[12px] text-on-surface-variant mt-1 line-clamp-2">Slow-simmered golden baby potatoes with crushed black cardamom and Kashmiri dried fennel powder.</p>
+</div>
+</div>
+<div class="p-space-sm pt-0">
+<a class="font-label-caps text-label-caps uppercase tracking-wider text-primary group-hover:text-secondary flex items-center gap-1 transition-colors" href="#">
+<span>View Recipe</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Recipe Card 3 -->
+<div class="group bg-surface-container-low overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div>
+<div class="aspect-[4/3] w-full overflow-hidden relative bg-surface-container">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Golden yellow Dal Tadka with bubbling hot ghee tempering of whole cumin, garlic slices, and dried red chillies in a brass bowl." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDiiRx_Wfn2laAQJpEg5Hhg81K4eFtbeGraLOdMAvRiWPKEPVCo4X8u0cBx6nv8XroT13rb88R6Jsbu9TqfCqtwr3bKCs2W33Pr4Vh9cd22wKsxif3pFXoyyilTyeo4bgLSAwY41dvIF0QktcMmQH_40FUYqWouOQvBkcUIhiv0kCm1cLj7ejVrBG5vhM2byQrQ3y2BEkfZy1YLftQsaoJiYYaBgyFlBcW9ToTlvueAOKV2DslYJcQK')">
+</div>
+<span class="absolute top-2 left-2 bg-surface/90 backdrop-blur-sm text-primary font-label-caps text-[9px] px-2 py-0.5 uppercase tracking-wider">Comfort • 25 Min</span>
+</div>
+<div class="p-space-sm">
+<span class="font-label-caps text-[10px] text-secondary uppercase tracking-widest block">Monograph #02</span>
+<h4 class="font-headline-sm text-[18px] text-primary mt-1 group-hover:text-secondary transition-colors">Dal Tadka with Nagaur Cumin</h4>
+<p class="font-body-sm text-[12px] text-on-surface-variant mt-1 line-clamp-2">Arhar yellow lentils tempered in cow ghee with sweet wild cumin seeds and garlic.</p>
+</div>
+</div>
+<div class="p-space-sm pt-0">
+<a class="font-label-caps text-label-caps uppercase tracking-wider text-primary group-hover:text-secondary flex items-center gap-1 transition-colors" href="#">
+<span>View Recipe</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Recipe Card 4 -->
+<div class="group bg-surface-container-low overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div>
+<div class="aspect-[4/3] w-full overflow-hidden relative bg-surface-container">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Creamy golden vegetable korma with cashew nut gravy, coconut milk, and green vegetables served in an elegant stoneware bowl." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBN-ygBbtEkwvF0b6S52pBgn0McHHBe89yKGQMdxtHoa0XURuNx2H4NPWgGQt2_vqEsSLLwNTI8PNOsQbgLci0HBfxNngu6KTGA_o2FZbyOhU7DFru7z0V3LZ93Zyo5TmQgEvbrebwx6f52b_D_5A9ryLXn3sPdEutqoDEYdi9fUu1a8A0A80XAGE5UHW-NC3MmRckgY6yI5Uy6eemasbu-DESa8s_d30fTEKUwaJru03YSwztxgACG')">
+</div>
+<span class="absolute top-2 left-2 bg-surface/90 backdrop-blur-sm text-primary font-label-caps text-[9px] px-2 py-0.5 uppercase tracking-wider">Vegetarian • 40 Min</span>
+</div>
+<div class="p-space-sm">
+<span class="font-label-caps text-[10px] text-secondary uppercase tracking-widest block">Monograph #09</span>
+<h4 class="font-headline-sm text-[18px] text-primary mt-1 group-hover:text-secondary transition-colors">Golden Turmeric Vegetable Korma</h4>
+<p class="font-body-sm text-[12px] text-on-surface-variant mt-1 line-clamp-2">Garden seasonal vegetables stewed in cashew milk, cardamom, and Salem turmeric.</p>
+</div>
+</div>
+<div class="p-space-sm pt-0">
+<a class="font-label-caps text-label-caps uppercase tracking-wider text-primary group-hover:text-secondary flex items-center gap-1 transition-colors" href="#">
+<span>View Recipe</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- TOAST NOTIFICATION CONTAINER (MICRO-INTERACTION) -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 max-w-md bg-inverse-surface text-inverse-on-surface p-space-md shadow-2xl flex items-center gap-space-sm" id="actionToast">
+<span class="material-symbols-outlined text-secondary-container text-[24px]">task_alt</span>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps uppercase tracking-wider font-bold text-secondary-container" id="toastHeading">Updated Basket</span>
+<span class="font-body-sm text-body-sm text-outline-variant" id="toastMessage">Added 5 Artisanal Spices (₹1,428) to your allocation.</span>
+</div>
+<a class="ml-auto pl-space-sm font-label-caps text-label-caps uppercase tracking-widest text-surface-bright underline hover:text-secondary-container" href="#">View Cart</a>
+</div>
+<script>
+    // Serving Adjuster Logic
+    let currentServings = 4;
+    function adjustServings(delta) {
+      const newServings = currentServings + delta;
+      if (newServings < 2 || newServings > 16) return;
+      currentServings = newServings;
+      document.getElementById('servingsDisplay').textContent = currentServings;
+      
+      const multiplier = currentServings / 4;
+      document.querySelectorAll('.qty').forEach(el => {
+        const base = parseFloat(el.getAttribute('data-base'));
+        if (!isNaN(base)) {
+          const val = base * currentServings;
+          el.textContent = val % 1 === 0 ? val : val.toFixed(1).replace(/\.0$/, '');
+        }
+      });
+      showToast('Servings Scaled', `Proportions adjusted for ${currentServings} guests.`);
+    }
+
+    // Save Recipe Toggle
+    let isSaved = false;
+    function toggleSaveRecipe() {
+      isSaved = !isSaved;
+      const icon = document.getElementById('saveIcon');
+      const text = document.getElementById('saveText');
+      if (isSaved) {
+        icon.textContent = 'bookmark';
+        icon.style.fontVariationSettings = "'FILL' 1";
+        text.textContent = 'Saved to Cellar';
+        showToast('Recipe Inscribed', 'Saved to your private recipe cellar archive.');
+      } else {
+        icon.textContent = 'bookmark_border';
+        icon.style.fontVariationSettings = "'FILL' 0";
+        text.textContent = 'Save Recipe';
+        showToast('Recipe Removed', 'Recipe removed from your private archive.');
+      }
+    }
+
+    // Copy Recipe Link
+    function copyRecipeLink() {
+      if (navigator.clipboard) {
+        navigator.clipboard.writeText(window.location.href);
+        showToast('Link Copied', 'Monograph link inscribed to clipboard.');
+      }
+    }
+
+    // Add to Cart Logic
+    function addAllSpicesToCart() {
+      const btn = document.getElementById('addAllBtn');
+      const originalText = btn.innerHTML;
+      btn.innerHTML = `<span class="material-symbols-outlined text-[18px]">check</span><span>Added Complete Spice Kit!</span>`;
+      btn.classList.add('bg-secondary');
+      showToast('Vault Allocated', 'Added all 5 Monograph Spices (₹1,428) with 10% discount.');
+      setTimeout(() => {
+        btn.innerHTML = originalText;
+        btn.classList.remove('bg-secondary');
+      }, 3500);
+    }
+
+    function addSingleSpice(name, price) {
+      showToast('Jar Reserved', `Added ${name} (₹${price}) to your cart.`);
+    }
+
+    // Toast Trigger Helper
+    let toastTimeout;
+    function showToast(heading, msg) {
+      clearTimeout(toastTimeout);
+      const toast = document.getElementById('actionToast');
+      document.getElementById('toastHeading').textContent = heading;
+      document.getElementById('toastMessage').textContent = msg;
+      toast.classList.remove('translate-y-24', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+      toastTimeout = setTimeout(() => {
+        toast.classList.remove('translate-y-0', 'opacity-100');
+        toast.classList.add('translate-y-24', 'opacity-0');
+      }, 4000);
+    }
+
+    // Accordion Toggle
+    function toggleFaq(btn) {
+      const content = btn.nextElementSibling;
+      const icon = btn.querySelector('.material-symbols-outlined');
+      const isOpen = content.style.maxHeight && content.style.maxHeight !== '0px';
+
+      // Close all others
+      document.querySelectorAll('.faq-content').forEach(c => c.style.maxHeight = null);
+      document.querySelectorAll('#faqAccordion .material-symbols-outlined').forEach(i => i.classList.remove('rotate-180'));
+
+      if (!isOpen) {
+        content.style.maxHeight = content.scrollHeight + 'px';
+        icon.classList.add('rotate-180');
+      }
+    }
+
+    // Filter Review Tabs
+    function filterReviews(type, btn) {
+      document.querySelectorAll('.review-tab').forEach(t => {
+        t.classList.remove('bg-primary', 'text-on-primary');
+        t.classList.add('bg-surface-container', 'text-on-surface');
+      });
+      btn.classList.remove('bg-surface-container', 'text-on-surface');
+      btn.classList.add('bg-primary', 'text-on-primary');
+      showToast('Reviews Filtered', `Displaying reviews categorized by: ${btn.textContent.trim()}`);
+    }
+
+    function openReviewModal() {
+      showToast('Review Chamber', 'Patron correspondence ledger is ready for your entry.');
+    }
+
+    // Quick Cart Trigger from sticky bar
+    document.getElementById('quickCartTrigger')?.addEventListener('click', addAllSpicesToCart);
+  </script>
+</div></main><section class="w-full bg-surface-container py-space-xl px-gutter-desktop"><div class="max-w-4xl mx-auto text-center flex flex-col items-center"><span class="font-label-caps text-label-caps text-secondary uppercase tracking-[0.2em] mb-space-xs">Cultivated Heritage</span><h2 class="font-headline-lg text-headline-lg text-primary mb-space-sm">BRING BETTER FLAVOUR HOME</h2><p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mb-space-lg">Receive seasonal harvest allocations, single-estate tasting notes, and bespoke epicurean recipes directly from our master botanists.</p><form class="flex flex-col sm:flex-row w-full max-w-md gap-space-xs" onsubmit="event.preventDefault();"><input class="flex-1 bg-surface-container-lowest px-space-md py-space-sm text-on-surface font-body-md text-body-md placeholder:text-outline focus:outline-none focus:bg-surface-bright transition-colors" placeholder="Enter your correspondence email" type="email"/><button class="bg-primary-container text-on-primary font-label-caps text-label-caps tracking-widest uppercase px-space-lg py-space-sm hover:bg-primary transition-colors flex items-center justify-center gap-space-xs" type="submit"><span>Inscribe</span><span class="material-symbols-outlined text-[16px]">arrow_forward</span></button></form><span class="font-label-sm text-label-sm text-on-surface-variant mt-space-sm tracking-wide">Strict provenance. Zero intermediaries. Pure single-lot botanical terroir.</span></div></section><footer class="w-full bg-inverse-surface text-inverse-on-surface pt-space-xl pb-space-lg px-gutter-desktop"><div class="w-full max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-gutter-desktop mb-space-xl"><div class="lg:col-span-2 flex flex-col items-start pr-gutter-desktop"><span class="font-headline-sm text-headline-sm uppercase tracking-wider text-surface-bright mb-space-xs" class="brand-dynamic-name">VAANIKA</span><span class="font-label-caps text-label-caps text-secondary-container uppercase tracking-[0.2em] mb-space-md">Artisanal Spices</span><p class="font-body-md text-body-md text-outline-variant max-w-sm mb-space-md">Preserving centuries-old spice terroir through direct smallholder alliances across the Western Ghats, Malabar Coast, and Himalayan foothills.</p><div class="flex items-center gap-space-sm text-outline-variant"><span class="material-symbols-outlined text-[20px] text-secondary-container">eco</span><span class="font-label-sm text-label-sm uppercase tracking-wider">Regenerative &amp; Ethical Charter</span></div></div><div class="flex flex-col gap-space-sm"><span class="font-label-caps text-label-caps uppercase tracking-wider text-secondary-container mb-space-xs">Provenance</span><a class="font-body-sm text-body-sm text-outline-variant hover:text-surface-bright transition-colors" href="#">Wayanad Tellicherry Garbled</a><a class="font-body-sm text-body-sm text-outline-variant hover:text-surface-bright transition-colors" href="#">Alleppey Green Cardamom</a><a class="font-body-sm text-body-sm text-outline-variant hover:text-surface-bright transition-colors" href="#">Lakadong High-Curcumin</a><a class="font-body-sm text-body-sm text-outline-variant hover:text-surface-bright transition-colors" href="#">Pampore Kashmiri Saffron</a><a class="font-body-sm text-body-sm text-outline-variant hover:text-surface-bright transition-colors" href="#">Guntur Sannam Chilli</a></div><div class="flex flex-col gap-space-sm"><span class="font-label-caps text-label-caps uppercase tracking-wider text-secondary-container mb-space-xs">Cultivator Charter</span><a class="font-body-sm text-body-sm text-outline-variant hover:text-surface-bright transition-colors" href="#">Origin Traceability</a><a class="font-body-sm text-body-sm text-outline-variant hover:text-surface-bright transition-colors" href="#">Estate Collective Index</a><a class="font-body-sm text-body-sm text-outline-variant hover:text-surface-bright transition-colors" href="#">Harvest Calendars</a><a class="font-body-sm text-body-sm text-outline-variant hover:text-surface-bright transition-colors" href="#">Volatile Oil Analytics</a><a class="font-body-sm text-body-sm text-outline-variant hover:text-surface-bright transition-colors" href="#">Fair-Share Guild</a></div><div class="flex flex-col gap-space-sm"><span class="font-label-caps text-label-caps uppercase tracking-wider text-secondary-container mb-space-xs">Concierge</span><a class="font-body-sm text-body-sm text-outline-variant hover:text-surface-bright transition-colors" href="#">Private Spice Curation</a><a class="font-body-sm text-body-sm text-outline-variant hover:text-surface-bright transition-colors" href="#">Culinary Partnerships</a><a class="font-body-sm text-body-sm text-outline-variant hover:text-surface-bright transition-colors" href="#">Order Tracking</a><a class="font-body-sm text-body-sm text-outline-variant hover:text-surface-bright transition-colors" href="#">Care &amp; Storage Monograph</a><a class="font-body-sm text-body-sm text-outline-variant hover:text-surface-bright transition-colors" href="#">Bespoke Gifting</a></div></div><div class="w-full max-w-7xl mx-auto pt-space-md flex flex-col sm:flex-row items-center justify-between gap-space-md text-outline-variant"><p class="font-label-sm text-label-sm">© 2024 Vaanika Artisanal Spices Maison. All provenance rights reserved.</p><div class="flex items-center gap-space-lg"><a class="font-label-sm text-label-sm hover:text-surface-bright transition-colors" href="#">Privacy Charter</a><a class="font-label-sm text-label-sm hover:text-surface-bright transition-colors" href="#">Terms of Allocation</a><a class="font-label-sm text-label-sm hover:text-surface-bright transition-colors" href="#">Botanical Standards</a></div></div></footer></body></html>

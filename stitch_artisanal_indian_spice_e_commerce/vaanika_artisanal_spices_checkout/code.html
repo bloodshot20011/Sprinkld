@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "secondary": "#8f4e00",
+          "secondary-fixed-dim": "#ffb77a",
+          "surface-container": "#f3ede9",
+          "tertiary-fixed": "#ffdada",
+          "outline-variant": "#d8c1c1",
+          "primary-fixed-dim": "#ffb2b7",
+          "on-primary-fixed-variant": "#733239",
+          "primary": "#2e0007",
+          "on-tertiary-container": "#cb757a",
+          "on-primary-fixed": "#3b0710",
+          "on-secondary-fixed-variant": "#6d3a00",
+          "surface-container-highest": "#e7e1de",
+          "inverse-surface": "#32302e",
+          "on-background": "#1d1b19",
+          "on-tertiary-fixed-variant": "#753137",
+          "background": "#fff8f4",
+          "outline": "#867273",
+          "on-primary": "#ffffff",
+          "surface-bright": "#fff8f4",
+          "on-error": "#ffffff",
+          "error-container": "#ffdad6",
+          "secondary-fixed": "#ffdcc2",
+          "on-tertiary": "#ffffff",
+          "on-primary-container": "#c8767c",
+          "surface-variant": "#e7e1de",
+          "surface-container-high": "#ede7e3",
+          "on-error-container": "#93000a",
+          "inverse-primary": "#ffb2b7",
+          "surface-container-lowest": "#ffffff",
+          "surface": "#fff8f4",
+          "primary-container": "#4a121a",
+          "surface-tint": "#90494f",
+          "secondary-container": "#fea047",
+          "on-surface-variant": "#534343",
+          "primary-fixed": "#ffdadb",
+          "on-surface": "#1d1b19",
+          "on-secondary-container": "#6d3a00",
+          "inverse-on-surface": "#f6efec",
+          "tertiary": "#2e0006",
+          "error": "#ba1a1a",
+          "tertiary-container": "#4c1018",
+          "tertiary-fixed-dim": "#ffb3b6",
+          "surface-dim": "#dfd9d5",
+          "on-secondary-fixed": "#2e1500",
+          "on-secondary": "#ffffff",
+          "surface-container-low": "#f9f2ef",
+          "on-tertiary-fixed": "#3d050e"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-md": "1.25rem",
+          "space-xl": "4rem",
+          "margin": "1.25rem",
+          "space-sm": "0.75rem",
+          "margin-desktop": "4rem",
+          "space-xs": "0.375rem",
+          "gutter": "1.5rem",
+          "space-lg": "2.25rem",
+          "gutter-desktop": "2.5rem"
+        },
+        "fontFamily": {
+          "label-caps": [
+            "Plus Jakarta Sans"
+          ],
+          "display-hero-mobile": [
+            "Playfair Display"
+          ],
+          "label-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "body-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-md": [
+            "Playfair Display"
+          ],
+          "subheading": [
+            "Playfair Display"
+          ],
+          "headline-lg-mobile": [
+            "Playfair Display"
+          ],
+          "headline-sm": [
+            "Playfair Display"
+          ],
+          "body-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "body-md": [
+            "Plus Jakarta Sans"
+          ],
+          "display-hero": [
+            "Playfair Display"
+          ],
+          "headline-lg": [
+            "Playfair Display"
+          ]
+        },
+        "fontSize": {
+          "label-caps": [
+            "11px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.14em",
+              "fontWeight": "600"
+            }
+          ],
+          "display-hero-mobile": [
+            "38px",
+            {
+              "lineHeight": "46px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "400"
+            }
+          ],
+          "label-sm": [
+            "12px",
+            {
+              "lineHeight": "18px",
+              "letterSpacing": "0.04em",
+              "fontWeight": "500"
+            }
+          ],
+          "body-sm": [
+            "13px",
+            {
+              "lineHeight": "20px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-md": [
+            "32px",
+            {
+              "lineHeight": "40px",
+              "letterSpacing": "0em",
+              "fontWeight": "500"
+            }
+          ],
+          "subheading": [
+            "19px",
+            {
+              "lineHeight": "28px",
+              "letterSpacing": "0.02em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-lg-mobile": [
+            "30px",
+            {
+              "lineHeight": "38px",
+              "letterSpacing": "0em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-sm": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-lg": [
+            "17px",
+            {
+              "lineHeight": "28px",
+              "letterSpacing": "0em",
+              "fontWeight": "400"
+            }
+          ],
+          "body-md": [
+            "15px",
+            {
+              "lineHeight": "24px",
+              "letterSpacing": "0.005em",
+              "fontWeight": "400"
+            }
+          ],
+          "display-hero": [
+            "64px",
+            {
+              "lineHeight": "72px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-lg": [
+            "44px",
+            {
+              "lineHeight": "52px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "400"
+            }
+          ]
+        }
+      },
+    },
+  }</script><link rel="stylesheet" href="../theme-styles.css"/>
+<script src="../theme-manager.js"></script>
+</head><body class="bg-background font-body-md text-on-surface antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed"><header class="fixed top-0 inset-x-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-7xl mx-auto px-margin lg:px-margin-desktop flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="A refined, minimalist luxury wordmark and insignia for 'MASALA VAULT' artisanal Indian spices, featuring an elegant monogram emblem with botanical spice star anise/clove motifs and timeless serif lettering.. Brand logo. - Primary color: #4a121a
+- Font: playfairDisplay
+- Mode: light
+- Roundness: rounded-lg
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1U7umTVxr7A_QAstDKrJBl6jpxejtiF_7gLzXm0ixYON8uRvVXETcymHjliPJZT2Eh7qznUdVBFBY4fEyUn8PxUOggGZsHwyePDfLOBxq2ZPam4Dl2CmjnobTD2rfV_2Wlw5jMu0caGvHAAFWIQ9xwcnskkoqvKSi54JrUngvSVhmkEUBvGZP6dtTuqeYaDYjhzkkhMcy8TtmuZAW4mJsX3tO5DP879AVnvZt1jX3SYk2y3A-yHyVwkkw"/><span class="font-headline-sm text-headline-sm text-primary font-semibold tracking-tight" class="brand-dynamic-name">Vaanika</span></div><div class="flex items-center gap-space-md"><div class="hidden sm:flex items-center gap-space-xs px-space-sm py-1.5 bg-surface-container-low rounded-DEFAULT"><span class="material-symbols-outlined text-secondary text-[16px]">lock</span><span class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant font-semibold">Secure 256-Bit Encrypted Checkout</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-background min-h-screen"><div class="max-w-7xl mx-auto px-margin lg:px-margin-desktop pt-space-md pb-space-xs"><nav class="flex items-center gap-2 font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant" data-active-classes="text-primary font-semibold"><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="cart" href="#">Cart</a><span class="text-outline-variant font-light">/</span><a aria-current="page" class="transition-colors text-primary font-semibold" data-path="checkout" href="#">Checkout</a></nav></div><div class="max-w-7xl mx-auto px-margin lg:px-margin-desktop py-space-sm"><div class="flex flex-col w-full">
+<!-- Interactive Step Indicator Bar -->
+<div class="w-full mb-space-lg">
+<div class="flex items-center justify-between max-w-2xl mx-auto px-4">
+<div class="flex items-center gap-space-xs text-primary font-label-caps text-label-caps uppercase">
+<span class="w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold text-[11px]">1</span>
+<span class="tracking-widest font-semibold">Contact &amp; Delivery</span>
+</div>
+<div class="flex-1 h-[1px] bg-outline-variant/40 mx-3"></div>
+<div class="flex items-center gap-space-xs text-primary font-label-caps text-label-caps uppercase">
+<span class="w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold text-[11px]">2</span>
+<span class="tracking-widest font-semibold">Transit Protocol</span>
+</div>
+<div class="flex-1 h-[1px] bg-outline-variant/40 mx-3"></div>
+<div class="flex items-center gap-space-xs text-secondary font-label-caps text-label-caps uppercase">
+<span class="w-6 h-6 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold text-[11px] shadow-sm">3</span>
+<span class="tracking-widest font-bold">Payment &amp; Vault Review</span>
+</div>
+</div>
+</div>
+<!-- QA Preview Controls -->
+<div class="w-full flex justify-end items-center mb-space-sm gap-2">
+<button class="text-on-surface-variant hover:text-primary font-label-caps text-[10px] uppercase tracking-widest px-3 py-1 bg-surface-container rounded transition-all" id="qa-toggle-empty" type="button">
+      Toggle Cart State (Empty / Populated)
+    </button>
+</div>
+<!-- Empty Cart State Screen (Hidden by Default) -->
+<div class="hidden flex-col items-center justify-center py-20 px-4 text-center max-w-xl mx-auto" id="empty-cart-state">
+<div class="w-20 h-20 rounded-full bg-surface-container flex items-center justify-center mb-6 text-primary">
+<span class="material-symbols-outlined text-[36px]">inventory_2</span>
+</div>
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary mb-2 font-semibold">Vault Receptacle Empty</span>
+<h2 class="font-headline-md text-headline-md text-primary mb-3">Your spice cellar awaits curation.</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">
+      No botanical lots or single-estate harvests are currently staged for dispatch. Explore our recent Wayanad, Salem, and Pampore harvests.
+    </p>
+<button class="bg-primary text-on-primary font-label-caps text-label-caps uppercase tracking-widest px-8 py-3.5 hover:bg-primary-container transition-all" onclick="document.getElementById('qa-toggle-empty').click()" type="button">
+      Return to Curated Lots
+    </button>
+</div>
+<!-- Main Checkout Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-start" id="checkout-main-grid">
+<!-- LEFT COLUMN: Forms (approx 62% on 12 cols = 7 cols or lg:col-span-7) -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<!-- SECTION 1: CONTACT INFORMATION -->
+<section class="bg-surface-container-lowest p-6 md:p-8 rounded-DEFAULT shadow-sm">
+<div class="flex items-center justify-between pb-4 mb-6 bg-surface-container-low/50 px-4 py-3 rounded">
+<div class="flex items-center gap-2">
+<span class="font-label-caps text-label-caps uppercase text-secondary font-bold tracking-widest">01.</span>
+<h2 class="font-headline-sm text-headline-sm text-primary tracking-tight">Contact Information</h2>
+</div>
+<a class="font-label-sm text-label-sm text-secondary hover:text-primary transition-colors flex items-center gap-1" href="#">
+<span>Cellar Sign In</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+<div class="space-y-4">
+<div>
+<label class="block font-label-caps text-label-caps uppercase text-on-surface-variant mb-1.5" for="email">
+              Dispatch Monograph &amp; Tracking Email
+            </label>
+<div class="relative">
+<input class="w-full bg-surface-container-low px-4 py-3 text-on-surface font-body-md text-body-md rounded focus:outline-none focus:bg-surface-container-lowest transition-all" id="email" placeholder="name@domain.com" type="email" value="artisan.patron@epicurean.in"/>
+<div class="absolute right-3.5 top-3.5 flex items-center text-secondary" id="email-valid-icon">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+</div>
+</div>
+<div>
+<label class="block font-label-caps text-label-caps uppercase text-on-surface-variant mb-1.5" for="phone">
+              Mobile Authentication (+91 Courier Protocol)
+            </label>
+<div class="flex">
+<span class="inline-flex items-center px-4 bg-surface-container text-on-surface font-body-md text-body-md rounded-l">
+                +91
+              </span>
+<input class="w-full bg-surface-container-low px-4 py-3 text-on-surface font-body-md text-body-md rounded-r focus:outline-none focus:bg-surface-container-lowest transition-all" id="phone" placeholder="98765 43210" type="tel" value="98201 49822"/>
+</div>
+</div>
+<label class="flex items-start gap-3 pt-2 cursor-pointer select-none">
+<input checked="" class="mt-1 accent-primary w-4 h-4 rounded" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+              Send me dispatch updates, harvest monographs, and seasonal tasting allocations via SMS &amp; Email.
+            </span>
+</label>
+</div>
+</section>
+<!-- SECTION 2: DELIVERY ADDRESS -->
+<section class="bg-surface-container-lowest p-6 md:p-8 rounded-DEFAULT shadow-sm">
+<div class="flex items-center justify-between pb-4 mb-6 bg-surface-container-low/50 px-4 py-3 rounded">
+<div class="flex items-center gap-2">
+<span class="font-label-caps text-label-caps uppercase text-secondary font-bold tracking-widest">02.</span>
+<h2 class="font-headline-sm text-headline-sm text-primary tracking-tight">Delivery Address</h2>
+</div>
+<span class="font-label-caps text-[10px] tracking-widest text-on-surface-variant uppercase bg-surface-container px-2.5 py-1 rounded">Single-Estate Safe</span>
+</div>
+<div class="space-y-4">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block font-label-caps text-label-caps uppercase text-on-surface-variant mb-1.5" for="first-name">First Name</label>
+<input class="w-full bg-surface-container-low px-4 py-3 text-on-surface font-body-md text-body-md rounded focus:outline-none focus:bg-surface-container-lowest transition-all" id="first-name" type="text" value="Raghavendra"/>
+</div>
+<div>
+<label class="block font-label-caps text-label-caps uppercase text-on-surface-variant mb-1.5" for="last-name">Last Name</label>
+<input class="w-full bg-surface-container-low px-4 py-3 text-on-surface font-body-md text-body-md rounded focus:outline-none focus:bg-surface-container-lowest transition-all" id="last-name" type="text" value="Suryavanshi"/>
+</div>
+</div>
+<div>
+<label class="block font-label-caps text-label-caps uppercase text-on-surface-variant mb-1.5" for="street-address">Street Address / Estate Line</label>
+<input class="w-full bg-surface-container-low px-4 py-3 text-on-surface font-body-md text-body-md rounded focus:outline-none focus:bg-surface-container-lowest transition-all" id="street-address" placeholder="House/Flat number, road or estate" type="text" value="Flat 402, Nilgiri Heritage Enclave"/>
+</div>
+<div>
+<label class="block font-label-caps text-label-caps uppercase text-on-surface-variant mb-1.5" for="landmark">Apartment, Suite, Villa or Landmark (Optional)</label>
+<input class="w-full bg-surface-container-low px-4 py-3 text-on-surface font-body-md text-body-md rounded focus:outline-none focus:bg-surface-container-lowest transition-all" id="landmark" placeholder="Nearby landmark for delivery personnel" type="text" value="Opposite Botanical Gardens Gate 2"/>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+<div>
+<label class="block font-label-caps text-label-caps uppercase text-on-surface-variant mb-1.5" for="city">City</label>
+<input class="w-full bg-surface-container-low px-4 py-3 text-on-surface font-body-md text-body-md rounded focus:outline-none focus:bg-surface-container-lowest transition-all" id="city" type="text" value="New Delhi"/>
+</div>
+<div>
+<label class="block font-label-caps text-label-caps uppercase text-on-surface-variant mb-1.5" for="state">State</label>
+<select class="w-full bg-surface-container-low px-4 py-3 text-on-surface font-body-md text-body-md rounded focus:outline-none focus:bg-surface-container-lowest transition-all" id="state">
+<option selected="" value="Delhi NCR">Delhi NCR</option>
+<option value="Maharashtra">Maharashtra</option>
+<option value="Karnataka">Karnataka</option>
+<option value="Tamil Nadu">Tamil Nadu</option>
+<option value="West Bengal">West Bengal</option>
+<option value="Kerala">Kerala</option>
+<option value="Telangana">Telangana</option>
+<option value="Gujarat">Gujarat</option>
+<option value="Rajasthan">Rajasthan</option>
+</select>
+</div>
+<div>
+<label class="block font-label-caps text-label-caps uppercase text-on-surface-variant mb-1.5" for="pincode">PIN Code</label>
+<div class="flex gap-1.5">
+<input class="w-full bg-surface-container-low px-4 py-3 text-on-surface font-body-md text-body-md rounded focus:outline-none focus:bg-surface-container-lowest transition-all" id="pincode" maxlength="6" placeholder="PIN" type="text" value="110001"/>
+<button class="bg-surface-container hover:bg-surface-container-high px-3 py-2 text-primary font-label-caps text-[10px] uppercase font-bold tracking-wider rounded transition-all" id="check-pin-btn" type="button">
+                  Check
+                </button>
+</div>
+</div>
+</div>
+<!-- Interactive PIN Verification Pill -->
+<div class="p-3 bg-surface-container-low rounded flex items-center justify-between" id="pincode-status-box">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">verified</span>
+<span class="font-body-sm text-body-sm text-primary font-medium">
+                PIN 110001 Verified: Delivery active via Climate-Safe Express (2–4 business days).
+              </span>
+</div>
+<span class="font-label-caps text-[10px] text-secondary font-bold uppercase tracking-widest">Active Route</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-1">
+<div>
+<label class="block font-label-caps text-label-caps uppercase text-on-surface-variant mb-1.5" for="country">Country / Sovereign Region</label>
+<input class="w-full bg-surface-container px-4 py-3 text-on-surface-variant font-body-md text-body-md rounded cursor-not-allowed" disabled="" id="country" type="text" value="India"/>
+</div>
+<div class="flex items-center">
+<label class="flex items-center gap-3 cursor-pointer select-none pt-4">
+<input checked="" class="accent-primary w-4 h-4 rounded" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Save this address to my profile</span>
+</label>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: DELIVERY METHOD -->
+<section class="bg-surface-container-lowest p-6 md:p-8 rounded-DEFAULT shadow-sm">
+<div class="flex items-center justify-between pb-4 mb-6 bg-surface-container-low/50 px-4 py-3 rounded">
+<div class="flex items-center gap-2">
+<span class="font-label-caps text-label-caps uppercase text-secondary font-bold tracking-widest">03.</span>
+<h2 class="font-headline-sm text-headline-sm text-primary tracking-tight">Delivery Protocol</h2>
+</div>
+<span class="font-label-caps text-[10px] tracking-widest text-on-surface-variant uppercase">Temperature Stabilized</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<!-- Standard Shipping -->
+<label class="relative p-5 rounded cursor-pointer transition-all bg-surface-container-low ring-2 ring-primary flex flex-col justify-between" id="shipping-card-std">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-3">
+<input checked="" class="accent-primary w-4 h-4 mt-0.5" id="ship-std" name="shipping-method" type="radio" value="0"/>
+<div>
+<span class="block font-headline-sm text-[16px] text-primary font-semibold">Climate-Safe Standard</span>
+<span class="block font-body-sm text-body-sm text-on-surface-variant mt-0.5">2–4 Business Days Transit</span>
+</div>
+</div>
+<span class="font-label-caps text-label-caps text-secondary font-bold tracking-wider">FREE</span>
+</div>
+<p class="font-body-sm text-[12px] text-on-surface-variant mt-4 pt-3 bg-surface-container/60 p-2.5 rounded">
+              Aroma-sealed amber jars packed in isothermal recycled coir pulp.
+            </p>
+</label>
+<!-- Cold-Chain Air Express -->
+<label class="relative p-5 rounded cursor-pointer transition-all bg-surface-container-low hover:bg-surface-container flex flex-col justify-between" id="shipping-card-exp">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-3">
+<input class="accent-primary w-4 h-4 mt-0.5" id="ship-exp" name="shipping-method" type="radio" value="99"/>
+<div>
+<span class="block font-headline-sm text-[16px] text-primary font-semibold">Cold-Chain Air Express</span>
+<span class="block font-body-sm text-body-sm text-on-surface-variant mt-0.5">Next Flight Out (1–2 Days)</span>
+</div>
+</div>
+<span class="font-label-caps text-label-caps text-primary font-bold tracking-wider">₹99.00</span>
+</div>
+<p class="font-body-sm text-[12px] text-on-surface-variant mt-4 pt-3 bg-surface-container/60 p-2.5 rounded">
+              Priority domestic cargo dispatch to safeguard high volatile essential oils.
+            </p>
+</label>
+</div>
+</section>
+<!-- SECTION 4: PAYMENT METHOD -->
+<section class="bg-surface-container-lowest p-6 md:p-8 rounded-DEFAULT shadow-sm">
+<div class="flex items-center justify-between pb-4 mb-2 bg-surface-container-low/50 px-4 py-3 rounded">
+<div class="flex items-center gap-2">
+<span class="font-label-caps text-label-caps uppercase text-secondary font-bold tracking-widest">04.</span>
+<h2 class="font-headline-sm text-headline-sm text-primary tracking-tight">Payment Method</h2>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant text-[12px]">
+<span class="material-symbols-outlined text-[15px] text-secondary">encrypted</span>
+<span class="font-label-caps text-[10px] tracking-wider uppercase">256-Bit SSL Vault</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6">
+          Select your preferred payment channel. All gateway channels are encrypted directly with banking rails.
+        </p>
+<!-- Method Tabs -->
+<div class="grid grid-cols-2 sm:grid-cols-5 gap-2 mb-6">
+<button class="pay-tab-btn py-3 px-2 rounded bg-surface-container-high text-primary font-label-caps text-label-caps uppercase tracking-wider font-semibold transition-all" data-tab="upi" type="button">
+            UPI / QR
+          </button>
+<button class="pay-tab-btn py-3 px-2 rounded bg-surface-container-low text-on-surface-variant hover:text-primary font-label-caps text-label-caps uppercase tracking-wider transition-all" data-tab="card" type="button">
+            Card
+          </button>
+<button class="pay-tab-btn py-3 px-2 rounded bg-surface-container-low text-on-surface-variant hover:text-primary font-label-caps text-label-caps uppercase tracking-wider transition-all" data-tab="netbanking" type="button">
+            Net Banking
+          </button>
+<button class="pay-tab-btn py-3 px-2 rounded bg-surface-container-low text-on-surface-variant hover:text-primary font-label-caps text-label-caps uppercase tracking-wider transition-all" data-tab="wallets" type="button">
+            Wallets
+          </button>
+<button class="pay-tab-btn py-3 px-2 rounded bg-surface-container-low text-on-surface-variant hover:text-primary font-label-caps text-label-caps uppercase tracking-wider transition-all col-span-2 sm:col-span-1" data-tab="cod" type="button">
+            Cash On Delivery
+          </button>
+</div>
+<!-- TAB CONTENT 1: UPI -->
+<div class="pay-content-panel space-y-4" id="tab-content-upi">
+<div class="p-4 bg-surface-container-low rounded space-y-4">
+<span class="font-label-caps text-[11px] uppercase tracking-wider text-on-surface-variant block">Quick App Selection</span>
+<div class="grid grid-cols-4 gap-2">
+<button class="p-3 bg-surface-container-lowest hover:bg-surface-container-high rounded text-center transition-all flex flex-col items-center gap-1" type="button">
+<span class="font-label-caps text-[11px] font-bold text-primary">GPay</span>
+<span class="text-[10px] text-on-surface-variant">Instant</span>
+</button>
+<button class="p-3 bg-surface-container-lowest hover:bg-surface-container-high rounded text-center transition-all flex flex-col items-center gap-1" type="button">
+<span class="font-label-caps text-[11px] font-bold text-primary">PhonePe</span>
+<span class="text-[10px] text-on-surface-variant">Fast</span>
+</button>
+<button class="p-3 bg-surface-container-lowest hover:bg-surface-container-high rounded text-center transition-all flex flex-col items-center gap-1" type="button">
+<span class="font-label-caps text-[11px] font-bold text-primary">Paytm</span>
+<span class="text-[10px] text-on-surface-variant">Wallet/UPI</span>
+</button>
+<button class="p-3 bg-surface-container-lowest hover:bg-surface-container-high rounded text-center transition-all flex flex-col items-center gap-1" type="button">
+<span class="font-label-caps text-[11px] font-bold text-primary">BHIM</span>
+<span class="text-[10px] text-on-surface-variant">Direct</span>
+</button>
+</div>
+<div>
+<label class="block font-label-caps text-label-caps uppercase text-on-surface-variant mb-1.5" for="upi-id">Or Enter Virtual Payment Address (VPA)</label>
+<div class="flex gap-2">
+<input class="w-full bg-surface-container-lowest px-4 py-3 text-on-surface font-body-md text-body-md rounded focus:outline-none" id="upi-id" placeholder="yourname@bank" type="text" value="raghavendra@okhdfcbank"/>
+<button class="bg-primary hover:bg-primary-container text-on-primary font-label-caps text-label-caps uppercase px-5 py-3 tracking-wider rounded transition-all" id="verify-vpa-btn" type="button">
+                  Verify VPA
+                </button>
+</div>
+<div class="mt-2 flex items-center gap-2 text-secondary font-body-sm text-body-sm" id="vpa-status">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>Verified Holder: <strong>Raghavendra Suryavanshi</strong></span>
+</div>
+</div>
+</div>
+</div>
+<!-- TAB CONTENT 2: CARD (HIDDEN INITIALLY) -->
+<div class="pay-content-panel hidden space-y-4" id="tab-content-card">
+<div class="p-5 bg-surface-container-low rounded space-y-4">
+<div class="flex items-center justify-between pb-2">
+<span class="font-label-caps text-[11px] uppercase tracking-wider text-on-surface-variant">Domestic &amp; International Cards</span>
+<div class="flex items-center gap-2 font-label-caps text-[11px] text-on-surface-variant font-bold">
+<span>VISA</span> • <span>MC</span> • <span>RUPAY</span> • <span>AMEX</span>
+</div>
+</div>
+<div>
+<label class="block font-label-caps text-label-caps uppercase text-on-surface-variant mb-1" for="card-num">Card Number</label>
+<div class="relative">
+<input class="w-full bg-surface-container-lowest px-4 py-3 text-on-surface font-body-md rounded focus:outline-none" id="card-num" placeholder="4532 •••• •••• 8921" type="text"/>
+<span class="material-symbols-outlined absolute right-3 top-3 text-on-surface-variant text-[20px]">credit_card</span>
+</div>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
+<div class="col-span-1">
+<label class="block font-label-caps text-label-caps uppercase text-on-surface-variant mb-1" for="card-exp">Expiry (MM/YY)</label>
+<input class="w-full bg-surface-container-lowest px-4 py-3 text-on-surface font-body-md rounded focus:outline-none" id="card-exp" placeholder="08/28" type="text"/>
+</div>
+<div class="col-span-1">
+<label class="block font-label-caps text-label-caps uppercase text-on-surface-variant mb-1" for="card-cvv">CVV</label>
+<input class="w-full bg-surface-container-lowest px-4 py-3 text-on-surface font-body-md rounded focus:outline-none" id="card-cvv" maxlength="4" placeholder="•••" type="password"/>
+</div>
+<div class="col-span-2 sm:col-span-1">
+<label class="block font-label-caps text-label-caps uppercase text-on-surface-variant mb-1" for="card-name">Name on Card</label>
+<input class="w-full bg-surface-container-lowest px-4 py-3 text-on-surface font-body-md rounded focus:outline-none" id="card-name" placeholder="R Suryavanshi" type="text"/>
+</div>
+</div>
+<label class="flex items-center gap-3 pt-1 cursor-pointer">
+<input checked="" class="accent-primary w-4 h-4 rounded" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Secure this card for RBI-compliant tokenized express checkout</span>
+</label>
+</div>
+</div>
+<!-- TAB CONTENT 3: NET BANKING (HIDDEN) -->
+<div class="pay-content-panel hidden space-y-4" id="tab-content-netbanking">
+<div class="p-5 bg-surface-container-low rounded space-y-4">
+<span class="font-label-caps text-[11px] uppercase tracking-wider text-on-surface-variant block">Select Verified Financial Institution</span>
+<select class="w-full bg-surface-container-lowest px-4 py-3 text-on-surface font-body-md text-body-md rounded focus:outline-none">
+<option value="HDFC">HDFC Bank (Retail &amp; Corporate)</option>
+<option value="ICICI">ICICI Bank</option>
+<option value="SBI">State Bank of India</option>
+<option value="Axis">Axis Bank</option>
+<option value="Kotak">Kotak Mahindra Bank</option>
+<option value="IDFC">IDFC FIRST Bank</option>
+</select>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              You will be securely routed to your bank's portal to authenticate with 2FA OTP.
+            </p>
+</div>
+</div>
+<!-- TAB CONTENT 4: WALLETS (HIDDEN) -->
+<div class="pay-content-panel hidden space-y-4" id="tab-content-wallets">
+<div class="p-5 bg-surface-container-low rounded space-y-4">
+<span class="font-label-caps text-[11px] uppercase tracking-wider text-on-surface-variant block">Select Digital Wallet</span>
+<div class="grid grid-cols-3 gap-3">
+<label class="p-3 bg-surface-container-lowest rounded flex items-center gap-2 cursor-pointer">
+<input checked="" class="accent-primary" name="wallet-opt" type="radio"/>
+<span class="font-body-sm text-body-sm font-semibold text-primary">Amazon Pay</span>
+</label>
+<label class="p-3 bg-surface-container-lowest rounded flex items-center gap-2 cursor-pointer">
+<input class="accent-primary" name="wallet-opt" type="radio"/>
+<span class="font-body-sm text-body-sm font-semibold text-primary">Paytm Balance</span>
+</label>
+<label class="p-3 bg-surface-container-lowest rounded flex items-center gap-2 cursor-pointer">
+<input class="accent-primary" name="wallet-opt" type="radio"/>
+<span class="font-body-sm text-body-sm font-semibold text-primary">PhonePe</span>
+</label>
+</div>
+</div>
+</div>
+<!-- TAB CONTENT 5: COD (HIDDEN) -->
+<div class="pay-content-panel hidden space-y-4" id="tab-content-cod">
+<div class="p-5 bg-surface-container-low rounded space-y-3">
+<div class="flex items-center gap-2 text-secondary">
+<span class="material-symbols-outlined text-[20px]">local_shipping</span>
+<span class="font-headline-sm text-[16px] font-semibold text-primary">Cash &amp; On-Arrival QR Enabled</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Pay in exact currency or scan the dynamic UPI QR code on courier terminal upon arrival.
+            </p>
+<div class="p-3 bg-secondary-fixed/30 rounded flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-secondary-fixed font-medium">Remote Estate Logistics Handling Surcharge</span>
+<span class="font-label-caps text-label-caps text-on-secondary-fixed font-bold">+₹30.00</span>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 5: BILLING ADDRESS MATCH -->
+<section class="bg-surface-container-lowest p-6 md:p-8 rounded-DEFAULT shadow-sm">
+<div class="flex items-center justify-between pb-3 mb-4 bg-surface-container-low/50 px-4 py-2.5 rounded">
+<div class="flex items-center gap-2">
+<span class="font-label-caps text-label-caps uppercase text-secondary font-bold tracking-widest">05.</span>
+<h2 class="font-headline-sm text-[18px] text-primary tracking-tight">Tax Invoicing &amp; Billing</h2>
+</div>
+</div>
+<label class="flex items-center gap-3 cursor-pointer select-none">
+<input checked="" class="accent-primary w-4 h-4 rounded" id="billing-match-toggle" type="checkbox"/>
+<span class="font-body-md text-body-md text-on-surface font-medium">Billing address matches delivery address</span>
+</label>
+<!-- Expanded Billing Form (Revealed when unchecked) -->
+<div class="hidden mt-5 pt-5 border-t border-surface-container space-y-4" id="alternative-billing-box">
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-secondary font-semibold block">Alternate Invoicing Entity</span>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block font-label-caps text-label-caps uppercase text-on-surface-variant mb-1" for="bill-name">Entity or Name</label>
+<input class="w-full bg-surface-container-low px-4 py-3 text-on-surface font-body-md rounded focus:outline-none" id="bill-name" placeholder="Name on Invoice" type="text"/>
+</div>
+<div>
+<label class="block font-label-caps text-label-caps uppercase text-on-surface-variant mb-1" for="bill-gst">GSTIN (Optional)</label>
+<input class="w-full bg-surface-container-low px-4 py-3 text-on-surface font-body-md rounded focus:outline-none uppercase" id="bill-gst" placeholder="22AAAAA0000A1Z5" type="text"/>
+</div>
+</div>
+<div>
+<label class="block font-label-caps text-label-caps uppercase text-on-surface-variant mb-1" for="bill-address">Billing Street Line</label>
+<input class="w-full bg-surface-container-low px-4 py-3 text-on-surface font-body-md rounded focus:outline-none" id="bill-address" placeholder="Registered office address" type="text"/>
+</div>
+</div>
+</section>
+</div>
+<!-- RIGHT COLUMN: STICKY ORDER SUMMARY (approx 38% = 5 cols) -->
+<div class="lg:col-span-5 flex flex-col gap-space-md lg:sticky lg:top-24">
+<div class="bg-surface-container-lowest p-6 md:p-8 rounded-DEFAULT shadow-md flex flex-col gap-5">
+<!-- Header -->
+<div class="flex items-center justify-between pb-4 bg-surface-container-low/50 px-4 py-3 rounded">
+<div>
+<span class="font-label-caps text-label-caps uppercase text-secondary font-bold tracking-widest block">Harvest Vault</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Your Order (3 Items)</h3>
+</div>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors underline underline-offset-4" href="#">
+            Edit Cart
+          </a>
+</div>
+<!-- Cart Item Rows -->
+<div class="flex flex-col gap-4">
+<!-- Item 1 -->
+<div class="flex items-center gap-4 bg-surface-container-low/60 p-3 rounded">
+<div class="relative w-16 h-16 bg-surface-container shrink-0 rounded overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A macro studio shot of an amber glass jar filled with vivid deep crimson Kashmiri red chilli powder, resting on a raw linen background with soft warm culinary lighting in a luxury aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnqwAnLp7Q2oYpdVGQZq8AS9OfH0ioN5xeVnxcIx7En_6Dc5ZVMj5_EL0MMZR1pcG6134pu2LphMNIkAodXw4rDuNXYBF-BMNHXOebI0FreDox5szQhS9atHo89G4aZSiWdK9pqg6bdR_sD7-PZ9xNEijSIZii3afy5niAKEsni1dTJ9S30sj3XnHEjyBWiiRbGvzAOHeIFduUZypVdrezOrOX5Tudkvql_Sx_5Jb7yy-yEdHgBZF0"/>
+<span class="absolute top-0 right-0 bg-primary text-on-primary font-label-caps text-[10px] w-5 h-5 flex items-center justify-center font-bold">2</span>
+</div>
+<div class="flex-1 min-w-0">
+<h4 class="font-headline-sm text-[15px] text-primary truncate font-semibold">Kashmiri Red Chilli Powder</h4>
+<p class="font-body-sm text-[12px] text-on-surface-variant">100g Amber Jar • Pampore Valley</p>
+<div class="flex items-center gap-2 mt-1">
+<span class="font-label-caps text-[9px] uppercase tracking-wider bg-secondary-fixed text-on-secondary-fixed px-1.5 py-0.5 rounded font-bold">Single Estate</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-headline-sm text-[15px] text-primary font-semibold">₹498.00</span>
+<span class="block font-body-sm text-[11px] text-on-surface-variant">₹249 each</span>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="flex items-center gap-4 bg-surface-container-low/60 p-3 rounded">
+<div class="relative w-16 h-16 bg-surface-container shrink-0 rounded overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="High contrast editorial photograph of golden pure Salem turmeric powder in an apothecary jar, showing deep saffron-orange hues with authentic spice texture on an ivory stone pedestal." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7Z_ZpiPh-ey7MnoW4DZwTGcL5qF_BvNjHYOJKQFKaUwN9N1EPZ4_WfLLILTmJcNf_d7zJzLnuzUxolvPM0Bm9CPArk6YYd539Y0MY2ylZuSIUtNWIyXDpZTMPnPv0b0aShzwbQi91ccbREevCaOpoD6ss_ZFn0lZI07cbKgC5NYE8vcXHLhW1bLmHhQ346uWeoJgCmy9BTBs230Jl0QX2byojJfztn9jVPqrnIw5MPGsQLL8Ki8Yo"/>
+<span class="absolute top-0 right-0 bg-primary text-on-primary font-label-caps text-[10px] w-5 h-5 flex items-center justify-center font-bold">1</span>
+</div>
+<div class="flex-1 min-w-0">
+<h4 class="font-headline-sm text-[15px] text-primary truncate font-semibold">Salem Turmeric Powder</h4>
+<p class="font-body-sm text-[12px] text-on-surface-variant">100g Amber Jar • 4.8% Curcumin</p>
+<div class="flex items-center gap-2 mt-1">
+<span class="font-label-caps text-[9px] uppercase tracking-wider bg-surface-container text-on-surface-variant px-1.5 py-0.5 rounded">High Volatile</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-headline-sm text-[15px] text-primary font-semibold">₹280.00</span>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="flex items-center gap-4 bg-surface-container-low/60 p-3 rounded">
+<div class="relative w-16 h-16 bg-surface-container shrink-0 rounded overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Macro luxury photography of Tellicherry extra bold whole black peppercorns spilling delicately out of a dark botanical spice vial on dark parchment, natural soft side lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzNavsz9_NxvJIoR-iWTNCbrefGfeokyAXs9SqLRczUJTLlLx3335LZ41gtQs4QPgg0bnClgDM8kJq3nR9A0FLX-jXDdXZ45CVWCzKewI47JipP0-WmH8Y7hdhcT3Ks8mWbL7aiSzO0thPwntSvSj9bzR8iMyvfp0SRDAq0DfB85o0bdkWOwr1BY8aoYhrBan6tDBHDh0gVEMGdq4avzkksRBNwIJFIji2pf03YubCdqGkqo8Syv1F"/>
+<span class="absolute top-0 right-0 bg-primary text-on-primary font-label-caps text-[10px] w-5 h-5 flex items-center justify-center font-bold">1</span>
+</div>
+<div class="flex-1 min-w-0">
+<h4 class="font-headline-sm text-[15px] text-primary truncate font-semibold">Malabar Tellicherry Peppercorns</h4>
+<p class="font-body-sm text-[12px] text-on-surface-variant">100g Whole Extra Bold • Wayanad</p>
+<div class="flex items-center gap-2 mt-1">
+<span class="font-label-caps text-[9px] uppercase tracking-wider bg-secondary-fixed text-on-secondary-fixed px-1.5 py-0.5 rounded font-bold">Grade TGSEB</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-headline-sm text-[15px] text-primary font-semibold">₹420.00</span>
+</div>
+</div>
+</div>
+<!-- Promo Code Accordion / Voucher Box -->
+<div class="p-4 bg-surface-container-low rounded space-y-3">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-[11px] uppercase tracking-wider text-on-surface-variant font-semibold">Harvest Privilege Voucher</span>
+<span class="font-label-caps text-[10px] text-secondary font-bold uppercase">Code Applied</span>
+</div>
+<div class="flex gap-2">
+<input class="w-full bg-surface-container-lowest px-3 py-2 text-on-surface font-label-caps text-[12px] uppercase tracking-wider rounded focus:outline-none" id="promo-input" placeholder="Enter coupon code" type="text" value="SPICE10"/>
+<button class="bg-surface-container hover:bg-surface-container-high px-4 py-2 font-label-caps text-[11px] uppercase font-bold text-primary rounded transition-all" id="promo-apply-btn" type="button">
+              Applied
+            </button>
+</div>
+<!-- Applied Voucher Pill -->
+<div class="flex items-center justify-between bg-primary-fixed/40 px-3 py-2 rounded" id="promo-pill">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary">local_activity</span>
+<span class="font-body-sm text-[12px] text-primary font-semibold">SPICE10 (-10% Botanical Lots)</span>
+</div>
+<button class="text-on-surface-variant hover:text-error text-[11px] font-label-caps uppercase tracking-wider" id="remove-promo-btn" type="button">
+              Remove
+            </button>
+</div>
+</div>
+<!-- Ledger Calculation Breakdown -->
+<div class="space-y-2.5 pt-2 border-t border-surface-container text-body-md font-body-md">
+<div class="flex justify-between text-on-surface-variant">
+<span>Items Subtotal</span>
+<span class="font-medium text-on-surface">₹1,198.00</span>
+</div>
+<div class="flex justify-between text-secondary" id="row-discount">
+<span>Harvest Privilege (SPICE10)</span>
+<span class="font-semibold">-₹119.80</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>Climate-Safe Transit</span>
+<span class="font-semibold text-secondary" id="transit-fee-label">FREE</span>
+</div>
+<div class="hidden justify-between text-on-surface-variant" id="row-cod">
+<span>COD Estate Surcharge</span>
+<span class="font-medium text-on-surface">₹30.00</span>
+</div>
+<div class="flex justify-between text-on-surface-variant text-[13px]">
+<span>Estimated GST (5% Agri-Spice)</span>
+<span class="font-medium text-on-surface" id="gst-val">₹53.91</span>
+</div>
+<div class="flex items-baseline justify-between pt-3 border-t border-surface-container">
+<div>
+<span class="block font-headline-sm text-headline-sm text-primary font-bold">Payable Balance</span>
+<span class="block font-label-caps text-[10px] text-on-surface-variant uppercase tracking-widest">Inclusive of single-estate origin taxes</span>
+</div>
+<span class="font-headline-md text-headline-md text-primary font-bold tracking-tight" id="total-val">₹1,132.11</span>
+</div>
+</div>
+<!-- PRIMARY PLACE ORDER CTA -->
+<button class="w-full bg-primary hover:bg-[#5C1D24] text-on-primary py-4 px-6 rounded-DEFAULT flex items-center justify-center gap-3 group transition-all duration-300 shadow-md" id="place-order-btn" type="button">
+<span class="material-symbols-outlined text-[20px] text-secondary-fixed">lock</span>
+<span class="font-label-caps text-label-caps uppercase tracking-widest font-bold group-hover:tracking-[0.2em] transition-all">
+            Place Order &amp; Dispatch →
+          </span>
+</button>
+<!-- Trust & Provenance Guarantees Box -->
+<div class="p-4 bg-surface-container-low/70 rounded space-y-2 text-on-surface-variant font-body-sm text-[12px]">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+<span>UV-Filtering Amber Glass Sealed · Batch Harvest Preservation</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+<span>Certified 100% Single-Origin Zero Adulteration Provenance</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+<span>256-Bit Bank Grade SSL Encrypted Checkout Rails</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+<span>Complimentary Climate-Resilient Cold Transit Protected</span>
+</div>
+</div>
+<p class="text-center font-body-sm text-[11px] text-on-surface-variant">
+          By placing this order, you agree to Vaanika's <a class="underline hover:text-primary" href="#">Terms of Provenance</a> and <a class="underline hover:text-primary" href="#">Privacy Monograph</a>.
+        </p>
+</div>
+</div>
+</div>
+<!-- Mobile Floating Sticky Checkout Drawer Bar -->
+<div class="lg:hidden fixed bottom-0 inset-x-0 bg-surface-container-lowest p-4 border-t border-surface-container shadow-2xl z-40 flex items-center justify-between">
+<div>
+<span class="block font-label-caps text-[10px] uppercase text-on-surface-variant">Total Payable</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold" id="mobile-total-val">₹1,132.11</span>
+</div>
+<button class="bg-primary text-on-primary py-3 px-6 rounded-DEFAULT font-label-caps text-label-caps uppercase tracking-wider font-bold shadow-md" onclick="document.getElementById('place-order-btn').click()" type="button">
+      Place Order →
+    </button>
+</div>
+<!-- ORDER CONFIRMATION MODAL (DYNAMICALLY TRIGGERED) -->
+<div class="fixed inset-0 z-50 bg-primary/80 backdrop-blur-md hidden flex items-center justify-center p-4" id="order-success-modal">
+<div class="bg-background max-w-xl w-full p-8 md:p-10 rounded shadow-2xl relative text-left">
+<!-- Monograph Archival Header -->
+<div class="flex items-center justify-between pb-6 border-b border-surface-container">
+<div>
+<span class="font-label-caps text-label-caps uppercase text-secondary font-bold tracking-widest block">Dispatch Manifest Confirmed</span>
+<h2 class="font-headline-md text-headline-md text-primary mt-1">Provenance Registered.</h2>
+</div>
+<div class="w-12 h-12 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[28px]">verified</span>
+</div>
+</div>
+<!-- Lot Manifest Metadata -->
+<div class="py-6 space-y-4 font-body-md text-body-md">
+<div class="p-4 bg-surface-container-low rounded space-y-2">
+<div class="flex justify-between">
+<span class="text-on-surface-variant font-label-caps text-[11px] uppercase">Manifest Reference</span>
+<span class="font-headline-sm text-[14px] text-primary font-bold">#VAANIKA-2026-KR841</span>
+</div>
+<div class="flex justify-between">
+<span class="text-on-surface-variant font-label-caps text-[11px] uppercase">Estimated Safe Arrival</span>
+<span class="font-medium text-primary">In 2–4 Business Days (Climate Express)</span>
+</div>
+<div class="flex justify-between">
+<span class="text-on-surface-variant font-label-caps text-[11px] uppercase">Authorized Dispatch Consignee</span>
+<span class="font-medium text-primary">Raghavendra Suryavanshi</span>
+</div>
+</div>
+<p class="text-on-surface-variant font-body-sm text-body-sm leading-relaxed">
+          Your botanical lots have been sealed inside isothermal nitrogen-flushed amber jars. An archival tracking monograph has been dispatched to <strong>artisan.patron@epicurean.in</strong>.
+        </p>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-col sm:flex-row gap-3 pt-4 border-t border-surface-container">
+<button class="flex-1 bg-surface-container hover:bg-surface-container-high text-primary py-3 px-4 font-label-caps text-label-caps uppercase tracking-wider font-semibold rounded text-center transition-all" onclick="window.print()" type="button">
+          Print Harvest Certificate
+        </button>
+<button class="flex-1 bg-primary hover:bg-primary-container text-on-primary py-3 px-4 font-label-caps text-label-caps uppercase tracking-wider font-bold rounded text-center transition-all" onclick="window.location.reload()" type="button">
+          Return to Cellar Vault
+        </button>
+</div>
+</div>
+</div>
+<!-- Processing State Overlay -->
+<div class="fixed inset-0 z-50 bg-primary/70 backdrop-blur-sm hidden flex flex-col items-center justify-center text-center p-4" id="transmitting-overlay">
+<div class="w-16 h-16 border-4 border-surface-container border-t-secondary rounded-full animate-spin mb-4"></div>
+<span class="font-headline-sm text-headline-sm text-on-primary">TRANSMITTING TO DISPATCH...</span>
+<span class="font-label-caps text-label-caps text-secondary-fixed-dim uppercase tracking-widest mt-2">Encrypting lot pedigree • Reserving climate-safe cold carrier</span>
+</div>
+</div>
+<script>
+  (function initVaanikaCheckout() {
+    // Pricing state
+    const subtotal = 1198.00;
+    let promoDiscount = 119.80;
+    let shippingFee = 0;
+    let codFee = 0;
+
+    const totalEl = document.getElementById('total-val');
+    const mobileTotalEl = document.getElementById('mobile-total-val');
+    const transitFeeLabel = document.getElementById('transit-fee-label');
+    const rowCod = document.getElementById('row-cod');
+    const rowDiscount = document.getElementById('row-discount');
+    const gstValEl = document.getElementById('gst-val');
+
+    function calculateTotal() {
+      const taxable = Math.max(0, subtotal - promoDiscount);
+      const gst = taxable * 0.05; // 5% Agri GST
+      gstValEl.textContent = '₹' + gst.toFixed(2);
+      
+      const grandTotal = taxable + gst + shippingFee + codFee;
+      const formatted = '₹' + grandTotal.toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+      totalEl.textContent = formatted;
+      if (mobileTotalEl) mobileTotalEl.textContent = formatted;
+    }
+
+    // 1. Delivery Protocol Switching
+    const shipStd = document.getElementById('ship-std');
+    const shipExp = document.getElementById('ship-exp');
+    const cardStd = document.getElementById('shipping-card-std');
+    const cardExp = document.getElementById('shipping-card-exp');
+
+    function updateShippingUI() {
+      if (shipExp.checked) {
+        shippingFee = 99;
+        transitFeeLabel.textContent = '₹99.00';
+        transitFeeLabel.className = 'font-semibold text-primary';
+        cardExp.classList.add('ring-2', 'ring-primary');
+        cardStd.classList.remove('ring-2', 'ring-primary');
+      } else {
+        shippingFee = 0;
+        transitFeeLabel.textContent = 'FREE';
+        transitFeeLabel.className = 'font-semibold text-secondary';
+        cardStd.classList.add('ring-2', 'ring-primary');
+        cardExp.classList.remove('ring-2', 'ring-primary');
+      }
+      calculateTotal();
+    }
+
+    shipStd.addEventListener('change', updateShippingUI);
+    shipExp.addEventListener('change', updateShippingUI);
+
+    // 2. Payment Method Tabs
+    const tabButtons = document.querySelectorAll('.pay-tab-btn');
+    const tabPanels = {
+      upi: document.getElementById('tab-content-upi'),
+      card: document.getElementById('tab-content-card'),
+      netbanking: document.getElementById('tab-content-netbanking'),
+      wallets: document.getElementById('tab-content-wallets'),
+      cod: document.getElementById('tab-content-cod')
+    };
+
+    tabButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const tab = btn.getAttribute('data-tab');
+
+        // Style tab buttons
+        tabButtons.forEach(b => {
+          b.classList.remove('bg-surface-container-high', 'font-semibold', 'text-primary');
+          b.classList.add('bg-surface-container-low', 'text-on-surface-variant');
+        });
+        btn.classList.add('bg-surface-container-high', 'font-semibold', 'text-primary');
+        btn.classList.remove('bg-surface-container-low', 'text-on-surface-variant');
+
+        // Toggle panel display
+        Object.keys(tabPanels).forEach(key => {
+          if (key === tab) {
+            tabPanels[key].classList.remove('hidden');
+          } else {
+            tabPanels[key].classList.add('hidden');
+          }
+        });
+
+        // COD Surcharge logic
+        if (tab === 'cod') {
+          codFee = 30;
+          rowCod.classList.remove('hidden');
+          rowCod.classList.add('flex');
+        } else {
+          codFee = 0;
+          rowCod.classList.add('hidden');
+          rowCod.classList.remove('flex');
+        }
+        calculateTotal();
+      });
+    });
+
+    // 3. PIN Code Verification Simulation
+    const checkPinBtn = document.getElementById('check-pin-btn');
+    const pinInput = document.getElementById('pincode');
+    const pinStatusBox = document.getElementById('pincode-status-box');
+
+    function verifyPin() {
+      const pin = pinInput.value.trim();
+      if (pin.length === 6) {
+        pinStatusBox.innerHTML = `
+          <div class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-secondary text-[18px]">verified</span>
+            <span class="font-body-sm text-body-sm text-primary font-medium">
+              PIN ${pin} Verified: Single-Estate logistics active via Climate Express.
+            </span>
+          </div>
+          <span class="font-label-caps text-[10px] text-secondary font-bold uppercase tracking-widest">Available</span>
+        `;
+      } else {
+        pinStatusBox.innerHTML = `
+          <div class="flex items-center gap-2 text-error">
+            <span class="material-symbols-outlined text-[18px]">info</span>
+            <span class="font-body-sm text-body-sm font-medium">
+              Please enter an authentic 6-digit Indian Postal Code.
+            </span>
+          </div>
+        `;
+      }
+    }
+    checkPinBtn.addEventListener('click', verifyPin);
+    pinInput.addEventListener('keyup', (e) => {
+      if (e.key === 'Enter') verifyPin();
+    });
+
+    // 4. Promo Code Handlers
+    const promoInput = document.getElementById('promo-input');
+    const promoApplyBtn = document.getElementById('promo-apply-btn');
+    const removePromoBtn = document.getElementById('remove-promo-btn');
+    const promoPill = document.getElementById('promo-pill');
+
+    removePromoBtn.addEventListener('click', () => {
+      promoDiscount = 0;
+      promoPill.classList.add('hidden');
+      rowDiscount.classList.add('hidden');
+      promoInput.value = '';
+      promoApplyBtn.textContent = 'Apply';
+      promoApplyBtn.classList.remove('bg-surface-container-high');
+      calculateTotal();
+    });
+
+    promoApplyBtn.addEventListener('click', () => {
+      const code = promoInput.value.trim().toUpperCase();
+      if (code === 'SPICE10') {
+        promoDiscount = 119.80;
+        promoPill.classList.remove('hidden');
+        rowDiscount.classList.remove('hidden');
+        promoApplyBtn.textContent = 'Applied';
+        calculateTotal();
+      } else if (code) {
+        alert('Voucher not recognized for single-estate allocations. Use "SPICE10" for test verification.');
+      }
+    });
+
+    // 5. Billing Checkbox Toggle
+    const billingToggle = document.getElementById('billing-match-toggle');
+    const altBillingBox = document.getElementById('alternative-billing-box');
+    billingToggle.addEventListener('change', () => {
+      if (billingToggle.checked) {
+        altBillingBox.classList.add('hidden');
+      } else {
+        altBillingBox.classList.remove('hidden');
+      }
+    });
+
+    // 6. UPI Verify VPA Button
+    const verifyVpaBtn = document.getElementById('verify-vpa-btn');
+    const vpaStatus = document.getElementById('vpa-status');
+    verifyVpaBtn.addEventListener('click', () => {
+      verifyVpaBtn.innerHTML = 'Checking...';
+      setTimeout(() => {
+        verifyVpaBtn.innerHTML = 'Verified';
+        vpaStatus.innerHTML = `
+          <span class="material-symbols-outlined text-[18px]">verified</span>
+          <span>Verified Banking Account: <strong>Raghavendra Suryavanshi (HDFC Bank)</strong></span>
+        `;
+      }, 400);
+    });
+
+    // 7. Place Order Flow & Modal Simulation
+    const placeOrderBtn = document.getElementById('place-order-btn');
+    const transmittingOverlay = document.getElementById('transmitting-overlay');
+    const successModal = document.getElementById('order-success-modal');
+
+    placeOrderBtn.addEventListener('click', () => {
+      transmittingOverlay.classList.remove('hidden');
+      setTimeout(() => {
+        transmittingOverlay.classList.add('hidden');
+        successModal.classList.remove('hidden');
+      }, 1200);
+    });
+
+    // 8. QA Cart State Toggle (Empty vs Filled)
+    const qaToggleBtn = document.getElementById('qa-toggle-empty');
+    const mainGrid = document.getElementById('checkout-main-grid');
+    const emptyState = document.getElementById('empty-cart-state');
+
+    qaToggleBtn.addEventListener('click', () => {
+      const isGridHidden = mainGrid.classList.contains('hidden');
+      if (isGridHidden) {
+        mainGrid.classList.remove('hidden');
+        emptyState.classList.add('hidden');
+        emptyState.classList.remove('flex');
+        qaToggleBtn.textContent = 'Toggle Cart State (Empty / Populated)';
+      } else {
+        mainGrid.classList.add('hidden');
+        emptyState.classList.remove('hidden');
+        emptyState.classList.add('flex');
+        qaToggleBtn.textContent = 'Restore Populated Checkout';
+      }
+    });
+
+    // Initial calculation
+    calculateTotal();
+  })();
+</script></div></main><footer class="w-full bg-surface-container-low mt-space-xl"><div class="max-w-7xl mx-auto px-margin lg:px-margin-desktop py-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm"><span class="material-symbols-outlined text-secondary text-[16px]">verified_user</span><span>256-Bit SSL Heritage Encryption • Single-Estate Authenticity Guaranteed</span></div><nav class="flex flex-wrap items-center justify-center gap-space-md font-label-sm text-label-sm" data-active-classes="text-primary font-medium"><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="privacy-policy" href="#">Privacy Policy</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="terms-of-service" href="#">Terms of Service</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="return-and-refund-policy" href="#">Return &amp; Refund Policy</a></nav><div class="font-label-caps text-label-caps uppercase text-on-surface-variant">© 2024 Vaanika Artisanal Spices. All rights reserved.</div></div></footer></body></html>

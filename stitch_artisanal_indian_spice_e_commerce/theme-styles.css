@@ -1,0 +1,278 @@
+/* ==========================================================================
+   Vaanika Artisanal Spices — Theme System & Responsive Styling
+   Themes:
+   1. Vaanika (Default) — Burgundy + Saffron + Ivory (Heritage Artisanal)
+   2. Zaiqa (Theme 5) — Burnt Orange + Black + White (Bold | Modern | Energetic)
+   3. Sira (Theme 6) — Indigo + Lime (Modern | Fresh | Unique)
+   4. Kavya (Theme 3) — Deep Plum + Pink (Boutique | Sophisticated | Premium)
+   5. Aruna (Theme 2) — Cobalt + White + Terracotta (Clean | Confident | Premium)
+   ========================================================================== */
+
+:root, [data-theme="vaanika"] {
+  --primary-color: #2e0007;
+  --primary-container-color: #4a121a;
+  --secondary-color: #8f4e00;
+  --secondary-container-color: #fea047;
+  --surface-color: #fff8f4;
+  --surface-container-color: #f3ede9;
+  --surface-container-low-color: #f9f2ef;
+  --surface-container-high-color: #ede7e3;
+  --surface-container-highest-color: #e7e1de;
+  --surface-container-lowest-color: #ffffff;
+  --surface-dim-color: #dfd9d5;
+  --on-surface-color: #1d1b19;
+  --on-surface-variant-color: #534343;
+  --on-primary-color: #ffffff;
+  --on-primary-container-color: #ffdadb;
+  --on-secondary-color: #ffffff;
+  --on-secondary-container-color: #6d3a00;
+  --outline-color: #867273;
+  --outline-variant-color: #d8c1c1;
+  --inverse-surface-color: #32302e;
+  --inverse-on-surface-color: #f6efec;
+  --background-color: #fff8f4;
+  --on-background-color: #1d1b19;
+  --tertiary-color: #2e0006;
+  --tertiary-container-color: #4c1018;
+  --on-tertiary-color: #ffffff;
+  --error-color: #ba1a1a;
+  --error-container-color: #ffdad6;
+  --on-error-color: #ffffff;
+
+  --theme-name: "Vaanika";
+  --theme-tagline: "Heritage Artisanal Spices";
+  --theme-accent-gradient: linear-gradient(135deg, #4a121a 0%, #2e0007 100%);
+  --theme-badge-bg: #4a121a;
+  --theme-badge-text: #fea047;
+}
+
+[data-theme="zaiqa"] {
+  --primary-color: #111111;
+  --primary-container-color: #1e1b18;
+  --secondary-color: #c85a17;
+  --secondary-container-color: #e67e22;
+  --surface-color: #faf7f2;
+  --surface-container-color: #f1ebe1;
+  --surface-container-low-color: #f6f2ec;
+  --surface-container-high-color: #e7dfd3;
+  --surface-container-highest-color: #ddd4c6;
+  --surface-container-lowest-color: #ffffff;
+  --surface-dim-color: #d9d0c2;
+  --on-surface-color: #121212;
+  --on-surface-variant-color: #524d47;
+  --on-primary-color: #ffffff;
+  --on-primary-container-color: #ffd8c2;
+  --on-secondary-color: #ffffff;
+  --on-secondary-container-color: #3d1600;
+  --outline-color: #857c74;
+  --outline-variant-color: #d3cbbe;
+  --inverse-surface-color: #1c1917;
+  --inverse-on-surface-color: #fdfbf7;
+  --background-color: #faf7f2;
+  --on-background-color: #121212;
+  --tertiary-color: #943806;
+  --tertiary-container-color: #d35400;
+  --on-tertiary-color: #ffffff;
+  --error-color: #ba1a1a;
+  --error-container-color: #ffdad6;
+  --on-error-color: #ffffff;
+
+  --theme-name: "Zaiqa";
+  --theme-tagline: "Bold & Fiery Terroirs";
+  --theme-accent-gradient: linear-gradient(135deg, #1e1b18 0%, #111111 100%);
+  --theme-badge-bg: #1e1b18;
+  --theme-badge-text: #e67e22;
+}
+
+[data-theme="sira"] {
+  --primary-color: #0b132b;
+  --primary-container-color: #162145;
+  --secondary-color: #4d7c0f;
+  --secondary-container-color: #aeea00;
+  --surface-color: #f6f8fc;
+  --surface-container-color: #e8edf7;
+  --surface-container-low-color: #f0f4fb;
+  --surface-container-high-color: #dde4f2;
+  --surface-container-highest-color: #d0d9eb;
+  --surface-container-lowest-color: #ffffff;
+  --surface-dim-color: #c7d2e6;
+  --on-surface-color: #0d172a;
+  --on-surface-variant-color: #475569;
+  --on-primary-color: #ffffff;
+  --on-primary-container-color: #d9f99d;
+  --on-secondary-color: #ffffff;
+  --on-secondary-container-color: #1a2e05;
+  --outline-color: #64748b;
+  --outline-variant-color: #cbd5e1;
+  --inverse-surface-color: #0f172a;
+  --inverse-on-surface-color: #f8fafc;
+  --background-color: #f6f8fc;
+  --on-background-color: #0d172a;
+  --tertiary-color: #1e293b;
+  --tertiary-container-color: #334155;
+  --on-tertiary-color: #ffffff;
+  --error-color: #ba1a1a;
+  --error-container-color: #ffdad6;
+  --on-error-color: #ffffff;
+
+  --theme-name: "Sira";
+  --theme-tagline: "Modern Botanical Chemistry";
+  --theme-accent-gradient: linear-gradient(135deg, #162145 0%, #0b132b 100%);
+  --theme-badge-bg: #162145;
+  --theme-badge-text: #aeea00;
+}
+
+[data-theme="kavya"] {
+  --primary-color: #2b0e1e;
+  --primary-container-color: #42152f;
+  --secondary-color: #991b58;
+  --secondary-container-color: #e8a0bf;
+  --surface-color: #faf5f8;
+  --surface-container-color: #f2e5ec;
+  --surface-container-low-color: #f7edf3;
+  --surface-container-high-color: #ebdbe4;
+  --surface-container-highest-color: #dfccda;
+  --surface-container-lowest-color: #ffffff;
+  --surface-dim-color: #d6bfd0;
+  --on-surface-color: #24101d;
+  --on-surface-variant-color: #6b495d;
+  --on-primary-color: #ffffff;
+  --on-primary-container-color: #fbcfe8;
+  --on-secondary-color: #ffffff;
+  --on-secondary-container-color: #400620;
+  --outline-color: #8a677b;
+  --outline-variant-color: #d9c0ce;
+  --inverse-surface-color: #2a0c20;
+  --inverse-on-surface-color: #fdf6fb;
+  --background-color: #faf5f8;
+  --on-background-color: #24101d;
+  --tertiary-color: #581c3b;
+  --tertiary-container-color: #831843;
+  --on-tertiary-color: #ffffff;
+  --error-color: #ba1a1a;
+  --error-container-color: #ffdad6;
+  --on-error-color: #ffffff;
+
+  --theme-name: "Kavya";
+  --theme-tagline: "Boutique Fine Spices";
+  --theme-accent-gradient: linear-gradient(135deg, #42152f 0%, #2b0e1e 100%);
+  --theme-badge-bg: #42152f;
+  --theme-badge-text: #e8a0bf;
+}
+
+[data-theme="aruna"] {
+  --primary-color: #0f3460;
+  --primary-container-color: #162447;
+  --secondary-color: #c85a32;
+  --secondary-container-color: #e27d5f;
+  --surface-color: #ffffff;
+  --surface-container-color: #f0f4f9;
+  --surface-container-low-color: #f6f9fc;
+  --surface-container-high-color: #e4ebf5;
+  --surface-container-highest-color: #d4dfed;
+  --surface-container-lowest-color: #ffffff;
+  --surface-dim-color: #cad8e8;
+  --on-surface-color: #0a192f;
+  --on-surface-variant-color: #486581;
+  --on-primary-color: #ffffff;
+  --on-primary-container-color: #d0e1fd;
+  --on-secondary-color: #ffffff;
+  --on-secondary-container-color: #3d1406;
+  --outline-color: #627d98;
+  --outline-variant-color: #c1d1e0;
+  --inverse-surface-color: #0f2942;
+  --inverse-on-surface-color: #f0f8ff;
+  --background-color: #ffffff;
+  --on-background-color: #0a192f;
+  --tertiary-color: #1a365d;
+  --tertiary-container-color: #234e70;
+  --on-tertiary-color: #ffffff;
+  --error-color: #ba1a1a;
+  --error-container-color: #ffdad6;
+  --on-error-color: #ffffff;
+
+  --theme-name: "Aruna";
+  --theme-tagline: "Pure Origin Spice Estate";
+  --theme-accent-gradient: linear-gradient(135deg, #162447 0%, #0f3460 100%);
+  --theme-badge-bg: #162447;
+  --theme-badge-text: #e27d5f;
+}
+
+/* Dynamic Transition on Theme Change */
+html, body, header, nav, main, footer, section, div, button, a {
+  transition: background-color 0.25s ease, border-color 0.25s ease, color 0.25s ease;
+}
+
+/* Floating Theme Switcher Widget */
+.floating-theme-widget {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(18, 16, 15, 0.92);
+  backdrop-filter: blur(12px);
+  padding: 6px 10px;
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.5);
+}
+
+.theme-pill-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 9999px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #d1d5db;
+  background: transparent;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.theme-pill-btn:hover {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.theme-pill-btn.active {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.18);
+  border-color: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.theme-color-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+  border: 1.5px solid rgba(255, 255, 255, 0.6);
+  flex-shrink: 0;
+}
+
+/* Responsiveness helpers */
+@media (max-width: 640px) {
+  .floating-theme-widget {
+    bottom: 16px;
+    right: 16px;
+    left: 16px;
+    justify-content: center;
+    overflow-x: auto;
+    padding: 4px 6px;
+  }
+  .theme-pill-btn {
+    padding: 4px 8px;
+    font-size: 10px;
+  }
+  .theme-pill-btn span.theme-text {
+    display: none;
+  }
+}

@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-secondary-fixed-variant": "#6d3a00", "outline": "#867273", "inverse-primary": "#ffb2b7", "inverse-surface": "#32302e", "error-container": "#ffdad6", "surface-container-high": "#ede7e3", "on-secondary-container": "#6d3a00", "on-tertiary-fixed-variant": "#753137", "primary-fixed-dim": "#ffb2b7", "on-surface": "#1d1b19", "on-error": "#ffffff", "surface-dim": "#dfd9d5", "tertiary-fixed-dim": "#ffb3b6", "surface-variant": "#e7e1de", "on-secondary": "#ffffff", "outline-variant": "#d8c1c1", "on-surface-variant": "#534343", "on-primary-container": "#c8767c", "primary-container": "#4a121a", "tertiary": "#2e0006", "on-primary": "#ffffff", "secondary-fixed": "#ffdcc2", "secondary-fixed-dim": "#ffb77a", "secondary": "#8f4e00", "on-tertiary-container": "#cb757a", "tertiary-container": "#4c1018", "on-primary-fixed-variant": "#733239", "background": "#fff8f4", "tertiary-fixed": "#ffdada", "surface-tint": "#90494f", "on-error-container": "#93000a", "primary-fixed": "#ffdadb", "on-secondary-fixed": "#2e1500", "primary": "#2e0007", "on-primary-fixed": "#3b0710", "on-tertiary": "#ffffff", "on-background": "#1d1b19", "surface-bright": "#fff8f4", "surface-container-lowest": "#ffffff", "error": "#ba1a1a", "secondary-container": "#fea047", "surface-container": "#f3ede9", "inverse-on-surface": "#f6efec", "surface": "#fff8f4", "on-tertiary-fixed": "#3d050e", "surface-container-highest": "#e7e1de", "surface-container-low": "#f9f2ef" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xl": "4rem", "gutter": "1.5rem", "margin": "1.25rem", "space-md": "1.25rem", "space-xs": "0.375rem", "space-sm": "0.75rem", "space-lg": "2.25rem", "gutter-desktop": "2.5rem", "margin-desktop": "4rem" }, "fontFamily": { "body-sm": ["Plus Jakarta Sans"], "label-caps": ["Plus Jakarta Sans"], "subheading": ["Playfair Display"], "display-hero": ["Playfair Display"], "headline-lg": ["Playfair Display"], "body-md": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Playfair Display"], "body-lg": ["Plus Jakarta Sans"], "headline-md": ["Playfair Display"], "headline-sm": ["Playfair Display"], "display-hero-mobile": ["Playfair Display"], "label-sm": ["Plus Jakarta Sans"] }, "fontSize": { "body-sm": ["13px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "400" }], "label-caps": ["11px", { "lineHeight": "16px", "letterSpacing": "0.14em", "fontWeight": "600" }], "subheading": ["19px", { "lineHeight": "28px", "letterSpacing": "0.02em", "fontWeight": "400" }], "display-hero": ["64px", { "lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "400" }], "headline-lg": ["44px", { "lineHeight": "52px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "body-md": ["15px", { "lineHeight": "24px", "letterSpacing": "0.005em", "fontWeight": "400" }], "headline-lg-mobile": ["30px", { "lineHeight": "38px", "letterSpacing": "0em", "fontWeight": "400" }], "body-lg": ["17px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-md": ["32px", { "lineHeight": "40px", "letterSpacing": "0em", "fontWeight": "500" }], "headline-sm": ["24px", { "lineHeight": "32px", "letterSpacing": "0.01em", "fontWeight": "600" }], "display-hero-mobile": ["38px", { "lineHeight": "46px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "label-sm": ["12px", { "lineHeight": "18px", "letterSpacing": "0.04em", "fontWeight": "500" }] } } } };</script><link rel="stylesheet" href="../theme-styles.css"/>
+<script src="../theme-manager.js"></script>
+</head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-7xl mx-auto px-margin lg:px-margin-desktop flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-sm"><img alt="A refined, minimalist luxury wordmark and insignia for 'MASALA VAULT' artisanal Indian spices, featuring an elegant monogram emblem with botanical spice star anise/clove motifs and timeless serif lettering.. Brand logo. - Primary color: #4a121a
+- Font: playfairDisplay
+- Mode: light
+- Roundness: rounded-lg
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1U7umTVxr7A_QAstDKrJBl6jpxejtiF_7gLzXm0ixYON8uRvVXETcymHjliPJZT2Eh7qznUdVBFBY4fEyUn8PxUOggGZsHwyePDfLOBxq2ZPam4Dl2CmjnobTD2rfV_2Wlw5jMu0caGvHAAFWIQ9xwcnskkoqvKSi54JrUngvSVhmkEUBvGZP6dtTuqeYaDYjhzkkhMcy8TtmuZAW4mJsX3tO5DP879AVnvZt1jX3SYk2y3A-yHyVwkkw"/><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-medium hidden sm:inline" class="brand-dynamic-name">VAANIKA</span></div><nav class="hidden md:flex items-center gap-space-lg" data-active-classes="text-primary font-semibold"><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface transition-colors" data-path="shop" href="#">Shop</a><a aria-current="page" class="uppercase transition-colors text-primary font-semibold" data-path="collections" href="#">Collections</a><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface transition-colors" data-path="recipes" href="#">Recipes</a><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface transition-colors" data-path="our-story" href="#">Our Story</a></nav><div class="flex items-center gap-space-md"><button aria-label="Search spices" class="text-on-surface-variant hover:text-on-surface transition-colors flex items-center justify-center" type="button"><span class="material-symbols-outlined text-[22px]">search</span></button><button aria-label="Cart with 4 items" class="relative text-on-surface-variant hover:text-on-surface transition-colors flex items-center justify-center" type="button"><span class="material-symbols-outlined text-[22px]">shopping_bag</span><span class="absolute -top-1.5 -right-2 bg-secondary-container text-on-secondary-container font-label-caps text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold">4</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-background"><div class="flex flex-col w-full">
+<!-- SECTION 1: BREADCRUMB & EDITORIAL INTRO -->
+<section class="max-w-7xl mx-auto w-full px-margin lg:px-margin-desktop pt-8 pb-10">
+<nav aria-label="Breadcrumb" class="flex items-center gap-2 mb-6">
+<a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-primary transition-colors" href="#">Home</a>
+<span class="text-outline-variant font-label-caps text-label-caps">/</span>
+<span class="font-label-caps text-label-caps uppercase text-primary font-bold">Collections</span>
+</nav>
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6">
+<div class="max-w-3xl">
+<span class="font-label-caps text-label-caps uppercase tracking-[0.2em] text-secondary font-bold block mb-2">EXPLORE OUR COLLECTIONS</span>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight uppercase">SPICES FOR EVERY KIND OF COOK.</h1>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md pb-1">
+        From everyday kitchen essentials to single-estate terroir reserve blends, discover untamed aromatics carefully calibrated for every recipe, culinary temperament, and ritual.
+      </p>
+</div>
+</section>
+<!-- SECTION 2: FEATURED HERO BANNER -->
+<section class="max-w-7xl mx-auto w-full px-margin lg:px-margin-desktop pb-16">
+<div class="relative w-full rounded-lg overflow-hidden bg-primary text-on-primary min-h-[440px] flex flex-col justify-between p-8 md:p-14 shadow-xl">
+<!-- Background Image with Scrim -->
+<div class="absolute inset-0 bg-cover bg-center z-0 scale-105 transition-transform duration-700 hover:scale-100 opacity-40 mix-blend-luminosity" data-alt="Rich moody still life of glass jars with wooden lids filled with colorful raw whole spices, star anise, ceylon cinnamon sticks, and Kashmiri chilis on black slate counter. Warm morning window light and copper accents." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBi75SNZfFxTTv7tFaglsc3BfkVn1mZTM8IRLfL0D_erBqN1iDghE2Nn1LC6CiPjJ78OwJsifIEEohLyvRbfw9GCY77dzMG0pjh7TPZ6C5WZkEUkKELjoRSp-vXJliPU3LvoJHzqpB7z1D4ZNNfv6A_5DdUQoQinXfMcpeqDhO6yWzXrZmWPehBAvOynd2a4IPMCFTMGUl24LoqSMqO4qNQ_k55PcYky__8dgCoX9YbQ4J_2IVgg8yo')">
+</div>
+<div class="absolute inset-0 bg-gradient-to-r from-primary via-primary/80 to-transparent z-0"></div>
+<!-- Content -->
+<div class="relative z-10 max-w-xl space-y-4">
+<div class="inline-flex items-center gap-2 px-3 py-1 bg-secondary-container text-on-secondary-container rounded font-label-caps text-label-caps uppercase tracking-wider">
+<span class="material-symbols-outlined text-[14px]">stars</span> Private Reserve Casket
+        </div>
+<h2 class="font-headline-lg text-headline-lg text-surface tracking-tight">THE INDIAN KITCHEN</h2>
+<p class="font-subheading text-subheading text-surface-container-high leading-relaxed">
+          Essential spices and cold-stone stone-ground blends for creating bold, authentic culinary depth at home.
+        </p>
+<div class="flex items-center gap-3 pt-2">
+<span class="font-headline-sm text-headline-sm text-secondary-fixed">₹3,200</span>
+<span class="font-body-md text-body-md text-surface-variant line-through">₹3,850</span>
+<span class="font-label-caps text-label-caps uppercase px-2 py-0.5 bg-primary-container text-on-primary-container rounded">Save 17%</span>
+</div>
+</div>
+<div class="relative z-10 pt-6 flex flex-wrap items-center gap-4">
+<button class="px-8 py-3.5 bg-secondary hover:bg-secondary-fixed hover:text-on-secondary-fixed text-on-secondary font-label-caps text-label-caps uppercase tracking-widest transition-all duration-300 flex items-center gap-2 shadow-lg">
+          EXPLORE COLLECTION <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+<span class="font-label-sm text-label-sm text-surface-variant hidden sm:inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary-fixed">verified</span> Contains 6 Full-Format Glass Vault Jars
+        </span>
+</div>
+</div>
+</section>
+<!-- SECTION 3: MAIN CATEGORY GRID -->
+<section class="max-w-7xl mx-auto w-full px-margin lg:px-margin-desktop pb-20">
+<div class="flex items-center justify-between pb-6">
+<div class="space-y-1">
+<span class="font-label-caps text-label-caps uppercase text-secondary font-bold tracking-widest">PROVENANCE PORTFOLIO</span>
+<h3 class="font-headline-md text-headline-md text-primary">SHOP BY CATEGORY</h3>
+</div>
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant hidden md:block">Lot Selection 2024 / 25</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Whole Spices (Span 7) -->
+<div class="md:col-span-7 group relative bg-surface-container rounded-lg overflow-hidden flex flex-col justify-between p-8 min-h-[360px] shadow-sm hover:shadow-md transition-all">
+<div class="absolute inset-0 bg-cover bg-center opacity-25 group-hover:scale-105 group-hover:opacity-30 transition-all duration-500" data-alt="Close up dark slate presentation of whole raw Tellicherry peppercorns, fragrant green cardamom pods, and star anise pods illuminated by soft amber directional light. Minimalist editorial photography." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCBNZXg-dvpU6Bgd0sIrW2fUnV3rrKvTI2Bdry5aMOhMgy5REoh9k3yV9u_l7RaUaDORgyu9Ii6jZEH6XticnCh3_E6l7Mfz7shbkCbCMo8vO4y_lgQ_BsI1M1o55jFZ2sGAkE1p-UNkiWdtnQ307mlElh1BhAheJhv4WkbTq70cVe6CKoVbLkoLrCsnbmw452zLGa8KXLaU_NBLHi5gPpwk5n6MXK3RDVo5n4Kb0GC1cR0NRbGqzU5')">
+</div>
+<div class="relative z-10">
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-secondary font-semibold">Single Origin Terroirs</span>
+<h4 class="font-headline-sm text-headline-sm text-primary mt-1">Whole Spices</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 max-w-sm">
+            Sun-dried Malabar Tellicherry pepper, Grade-A green cardamom, roasted cumin seeds, sweet Ceylon quills, and aromatic cloves.
+          </p>
+</div>
+<div class="relative z-10 pt-6">
+<a class="inline-flex items-center gap-2 font-label-caps text-label-caps uppercase tracking-widest text-primary font-bold group-hover:text-secondary transition-colors" href="#">
+            SHOP WHOLE SPICES <span class="material-symbols-outlined text-[16px] transition-transform group-hover:translate-x-1">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Ground Spices (Span 5) -->
+<div class="md:col-span-5 group relative bg-surface-container rounded-lg overflow-hidden flex flex-col justify-between p-8 min-h-[360px] shadow-sm hover:shadow-md transition-all">
+<div class="absolute inset-0 bg-cover bg-center opacity-25 group-hover:scale-105 group-hover:opacity-30 transition-all duration-500" data-alt="Overhead shot of vibrant ochre Salem turmeric powder alongside bright crimson Kashmiri chili powder and finely milled cumin on hand-carved stone tasting spoons." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBahRTb7R_PJBacNGau0x_m57KDn_pGdsPnTOYUdsorixsx9XLjLkXXwj1Jbz52tFq3rLHueXR8Lddg03jlom7cTrp2F72KkncPYVyZ0r5uZbFPk1Ys6OEWBdk9mHsgtzPGQBncoxseFn2pIFWQyu3SyuZlAv0hZGpU3z4wVJltpjXn-pQ8GkHm3meYlURJpcFAZtQpK_jMy9xiyDSTDDOLO1wj88LcSqQaPxY_oEmtLQSIb7g8Papd')">
+</div>
+<div class="relative z-10">
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-secondary font-semibold">Cold Stone Milled</span>
+<h4 class="font-headline-sm text-headline-sm text-primary mt-1">Ground Spices</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+            High-curcumin Salem turmeric, vibrant Kashmiri Degi chilli, aromatic coriander, and toasted royal cumin.
+          </p>
+</div>
+<div class="relative z-10 pt-6">
+<a class="inline-flex items-center gap-2 font-label-caps text-label-caps uppercase tracking-widest text-primary font-bold group-hover:text-secondary transition-colors" href="#">
+            SHOP GROUND SPICES <span class="material-symbols-outlined text-[16px] transition-transform group-hover:translate-x-1">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Blends & Masalas (Span 5) -->
+<div class="md:col-span-5 group relative bg-surface-container rounded-lg overflow-hidden flex flex-col justify-between p-8 min-h-[360px] shadow-sm hover:shadow-md transition-all">
+<div class="absolute inset-0 bg-cover bg-center opacity-25 group-hover:scale-105 group-hover:opacity-30 transition-all duration-500" data-alt="Artisanal spice mortar with brass pestle crushing multi-layered roasted garam masala seeds, cinnamon bark and crushed dry bay leaf in warm rustic interior." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCiXrKivS75X7-C1ozkRJYDgZZbib9ocuT-PuMJQHTPIFpEJsnpH4bIiNZLXmieR22KgIJcGIzYvRg49xRjcFKcbmTsHuwWDMspSNkKVkMb1S8WnWUu3JZwRWcxUCpm5NFE8m0_5XbalfYQeg1SLsUXyoIjlqD2uI2bjn-Tjb6IxrCKldjOrA4fl6jGdO-89x-8mS8bABxutaywHcgmA4XxIyvNWmp7p1bBTHUlOs3Vz_oVSoGi5Qxz')">
+</div>
+<div class="relative z-10">
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-secondary font-semibold">Traditional Heritage Ratios</span>
+<h4 class="font-headline-sm text-headline-sm text-primary mt-1">Blends &amp; Masalas</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+            Awadhi Biryani Masala, Royal 14-Spice Garam Masala, Clay-Oven Tandoori blend, and zesty Amchur Chaat.
+          </p>
+</div>
+<div class="relative z-10 pt-6">
+<a class="inline-flex items-center gap-2 font-label-caps text-label-caps uppercase tracking-widest text-primary font-bold group-hover:text-secondary transition-colors" href="#">
+            SHOP MASALAS <span class="material-symbols-outlined text-[16px] transition-transform group-hover:translate-x-1">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Spice Vaults (Span 7) -->
+<div class="md:col-span-7 group relative bg-primary text-on-primary rounded-lg overflow-hidden flex flex-col justify-between p-8 min-h-[360px] shadow-md hover:shadow-lg transition-all">
+<div class="absolute inset-0 bg-cover bg-center opacity-20 group-hover:scale-105 group-hover:opacity-25 transition-all duration-500" data-alt="Luxury wooden presentation box lined with velvet displaying six amber spice jars with custom labeled botanical spices on slate base." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDugfq0ogSKX0lWTGfYKzZRtRNEV_tJX1nEzN0LsfyIowk7q1eeya5-DvluSmwlv2wFVczyzymlRjoWs7_3FAmyW3zlRYZfKPW1_y6hKh1yC-KWNwjpsIjvjawNZgi_RK_U_Xn4DXGhqif85NeU3R9OtNeGTiupmPguXZX-B_gutRm2hoU1GwU23Rlnmk9CkBeXTQjxdBODtHTU5cGk-PNBxXKqG6vENo-7bC2uqW6GZO_OwljgZ13k')">
+</div>
+<div class="relative z-10">
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-secondary-fixed font-semibold">Archival Wooden Caskets</span>
+<h4 class="font-headline-sm text-headline-sm text-surface mt-1">Spice Vaults &amp; Sets</h4>
+<p class="font-body-md text-body-md text-surface-variant mt-2 max-w-md">
+            Everyday Kitchen Box, Indian Classics Vault, BBQ Pitmaster Reserve, and bespoke Heirloom Gifting Collections.
+          </p>
+</div>
+<div class="relative z-10 pt-6">
+<a class="inline-flex items-center gap-2 font-label-caps text-label-caps uppercase tracking-widest text-secondary-fixed font-bold group-hover:text-surface transition-colors" href="#">
+            EXPLORE COLLECTIONS <span class="material-symbols-outlined text-[16px] transition-transform group-hover:translate-x-1">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: CURATED COLLECTION STORY CARDS -->
+<section class="w-full bg-surface-container-low py-16">
+<div class="max-w-7xl mx-auto px-margin lg:px-margin-desktop">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-10">
+<div>
+<span class="font-label-caps text-label-caps uppercase text-secondary font-bold tracking-widest">MASTER BLENDER SELECTION</span>
+<h3 class="font-headline-md text-headline-md text-primary mt-1">CURATED FOR YOUR KITCHEN</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 md:mt-0">Pre-calibrated spice caskets, ready for daily epicurean exploration.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Everyday Essentials -->
+<div class="bg-surface-container-lowest rounded-lg p-6 flex flex-col sm:flex-row gap-6 shadow-sm hover:shadow-md transition-all group">
+<div class="w-full sm:w-44 h-48 bg-surface-container-high rounded overflow-hidden flex-shrink-0 relative">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Four neatly packaged spice jars in a kraft box containing golden turmeric, whole black pepper, coriander seeds and cumin on linen." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBfy-Wjvpx6mUlkjmVZQxkWCWfXbJX1SsbohUclPsEyBo1S7c7leJvQUuUCCRnA1yiUfTF1bi72uZlGbWLM8l44OYySbGyDFsSzl986ausicys3VsvR-uh0meG-kgt-IsR9WlPfVxIF2Zye9rPXW00MLb023wyYH-GcvZIw8dKk1nAaolgMvM67s2bSx7G_F1pJm9mX3MPhoZ5G38AIKa2_ULMmSjqqb16cqdme0L-QhoKVw_zTfiQa')">
+</div>
+<span class="absolute top-2 left-2 bg-surface/90 text-primary font-label-caps text-[10px] px-2 py-0.5 rounded">4-Jar Box</span>
+</div>
+<div class="flex flex-col justify-between flex-1">
+<div>
+<span class="font-label-caps text-label-caps text-secondary font-semibold uppercase">Daily Staples</span>
+<h4 class="font-headline-sm text-headline-sm text-primary mt-0.5">Everyday Essentials</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">Salem Turmeric, Jeera Cumin, Coriander Seed, and Bold Malabar Black Pepper.</p>
+</div>
+<div class="flex items-center justify-between pt-4 mt-2">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase block text-[10px]">Vault Allocation</span>
+<span class="font-headline-sm text-headline-sm text-primary">₹849</span>
+</div>
+<button class="px-4 py-2 bg-primary hover:bg-primary-container text-on-primary font-label-caps text-label-caps uppercase tracking-wider transition-colors">
+                Add To Order
+              </button>
+</div>
+</div>
+</div>
+<!-- Indian Classics -->
+<div class="bg-surface-container-lowest rounded-lg p-6 flex flex-col sm:flex-row gap-6 shadow-sm hover:shadow-md transition-all group">
+<div class="w-full sm:w-44 h-48 bg-surface-container-high rounded overflow-hidden flex-shrink-0 relative">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Glass spice jars filled with rich aromatic garam masala, Awadhi biryani blend and tandoori seasoning on a dark wood background." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDfkwZCVO39c2SEIhTTJ3oMs5vEDobQlCqaS8XIA02M4xqGZTJEFlhWv2NjHAkUTAzvqmsZYKIjohp2wqQ6PlftTrlEBi4q8aoLG8TJ4SSykSSKlvSh1PqVbVK0MsKpjrYzRyK7sEs_Ycy1iwDPLarmdisVpipeQPBBMsNT5RsSE_Ai3jsYENQ2tXwQqoBJtMBefYzeteibOP0infqn17yl75AHXKavK3rSudzW0haZ11bOLcbVvDF_')">
+</div>
+<span class="absolute top-2 left-2 bg-secondary-container text-on-secondary-container font-label-caps text-[10px] px-2 py-0.5 rounded font-bold">Chef's Select</span>
+</div>
+<div class="flex flex-col justify-between flex-1">
+<div>
+<span class="font-label-caps text-label-caps text-secondary font-semibold uppercase">Heritage Blends</span>
+<h4 class="font-headline-sm text-headline-sm text-primary mt-0.5">Indian Classics</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">Royal Garam Masala, Awadhi Biryani Masala, Amchur Chaat, and Clay-Oven Tandoori.</p>
+</div>
+<div class="flex items-center justify-between pt-4 mt-2">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase block text-[10px]">Vault Allocation</span>
+<span class="font-headline-sm text-headline-sm text-primary">₹1,190</span>
+</div>
+<button class="px-4 py-2 bg-primary hover:bg-primary-container text-on-primary font-label-caps text-label-caps uppercase tracking-wider transition-colors">
+                Add To Order
+              </button>
+</div>
+</div>
+</div>
+<!-- Heat Lovers -->
+<div class="bg-surface-container-lowest rounded-lg p-6 flex flex-col sm:flex-row gap-6 shadow-sm hover:shadow-md transition-all group">
+<div class="w-full sm:w-44 h-48 bg-surface-container-high rounded overflow-hidden flex-shrink-0 relative">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Dry red chili peppers, sun dried flakes and crushed black pepper pods in glass apothecary jars on dark textured slate." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDSL7TcTeizAJinrKqt_ww_92sPcCX3TcvlqAaJ3hEzTkkhZ_wArPA3TApm65jRqjm7Enzfr1CayhTA-_SScROaTneu-51eIlw7U9q6aFrWbCncu_dt6wpuQ7zftRYbeq_3yVSd_VD47b21v3eQAoAZkoDwQFqyPMh_yHWufICV5zt2UJs2H1UHkOkqF_WQNWSe2ck0LUY7GJLTzxFRZJxv_qTnoVBRCXnsL_y9XhbNMlIJDyLElRRN')">
+</div>
+<span class="absolute top-2 left-2 bg-tertiary-container text-on-tertiary-container font-label-caps text-[10px] px-2 py-0.5 rounded font-bold">High Heat</span>
+</div>
+<div class="flex flex-col justify-between flex-1">
+<div>
+<span class="font-label-caps text-label-caps text-secondary font-semibold uppercase">Pungent Terroirs</span>
+<h4 class="font-headline-sm text-headline-sm text-primary mt-0.5">Heat Lovers Vault</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">Kashmiri Degi Chilli, Sun-Dried Flakes, Guntur Sannam Chillies, and Extra Bold Pepper.</p>
+</div>
+<div class="flex items-center justify-between pt-4 mt-2">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase block text-[10px]">Vault Allocation</span>
+<span class="font-headline-sm text-headline-sm text-primary">₹980</span>
+</div>
+<button class="px-4 py-2 bg-primary hover:bg-primary-container text-on-primary font-label-caps text-label-caps uppercase tracking-wider transition-colors">
+                Add To Order
+              </button>
+</div>
+</div>
+</div>
+<!-- Premium Spice Box -->
+<div class="bg-surface-container-lowest rounded-lg p-6 flex flex-col sm:flex-row gap-6 shadow-sm hover:shadow-md transition-all group">
+<div class="w-full sm:w-44 h-48 bg-surface-container-high rounded overflow-hidden flex-shrink-0 relative">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Intense close up of deep red saffron threads in glass jar and bright green Alleppey cardamom pods with Ceylon cinnamon sticks on fine linen." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAICpVU3p3K8oiuljHwTHg1Deway9pomm55SksqaXfGgGesS-3kwKY30YUzgFU41hh06Rpbr1KTgMKJPgHY-P26cALGoyR_aYIy4pbOpKKL5sHZz1ehNKjnmfQiHHcNiQDD4Csa_AIp4S5Fo2XPX9vtyneBU41Sz12Xce9zvW7DcsSqv5HvQw65hTI6GSR9xl9KUmD_4Jqk6nBWNcHEs5YoYhzxJ98vN_LPVuKjT8qw5oB3sivYQic8')">
+</div>
+<span class="absolute top-2 left-2 bg-secondary-fixed text-on-secondary-fixed font-label-caps text-[10px] px-2 py-0.5 rounded font-bold">GI Tagged</span>
+</div>
+<div class="flex flex-col justify-between flex-1">
+<div>
+<span class="font-label-caps text-label-caps text-secondary font-semibold uppercase">Grand Cru Allocation</span>
+<h4 class="font-headline-sm text-headline-sm text-primary mt-0.5">Premium Spice Box</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">GI-Tagged Alleppey Green Cardamom, Pampore Mogra Saffron, and True Ceylon Quills.</p>
+</div>
+<div class="flex items-center justify-between pt-4 mt-2">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase block text-[10px]">Vault Allocation</span>
+<span class="font-headline-sm text-headline-sm text-primary">₹1,850</span>
+</div>
+<button class="px-4 py-2 bg-primary hover:bg-primary-container text-on-primary font-label-caps text-label-caps uppercase tracking-wider transition-colors">
+                Add To Order
+              </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 5: INTERACTIVE FLAVOUR FINDER -->
+<section class="max-w-7xl mx-auto w-full px-margin lg:px-margin-desktop py-20">
+<div class="text-center max-w-2xl mx-auto mb-10">
+<span class="font-label-caps text-label-caps uppercase text-secondary font-bold tracking-widest block mb-2">SENSORY PALETTE ENGINE</span>
+<h3 class="font-headline-md text-headline-md text-primary">FIND YOUR FLAVOUR</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">Filter our archives by primary botanical note to compose your ideal cooking repertoire.</p>
+</div>
+<!-- Filter Buttons -->
+<div class="flex flex-wrap items-center justify-center gap-2 mb-10" id="flavour-filters">
+<button class="flavour-btn active px-5 py-2 rounded-full font-label-caps text-label-caps uppercase tracking-wider transition-all bg-primary text-on-primary shadow-sm" data-note="aromatic">AROMATIC</button>
+<button class="flavour-btn px-5 py-2 rounded-full font-label-caps text-label-caps uppercase tracking-wider transition-all bg-surface-container text-on-surface-variant hover:bg-surface-container-high" data-note="earthy">EARTHY</button>
+<button class="flavour-btn px-5 py-2 rounded-full font-label-caps text-label-caps uppercase tracking-wider transition-all bg-surface-container text-on-surface-variant hover:bg-surface-container-high" data-note="smoky">SMOKY</button>
+<button class="flavour-btn px-5 py-2 rounded-full font-label-caps text-label-caps uppercase tracking-wider transition-all bg-surface-container text-on-surface-variant hover:bg-surface-container-high" data-note="citrusy">CITRUSY</button>
+<button class="flavour-btn px-5 py-2 rounded-full font-label-caps text-label-caps uppercase tracking-wider transition-all bg-surface-container text-on-surface-variant hover:bg-surface-container-high" data-note="sweet">SWEET</button>
+<button class="flavour-btn px-5 py-2 rounded-full font-label-caps text-label-caps uppercase tracking-wider transition-all bg-surface-container text-on-surface-variant hover:bg-surface-container-high" data-note="spicy">SPICY</button>
+<button class="flavour-btn px-5 py-2 rounded-full font-label-caps text-label-caps uppercase tracking-wider transition-all bg-surface-container text-on-surface-variant hover:bg-surface-container-high" data-note="woody">WOODY</button>
+</div>
+<!-- Results Grid -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6" id="flavour-results">
+<!-- Card 1 -->
+<div class="bg-surface-container rounded-lg p-5 flex flex-col justify-between shadow-sm hover:shadow-md transition-all">
+<div class="w-full aspect-square rounded bg-surface-container-high overflow-hidden mb-4">
+<div class="w-full h-full bg-cover bg-center hover:scale-110 transition-transform duration-500" data-alt="Macro photography of vivid green cardamom pods resting on a dark polished timber background." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDPt5ftvh6Trfo0DG-3g3zWFqTjXeTFLHyBGdSlp-pVZynJrrrAw7lTr7km_IZr-N2NLDQ8NWwc9vgB-F9j8TUUtK7X2NrSCeWWBqjyfHMBo__enWcvLLMUDsHceW68KXJyloygXq-OszT4mQ6beD95-lKufevlaX9cIG0dMP6JXBY7n99-GtGs6FPM626wg0CiOAibmZh7HFibp4p_yFj5HySE_JoOe9QFBp_71aKETB5j6P-UDnGI')">
+</div>
+</div>
+<div>
+<span class="font-label-caps text-[10px] text-secondary uppercase font-semibold">High Cineole</span>
+<h4 class="font-headline-sm text-[18px] leading-tight text-primary mt-1">Green Cardamom</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Alleppey 8mm Super Bold</p>
+</div>
+<div class="flex items-center justify-between pt-4 mt-2">
+<span class="font-headline-sm text-[18px] text-primary">₹450</span>
+<button class="w-8 h-8 rounded bg-primary text-on-primary flex items-center justify-center hover:bg-primary-container transition-colors">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container rounded-lg p-5 flex flex-col justify-between shadow-sm hover:shadow-md transition-all">
+<div class="w-full aspect-square rounded bg-surface-container-high overflow-hidden mb-4">
+<div class="w-full h-full bg-cover bg-center hover:scale-110 transition-transform duration-500" data-alt="Subtle close-up photograph of tightly rolled delicate Ceylon cinnamon quills on textured paper." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuALPAIHdd4kW5y5pHPBhAxR_wHxalg9uiLN90SJkahVHbweDgHK1B7AqEY3_OZIrW82GRuDVl1NMeVoK7B4f2v26tS1TpCFNgqcgBJOp7618LcptkPaJLG8m7Go-bGEflAS5Sd2VmFChIwuNEhDLjR95UKnIiot66F0Hs-URi46sUMYu447hZYkk6LK-UNrvINTJiF9YEyJ_P9WcSQLXds5G1AWMQief07E2ighswsAqfrL1F4ajSY1')">
+</div>
+</div>
+<div>
+<span class="font-label-caps text-[10px] text-secondary uppercase font-semibold">Low Coumarin</span>
+<h4 class="font-headline-sm text-[18px] leading-tight text-primary mt-1">Ceylon Cinnamon</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Alba Grade Pure Quills</p>
+</div>
+<div class="flex items-center justify-between pt-4 mt-2">
+<span class="font-headline-sm text-[18px] text-primary">₹360</span>
+<button class="w-8 h-8 rounded bg-primary text-on-primary flex items-center justify-center hover:bg-primary-container transition-colors">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container rounded-lg p-5 flex flex-col justify-between shadow-sm hover:shadow-md transition-all">
+<div class="w-full aspect-square rounded bg-surface-container-high overflow-hidden mb-4">
+<div class="w-full h-full bg-cover bg-center hover:scale-110 transition-transform duration-500" data-alt="Handful of whole star anise pods showing intact seeds resting inside brass tasting bowl." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCkLysl5tCtV8A7OsNigx-sm0jwhV4g6ynQUxEoxWawVTHdbX_02jjMSHvw9BcMISYc2yoB8yyhdQbfHg-2xpW47co1U-muEJ2Teve0fzfQHGVSDCXO9mRBj1JhyhobZnGwRJSLqhqCB9vd8YDQAaavnvBNNWh0WngOYoa5JwnoK6SnL0j1ZrDk0fekgEXM22e6KBtw0kFL9n098SsndSC46pJTtsGMZXIcBtZRez1nTBfeyPEuAgG9')">
+</div>
+</div>
+<div>
+<span class="font-label-caps text-[10px] text-secondary uppercase font-semibold">Anethole Rich</span>
+<h4 class="font-headline-sm text-[18px] leading-tight text-primary mt-1">Star Anise</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Arunachal Forest Foraged</p>
+</div>
+<div class="flex items-center justify-between pt-4 mt-2">
+<span class="font-headline-sm text-[18px] text-primary">₹280</span>
+<button class="w-8 h-8 rounded bg-primary text-on-primary flex items-center justify-center hover:bg-primary-container transition-colors">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container rounded-lg p-5 flex flex-col justify-between shadow-sm hover:shadow-md transition-all">
+<div class="w-full aspect-square rounded bg-surface-container-high overflow-hidden mb-4">
+<div class="w-full h-full bg-cover bg-center hover:scale-110 transition-transform duration-500" data-alt="Glossy dark whole cloves with crown tops clustered together on white porcelain saucer." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDEoPvJ1fMMsnJOXamNS_ABuBZEKoYVw3m2b1HToqemv4mVIWOA-WiKQA1YY379neWTLA8tJOghb1pBH_jJPpzIhxNDxf2OR2mojt4A63acxgfPflpTbriS0VHwqe7b3nQT3_1SMkpySwQZeNWszltmLxXkXsnUjT8qUe7TW8VIQZxoF1otI-50HedV_Sf28j1wvOknkWQ2BsdcyCWyuUDRbR8-0rF90OD8KPbBVWo8FTLiTBvTcYwv')">
+</div>
+</div>
+<div>
+<span class="font-label-caps text-[10px] text-secondary uppercase font-semibold">High Eugenol</span>
+<h4 class="font-headline-sm text-[18px] leading-tight text-primary mt-1">Whole Cloves</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Zanzibar-Malabar Hybrid</p>
+</div>
+<div class="flex items-center justify-between pt-4 mt-2">
+<span class="font-headline-sm text-[18px] text-primary">₹310</span>
+<button class="w-8 h-8 rounded bg-primary text-on-primary flex items-center justify-center hover:bg-primary-container transition-colors">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+</div>
+<div class="text-center pt-8">
+<a class="inline-flex items-center gap-2 font-label-caps text-label-caps uppercase tracking-widest text-secondary hover:text-primary transition-colors font-bold" href="#">
+        EXPLORE THESE SPICES <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</section>
+<!-- SECTION 6: COOKING STYLE VISUAL NAVIGATION -->
+<section class="w-full bg-surface-container py-16">
+<div class="max-w-7xl mx-auto px-margin lg:px-margin-desktop">
+<div class="text-center max-w-xl mx-auto mb-10">
+<span class="font-label-caps text-label-caps uppercase text-secondary font-bold tracking-widest">CULINARY DIALECTS</span>
+<h3 class="font-headline-md text-headline-md text-primary mt-1">WHAT'S ON THE MENU?</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Select your cooking tradition to unlock dedicated spice pairings.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Indian -->
+<div class="relative group rounded-lg overflow-hidden bg-surface-container-high h-72 p-6 flex flex-col justify-end shadow-sm hover:shadow-lg transition-all cursor-pointer">
+<div class="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-500 opacity-60" data-alt="Simmering rich copper handi with slow-cooked Indian curry topped with fresh coriander and spice oil." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB5LXx1AD42or--KbDhtiKEUHgB50MKrBvMsBJK6TVdGtZGZMvnAuTJYy30lnhFmRGzUf9yBJH6Z6hM1Ckst5bXNdJEcG3qmqWzokHswjCoUMoIhpFJ1CsYEzg-TsFjm-yrCqt6qmXOwNjKFsBUxzzPrZqXWjcmO-lukal_Bn5mU4yQcG9jgYjiTXwm-NUvb3IhQE64kaWi_P8WWboxLllgui8ett63fTbqMqm7Oq5UyWNmsjDyjWXw')">
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent"></div>
+<div class="relative z-10 text-on-primary">
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-secondary-fixed">Tradition</span>
+<h4 class="font-headline-sm text-headline-sm text-surface">INDIAN</h4>
+<p class="font-body-sm text-body-sm text-surface-variant mt-1">Curries, Biryani, Slow Dal, and Tandoori grills.</p>
+</div>
+</div>
+<!-- BBQ -->
+<div class="relative group rounded-lg overflow-hidden bg-surface-container-high h-72 p-6 flex flex-col justify-end shadow-sm hover:shadow-lg transition-all cursor-pointer">
+<div class="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-500 opacity-60" data-alt="Wood smoke rising around grilled spiced skewers and char-crusted roasts sprinkled with coarse dry rub." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBqHY0abW8OulXl1y2TCxruknCXhafcCTNJFy7svqcPpr3A8H4LzPplEoEWPT50p0ynfzQNrOr4RMzDdR66l7tQojupRyD7b4JHFpNKvmPVn00CO3xL8ufvdBNRKsAPRHHnp3N7SyoP5YrZCYtc3e83LwzPPFwwaVmanM4tg7f5sKeKGIYaW1oIHOr0gLPrC0KbBMRKbFR7-AsmyFi8gXgpZbKHDes3EGDKoomYk1Ucf8jVBndvWY4e')">
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent"></div>
+<div class="relative z-10 text-on-primary">
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-secondary-fixed">Open Flame</span>
+<h4 class="font-headline-sm text-headline-sm text-surface">BBQ &amp; SMOKE</h4>
+<p class="font-body-sm text-body-sm text-surface-variant mt-1">Pungent Dry Rubs, Marinades, Glazes, and Pit Grills.</p>
+</div>
+</div>
+<!-- Everyday -->
+<div class="relative group rounded-lg overflow-hidden bg-surface-container-high h-72 p-6 flex flex-col justify-end shadow-sm hover:shadow-lg transition-all cursor-pointer">
+<div class="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-500 opacity-60" data-alt="Fresh vibrant heirloom vegetables, basmati rice, and yellow lentils tossed in mustard seed and turmeric tadka." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDxX3vl7ZwitPZMgjtAtx11EJ9mYqoHi8kiw5WCfRYMW1GvxU4yFMHPXL5XNStYkSPvD63R-gyOaOBfUOgLzpIR3-qlA6WHMdbDh3erIci4LGJ7VT7p_9M-HO4i5ZReRr0EO31LLyYHgxEFdHmhATNFP58inrtqmaqH0RGQEK16OyPk-lPKzLRvNVxmXJmSDoS3WOR2PuLM7oRgxqmNYBMyLBn6mIhj6SiYP47y-z9cJaPzuFX4gD4Z')">
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent"></div>
+<div class="relative z-10 text-on-primary">
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-secondary-fixed">Pantry Basics</span>
+<h4 class="font-headline-sm text-headline-sm text-surface">EVERYDAY</h4>
+<p class="font-body-sm text-body-sm text-surface-variant mt-1">Crisp Vegetables, Basmati Rice, and Simple Lentils.</p>
+</div>
+</div>
+<!-- Global -->
+<div class="relative group rounded-lg overflow-hidden bg-surface-container-high h-72 p-6 flex flex-col justify-end shadow-sm hover:shadow-lg transition-all cursor-pointer">
+<div class="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-500 opacity-60" data-alt="Rustic Mediterranean flatbread and Mexican roasted spices on aged ceramic platter." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDPgTgF7FPaaRF56r2EZn8OannF-HM0qvoqGWjQkP8xGYeXBmQSbLXZAObJVPVByEI0fU9THwN15FerDlNVqEM3ZYEWmYw664ICLe42HYpIFGzdOWwtYRTkQocNDWGS_TE8Si6gOYa8JnmsXIz4x85Sytjig3HDSS5eBNOoVQXjGkDnwMyA_pFgF8e_7cAmvfdc4CIFvUj0riZgO_MIes9vMegEZKPgNy20f1GG_6rS4AnYJbE7fGWk')">
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent"></div>
+<div class="relative z-10 text-on-primary">
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-secondary-fixed">Cross-Culture</span>
+<h4 class="font-headline-sm text-headline-sm text-surface">GLOBAL</h4>
+<p class="font-body-sm text-body-sm text-surface-variant mt-1">Mexican moles, Mediterranean stews, and East Asian broths.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 7: FEATURED PRODUCTS (START HERE) -->
+<section class="max-w-7xl mx-auto w-full px-margin lg:px-margin-desktop py-20">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+<div>
+<span class="font-label-caps text-label-caps uppercase text-secondary font-bold tracking-widest">FOUNDATIONAL LOTS</span>
+<h3 class="font-headline-md text-headline-md text-primary mt-1">START HERE</h3>
+</div>
+<a class="font-label-caps text-label-caps uppercase text-secondary hover:text-primary transition-colors font-bold mt-2 md:mt-0 flex items-center gap-1" href="#">
+        VIEW FULL VAULT (42 VARIANTS) <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Product 1 -->
+<div class="bg-surface-container-lowest rounded-lg p-6 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div>
+<div class="aspect-[4/5] bg-surface-container rounded overflow-hidden mb-5 relative">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Warm amber glass jar filled with rich red Kashmiri chili powder against rustic kitchen stone background." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDXgpda9siXzkqgTmiSZFHoQrhS_6tyhNarazjKYfzj09GmdvKsjkwirUTfBx2SW9bVm0QAzaucxi_CvJR6PTCWKOdDXSLZaOwcwQ5FQ8MlNw0epZWktX4M3gHPA4hSrcGyXktv-T6p09P0cOmwahZnTDvNsJqBU1biDGyhUDmrSWQUQZW31OUBumBrJ-WU16HIS79pIKDU7Pj81h1zhdRD7eBXNETSlmpB0inACVcX8M9adKUIfbyF')">
+</div>
+<span class="absolute top-3 left-3 bg-surface/90 text-primary font-label-caps text-[10px] px-2 py-0.5 rounded">Cold Stone Milled</span>
+</div>
+<div class="flex items-center gap-1 text-secondary text-sm mb-1">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-caps text-[11px] text-on-surface font-bold">4.9</span>
+<span class="text-on-surface-variant text-[11px]">(128)</span>
+</div>
+<h4 class="font-headline-sm text-[20px] text-primary">Kashmiri Red Chilli</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Vibrant colour with mellow warm sun-dried warmth.</p>
+<span class="font-label-sm text-label-sm text-on-surface-variant block mt-2">100g Mylar Air-Lock Jar</span>
+</div>
+<div class="flex items-center justify-between pt-6 mt-4">
+<span class="font-headline-sm text-headline-sm text-primary">₹249</span>
+<button class="px-4 py-2 bg-primary hover:bg-primary-container text-on-primary font-label-caps text-label-caps uppercase tracking-wider transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">shopping_bag</span> Add to Cart
+          </button>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="bg-surface-container-lowest rounded-lg p-6 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div>
+<div class="aspect-[4/5] bg-surface-container rounded overflow-hidden mb-5 relative">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Amber glass apothecary bottle of golden bright yellow Salem Turmeric powder on raw timber desk." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAZtUkb8MQhFQmM7P6nBHLjFqIbTlygtm0JoHIrElblYxQaiDU5uQO0cq0TK7qICb1yHiOa0FuwGq3YREACByoN5NKLW-6NWpie7umJS5lojcjoEnyz-PrhZ1dwd5RUVVKpd7ez-WLV9MjJKyn7GBcyJ5cPdeNigNHhyH12AxsHz9HpAQNN2smv-OY0UbGoXREMT3ScSK7wFlt_uCuik7ziuyN87Pt82vYfqhKmFoddGxpLRgauzMyf')">
+</div>
+<span class="absolute top-3 left-3 bg-secondary-container text-on-secondary-container font-label-caps text-[10px] px-2 py-0.5 rounded font-bold">5.8% Curcumin</span>
+</div>
+<div class="flex items-center gap-1 text-secondary text-sm mb-1">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-caps text-[11px] text-on-surface font-bold">5.0</span>
+<span class="text-on-surface-variant text-[11px]">(214)</span>
+</div>
+<h4 class="font-headline-sm text-[20px] text-primary">Salem Turmeric</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Single-estate Tamil Nadu harvest with rich aromatic oils.</p>
+<span class="font-label-sm text-label-sm text-on-surface-variant block mt-2">100g Mylar Air-Lock Jar</span>
+</div>
+<div class="flex items-center justify-between pt-6 mt-4">
+<span class="font-headline-sm text-headline-sm text-primary">₹199</span>
+<button class="px-4 py-2 bg-primary hover:bg-primary-container text-on-primary font-label-caps text-label-caps uppercase tracking-wider transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">shopping_bag</span> Add to Cart
+          </button>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="bg-surface-container-lowest rounded-lg p-6 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div>
+<div class="aspect-[4/5] bg-surface-container rounded overflow-hidden mb-5 relative">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Dark heavy glass jar loaded with large wrinkled Tellicherry black peppercorns next to brass measures." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAE545f26IPk1W66iuWRCLXptfgy9No_UCrytJEJ5df6azotw9-4CuefDtbaoQHNrTTO0VGTmFt2IdJZT-qsuTmHw6cSd6wI9Iqwex9v82NAsd43LcQIbeK17J9uY0uJLKOHxIOBljagoTvS62KSLzbQw558nULNiNry42Ip0zxM84cKPwYJHliVNRF0Am0aJ4wrZWZHUaQjERCwv4wfK7OV1Rzi5YYmAsf_IuATGaSzE8SfJbxNMkX')">
+</div>
+<span class="absolute top-3 left-3 bg-surface/90 text-primary font-label-caps text-[10px] px-2 py-0.5 rounded">TGSEB Grade</span>
+</div>
+<div class="flex items-center gap-1 text-secondary text-sm mb-1">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-caps text-[11px] text-on-surface font-bold">4.8</span>
+<span class="text-on-surface-variant text-[11px]">(89)</span>
+</div>
+<h4 class="font-headline-sm text-[20px] text-primary">Malabar Black Peppercorns</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Kerala estate sun-cured, bold volatile bite and citrus note.</p>
+<span class="font-label-sm text-label-sm text-on-surface-variant block mt-2">75g Glass Vault</span>
+</div>
+<div class="flex items-center justify-between pt-6 mt-4">
+<span class="font-headline-sm text-headline-sm text-primary">₹320</span>
+<button class="px-4 py-2 bg-primary hover:bg-primary-container text-on-primary font-label-caps text-label-caps uppercase tracking-wider transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">shopping_bag</span> Add to Cart
+          </button>
+</div>
+</div>
+<!-- Product 4 -->
+<div class="bg-surface-container-lowest rounded-lg p-6 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div>
+<div class="aspect-[4/5] bg-surface-container rounded overflow-hidden mb-5 relative">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Brown textured spice powder in glass jar with dark wooden stopper surrounded by dry bay leaf and cinnamon." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC8q84qAHXmsgWba1SFrUONWlaknTIyux4HzqTQPCll1lRCBGLBwZ3mRuQgKXVw__NEppdGAL5CPYX1SNjofAJUSpF6ClOTlI5lEnGOTF2ZFywh0eHieO5ZUtBJ-zbUmt_uqmqzEYk_-VBzdACcuwkrOUU8LLO92cq-oEnagpzx_qfURlG0l4G_ZH55ZP9RT4s5v-2pQOEgOFJ5cA8py2ni88XsZ7CY1PhyYe0FrjokAwnqFiWZE6s-')">
+</div>
+<span class="absolute top-3 left-3 bg-primary-container text-on-primary-container font-label-caps text-[10px] px-2 py-0.5 rounded font-bold">14 Spice Heritage</span>
+</div>
+<div class="flex items-center gap-1 text-secondary text-sm mb-1">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-caps text-[11px] text-on-surface font-bold">5.0</span>
+<span class="text-on-surface-variant text-[11px]">(340)</span>
+</div>
+<h4 class="font-headline-sm text-[20px] text-primary">Royal Garam Masala</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Roasted whole, hand-ground in micro batches twice monthly.</p>
+<span class="font-label-sm text-label-sm text-on-surface-variant block mt-2">100g Glass Vault</span>
+</div>
+<div class="flex items-center justify-between pt-6 mt-4">
+<span class="font-headline-sm text-headline-sm text-primary">₹380</span>
+<button class="px-4 py-2 bg-primary hover:bg-primary-container text-on-primary font-label-caps text-label-caps uppercase tracking-wider transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">shopping_bag</span> Add to Cart
+          </button>
+</div>
+</div>
+<!-- Product 5 -->
+<div class="bg-surface-container-lowest rounded-lg p-6 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div>
+<div class="aspect-[4/5] bg-surface-container rounded overflow-hidden mb-5 relative">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Intense green whole cardamom pods in glass spice jar with wooden cap on dark slate." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAXIbaY1SYgQOCOXaq9iaC0XNA5uqg46u9Sd6GMLmKgWFDK-BZGroJP0h4Vs335UKDYK_ONdft1_apUNmHu-F0PGiOavN7JoihYix7ceC0hQNHDRJc82LH0mQvQczJ-qgAM2V5Tis8mgsQmStkB2dxXzF5ePnhTa1WQA2mN0u9-TNW-JtYoqkwp7svvoW0OaEzEyMqN84Zpk_02wVVvnZSgB-uMeYjWlh51yGDxfT-7xFnGDrnrrZtl')">
+</div>
+<span class="absolute top-3 left-3 bg-secondary-fixed text-on-secondary-fixed font-label-caps text-[10px] px-2 py-0.5 rounded font-bold">GI Alleppey</span>
+</div>
+<div class="flex items-center gap-1 text-secondary text-sm mb-1">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-caps text-[11px] text-on-surface font-bold">4.9</span>
+<span class="text-on-surface-variant text-[11px]">(175)</span>
+</div>
+<h4 class="font-headline-sm text-[20px] text-primary">Alleppey Cardamom</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Plump, highly aromatic green pods bursting with sweet resin.</p>
+<span class="font-label-sm text-label-sm text-on-surface-variant block mt-2">50g Glass Vault</span>
+</div>
+<div class="flex items-center justify-between pt-6 mt-4">
+<span class="font-headline-sm text-headline-sm text-primary">₹450</span>
+<button class="px-4 py-2 bg-primary hover:bg-primary-container text-on-primary font-label-caps text-label-caps uppercase tracking-wider transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">shopping_bag</span> Add to Cart
+          </button>
+</div>
+</div>
+<!-- Product 6 -->
+<div class="bg-surface-container-lowest rounded-lg p-6 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div>
+<div class="aspect-[4/5] bg-surface-container rounded overflow-hidden mb-5 relative">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="True delicate quilled ceylon cinnamon sticks inside apothecary glass container beside copper spoon." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDi2oPfIS9HNRcfYIHujTHe2QKLUuHdUdpGOxEAQ1UMnSNdwV2rYWnbfX_x4K4zTNBVGhb13TMnIr-htmuJi2vBZcAGl-ADf0VyX9EYj-g4baJvfsliG24x8kteCylMShy644bfsVIeO99n4rIvAwpDBVri1kSF5pxzG6Yq-PSfvvzqN14cNWkLGUrVBl0S5t9YmrbV2EriN98qjwgHmKVJrXSPPpHCzEiGeZPokEJ4B5wmuWlW7Fxp')">
+</div>
+<span class="absolute top-3 left-3 bg-surface/90 text-primary font-label-caps text-[10px] px-2 py-0.5 rounded">True Cinnamomum</span>
+</div>
+<div class="flex items-center gap-1 text-secondary text-sm mb-1">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-caps text-[11px] text-on-surface font-bold">4.8</span>
+<span class="text-on-surface-variant text-[11px]">(64)</span>
+</div>
+<h4 class="font-headline-sm text-[20px] text-primary">Ceylon Cinnamon</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Multi-layered fragile bark with subtle sweet honeyed tones.</p>
+<span class="font-label-sm text-label-sm text-on-surface-variant block mt-2">60g Glass Vault</span>
+</div>
+<div class="flex items-center justify-between pt-6 mt-4">
+<span class="font-headline-sm text-headline-sm text-primary">₹360</span>
+<button class="px-4 py-2 bg-primary hover:bg-primary-container text-on-primary font-label-caps text-label-caps uppercase tracking-wider transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">shopping_bag</span> Add to Cart
+          </button>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 8: INTERACTIVE BUILD YOUR OWN SPICE BOX -->
+<section class="w-full bg-surface-container-high py-20">
+<div class="max-w-7xl mx-auto px-margin lg:px-margin-desktop">
+<div class="max-w-xl mb-12">
+<span class="font-label-caps text-label-caps uppercase text-secondary font-bold tracking-widest">BESPOKE ATELIER</span>
+<h3 class="font-headline-md text-headline-md text-primary mt-1">BUILD YOUR OWN SPICE BOX</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+          Select any four single-estate jars or ground staples. We pack them in our signature reclaimed walnut casket with personalized brass lot numbering.
+        </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- 4 Spice Slots Selection (Span 8) -->
+<div class="lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
+<!-- Slot 1 -->
+<div class="bg-surface-container-lowest p-5 rounded-lg shadow-sm flex items-center gap-4">
+<div class="w-16 h-16 rounded bg-surface-container flex items-center justify-center flex-shrink-0 text-secondary font-headline-sm">
+              01
+            </div>
+<div class="flex-1 min-w-0">
+<span class="font-label-caps text-[10px] text-secondary uppercase font-semibold">Slot 1 Selected</span>
+<h4 class="font-body-lg text-body-lg text-primary font-bold truncate">Kashmiri Chilli</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Mild heat, pure ruby colour</p>
+</div>
+<button class="text-on-surface-variant hover:text-primary" title="Change item">
+<span class="material-symbols-outlined text-[20px]">swap_horiz</span>
+</button>
+</div>
+<!-- Slot 2 -->
+<div class="bg-surface-container-lowest p-5 rounded-lg shadow-sm flex items-center gap-4">
+<div class="w-16 h-16 rounded bg-surface-container flex items-center justify-center flex-shrink-0 text-secondary font-headline-sm">
+              02
+            </div>
+<div class="flex-1 min-w-0">
+<span class="font-label-caps text-[10px] text-secondary uppercase font-semibold">Slot 2 Selected</span>
+<h4 class="font-body-lg text-body-lg text-primary font-bold truncate">Salem Turmeric</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">High active curcumin</p>
+</div>
+<button class="text-on-surface-variant hover:text-primary" title="Change item">
+<span class="material-symbols-outlined text-[20px]">swap_horiz</span>
+</button>
+</div>
+<!-- Slot 3 -->
+<div class="bg-surface-container-lowest p-5 rounded-lg shadow-sm flex items-center gap-4">
+<div class="w-16 h-16 rounded bg-surface-container flex items-center justify-center flex-shrink-0 text-secondary font-headline-sm">
+              03
+            </div>
+<div class="flex-1 min-w-0">
+<span class="font-label-caps text-[10px] text-secondary uppercase font-semibold">Slot 3 Selected</span>
+<h4 class="font-body-lg text-body-lg text-primary font-bold truncate">Malabar Pepper</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Tellicherry sun-ripened</p>
+</div>
+<button class="text-on-surface-variant hover:text-primary" title="Change item">
+<span class="material-symbols-outlined text-[20px]">swap_horiz</span>
+</button>
+</div>
+<!-- Slot 4 -->
+<div class="bg-surface-container-lowest p-5 rounded-lg shadow-sm flex items-center gap-4">
+<div class="w-16 h-16 rounded bg-surface-container flex items-center justify-center flex-shrink-0 text-secondary font-headline-sm">
+              04
+            </div>
+<div class="flex-1 min-w-0">
+<span class="font-label-caps text-[10px] text-secondary uppercase font-semibold">Slot 4 Selected</span>
+<h4 class="font-body-lg text-body-lg text-primary font-bold truncate">Alleppey Cardamom</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Extra bold pods</p>
+</div>
+<button class="text-on-surface-variant hover:text-primary" title="Change item">
+<span class="material-symbols-outlined text-[20px]">swap_horiz</span>
+</button>
+</div>
+<!-- Inline Visual Bar of Box Completion -->
+<div class="sm:col-span-2 bg-surface-container-lowest p-5 rounded-lg shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-[24px]">verified</span>
+<div>
+<span class="font-body-sm text-body-sm text-primary font-semibold block">Box Allocation Status</span>
+<span class="font-label-caps text-[11px] text-on-surface-variant">4 of 4 Slots Filled • Ready to Pack</span>
+</div>
+</div>
+<span class="px-3 py-1 bg-secondary-fixed text-on-secondary-fixed font-label-caps text-[11px] uppercase rounded font-bold">100% Complete</span>
+</div>
+</div>
+<!-- Summary Card (Span 4) -->
+<div class="lg:col-span-4 bg-primary text-on-primary rounded-lg p-8 shadow-xl">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary-fixed font-bold block mb-1">CASKET SUMMARY</span>
+<h4 class="font-headline-sm text-headline-sm text-surface">YOUR BOX</h4>
+<div class="pt-6 space-y-3">
+<div class="flex justify-between font-body-sm text-body-sm text-surface-variant">
+<span>Curated Selection</span>
+<span class="font-semibold text-surface">4 PRODUCTS</span>
+</div>
+<div class="flex justify-between font-body-sm text-body-sm text-surface-variant">
+<span>Casket Finishing</span>
+<span class="font-semibold text-surface">Solid Walnut Sliding Lid</span>
+</div>
+<div class="flex justify-between font-body-sm text-body-sm text-surface-variant">
+<span>Fulfillment</span>
+<span class="font-semibold text-surface">Free Climate-Safe Express</span>
+</div>
+<div class="pt-4 mt-2 flex items-baseline justify-between">
+<span class="font-body-md text-body-md text-surface-variant">Bundle Price</span>
+<span class="font-headline-md text-headline-md text-surface">₹899</span>
+</div>
+</div>
+<button class="w-full mt-6 py-3.5 bg-secondary hover:bg-secondary-fixed hover:text-on-secondary-fixed text-on-secondary font-label-caps text-label-caps uppercase tracking-widest transition-all duration-300 flex items-center justify-center gap-2 shadow-lg">
+            BUILD MY BOX <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+<span class="font-label-caps text-[10px] text-surface-variant/80 uppercase tracking-wider block text-center mt-3">Personalized Gift Note Included Upon Checkout</span>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 9: GENERATIONAL SOURCING STORY -->
+<section class="max-w-7xl mx-auto w-full px-margin lg:px-margin-desktop py-24">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<span class="font-label-caps text-label-caps uppercase text-secondary font-bold tracking-widest block mb-2">INTEGRITY OF TERROIR</span>
+<h3 class="font-headline-md text-headline-md text-primary">EVERY COLLECTION HAS A STORY</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+        We reject industrial wholesale lots. Every gram of spice traces to dedicated family farms harvesting in synchronization with monsoon rhythms.
+      </p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 relative">
+<!-- Step 1 -->
+<div class="bg-surface-container rounded-lg p-6 flex flex-col justify-between shadow-sm">
+<div>
+<span class="font-headline-lg text-headline-lg text-secondary-container block leading-none mb-3">01</span>
+<span class="font-label-caps text-label-caps uppercase text-secondary font-bold tracking-wider">HARVEST</span>
+<h4 class="font-headline-sm text-[20px] text-primary mt-1">SOURCE</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+            Direct farmer alliances across Wayanad, Idukki, Salem, and Kashmir ensure shade-grown purity and sovereign trade pricing.
+          </p>
+</div>
+<div class="pt-6 mt-4 flex items-center gap-2 text-on-surface-variant text-[11px] font-label-caps uppercase">
+<span class="material-symbols-outlined text-[16px] text-secondary">eco</span> Single Micro-Lots
+        </div>
+</div>
+<!-- Step 2 -->
+<div class="bg-surface-container rounded-lg p-6 flex flex-col justify-between shadow-sm">
+<div>
+<span class="font-headline-lg text-headline-lg text-secondary-container block leading-none mb-3">02</span>
+<span class="font-label-caps text-label-caps uppercase text-secondary font-bold tracking-wider">CURATION</span>
+<h4 class="font-headline-sm text-[20px] text-primary mt-1">SELECT</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+            Manual sorting ensures only full pod sizes, complete seed retention, and zero filler matter make it into our archival line.
+          </p>
+</div>
+<div class="pt-6 mt-4 flex items-center gap-2 text-on-surface-variant text-[11px] font-label-caps uppercase">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified</span> Hand-Graded
+        </div>
+</div>
+<!-- Step 3 -->
+<div class="bg-surface-container rounded-lg p-6 flex flex-col justify-between shadow-sm">
+<div>
+<span class="font-headline-lg text-headline-lg text-secondary-container block leading-none mb-3">03</span>
+<span class="font-label-caps text-label-caps uppercase text-secondary font-bold tracking-wider">TECHNIQUE</span>
+<h4 class="font-headline-sm text-[20px] text-primary mt-1">CRAFT</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+            Traditional cold granite water-cooled stone mills crush spices gently under 38°C to retain precious volatile essential oils.
+          </p>
+</div>
+<div class="pt-6 mt-4 flex items-center gap-2 text-on-surface-variant text-[11px] font-label-caps uppercase">
+<span class="material-symbols-outlined text-[16px] text-secondary">precision_manufacturing</span> Cold Stone Mill
+        </div>
+</div>
+<!-- Step 4 -->
+<div class="bg-surface-container rounded-lg p-6 flex flex-col justify-between shadow-sm">
+<div>
+<span class="font-headline-lg text-headline-lg text-secondary-container block leading-none mb-3">04</span>
+<span class="font-label-caps text-label-caps uppercase text-secondary font-bold tracking-wider">PRESERVATION</span>
+<h4 class="font-headline-sm text-[20px] text-primary mt-1">PACK</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+            Sealed in UV-filtering amber glass with nitrogen purge to halt oxidation and protect flavor profiles for up to two full years.
+          </p>
+</div>
+<div class="pt-6 mt-4 flex items-center gap-2 text-on-surface-variant text-[11px] font-label-caps uppercase">
+<span class="material-symbols-outlined text-[16px] text-secondary">lock</span> Amber Glass
+        </div>
+</div>
+</div>
+<div class="text-center pt-12">
+<a class="inline-flex items-center gap-2 font-label-caps text-label-caps uppercase tracking-widest text-primary font-bold hover:text-secondary transition-colors" href="#">
+        LEARN ABOUT OUR PROCESS <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</section>
+<!-- SECTION 10: PRESENTATION VAULTS (GIFTING) -->
+<section class="w-full bg-surface-container-low py-20">
+<div class="max-w-7xl mx-auto px-margin lg:px-margin-desktop">
+<div class="text-center max-w-2xl mx-auto mb-14">
+<span class="font-label-caps text-label-caps uppercase text-secondary font-bold tracking-widest block mb-2">EPICUREAN PRESENTATION</span>
+<h3 class="font-headline-md text-headline-md text-primary">SPICE, BEAUTIFULLY GIFTED.</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+          Designed for memorable host gifts, culinary weddings, and distinguished collector kitchens.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Gift 1 -->
+<div class="bg-surface-container-lowest rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-all flex flex-col justify-between group">
+<div class="aspect-[4/3] bg-surface-container overflow-hidden relative">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-700" data-alt="Luxury wooden gift box resting on velvet cloth with 3 glass jars of Kashmiri saffron, cardamom and whole cloves tied with silk cord." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAXdBxXoI2obOjAEk_NOjV9iqpX2PU6Q6XbFWvViOpPsgV9qMFZQSXhikvcAjMm4T20355SF9NcQv8CWv9t0LjageyeQn8BGamzBRNWtKPUMbUMvx1SgHjXQp4BYe7gfx3R4c1kAy1-AAjiXGd3d13G5Boyj_7WJs86D13qVe6S5z1rf_6D2V42SnhH-BH7NVNRuDxoJk1GE3P95-kVj9iOZTqzJzAOraXNrM2UPSUH0HaFys3zORAJ')">
+</div>
+<span class="absolute top-3 left-3 bg-surface/90 text-primary font-label-caps text-[10px] px-2.5 py-1 rounded font-bold">Limited 500 Lots</span>
+</div>
+<div class="p-6 flex-1 flex flex-col justify-between">
+<div>
+<span class="font-label-caps text-label-caps uppercase text-secondary font-semibold">Trio Casket</span>
+<h4 class="font-headline-sm text-headline-sm text-primary mt-1">Premium Spice Box</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+                Pampore Mongra Saffron, Green Alleppey Cardamom, and Sri Lankan Alba Cinnamon in hand-buffed teak.
+              </p>
+</div>
+<div class="pt-6 mt-4 flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-primary">₹2,800</span>
+<button class="px-5 py-2.5 bg-primary hover:bg-primary-container text-on-primary font-label-caps text-label-caps uppercase tracking-wider transition-colors">
+                ACQUIRE GIFT
+              </button>
+</div>
+</div>
+</div>
+<!-- Gift 2 -->
+<div class="bg-surface-container-lowest rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all flex flex-col justify-between group">
+<div class="aspect-[4/3] bg-surface-container overflow-hidden relative">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-700" data-alt="Large magnificent handcrafted spice chest containing eight amber glass bottles and brass measuring spoons on dark wooden surface." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAziAgW4kmGGeliJZNN2qub34VAq5qaCzzEi3f_kRn-4kwSVAOy7KGG2lNo88WtfOlT93mKql11BcQPGPYpyswSeQVxtQnqgasA4zW2EJqv5oLz-qLVw4ZDDzDtonYFktxcpApBhmX1MHmg6pXjP1fuIxp7lnxBYYTJUSTfHcO3C70lKwPt2mZ1_2JQizRrx_5sAywMqMVAANtMtAbmASY9S13xIM4R_YaQ6KJQLKHGIX1MonMPbiqT')">
+</div>
+<span class="absolute top-3 left-3 bg-secondary text-on-secondary font-label-caps text-[10px] px-2.5 py-1 rounded font-bold">The Grand Reserve</span>
+</div>
+<div class="p-6 flex-1 flex flex-col justify-between">
+<div>
+<span class="font-label-caps text-label-caps uppercase text-secondary font-semibold">Complete Master Set</span>
+<h4 class="font-headline-sm text-headline-sm text-primary mt-1">Indian Kitchen Collection</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+                Eight full-size amber jars covering all classic foundations, cold-pressed masalas, and cast brass spice spoons.
+              </p>
+</div>
+<div class="pt-6 mt-4 flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-primary">₹4,500</span>
+<button class="px-5 py-2.5 bg-secondary hover:bg-secondary-fixed hover:text-on-secondary-fixed text-on-secondary font-label-caps text-label-caps uppercase tracking-wider transition-colors">
+                ACQUIRE GIFT
+              </button>
+</div>
+</div>
+</div>
+<!-- Gift 3 -->
+<div class="bg-surface-container-lowest rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-all flex flex-col justify-between group">
+<div class="aspect-[4/3] bg-surface-container overflow-hidden relative">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-700" data-alt="Minimalist kraft drawer tasting box showing miniature spice vials of exotic Indian spices on parchment paper." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBxUcEidJ3k7WIHsulosS4RsipeVQGa8NGeM9ZVfND21P_nt7fUqP6DorYf3LfZ2TfTM8kQHIi2VQUCkbnOrBbuNO9_-Wg8OMUOqJbjQ6Z8BAFjRouYrB1TgyqAPRxi47yNBXPJbw5-XfnhxTDZPY0b5BRUSii-FZgBX8EPeKCnFtGqF5kahzroh2ad44xBBmRgZroVfjqwOI085Z_4MHgBTBB0LB7WPnAgbSd5vFmHhC-TxGb6ouqu')">
+</div>
+<span class="absolute top-3 left-3 bg-surface/90 text-primary font-label-caps text-[10px] px-2.5 py-1 rounded font-bold">Introduction Pack</span>
+</div>
+<div class="p-6 flex-1 flex flex-col justify-between">
+<div>
+<span class="font-label-caps text-label-caps uppercase text-secondary font-semibold">Tasting Flights</span>
+<h4 class="font-headline-sm text-headline-sm text-primary mt-1">Gourmet Tasting Vault</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+                Six 30g trial vials curated for home chefs wanting to compare single-origin terroir expressions before committing.
+              </p>
+</div>
+<div class="pt-6 mt-4 flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-primary">₹1,400</span>
+<button class="px-5 py-2.5 bg-primary hover:bg-primary-container text-on-primary font-label-caps text-label-caps uppercase tracking-wider transition-colors">
+                ACQUIRE GIFT
+              </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 11: RECIPE DISCOVERY -->
+<section class="max-w-7xl mx-auto w-full px-margin lg:px-margin-desktop py-24">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+<div>
+<span class="font-label-caps text-label-caps uppercase text-secondary font-bold tracking-widest">GASTRONOMIC JOURNAL</span>
+<h3 class="font-headline-md text-headline-md text-primary mt-1">COOK WITH YOUR COLLECTION</h3>
+</div>
+<a class="font-label-caps text-label-caps uppercase text-secondary hover:text-primary transition-colors font-bold mt-2 md:mt-0 flex items-center gap-1" href="#">
+        EXPLORE ALL RECIPES <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Recipe 1 -->
+<div class="bg-surface-container rounded-lg overflow-hidden flex flex-col justify-between shadow-sm hover:shadow-md transition-all group">
+<div>
+<div class="aspect-[16/10] bg-surface-container-high overflow-hidden relative">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Steaming royal Awadhi Subz and paneer biryani in brass bowl garnished with fried onions, mint leaves and saffron rice grains." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCQ28dyCioQfzub1llwAKNXrlpU-88pZ04GgH3fu_rKnUS1qCYbuFKo6hnyEZxBUFMb3zudE_wNSHOrCYXk9vgt27RkRq8UiiHF_VS2diR2CPgufQKP8Za1nIHVjgBUscXlyruDWD-I42lnY1ODtKrU0fAxxqRUWq43gVIx_OD2mci8O3Ab4mip52bitfivizPqYJnDR464KcNfPPp5SETe4HFGC5Bu9QgQKdSh7iHGNmxO7pHl3yxb')">
+</div>
+<span class="absolute bottom-3 left-3 bg-surface/90 text-primary font-label-caps text-[10px] px-2 py-0.5 rounded">Awadhi Reserve</span>
+</div>
+<div class="p-6">
+<div class="flex items-center gap-4 text-on-surface-variant font-label-caps text-[11px] uppercase mb-2">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">schedule</span> 45m</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">tune</span> Intermediate</span>
+</div>
+<h4 class="font-headline-sm text-[20px] text-primary">Royal Awadhi Subz Dum Biryani</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+              Layered aged basmati rice with marinated paneer, vegetables, saffron milk, black mace, and green cardamom.
+            </p>
+</div>
+</div>
+<div class="p-6 pt-0">
+<a class="inline-flex items-center gap-1 font-label-caps text-label-caps uppercase tracking-widest text-primary font-bold group-hover:text-secondary transition-colors" href="../vaanika_artisanal_spices_royal_chicken_biryani_recipe_monograph/code.html">
+            VIEW RECIPE <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Recipe 2 -->
+<div class="bg-surface-container rounded-lg overflow-hidden flex flex-col justify-between shadow-sm hover:shadow-md transition-all group">
+<div>
+<div class="aspect-[16/10] bg-surface-container-high overflow-hidden relative">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Char-grilled tandoori paneer skewers coated in ruby red Kashmiri spices and herbs served on slate slab with lemon wedges." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBiAXjyKBZ6S7pKOQ994dJxK4RrzVW116Z85Jhxl8Z0QCnkGU6SEfbmV53KkNLg1NwzehHYaphe2RyHaafQAlbvmDEjt7A7lWQWXM0_rd27eNU5AateFapa6DkT-0jPUN43f5F6dCdgiuSTbuZFjKIIDP9as9jctobpDY2fis21ZFaGKguNtnXbLBgy35CXVL3cHA9Bpo6XUDkcJWC8AkZM1f-4YCDgHjaprFg53s0yYuUB3n2OxQ74')">
+</div>
+<span class="absolute bottom-3 left-3 bg-surface/90 text-primary font-label-caps text-[10px] px-2 py-0.5 rounded">Tandoori Blend</span>
+</div>
+<div class="p-6">
+<div class="flex items-center gap-4 text-on-surface-variant font-label-caps text-[11px] uppercase mb-2">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">schedule</span> 30m</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">tune</span> Easy</span>
+</div>
+<h4 class="font-headline-sm text-[20px] text-primary">Smoky Tandoori Paneer</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+              Hung curd marinade blended with vibrant Kashmiri Degi chilli, roasted kasuri methi, and black salt.
+            </p>
+</div>
+</div>
+<div class="p-6 pt-0">
+<a class="inline-flex items-center gap-1 font-label-caps text-label-caps uppercase tracking-widest text-primary font-bold group-hover:text-secondary transition-colors" href="#">
+            VIEW RECIPE <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Recipe 3 -->
+<div class="bg-surface-container rounded-lg overflow-hidden flex flex-col justify-between shadow-sm hover:shadow-md transition-all group">
+<div>
+<div class="aspect-[16/10] bg-surface-container-high overflow-hidden relative">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Homestyle yellow dal in rustic stone pot topped with sizzling ghee tadka of whole red chilies and cumin seeds." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuADfcahbwex4jeHlP2YV7hRq8UDkWQsqzjPyNMzP4uHaCZqWyibVPcnfuJXCYoCwZj2-Mik8uSNWmY0pjnNbUn1P9djfavo5eQIOFcG7vVN865S0sBOwBtjINtqgP90RCdvUSnulvKpE34B-iHJW-w67csayJO74_0s6swDYTx7lxyTEzfkPjDW1VY0MP0-uIfkQZYCnZCXc6OSinSTu3G39AvMu9lDTxa9Jl5NFtKvOaSFH50J3qHC')">
+</div>
+<span class="absolute bottom-3 left-3 bg-surface/90 text-primary font-label-caps text-[10px] px-2 py-0.5 rounded">Pantry Classic</span>
+</div>
+<div class="p-6">
+<div class="flex items-center gap-4 text-on-surface-variant font-label-caps text-[11px] uppercase mb-2">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">schedule</span> 25m</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">tune</span> Easy</span>
+</div>
+<h4 class="font-headline-sm text-[20px] text-primary">Homestyle Dal Tadka</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+              Silky toor dal tempered in bubbling cow's ghee with blooming roasted cumin, turmeric, and dried Guntur chilies.
+            </p>
+</div>
+</div>
+<div class="p-6 pt-0">
+<a class="inline-flex items-center gap-1 font-label-caps text-label-caps uppercase tracking-widest text-primary font-bold group-hover:text-secondary transition-colors" href="#">
+            VIEW RECIPE <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+</div>
+<script>
+  // Flavour Finder Filter interaction
+  document.querySelectorAll('.flavour-btn').forEach(button => {
+    button.addEventListener('click', () => {
+      document.querySelectorAll('.flavour-btn').forEach(btn => {
+        btn.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm');
+        btn.classList.add('bg-surface-container', 'text-on-surface-variant');
+      });
+      button.classList.remove('bg-surface-container', 'text-on-surface-variant');
+      button.classList.add('bg-primary', 'text-on-primary', 'shadow-sm');
+    });
+  });
+</script></main><footer class="w-full bg-inverse-surface text-inverse-on-surface"><div class="max-w-7xl mx-auto px-margin lg:px-margin-desktop pt-space-xl pb-space-lg"><div class="grid grid-cols-1 md:grid-cols-12 gap-gutter-desktop pb-space-lg"><div class="md:col-span-5 space-y-space-md"><span class="font-headline-sm text-headline-sm text-surface tracking-tight block" class="brand-dynamic-name">VAANIKA</span><p class="font-body-md text-body-md text-surface-variant max-w-sm">Purveyors of single-estate Indian spices, wild botanicals, and hand-foraged aromatics harvested in rhythm with the monsoons.</p><div class="pt-space-xs"><p class="font-label-caps text-label-caps uppercase tracking-widest text-secondary-fixed-dim mb-space-xs">Curator's Gazette</p><form class="flex max-w-sm"><input class="bg-surface-dim/20 text-inverse-on-surface placeholder:text-surface-variant/60 font-body-sm text-body-sm px-space-md py-space-sm flex-1 focus:outline-none focus:bg-surface-dim/30" placeholder="Enter your epistolary address" type="email"/><button aria-label="Subscribe" class="bg-secondary text-on-secondary px-space-md py-space-sm font-label-caps text-label-caps uppercase transition-colors hover:bg-secondary-fixed hover:text-on-secondary-fixed flex items-center justify-center" type="submit"><span class="material-symbols-outlined text-[18px]">arrow_forward</span></button></form></div></div><div class="md:col-span-2 space-y-space-sm"><h4 class="font-label-caps text-label-caps uppercase tracking-wider text-secondary-fixed">Vaults</h4><ul class="space-y-space-xs"><li class="font-body-sm text-body-sm text-surface-variant hover:text-surface transition-colors"><a data-path="shop" href="#">Single-Estate Malabar</a></li><li class="font-body-sm text-body-sm text-surface-variant hover:text-surface transition-colors"><a data-path="shop" href="#">Pampore Saffron</a></li><li class="font-body-sm text-body-sm text-surface-variant hover:text-surface transition-colors"><a data-path="shop" href="#">Guntur Sun-Dried</a></li><li class="font-body-sm text-body-sm text-surface-variant hover:text-surface transition-colors"><a data-path="collections" href="#">Artisanal Masalas</a></li><li class="font-body-sm text-body-sm text-surface-variant hover:text-surface transition-colors"><a data-path="collections" href="#">Private Reserve 2024</a></li></ul></div><div class="md:col-span-2 space-y-space-sm"><h4 class="font-label-caps text-label-caps uppercase tracking-wider text-secondary-fixed">Provenance</h4><ul class="space-y-space-xs"><li class="font-body-sm text-body-sm text-surface-variant hover:text-surface transition-colors"><a data-path="our-story" href="#">The Terroir Journal</a></li><li class="font-body-sm text-body-sm text-surface-variant hover:text-surface transition-colors"><a data-path="our-story" href="#">Farmer Collectives</a></li><li class="font-body-sm text-body-sm text-surface-variant hover:text-surface transition-colors"><a data-path="recipes" href="#">Culinary Monograph</a></li><li class="font-body-sm text-body-sm text-surface-variant hover:text-surface transition-colors"><a data-path="our-story" href="#">Harvest Epistles</a></li><li class="font-body-sm text-body-sm text-surface-variant hover:text-surface transition-colors"><a data-path="our-story" href="#">Laboratory Purity</a></li></ul></div><div class="md:col-span-3 space-y-space-sm"><h4 class="font-label-caps text-label-caps uppercase tracking-wider text-secondary-fixed">Concierge</h4><p class="font-body-sm text-body-sm text-surface-variant">Private culinary commissions and restaurant allocations managed through our master blender.</p><p class="font-label-sm text-label-sm text-surface-variant">concierge@vaanikaspices.com</p><div class="flex items-center gap-space-sm pt-space-xs"><span class="font-label-caps text-label-caps text-secondary-fixed-dim uppercase">Estate Batch Lot No. 841</span></div></div></div><div class="pt-space-md flex flex-col md:flex-row items-center justify-between gap-space-sm"><p class="font-body-sm text-body-sm text-surface-variant/80">© 2025 Vaanika Artisanal Spices. All rights reserved.</p><div class="flex items-center gap-space-md"><span class="font-label-caps text-label-caps text-surface-variant/80 uppercase cursor-pointer hover:text-surface transition-colors">Archival Registry</span><span class="font-label-caps text-label-caps text-surface-variant/80 uppercase cursor-pointer hover:text-surface transition-colors">Ethical Provenance</span><span class="font-label-caps text-label-caps text-surface-variant/80 uppercase cursor-pointer hover:text-surface transition-colors">Terms of Allocation</span></div></div></div></footer></body></html>

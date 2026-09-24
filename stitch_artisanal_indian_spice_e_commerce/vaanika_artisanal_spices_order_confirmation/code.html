@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "secondary-container": "#fea047", "inverse-on-surface": "#f6efec", "tertiary-fixed": "#ffdada", "background": "#fff8f4", "inverse-primary": "#ffb2b7", "primary-fixed": "#ffdadb", "surface-container-low": "#f9f2ef", "tertiary": "#2e0006", "on-tertiary-container": "#cb757a", "tertiary-container": "#4c1018", "on-tertiary-fixed-variant": "#753137", "surface-container-lowest": "#ffffff", "surface": "#fff8f4", "on-error": "#ffffff", "surface-container": "#f3ede9", "error": "#ba1a1a", "error-container": "#ffdad6", "surface-variant": "#e7e1de", "surface-container-high": "#ede7e3", "outline": "#867273", "on-error-container": "#93000a", "primary-container": "#4a121a", "on-secondary-fixed": "#2e1500", "primary": "#2e0007", "on-surface-variant": "#534343", "secondary-fixed": "#ffdcc2", "secondary": "#8f4e00", "surface-container-highest": "#e7e1de", "surface-tint": "#90494f", "on-background": "#1d1b19", "on-tertiary-fixed": "#3d050e", "secondary-fixed-dim": "#ffb77a", "on-primary-container": "#c8767c", "on-surface": "#1d1b19", "surface-bright": "#fff8f4", "on-secondary-fixed-variant": "#6d3a00", "on-tertiary": "#ffffff", "primary-fixed-dim": "#ffb2b7", "inverse-surface": "#32302e", "outline-variant": "#d8c1c1", "on-primary-fixed": "#3b0710", "surface-dim": "#dfd9d5", "tertiary-fixed-dim": "#ffb3b6", "on-primary-fixed-variant": "#733239", "on-primary": "#ffffff", "on-secondary-container": "#6d3a00", "on-secondary": "#ffffff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xs": "0.375rem", "space-sm": "0.75rem", "margin-desktop": "4rem", "space-md": "1.25rem", "gutter-desktop": "2.5rem", "space-lg": "2.25rem", "gutter": "1.5rem", "space-xl": "4rem", "margin": "1.25rem" }, "fontFamily": { "headline-lg": [ "Playfair Display" ], "display-hero-mobile": [ "Playfair Display" ], "body-md": [ "Plus Jakarta Sans" ], "body-sm": [ "Plus Jakarta Sans" ], "label-caps": [ "Plus Jakarta Sans" ], "headline-sm": [ "Playfair Display" ], "label-sm": [ "Plus Jakarta Sans" ], "headline-md": [ "Playfair Display" ], "headline-lg-mobile": [ "Playfair Display" ], "display-hero": [ "Playfair Display" ], "body-lg": [ "Plus Jakarta Sans" ], "subheading": [ "Playfair Display" ] }, "fontSize": { "headline-lg": [ "44px", { "lineHeight": "52px", "letterSpacing": "-0.01em", "fontWeight": "400" } ], "display-hero-mobile": [ "38px", { "lineHeight": "46px", "letterSpacing": "-0.01em", "fontWeight": "400" } ], "body-md": [ "15px", { "lineHeight": "24px", "letterSpacing": "0.005em", "fontWeight": "400" } ], "body-sm": [ "13px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "400" } ], "label-caps": [ "11px", { "lineHeight": "16px", "letterSpacing": "0.14em", "fontWeight": "600" } ], "headline-sm": [ "24px", { "lineHeight": "32px", "letterSpacing": "0.01em", "fontWeight": "600" } ], "label-sm": [ "12px", { "lineHeight": "18px", "letterSpacing": "0.04em", "fontWeight": "500" } ], "headline-md": [ "32px", { "lineHeight": "40px", "letterSpacing": "0em", "fontWeight": "500" } ], "headline-lg-mobile": [ "30px", { "lineHeight": "38px", "letterSpacing": "0em", "fontWeight": "400" } ], "display-hero": [ "64px", { "lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "400" } ], "body-lg": [ "17px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "400" } ], "subheading": [ "19px", { "lineHeight": "28px", "letterSpacing": "0.02em", "fontWeight": "400" } ] } } } };</script><link rel="stylesheet" href="../theme-styles.css"/>
+<script src="../theme-manager.js"></script>
+</head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="h-20 max-w-7xl mx-auto px-margin-desktop flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="A refined, minimalist luxury wordmark and insignia for 'MASALA VAULT' artisanal Indian spices, featuring an elegant monogram emblem with botanical spice star anise/clove motifs and timeless serif lettering.. Brand logo. - Primary color: #4a121a
+- Font: playfairDisplay
+- Mode: light
+- Roundness: rounded-lg
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1U7umTVxr7A_QAstDKrJBl6jpxejtiF_7gLzXm0ixYON8uRvVXETcymHjliPJZT2Eh7qznUdVBFBY4fEyUn8PxUOggGZsHwyePDfLOBxq2ZPam4Dl2CmjnobTD2rfV_2Wlw5jMu0caGvHAAFWIQ9xwcnskkoqvKSi54JrUngvSVhmkEUBvGZP6dtTuqeYaDYjhzkkhMcy8TtmuZAW4mJsX3tO5DP879AVnvZt1jX3SYk2y3A-yHyVwkkw"/><a class="font-headline-sm text-headline-sm text-primary tracking-tight font-normal uppercase" data-path="order-confirmation" href="#">Vaanika</a><span class="hidden sm:inline-block text-outline-variant font-body-sm text-body-sm px-space-xs">|</span><span class="hidden sm:inline-block font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant">Artisanal Spices</span></div><div class="flex items-center gap-space-lg"><nav data-active-classes="text-primary font-medium"><a class="font-label-caps text-label-caps uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors flex items-center gap-space-xs" data-path="concierge-support" href="#">Need Help? Concierge Support</a></nav><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-320px)]"><div class="flex flex-col w-full">
+<!-- Interactive View Switcher Bar (Discreet Edge-State Inspector) -->
+<div class="w-full bg-surface-container-low py-space-xs px-margin-desktop">
+<div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-space-xs text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="inline-block w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-secondary font-semibold">Preview Modes</span>
+<span class="text-outline-variant">|</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Order #SPC-10284</span>
+</div>
+<div class="flex items-center gap-1 overflow-x-auto py-1">
+<button class="px-3 py-1 font-label-caps text-label-caps uppercase tracking-wider bg-surface-container-highest text-primary font-medium transition-colors" id="btn-state-normal" onclick="setSimState('normal')">Confirmed</button>
+<button class="px-3 py-1 font-label-caps text-label-caps uppercase tracking-wider text-on-surface-variant hover:bg-surface-container transition-colors" id="btn-state-tracking" onclick="setSimState('tracking')">Live Tracking</button>
+<button class="px-3 py-1 font-label-caps text-label-caps uppercase tracking-wider text-on-surface-variant hover:bg-surface-container transition-colors flex items-center gap-1" id="btn-state-invoice" onclick="triggerInvoiceDownload()">
+<span class="material-symbols-outlined text-[14px]">download</span> Invoice Test
+        </button>
+<button class="px-3 py-1 font-label-caps text-label-caps uppercase tracking-wider text-on-surface-variant hover:bg-surface-container transition-colors" id="btn-state-processing" onclick="setSimState('processing')">Simulate Delay</button>
+</div>
+</div>
+</div>
+<!-- Toast Notification Alert (Triggered via Micro-actions) -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none bg-inverse-surface text-inverse-on-surface px-space-md py-space-sm shadow-2xl flex items-center gap-space-sm" id="toastNotification">
+<span class="material-symbols-outlined text-secondary-container" id="toastIcon">check_circle</span>
+<div class="space-y-0.5">
+<div class="font-label-caps text-label-caps uppercase tracking-widest text-secondary-fixed-dim" id="toastTitle">Notification</div>
+<div class="font-body-sm text-body-sm" id="toastMessage">Action completed successfully.</div>
+</div>
+</div>
+<!-- SECTION 1: SUCCESS CELEBRATION HERO -->
+<section class="w-full bg-surface pt-space-xl pb-space-lg relative overflow-hidden">
+<!-- Ambient Spice Glow Accent -->
+<div class="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-96 bg-gradient-to-br from-secondary-container/10 via-primary/5 to-transparent blur-3xl pointer-events-none -z-0"></div>
+<div class="max-w-4xl mx-auto px-space-md text-center relative z-10 flex flex-col items-center">
+<!-- Animated Brass Wreath & Checkmark Seal -->
+<div class="relative w-20 h-20 mb-space-md flex items-center justify-center">
+<!-- SVG Botanical Wreath with animated pulse -->
+<svg class="absolute inset-0 w-full h-full text-secondary animate-[spin_60s_linear_infinite]" fill="none" stroke="currentColor" viewbox="0 0 100 100">
+<circle cx="50" cy="50" opacity="0.4" r="46" stroke-dasharray="3 3" stroke-width="1"></circle>
+<!-- Botanical Star Anise & Leaf Petals -->
+<path d="M50 8 C53 20 47 20 50 8 Z" fill="currentColor" opacity="0.75"></path>
+<path d="M50 92 C53 80 47 80 50 92 Z" fill="currentColor" opacity="0.75"></path>
+<path d="M8 50 C20 53 20 47 8 50 Z" fill="currentColor" opacity="0.75"></path>
+<path d="M92 50 C80 53 80 47 92 50 Z" fill="currentColor" opacity="0.75"></path>
+<path d="M20 20 C30 28 26 32 20 20 Z" fill="currentColor" opacity="0.6"></path>
+<path d="M80 80 C70 72 74 68 80 80 Z" fill="currentColor" opacity="0.6"></path>
+<path d="M80 20 C72 30 68 26 80 20 Z" fill="currentColor" opacity="0.6"></path>
+<path d="M20 80 C28 70 32 74 20 80 Z" fill="currentColor" opacity="0.6"></path>
+</svg>
+<!-- Solid Inner Brass Badge -->
+<div class="w-14 h-14 rounded-full bg-secondary-container/20 flex items-center justify-center shadow-inner">
+<div class="w-11 h-11 rounded-full bg-primary flex items-center justify-center shadow-md">
+<svg class="w-6 h-6 text-secondary-fixed" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" viewbox="0 0 24 24">
+<polyline points="20 6 9 17 4 12"></polyline>
+</svg>
+</div>
+</div>
+</div>
+<!-- Main Display Title -->
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary font-semibold mb-space-xs block">
+        Harvest Allocation Verified
+      </span>
+<h1 class="font-display-hero text-headline-lg sm:text-display-hero text-primary tracking-tight font-normal uppercase leading-tight max-w-3xl">
+        Thank You For Your Order
+      </h1>
+<p class="font-subheading text-subheading italic text-on-surface-variant mt-space-xs max-w-xl">
+        Your fresh estate botanicals are sealed under nitrogen inertion and officially prepared for your culinary table.
+      </p>
+<!-- Order Identifier Pill with Interactive Copy -->
+<div class="mt-space-md inline-flex items-center gap-space-sm bg-surface-container px-space-md py-2 shadow-sm">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant">Allocation Number</span>
+<span class="font-body-md text-body-md font-semibold text-primary tracking-wider" id="displayOrderId">#SPC-10284</span>
+<button class="text-on-surface-variant hover:text-primary transition-colors flex items-center" onclick="copyOrderId('SPC-10284')" title="Copy Order ID">
+<span class="material-symbols-outlined text-[18px]">content_copy</span>
+</button>
+</div>
+<!-- Confirmation Monograph Dispatch Notice -->
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-sm max-w-lg">
+        An archival harvest monograph &amp; tax invoice has been dispatched to
+        <span class="text-primary font-medium">artisan.patron@epicurean.in</span> (+91 98201 49822).
+      </p>
+</div>
+</section>
+<!-- SECTION 2: ARCHIVAL HARVEST TIMELINE -->
+<section class="w-full bg-surface-container-low py-space-lg">
+<div class="max-w-5xl mx-auto px-space-md">
+<div class="flex items-center justify-between mb-space-md">
+<div>
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary font-semibold">Provenance Trail</span>
+<h2 class="font-headline-sm text-headline-sm text-primary font-normal">Order Progression</h2>
+</div>
+<div class="text-right">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider block">Carrier Partner</span>
+<span class="font-body-sm text-body-sm font-medium text-primary">BlueDart ClimateAir #BD-882910</span>
+</div>
+</div>
+<!-- Horizontal Step Tracker (Responsive) -->
+<div class="grid grid-cols-1 md:grid-cols-5 gap-space-sm relative">
+<!-- Step 1: ORDER PLACED (Complete) -->
+<div class="bg-surface-container-lowest p-space-sm flex flex-col justify-between shadow-sm relative">
+<div class="flex items-center justify-between pb-space-xs">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary font-bold">Step 01</span>
+<div class="w-6 h-6 rounded-full bg-primary text-secondary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</div>
+</div>
+<div class="space-y-1">
+<div class="font-label-caps text-label-caps uppercase tracking-wider text-primary font-semibold">Order Placed</div>
+<div class="font-body-sm text-body-sm text-on-surface font-medium">Verified &amp; Paid</div>
+<div class="font-label-caps text-label-caps text-outline text-[10px]">Today · 02:45 PM IST</div>
+</div>
+</div>
+<!-- Step 2: PROCESSING (Active next) -->
+<div class="bg-surface-container-lowest p-space-sm flex flex-col justify-between shadow-sm relative" id="timeline-step-2">
+<div class="flex items-center justify-between pb-space-xs">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary-container font-bold">Step 02</span>
+<div class="w-6 h-6 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center animate-pulse">
+<span class="material-symbols-outlined text-[14px]">sync</span>
+</div>
+</div>
+<div class="space-y-1">
+<div class="font-label-caps text-label-caps uppercase tracking-wider text-secondary font-semibold">Allocation &amp; QC</div>
+<div class="font-body-sm text-body-sm text-on-surface font-medium">Micro-Lot Retrieval</div>
+<div class="font-label-caps text-label-caps text-outline text-[10px]">Terrace Vault, Wayanad</div>
+</div>
+</div>
+<!-- Step 3: PACKED -->
+<div class="bg-surface-container-lowest p-space-sm flex flex-col justify-between shadow-sm opacity-60">
+<div class="flex items-center justify-between pb-space-xs">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-outline">Step 03</span>
+<div class="w-6 h-6 rounded-full bg-surface-container text-outline flex items-center justify-center">
+<span class="material-symbols-outlined text-[14px]">inventory_2</span>
+</div>
+</div>
+<div class="space-y-1">
+<div class="font-label-caps text-label-caps uppercase tracking-wider text-outline font-semibold">Coir Packaging</div>
+<div class="font-body-sm text-body-sm text-outline font-medium">Nitrogen Inertion</div>
+<div class="font-label-caps text-label-caps text-outline text-[10px]">Estimated Oct 11 · 10 AM</div>
+</div>
+</div>
+<!-- Step 4: SHIPPED -->
+<div class="bg-surface-container-lowest p-space-sm flex flex-col justify-between shadow-sm opacity-60">
+<div class="flex items-center justify-between pb-space-xs">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-outline">Step 04</span>
+<div class="w-6 h-6 rounded-full bg-surface-container text-outline flex items-center justify-center">
+<span class="material-symbols-outlined text-[14px]">local_shipping</span>
+</div>
+</div>
+<div class="space-y-1">
+<div class="font-label-caps text-label-caps uppercase tracking-wider text-outline font-semibold">Dispatched</div>
+<div class="font-body-sm text-body-sm text-outline font-medium">Air Freight Transit</div>
+<div class="font-label-caps text-label-caps text-outline text-[10px]">Estimated Oct 11 · Evening</div>
+</div>
+</div>
+<!-- Step 5: DELIVERED -->
+<div class="bg-surface-container-lowest p-space-sm flex flex-col justify-between shadow-sm opacity-60">
+<div class="flex items-center justify-between pb-space-xs">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-outline">Step 05</span>
+<div class="w-6 h-6 rounded-full bg-surface-container text-outline flex items-center justify-center">
+<span class="material-symbols-outlined text-[14px]">home_pin</span>
+</div>
+</div>
+<div class="space-y-1">
+<div class="font-label-caps text-label-caps uppercase tracking-wider text-outline font-semibold">Delivered</div>
+<div class="font-body-sm text-body-sm text-outline font-medium">Direct to Patron Kitchen</div>
+<div class="font-label-caps text-label-caps text-outline text-[10px]">Oct 12 – 14, 2026</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: ESTIMATED DELIVERY CARD (Prominent Banner) -->
+<section class="w-full bg-surface py-space-md">
+<div class="max-w-5xl mx-auto px-space-md">
+<div class="bg-surface-container-high p-space-md md:p-space-lg flex flex-col lg:flex-row lg:items-center justify-between gap-space-md shadow-sm relative overflow-hidden">
+<!-- Left details -->
+<div class="space-y-space-xs max-w-xl">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">calendar_clock</span>
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary font-semibold">Anticipated Arrival Window</span>
+</div>
+<div class="font-headline-md text-headline-md text-primary font-normal">
+            12–14 October, 2026
+          </div>
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="inline-block w-2 h-2 rounded-full bg-secondary"></span>
+<p class="font-body-sm text-body-sm font-medium">
+              Climate-Safe Express Delivery (Temperature-Stabilized &amp; Coir Insulated)
+            </p>
+</div>
+<div class="pt-2 text-on-surface">
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-outline block">Delivery Destination</span>
+<p class="font-body-md text-body-md font-medium text-primary mt-0.5">
+              Raghavendra Suryavanshi
+            </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Flat 402, Nilgiri Heritage Enclave, Opposite Botanical Gardens Gate 2<br/>
+              New Delhi, Delhi NCR - 110001 · Contact: +91 98201 49822
+            </p>
+</div>
+</div>
+<!-- Right actions -->
+<div class="flex flex-col sm:flex-row lg:flex-col gap-space-xs justify-end lg:items-end">
+<button class="px-space-md py-3 bg-transparent text-primary hover:bg-surface transition-colors font-label-caps text-label-caps uppercase tracking-widest text-center shadow-sm" onclick="openDeliveryEditNotice()">
+            Edit Delivery Details
+          </button>
+<span class="font-label-caps text-label-caps text-outline text-right">Cutoff for address edits: Today 18:00 IST</span>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: CORE TWO-COLUMN MONOGRAPH BREAKDOWN -->
+<section class="w-full bg-surface pb-space-xl">
+<div class="max-w-5xl mx-auto px-space-md">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop">
+<!-- LEFT COLUMN: Harvest Order Items & Financial Reconciliation -->
+<div class="lg:col-span-7 space-y-space-md">
+<div class="bg-surface-container-lowest p-space-md md:p-space-lg shadow-sm">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-primary font-normal">Your Harvest Order</span>
+<span class="px-2 py-0.5 font-label-caps text-label-caps bg-surface-container text-on-surface-variant uppercase tracking-wider">3 Items</span>
+</div>
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary font-semibold">Vault Allocated</span>
+</div>
+<!-- Item 1: Kashmiri Red Chilli -->
+<div class="py-space-sm flex gap-space-sm items-start">
+<img class="w-20 h-24 object-cover flex-shrink-0 bg-surface-container" data-alt="Close up artisanal glass apothecary spice jar of vibrant red Kashmiri chilli powder on slate stone with whole dried chillies beside it in soft moody culinary light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCh9OyN-ujSFVo6E96ctsfSIWn-VBJR-lDqpRIt_dDFNZwwyUvHHfALk2HX6B6W98v8iFpO5--0L0eDq7-vtDOdZPd-Zplc3kn_9YNLqzHiA84blagxgwYLa1Hz7MV67j8MHlSFp8K4mEX2u9b2rEeHbKk7QaFdFWyW_tU7B72oyE3TYgZhv5806lXKpJMdYDasF1PRC4tVkFx00zsqYPEHLe3D4LYb00fBWMhw7Dk5eTpT8DDjLlwM"/>
+<div class="flex-1 min-w-0">
+<div class="flex items-start justify-between gap-space-xs">
+<div>
+<h3 class="font-body-lg text-body-lg font-semibold text-primary">Kashmiri Red Chilli Powder</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">100g Violet Glass Flacon · Cold Ground</p>
+</div>
+<div class="text-right">
+<span class="font-body-md text-body-md font-semibold text-primary">₹498.00</span>
+<span class="font-label-caps text-label-caps text-outline block">2 × ₹249.00</span>
+</div>
+</div>
+<div class="mt-2 flex flex-wrap items-center gap-1">
+<span class="font-label-caps text-label-caps uppercase tracking-wider bg-surface-container px-2 py-0.5 text-on-surface-variant">Lot 2026-KR04</span>
+<span class="font-label-caps text-label-caps uppercase tracking-wider bg-surface-container px-2 py-0.5 text-on-surface-variant">Pampore Valley</span>
+<span class="font-label-caps text-label-caps uppercase tracking-wider bg-secondary-container/20 text-secondary px-2 py-0.5">High Oleoresin</span>
+</div>
+</div>
+</div>
+<!-- Item 2: Salem Turmeric -->
+<div class="py-space-sm flex gap-space-sm items-start">
+<img class="w-20 h-24 object-cover flex-shrink-0 bg-surface-container" data-alt="Macro overhead photo of deep golden yellow Salem turmeric root and pure ground powder presented on natural dark slate texture with warm dramatic studio light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYeZdmAVxXhXpxyiZA2v3E9DshTbTpIgWIYw87xukkEXXNBGJ6reoXJtM2qGpB4rZFoyrG_jdvPMIc1ksprWY2LIGSme2lri71Vjd-_-gtTtAncdLbOSsLr3SvBShximYPYJ5gNpyn-_JTnRKsHlLk_kHwONeKlFIfjZ2JAtf0rky5Uix2yy6UJYZ1TRYb07Ga0RsZtfZNYkIZFpD0HPuoxfNCuKrJu6fsnlwHd_6qKuBRVUeAPhSC"/>
+<div class="flex-1 min-w-0">
+<div class="flex items-start justify-between gap-space-xs">
+<div>
+<h3 class="font-body-lg text-body-lg font-semibold text-primary">Salem Turmeric Powder</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">100g Violet Glass Flacon · Single Estate</p>
+</div>
+<div class="text-right">
+<span class="font-body-md text-body-md font-semibold text-primary">₹280.00</span>
+<span class="font-label-caps text-label-caps text-outline block">1 × ₹280.00</span>
+</div>
+</div>
+<div class="mt-2 flex flex-wrap items-center gap-1">
+<span class="font-label-caps text-label-caps uppercase tracking-wider bg-surface-container px-2 py-0.5 text-on-surface-variant">Lot 2026-SL02</span>
+<span class="font-label-caps text-label-caps uppercase tracking-wider bg-surface-container px-2 py-0.5 text-on-surface-variant">Tamil Nadu</span>
+<span class="font-label-caps text-label-caps uppercase tracking-wider bg-secondary-container/20 text-secondary px-2 py-0.5">4.8% Curcumin</span>
+</div>
+</div>
+</div>
+<!-- Item 3: Malabar Tellicherry Peppercorns -->
+<div class="py-space-sm flex gap-space-sm items-start">
+<img class="w-20 h-24 object-cover flex-shrink-0 bg-surface-container" data-alt="Macro photography of bold extra-large black Tellicherry peppercorns spilled over dark rustic wood alongside a traditional mortar and pestle in artisanal kitchen setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJyt7W9vLNUTR05VesRFc4IZd1Hfw8Tdsk29gE6gdvKsy8dmTqHxKOYPLG1TDymqjd3PwpQiwvdPwpfjsGgYURnoBV93EJ1CMjHRUEbmopRPO1iGbz60PNTJqCqosdkTy-y5r1b60jbKZeWp7jj69wfFJBFqv2Y123wQS25YHsL2Z0occwqTugL-fH3UY5zTcTeRSc2_fDJaKXviCwJ-ZqVgO0X5yDIzS_u5owfjG1Cqezd0_mOOj3"/>
+<div class="flex-1 min-w-0">
+<div class="flex items-start justify-between gap-space-xs">
+<div>
+<h3 class="font-body-lg text-body-lg font-semibold text-primary">Tellicherry Black Peppercorns</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">100g Whole Extra Bold · Malabar Coast</p>
+</div>
+<div class="text-right">
+<span class="font-body-md text-body-md font-semibold text-primary">₹420.00</span>
+<span class="font-label-caps text-label-caps text-outline block">1 × ₹420.00</span>
+</div>
+</div>
+<div class="mt-2 flex flex-wrap items-center gap-1">
+<span class="font-label-caps text-label-caps uppercase tracking-wider bg-surface-container px-2 py-0.5 text-on-surface-variant">Lot 2026-TL09</span>
+<span class="font-label-caps text-label-caps uppercase tracking-wider bg-surface-container px-2 py-0.5 text-on-surface-variant">Wayanad Grade TGSEB</span>
+<span class="font-label-caps text-label-caps uppercase tracking-wider bg-secondary-container/20 text-secondary px-2 py-0.5">3.2% Piperine</span>
+</div>
+</div>
+</div>
+<!-- Financial Ledger Breakdown -->
+<div class="pt-space-md space-y-space-xs bg-surface-container-low p-space-md mt-space-sm">
+<div class="flex justify-between font-body-sm text-body-sm text-on-surface-variant">
+<span>Micro-Harvest Subtotal (4 units)</span>
+<span class="text-on-surface font-medium">₹1,198.00</span>
+</div>
+<div class="flex justify-between font-body-sm text-body-sm text-secondary">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">sell</span>
+                  Harvest Privilege Code (SPICE10)
+                </span>
+<span class="font-medium">-₹119.80</span>
+</div>
+<div class="flex justify-between font-body-sm text-body-sm text-on-surface-variant">
+<span>Climate-Safe Carbon Neutral Transit</span>
+<span class="text-primary font-medium tracking-wide">COMPLIMENTARY</span>
+</div>
+<div class="flex justify-between font-body-sm text-body-sm text-on-surface-variant">
+<span>Agricultural GST (5% Preserved Origin)</span>
+<span class="text-on-surface">₹53.91</span>
+</div>
+<div class="pt-space-xs flex items-baseline justify-between">
+<div>
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-primary block font-bold">Total Paid &amp; Audited</span>
+<span class="font-body-sm text-body-sm text-outline-variant">Inclusive of all local terroir excise</span>
+</div>
+<div class="text-right">
+<span class="font-headline-sm text-headline-sm text-primary font-normal">₹1,132.11</span>
+<span class="block px-2 py-0.5 font-label-caps text-label-caps uppercase tracking-widest bg-primary text-secondary-fixed text-center mt-1">Paid in Full</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: Payment, Verification & Quick Actions -->
+<div class="lg:col-span-5 space-y-space-md">
+<!-- Payment Verification Card -->
+<div class="bg-surface-container-lowest p-space-md shadow-sm space-y-space-sm">
+<div class="flex items-center justify-between pb-space-xs">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary font-semibold">Payment Verification</span>
+<span class="flex items-center gap-1 text-primary font-label-caps text-label-caps uppercase tracking-wider">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified_user</span> 256-Bit SSL
+              </span>
+</div>
+<div class="space-y-space-xs">
+<div class="flex justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">Settlement Rail</span>
+<span class="font-medium text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">qr_code_2</span> UPI Instant Clearance
+                </span>
+</div>
+<div class="flex justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">Account Holder</span>
+<span class="font-medium text-primary">Raghavendra Suryavanshi</span>
+</div>
+<div class="flex justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">Transaction ID</span>
+<span class="font-mono text-body-sm text-on-surface">TXN-849302-VNK</span>
+</div>
+<div class="flex justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">Audited Timestamp</span>
+<span class="font-body-sm text-body-sm text-on-surface">10 Oct 2026, 14:45:18 IST</span>
+</div>
+</div>
+<div class="p-space-xs bg-surface-container text-on-surface-variant font-body-sm text-body-sm flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">verified</span>
+<span>Payment authenticated with Indian Banking Rail via Razorpay UPI.</span>
+</div>
+</div>
+<!-- Want To Follow Your Harvest Card -->
+<div class="bg-surface-container-high p-space-md shadow-sm space-y-space-sm">
+<div class="space-y-1">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary font-semibold">Dispatch Logistics</span>
+<h3 class="font-headline-sm text-headline-sm text-primary font-normal">Want to follow your harvest?</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Live telemetric environmental sensors monitor your parcel's relative humidity and temperature until arrival.
+              </p>
+</div>
+<button class="w-full py-space-sm bg-primary text-secondary-fixed hover:bg-primary-container transition-colors font-label-caps text-label-caps uppercase tracking-widest flex items-center justify-center gap-2" onclick="openOrderModal()">
+<span>Track Dispatch Live</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+<!-- Quick Actions Panel -->
+<div class="bg-surface-container-lowest p-space-md shadow-sm space-y-space-xs">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-outline block">Actions &amp; Documentation</span>
+<a class="w-full py-3 bg-surface-container text-primary hover:bg-surface-container-highest transition-colors font-label-caps text-label-caps uppercase tracking-widest flex items-center justify-between px-space-sm" data-path="shop" href="#">
+<span>Continue Shopping</span>
+<span class="material-symbols-outlined text-[16px]">storefront</span>
+</a>
+<button class="w-full py-3 bg-transparent text-primary hover:bg-surface-container transition-colors font-label-caps text-label-caps uppercase tracking-widest flex items-center justify-between px-space-sm" onclick="openOrderModal()">
+<span>View Order Monograph</span>
+<span class="material-symbols-outlined text-[16px]">receipt_long</span>
+</button>
+<button class="w-full py-3 bg-transparent text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors font-label-caps text-label-caps uppercase tracking-widest flex items-center justify-between px-space-sm" onclick="triggerInvoiceDownload()">
+<span>Download Tax Invoice (PDF)</span>
+<span class="material-symbols-outlined text-[16px]">picture_as_pdf</span>
+</button>
+</div>
+<!-- Concierge Support Callout -->
+<div class="p-space-sm bg-surface-container flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center flex-shrink-0 text-secondary-fixed">
+<span class="material-symbols-outlined text-[20px]">support_agent</span>
+</div>
+<div class="text-left space-y-0.5">
+<div class="font-label-caps text-label-caps uppercase tracking-wider text-primary font-semibold">Special Handling or Instructions?</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Our spice vault concierge responds within 30 minutes. Contact <strong>concierge@vaanikaspices.com</strong></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 5: DISCOVERY WHILE YOU WAIT (4 Luxury Product Cards) -->
+<section class="w-full bg-surface-container-low py-space-xl">
+<div class="max-w-6xl mx-auto px-space-md">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-lg gap-space-sm">
+<div>
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary font-semibold block">Curated Reserve</span>
+<h2 class="font-headline-md text-headline-md text-primary font-normal">While You Wait...</h2>
+<p class="font-subheading text-subheading italic text-on-surface-variant mt-1">Discover complementary single-estate botanicals for your next feast.</p>
+</div>
+<a class="font-label-caps text-label-caps uppercase tracking-widest text-primary hover:text-secondary transition-colors flex items-center gap-1" data-path="shop" href="#">
+          Explore Full Cellar →
+        </a>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Card 1: Nagaur Cumin -->
+<div class="bg-surface-container-lowest flex flex-col shadow-sm group hover:shadow-md transition-shadow">
+<div class="relative overflow-hidden aspect-[4/5] bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Nagaur roasted cumin seeds in artisan stone bowl with rustic Rajasthan spice harvest background in soft golden warm culinary light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDDlUlBjzZEn6jxbW_c7WmSXo10k321jJKrzCQIHWOhUDUIkI0KEP2TqDuXZXR8ATwgWavz8mFdJKrXg1G0zaDvYqBtFwzgOC4PSFLHj5fZZ92NLsA9VI5djFNXTJQl4BmCyXT2fyRHbQRTIFwixnBm1rAYYrrh8yDqN1Y_x1olXJMGTbm0r-1wQd8gYeXA8QWNLnrqr8FbCMdhmNZ3V9KWhkwreU3Sonry__GOOQoWrmrl-FW-5_t"/>
+<span class="absolute top-3 left-3 bg-surface/90 backdrop-blur-md px-2 py-0.5 font-label-caps text-label-caps uppercase tracking-widest text-primary">Thar Desert</span>
+</div>
+<div class="p-space-sm flex flex-col flex-1 justify-between space-y-space-xs">
+<div>
+<div class="flex items-center justify-between text-on-surface-variant mb-1">
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-outline">Estate Lot 2026</span>
+<span class="font-label-caps text-label-caps text-secondary font-semibold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">star</span> 4.9
+                </span>
+</div>
+<h3 class="font-body-lg text-body-lg font-semibold text-primary">Nagaur Cumin Seeds</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">High essential oil content with earthy pine notes and sun-baked minerality.</p>
+</div>
+<div class="pt-2 flex items-center justify-between">
+<span class="font-body-md text-body-md font-semibold text-primary">₹220.00</span>
+<button class="font-label-caps text-label-caps uppercase tracking-widest text-primary hover:text-secondary transition-colors flex items-center gap-1" onclick="quickAddBotanical('Nagaur Cumin Seeds')">
+<span>Add to Next Dispatch</span> +
+              </button>
+</div>
+</div>
+</div>
+<!-- Card 2: Alleppey Cardamom -->
+<div class="bg-surface-container-lowest flex flex-col shadow-sm group hover:shadow-md transition-shadow">
+<div class="relative overflow-hidden aspect-[4/5] bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Vibrant extra bold green cardamom pods grade 8mm arranged on black slate in high-end culinary photography style with botanical details" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcFlHZJ4J-2zGPet0VBHeGJNSd9SSjMJKtqBoxnXS5hIV8G9tf21KVBTwxp6Dg1jxcVfEtcII1-0mWxHOlIjbLqV5AmGP5Wda3Z0TopFmIOZZPMMNTYwhvdA_hs9K5fPSBUE4KbWZdIn2VB6DjBqAy19h8Q8BuaYiysM3hrFXRHRPhFG6Asjz7E7ZHVXgfN2Fi-eOVEFErlh6GhjG2LuGaQzSMqcsmtRZbm_uNR5GqDmLaWn7yc3dL"/>
+<span class="absolute top-3 left-3 bg-surface/90 backdrop-blur-md px-2 py-0.5 font-label-caps text-label-caps uppercase tracking-widest text-primary">8mm+ Bold</span>
+</div>
+<div class="p-space-sm flex flex-col flex-1 justify-between space-y-space-xs">
+<div>
+<div class="flex items-center justify-between text-on-surface-variant mb-1">
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-outline">Cardamom Hills</span>
+<span class="font-label-caps text-label-caps text-secondary font-semibold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">star</span> 5.0
+                </span>
+</div>
+<h3 class="font-body-lg text-body-lg font-semibold text-primary">Alleppey Green Cardamom</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Extra bold pods harvested at 1100m elevation. Menthol, eucalyptus and citrus zest.</p>
+</div>
+<div class="pt-2 flex items-center justify-between">
+<span class="font-body-md text-body-md font-semibold text-primary">₹650.00</span>
+<button class="font-label-caps text-label-caps uppercase tracking-widest text-primary hover:text-secondary transition-colors flex items-center gap-1" onclick="quickAddBotanical('Alleppey Green Cardamom')">
+<span>Add to Next Dispatch</span> +
+              </button>
+</div>
+</div>
+</div>
+<!-- Card 3: Ceylon Cinnamon -->
+<div class="bg-surface-container-lowest flex flex-col shadow-sm group hover:shadow-md transition-shadow">
+<div class="relative overflow-hidden aspect-[4/5] bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Handcrafted delicate Ceylon cinnamon quills rolls in soft sunlight over textured linen tablecloth with warm brown tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1ECJh9JCH0Gjs6peUCF45xgz3aPnjoshTcLt3xAmmc6CRVTdqe5sVo97ln1XqD59mthPc5uZSmUp3oDqxaucQK4L_Sw4a0G0SQN7Ff_utiEQodUR74jrKLBY_xKdtSqQl1o1Ys74JcPsiW7dc88-oI7T8RCxfepycBcNExN5mkMnCftiuqLX661EgzfH6_wiohO9uYF5nsG28Nq7VEgd_VoztvoACbpOuLOe41h1ySgSkDG13S3A7"/>
+<span class="absolute top-3 left-3 bg-surface/90 backdrop-blur-md px-2 py-0.5 font-label-caps text-label-caps uppercase tracking-widest text-primary">True Alba Grade</span>
+</div>
+<div class="p-space-sm flex flex-col flex-1 justify-between space-y-space-xs">
+<div>
+<div class="flex items-center justify-between text-on-surface-variant mb-1">
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-outline">Southern Coast</span>
+<span class="font-label-caps text-label-caps text-secondary font-semibold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">star</span> 4.9
+                </span>
+</div>
+<h3 class="font-body-lg text-body-lg font-semibold text-primary">Ceylon Cinnamon Quills</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Ultra-thin multi-layered rolls with delicate sweetness and almost zero coumarin.</p>
+</div>
+<div class="pt-2 flex items-center justify-between">
+<span class="font-body-md text-body-md font-semibold text-primary">₹520.00</span>
+<button class="font-label-caps text-label-caps uppercase tracking-widest text-primary hover:text-secondary transition-colors flex items-center gap-1" onclick="quickAddBotanical('Ceylon Cinnamon Quills')">
+<span>Add to Next Dispatch</span> +
+              </button>
+</div>
+</div>
+</div>
+<!-- Card 4: Smoked Kashmiri Flakes -->
+<div class="bg-surface-container-lowest flex flex-col shadow-sm group hover:shadow-md transition-shadow">
+<div class="relative overflow-hidden aspect-[4/5] bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Artisanal oak-smoked Kashmiri red chilli flakes scattered on rustic dark stone background with wood embers and spice jar in artistic gourmet lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMyt2dVKZr2795eZpsJLmB8tSl-NAnPRGH0xfwFdaj-YnLq1rtTL8jpgtTl_vrfxnHnYiuphhFChRtFpgzat2ubHEOOeuWR-qRDrLOW0mh0MCc3lcc2UMtibMRi8Q3olLZDK5WD75_JkEbogsokUBu6Cn95zUDvfBE0GAs3vwP3cNTQWmSLkRQaknFVy3mIuyb7lQCmi0M7L1adJy25N2JaiWOkSDPYKq3OoksqKqcAcbs9dOLgrR-"/>
+<span class="absolute top-3 left-3 bg-surface/90 backdrop-blur-md px-2 py-0.5 font-label-caps text-label-caps uppercase tracking-widest text-secondary font-bold">Limited Barrel</span>
+</div>
+<div class="p-space-sm flex flex-col flex-1 justify-between space-y-space-xs">
+<div>
+<div class="flex items-center justify-between text-on-surface-variant mb-1">
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-outline">Smoked Barrel</span>
+<span class="font-label-caps text-label-caps text-secondary font-semibold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">star</span> 4.8
+                </span>
+</div>
+<h3 class="font-body-lg text-body-lg font-semibold text-primary">Smoked Kashmiri Flakes</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Slowly cured over aged applewood logs in Kashmir valley. Smoky, fruit-forward heat.</p>
+</div>
+<div class="pt-2 flex items-center justify-between">
+<span class="font-body-md text-body-md font-semibold text-primary">₹260.00</span>
+<button class="font-label-caps text-label-caps uppercase tracking-widest text-primary hover:text-secondary transition-colors flex items-center gap-1" onclick="quickAddBotanical('Smoked Kashmiri Flakes')">
+<span>Add to Next Dispatch</span> +
+              </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 6: CULINARY PAIRINGS & RECIPES -->
+<section class="w-full bg-surface py-space-xl">
+<div class="max-w-6xl mx-auto px-space-md">
+<div class="mb-space-lg max-w-2xl">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary font-semibold block">Kitchen Preparation</span>
+<h2 class="font-headline-md text-headline-md text-primary font-normal">What Will You Cook Next?</h2>
+<p class="font-subheading text-subheading italic text-on-surface-variant mt-1">
+          Monograph recipes calibrated specifically for your freshly ordered Kashmiri Chilli &amp; Salem Turmeric.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Recipe 1 -->
+<div class="bg-surface-container-low p-space-md flex flex-col justify-between shadow-sm space-y-space-sm group">
+<div class="space-y-space-xs">
+<div class="aspect-[16/10] bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Artisanal slow simmered Royal Kashmiri Rogan Josh in traditional brass handi with vibrant crimson gravy, aromatic star anise and fresh coriander garnish" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxM1ZXxMCCy9lovd24ue6fjQNIqq95C6Ws8JzNSabiL6-F0lcbIJA2nYVxUg5Dofs9cz3alqw5ZWppr3M6l-N4yfmQTtEGYKdrQj2BRXGlFKzONx1i2bpbQe05PxeaVPqL1wp04EIBIxUowQ8krR0Sk4hqdbWfUNVcsEYLJCXUsnW8ryMJ4TVOy2dhxN4MQgi4tOvpZAhY_SMEppSC80Juu-4SbHSIlXafTAp8BEBal58KizF1WHf6"/>
+</div>
+<div class="flex items-center gap-2 pt-2">
+<span class="font-label-caps text-label-caps uppercase tracking-wider bg-surface-container-highest px-2 py-0.5 text-primary">45 Mins</span>
+<span class="font-label-caps text-label-caps uppercase tracking-wider bg-surface-container-highest px-2 py-0.5 text-primary">Intermediate</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-normal">Royal Kashmiri Rogan Josh</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Employs cold-emulsified curd and double-bloomed Kashmiri chilli to yield the signature scarlet gravy without scorching.
+            </p>
+</div>
+<div class="pt-space-xs">
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-outline block mb-2">Primary Botanicals:</span>
+<div class="flex flex-wrap gap-1 mb-space-sm">
+<span class="font-label-caps text-label-caps bg-surface text-primary px-2 py-0.5">Kashmiri Chilli (Lot KR04)</span>
+<span class="font-label-caps text-label-caps bg-surface text-primary px-2 py-0.5">Black Cardamom</span>
+</div>
+<a class="font-label-caps text-label-caps uppercase tracking-widest text-primary hover:text-secondary transition-colors inline-flex items-center gap-1" href="#">
+              Read Recipe Monograph →
+            </a>
+</div>
+</div>
+<!-- Recipe 2 -->
+<div class="bg-surface-container-low p-space-md flex flex-col justify-between shadow-sm space-y-space-sm group">
+<div class="space-y-space-xs">
+<div class="aspect-[16/10] bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Golden turmeric and tempered coconut dal tadka served in an antique clay bowl garnished with sputtering mustard seeds and curry leaves" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGXaY-cxUp7hCUVmvPyrsDY_q5jRM-E7-gSD4tXcK-K01fP8qr9tirdDvxwjt6UKzEwfx6ErNYTXz1VBGmGijpXPcg03xusBc_iBIW1UAEOGVlUL6CCDIz6skrvTL_3ChaAJ2vweNjT-1wDTqsxSDQjMMpREEU_oS1bgiQ0BIzg5PUlHLJ4M3IBDNtA3hRAR4o1tk0i-7OJv21JeZS7VEJ0JTPaWpsxvxqe-Aw4FDosipRDdKAfv-W"/>
+</div>
+<div class="flex items-center gap-2 pt-2">
+<span class="font-label-caps text-label-caps uppercase tracking-wider bg-surface-container-highest px-2 py-0.5 text-primary">25 Mins</span>
+<span class="font-label-caps text-label-caps uppercase tracking-wider bg-surface-container-highest px-2 py-0.5 text-primary">Easy</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-normal">Golden Turmeric &amp; Coconut Dal Tadka</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Highlights Salem turmeric's high curcumin resonance. Tempered in ghee with hand-crushed whole cumin and curry leaves.
+            </p>
+</div>
+<div class="pt-space-xs">
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-outline block mb-2">Primary Botanicals:</span>
+<div class="flex flex-wrap gap-1 mb-space-sm">
+<span class="font-label-caps text-label-caps bg-surface text-primary px-2 py-0.5">Salem Turmeric (4.8%)</span>
+<span class="font-label-caps text-label-caps bg-surface text-primary px-2 py-0.5">Nagaur Cumin</span>
+</div>
+<a class="font-label-caps text-label-caps uppercase tracking-widest text-primary hover:text-secondary transition-colors inline-flex items-center gap-1" href="#">
+              Read Recipe Monograph →
+            </a>
+</div>
+</div>
+<!-- Recipe 3 -->
+<div class="bg-surface-container-low p-space-md flex flex-col justify-between shadow-sm space-y-space-sm group">
+<div class="space-y-space-xs">
+<div class="aspect-[16/10] bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Charcoal charred cubes of Tandoori paneer tikka skewers seasoned with rich red spices, mint chutney and charred lime wedges in high key restaurant setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBK-zQHZzLyW_PaTRHMFGj7Lp3VG8l04r1l5VE9lgEYe-oPwcZ9dmTCU1MzkGxvy8pkESJDSZJSJcRJSBUq2yzcDQi9xU-b4lUc2Eit6omVdNsE5bg8XBqleYoIxMvHOWQjHV9z2h3exTQ1OZyDiJhVf8n0x08aqn6FzhTCwmcaj8pfFmOoBPg7hYmS0nga15wraIur6tDDVXJS-3lUxqGXmmJq2xjUCdZWR1ktisqiUMTLTJRIfRhx"/>
+</div>
+<div class="flex items-center gap-2 pt-2">
+<span class="font-label-caps text-label-caps uppercase tracking-wider bg-surface-container-highest px-2 py-0.5 text-primary">30 Mins</span>
+<span class="font-label-caps text-label-caps uppercase tracking-wider bg-surface-container-highest px-2 py-0.5 text-primary">Easy</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-normal">Tandoori Paneer Tikka with Cold-Pressed Mustard</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Charcoal-roasted cottage cheese marinated in hung curd, Tellicherry cracked pepper, and aromatic ground Kashmiri chilli.
+            </p>
+</div>
+<div class="pt-space-xs">
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-outline block mb-2">Primary Botanicals:</span>
+<div class="flex flex-wrap gap-1 mb-space-sm">
+<span class="font-label-caps text-label-caps bg-surface text-primary px-2 py-0.5">Tellicherry TGSEB</span>
+<span class="font-label-caps text-label-caps bg-surface text-primary px-2 py-0.5">Kashmiri Degi</span>
+</div>
+<a class="font-label-caps text-label-caps uppercase tracking-widest text-primary hover:text-secondary transition-colors inline-flex items-center gap-1" href="#">
+              Read Recipe Monograph →
+            </a>
+</div>
+</div>
+</div>
+<div class="mt-space-lg text-center">
+<a class="inline-flex items-center gap-2 px-space-lg py-3 bg-primary text-secondary-fixed hover:bg-primary-container transition-colors font-label-caps text-label-caps uppercase tracking-widest shadow-sm" href="#">
+<span>Explore All 84 Culinary Monographs</span>
+<span class="material-symbols-outlined text-[16px]">menu_book</span>
+</a>
+</div>
+</div>
+</section>
+<!-- SECTION 7: NEWSLETTER RETENTION COMPONENT -->
+<section class="w-full bg-surface-container-high py-space-xl">
+<div class="max-w-4xl mx-auto px-space-md text-center space-y-space-sm">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary font-semibold block">The Vaanika Gazette</span>
+<h2 class="font-headline-md text-headline-md text-primary font-normal uppercase">Bring Better Flavour Home</h2>
+<!-- Smart Patron Enrolled State -->
+<div class="bg-surface p-space-md shadow-sm max-w-xl mx-auto text-left space-y-space-xs">
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined text-secondary text-[20px]">mark_email_read</span>
+<span class="font-body-md text-body-md font-semibold">You're already enrolled in our Epistolary Spice Gazette</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Dispatch advisories, monsoon harvest reports, and seasonal barrel reservations will arrive at <strong>artisan.patron@epicurean.in</strong>.
+        </p>
+<div class="pt-2 flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-outline">Frequency: Bi-Monthly Curations</span>
+<button class="font-label-caps text-label-caps uppercase tracking-widest text-secondary hover:underline" onclick="showToast('Dispatch Preferences Updated', 'Your mail frequency has been saved to quarterly monographs.')">
+            Manage Preferences
+          </button>
+</div>
+</div>
+</div>
+</section>
+<!-- INTERACTIVE ORDER DETAILS & LIVE TRACKING MODAL -->
+<div class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-primary/60 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300" id="orderMonographModal">
+<div class="bg-surface w-full max-w-3xl max-h-[921px] overflow-y-auto shadow-2xl p-space-md md:p-space-lg relative space-y-space-md">
+<!-- Close Button -->
+<button class="absolute top-6 right-6 text-on-surface-variant hover:text-primary transition-colors" onclick="closeOrderModal()">
+<span class="material-symbols-outlined text-[28px]">close</span>
+</button>
+<!-- Modal Header -->
+<div class="space-y-1 pr-10">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary font-semibold block">Archival Lot Ledger</span>
+<h2 class="font-headline-md text-headline-md text-primary font-normal">Order Monograph #SPC-10284</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Issued by Vaanika Artisanal Botanicals Curation House, Wayanad &amp; New Delhi.</p>
+</div>
+<!-- Live Logistics Telemetry -->
+<div class="bg-surface-container p-space-md space-y-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-container animate-ping"></span>
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-primary font-semibold">Active Vault Telemetry</span>
+</div>
+<span class="font-mono text-body-sm text-on-surface">BlueDart ClimateAir #BD-882910</span>
+</div>
+<div class="grid grid-cols-3 gap-2 pt-2 text-center">
+<div class="bg-surface p-2 shadow-sm">
+<span class="font-label-caps text-label-caps text-outline uppercase block">Vault Ambient Temp</span>
+<span class="font-body-md text-body-md font-semibold text-primary">18.4°C</span>
+</div>
+<div class="bg-surface p-2 shadow-sm">
+<span class="font-label-caps text-label-caps text-outline uppercase block">Seal Relative RH</span>
+<span class="font-body-md text-body-md font-semibold text-primary">42% (Optimal)</span>
+</div>
+<div class="bg-surface p-2 shadow-sm">
+<span class="font-label-caps text-label-caps text-outline uppercase block">Inert Gas Flush</span>
+<span class="font-body-md text-body-md font-semibold text-secondary">N₂ Pure 99.8%</span>
+</div>
+</div>
+</div>
+<!-- Itemized Archive Table -->
+<div class="space-y-space-xs">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-outline block">Batch Lot Testing Certificates</span>
+<div class="divide-y divide-surface-container">
+<div class="py-2 flex justify-between items-center text-body-sm">
+<div>
+<div class="font-medium text-primary">Kashmiri Red Chilli (Lot 2026-KR04)</div>
+<div class="text-on-surface-variant text-[11px]">Volatile Pungency: 12,000 SHU · Certified Zero Artificial Colorants</div>
+</div>
+<span class="font-label-caps text-label-caps text-secondary font-semibold">Lab Pass ✓</span>
+</div>
+<div class="py-2 flex justify-between items-center text-body-sm">
+<div>
+<div class="font-medium text-primary">Salem Turmeric (Lot 2026-SL02)</div>
+<div class="text-on-surface-variant text-[11px]">Curcuminoid Index: 4.82% HPLC · Steam-Sterilized</div>
+</div>
+<span class="font-label-caps text-label-caps text-secondary font-semibold">Lab Pass ✓</span>
+</div>
+<div class="py-2 flex justify-between items-center text-body-sm">
+<div>
+<div class="font-medium text-primary">Tellicherry Peppercorns (Lot 2026-TL09)</div>
+<div class="text-on-surface-variant text-[11px]">Piperine Purity: 3.2% · Berry Caliber 4.25mm+ Extra Bold</div>
+</div>
+<span class="font-label-caps text-label-caps text-secondary font-semibold">Lab Pass ✓</span>
+</div>
+</div>
+</div>
+<!-- Modal Bottom Actions -->
+<div class="pt-space-sm flex flex-col sm:flex-row items-center justify-between gap-space-xs">
+<button class="w-full sm:w-auto px-space-md py-2.5 bg-primary text-secondary-fixed hover:bg-primary-container transition-colors font-label-caps text-label-caps uppercase tracking-widest flex items-center justify-center gap-1.5" onclick="triggerInvoiceDownload()">
+<span class="material-symbols-outlined text-[16px]">download</span> Download Official Invoice (PDF)
+        </button>
+<button class="w-full sm:w-auto px-space-md py-2.5 bg-surface-container text-primary hover:bg-surface-container-highest transition-colors font-label-caps text-label-caps uppercase tracking-widest" onclick="closeOrderModal()">
+          Dismiss Monograph
+        </button>
+</div>
+</div>
+</div>
+<!-- Inline Script for Interactions -->
+<script>
+    function showToast(title, message) {
+      const toast = document.getElementById('toastNotification');
+      const toastTitle = document.getElementById('toastTitle');
+      const toastMsg = document.getElementById('toastMessage');
+      if (toast && toastTitle && toastMsg) {
+        toastTitle.textContent = title;
+        toastMsg.textContent = message;
+        toast.classList.remove('opacity-0', 'translate-y-24', 'pointer-events-none');
+        setTimeout(() => {
+          toast.classList.add('opacity-0', 'translate-y-24', 'pointer-events-none');
+        }, 3500);
+      }
+    }
+
+    function copyOrderId(orderId) {
+      if (navigator.clipboard) {
+        navigator.clipboard.writeText(orderId).then(() => {
+          showToast('Copied to Clipboard', `Order identifier #${orderId} is ready to paste.`);
+        }).catch(() => {
+          showToast('Allocation Copied', `#${orderId}`);
+        });
+      } else {
+        showToast('Allocation Copied', `#${orderId}`);
+      }
+    }
+
+    function openOrderModal() {
+      const modal = document.getElementById('orderMonographModal');
+      if (modal) {
+        modal.classList.remove('opacity-0', 'pointer-events-none');
+      }
+    }
+
+    function closeOrderModal() {
+      const modal = document.getElementById('orderMonographModal');
+      if (modal) {
+        modal.classList.add('opacity-0', 'pointer-events-none');
+      }
+    }
+
+    function triggerInvoiceDownload() {
+      showToast('Generating PDF Invoice', 'Tax invoice for #SPC-10284 is being compiled with GSTIN & batch seals.');
+      setTimeout(() => {
+        showToast('Download Ready', 'Vaanika-Invoice-SPC10284.pdf has begun downloading.');
+      }, 1200);
+    }
+
+    function openDeliveryEditNotice() {
+      showToast('Address Amendment Window', 'Patrons can amend suite notes until 18:00 IST. Concierge alerted.');
+    }
+
+    function quickAddBotanical(productName) {
+      showToast('Added to Dispatch Parcel', `${productName} will be consolidated into parcel #BD-882910.`);
+    }
+
+    function setSimState(state) {
+      const btnNormal = document.getElementById('btn-state-normal');
+      const btnTracking = document.getElementById('btn-state-tracking');
+      const btnProc = document.getElementById('btn-state-processing');
+
+      // reset styles
+      [btnNormal, btnTracking, btnProc].forEach(b => {
+        if(b) {
+          b.classList.remove('bg-surface-container-highest', 'text-primary');
+          b.classList.add('text-on-surface-variant');
+        }
+      });
+
+      if (state === 'normal') {
+        btnNormal.classList.add('bg-surface-container-highest', 'text-primary');
+        showToast('Standard View', 'Simulating newly confirmed order with immediate payment clearance.');
+      } else if (state === 'tracking') {
+        btnTracking.classList.add('bg-surface-container-highest', 'text-primary');
+        openOrderModal();
+      } else if (state === 'processing') {
+        btnProc.classList.add('bg-surface-container-highest', 'text-primary');
+        showToast('Edge Condition: Weather Delay', 'Simulating heavy Malabar monsoon advisory: air dispatch rescheduled +12 hours.');
+      }
+    }
+  </script>
+</div></main><footer class="w-full bg-inverse-surface text-inverse-on-surface pt-space-xl pb-space-lg"><div class="max-w-7xl mx-auto px-margin-desktop"><div class="grid grid-cols-1 md:grid-cols-12 gap-gutter-desktop pb-space-xl"><div class="md:col-span-5 flex flex-col justify-between space-y-space-md"><div class="space-y-space-sm"><div class="font-headline-md text-headline-md font-normal tracking-tight text-surface-bright uppercase">Vaanika</div><p class="font-subheading text-subheading italic text-outline-variant max-w-md">Artisanal single-estate spices, micro-harvested in limited lots across the Western Ghats and Malabar coast.</p></div><div class="space-y-space-xs pt-space-sm"><span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary-fixed-dim block">Archival Lot Verification</span><p class="font-body-sm text-body-sm text-outline-variant">Each glass flacon is labeled with unique harvest lot, elevation grade, and botanical volatile oil registry.</p></div></div><div class="md:col-span-2 space-y-space-sm"><span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary-fixed-dim block">Provenance</span><ul class="space-y-space-xs font-body-sm text-body-sm text-inverse-on-surface/80"><li><a class="hover:text-surface-bright transition-colors" data-path="estates" href="#">Single Estates</a></li><li><a class="hover:text-surface-bright transition-colors" data-path="botanicals" href="#">Botanical Origins</a></li><li><a class="hover:text-surface-bright transition-colors" data-path="harvest-calendar" href="#">Harvest Calendar</a></li><li><a class="hover:text-surface-bright transition-colors" data-path="potency-index" href="#">Potency Index</a></li></ul></div><div class="md:col-span-2 space-y-space-sm"><span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary-fixed-dim block">Governance</span><ul class="space-y-space-xs font-body-sm text-body-sm text-inverse-on-surface/80"><li><a class="hover:text-surface-bright transition-colors" data-path="fair-equity" href="#">Cultivator Equity</a></li><li><a class="hover:text-surface-bright transition-colors" data-path="sustainability" href="#">Biodiversity Charter</a></li><li><a class="hover:text-surface-bright transition-colors" data-path="privacy-legal" href="#">Client Discretion</a></li><li><a class="hover:text-surface-bright transition-colors" data-path="terms" href="#">Terms of Provision</a></li></ul></div><div class="md:col-span-3 space-y-space-sm"><span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary-fixed-dim block">Private Concierge</span><p class="font-body-sm text-body-sm text-inverse-on-surface/80">Direct assistance for orders, gift curation, or culinary consulting.</p><div class="pt-space-xs space-y-1"><p class="font-body-sm text-body-sm text-surface-bright font-medium">concierge@vaanikaspices.com</p><p class="font-label-caps text-label-caps text-outline-variant tracking-wider uppercase">Daily 08:00 – 20:00 IST</p></div></div></div><div class="pt-space-md flex flex-col md:flex-row items-center justify-between gap-space-sm font-label-caps text-label-caps uppercase tracking-wider text-outline-variant"><p>© 2025 Vaanika Artisanal Botanicals &amp; Spices. All rights reserved.</p><div class="flex items-center gap-space-md"><a class="hover:text-surface-bright transition-colors" data-path="privacy-legal" href="#">Privacy</a><a class="hover:text-surface-bright transition-colors" data-path="terms" href="#">Terms</a><a class="hover:text-surface-bright transition-colors" data-path="concierge-support" href="#">Concierge Desk</a></div></div></div></footer></body></html>

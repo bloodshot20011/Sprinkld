@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="vaanika">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Vaanika Artisanal Spices — Pure Vegetarian Culinary Maison</title>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  <link rel="stylesheet" href="theme-styles.css"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: 'var(--primary-color, #2e0007)',
+            'primary-container': 'var(--primary-container-color, #4a121a)',
+            secondary: 'var(--secondary-color, #8f4e00)',
+            'secondary-container': 'var(--secondary-container-color, #fea047)',
+            surface: 'var(--surface-color, #fff8f4)',
+            'surface-container': 'var(--surface-container-color, #f3ede9)',
+            'surface-container-low': 'var(--surface-container-low-color, #f9f2ef)',
+            'surface-container-high': 'var(--surface-container-high-color, #ede7e3)',
+            'on-surface': 'var(--on-surface-color, #1d1b19)',
+            'on-surface-variant': 'var(--on-surface-variant-color, #534343)',
+            outline: 'var(--outline-color, #867273)',
+            'outline-variant': 'var(--outline-variant-color, #d8c1c1)'
+          },
+          fontFamily: {
+            display: ['Playfair Display', 'serif'],
+            body: ['Plus Jakarta Sans', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #12100f;
+      color: #f9f2ef;
+      overflow: hidden;
+    }
+    .iframe-wrapper {
+      transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .hud-chip {
+      transition: all 0.2s ease;
+    }
+    .hud-chip.active {
+      background: var(--primary-container-color, #4a121a);
+      color: var(--secondary-container-color, #fea047);
+      border-color: rgba(254, 160, 71, 0.4);
+      font-weight: 600;
+    }
+    .top-theme-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 10px;
+      border-radius: 9999px;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #a89b94;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      transition: all 0.2s ease;
+      cursor: pointer;
+    }
+    .top-theme-btn:hover {
+      color: #ffffff;
+      background: rgba(255, 255, 255, 0.1);
+      border-color: rgba(255, 255, 255, 0.25);
+    }
+    .top-theme-btn.active {
+      color: #ffffff;
+      background: rgba(255, 255, 255, 0.18);
+      border-color: var(--secondary-container-color, #fea047);
+      box-shadow: 0 0 10px rgba(254, 160, 71, 0.25);
+    }
+    .top-theme-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      display: inline-block;
+      border: 1px solid rgba(255, 255, 255, 0.6);
+      flex-shrink: 0;
+    }
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 5px;
+      height: 5px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #1a1716;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #4a121a;
+      border-radius: 3px;
+    }
+  </style>
+  <script src="theme-manager.js"></script>
+</head>
+<body class="h-screen w-screen flex flex-col bg-[#12100f] text-[#f9f2ef]">
+
+  <!-- TOP MAISON APP HEADER / PAGE CONTROLLER -->
+  <header class="h-16 bg-[#1a1716] border-b border-[#352f2c] px-3 sm:px-6 flex items-center justify-between z-50 flex-shrink-0 shadow-xl">
+    <!-- Brand Info -->
+    <div class="flex items-center gap-3">
+      <div class="w-8 h-8 rounded-full bg-primary-container border border-secondary-container/40 flex items-center justify-center text-secondary-container font-display font-bold text-sm shadow-sm transition-colors">
+        <span class="brand-dynamic-letter">V</span>
+      </div>
+      <div class="flex flex-col">
+        <div class="flex items-center gap-2">
+          <span class="font-display text-base sm:text-lg tracking-widest uppercase font-semibold text-[#fff8f4] leading-none brand-dynamic-name">Vaanika</span>
+          <span class="px-1.5 py-0.5 bg-primary-container text-secondary-container text-[8px] sm:text-[9px] font-mono uppercase tracking-widest rounded border border-secondary-container/30 transition-colors">100% Pure Veg</span>
+        </div>
+        <span class="text-[9px] sm:text-[10px] tracking-[0.2em] text-[#a89b94] uppercase font-medium brand-dynamic-tagline">Artisanal Spice Maison</span>
+      </div>
+    </div>
+
+    <!-- 5-THEME SELECTOR IN HEADER -->
+    <div class="hidden xl:flex items-center gap-1.5 bg-[#141211] p-1 rounded-full border border-[#352f2c]">
+      <div class="flex items-center gap-1 px-2 text-[#a89b94] text-[10px] font-bold uppercase tracking-wider">
+        <span class="material-symbols-outlined text-[14px] text-secondary-container">palette</span>
+        <span>Theme:</span>
+      </div>
+      <!-- 1. Vaanika Default -->
+      <button data-theme-btn="vaanika" onclick="applyTheme('vaanika')" class="top-theme-btn active" title="Vaanika: Heritage Burgundy + Saffron (Default)">
+        <span class="top-theme-dot" style="background: linear-gradient(135deg, #4a121a 50%, #fea047 50%);"></span>
+        <span>Vaanika</span>
+      </button>
+      <!-- 2. Zaiqa -->
+      <button data-theme-btn="zaiqa" onclick="applyTheme('zaiqa')" class="top-theme-btn" title="Zaiqa: Burnt Orange + Black + White (Theme 5)">
+        <span class="top-theme-dot" style="background: linear-gradient(135deg, #111111 50%, #e67e22 50%);"></span>
+        <span>Zaiqa</span>
+      </button>
+      <!-- 3. Sira -->
+      <button data-theme-btn="sira" onclick="applyTheme('sira')" class="top-theme-btn" title="Sira: Indigo + Lime (Theme 6)">
+        <span class="top-theme-dot" style="background: linear-gradient(135deg, #0b132b 50%, #aeea00 50%);"></span>
+        <span>Sira</span>
+      </button>
+      <!-- 4. Kavya -->
+      <button data-theme-btn="kavya" onclick="applyTheme('kavya')" class="top-theme-btn" title="Kavya: Deep Plum + Pink (Theme 3)">
+        <span class="top-theme-dot" style="background: linear-gradient(135deg, #2b0e1e 50%, #e8a0bf 50%);"></span>
+        <span>Kavya</span>
+      </button>
+      <!-- 5. Aruna -->
+      <button data-theme-btn="aruna" onclick="applyTheme('aruna')" class="top-theme-btn" title="Aruna: Cobalt + White + Terracotta (Theme 2)">
+        <span class="top-theme-dot" style="background: linear-gradient(135deg, #0f3460 50%, #e27d5f 50%);"></span>
+        <span>Aruna</span>
+      </button>
+    </div>
+
+    <!-- Live Screen Nav Pill Carousel (Large Screens) -->
+    <nav class="hidden 2xl:flex items-center gap-1 bg-[#141211] p-1 rounded-lg border border-[#352f2c] max-w-xl overflow-x-auto no-scrollbar">
+      <button onclick="loadScreen('home', this)" class="hud-chip active px-2.5 py-1 text-[11px] uppercase tracking-wider rounded font-medium text-[#d8c1c1] hover:text-white border border-transparent">Home</button>
+      <button onclick="loadScreen('shop', this)" class="hud-chip px-2.5 py-1 text-[11px] uppercase tracking-wider rounded font-medium text-[#d8c1c1] hover:text-white border border-transparent">Shop Vault</button>
+      <button onclick="loadScreen('collections', this)" class="hud-chip px-2.5 py-1 text-[11px] uppercase tracking-wider rounded font-medium text-[#d8c1c1] hover:text-white border border-transparent">Collections</button>
+      <button onclick="loadScreen('product', this)" class="hud-chip px-2.5 py-1 text-[11px] uppercase tracking-wider rounded font-medium text-[#d8c1c1] hover:text-white border border-transparent">Product Detail</button>
+      <button onclick="loadScreen('recipes', this)" class="hud-chip px-2.5 py-1 text-[11px] uppercase tracking-wider rounded font-medium text-[#d8c1c1] hover:text-white border border-transparent">Veg Monographs</button>
+      <button onclick="loadScreen('recipe-detail', this)" class="hud-chip px-2.5 py-1 text-[11px] uppercase tracking-wider rounded font-medium text-[#d8c1c1] hover:text-white border border-transparent">Royal Biryani</button>
+      <button onclick="loadScreen('our-story', this)" class="hud-chip px-2.5 py-1 text-[11px] uppercase tracking-wider rounded font-medium text-[#d8c1c1] hover:text-white border border-transparent">Provenance</button>
+      <button onclick="loadScreen('cart', this)" class="hud-chip px-2.5 py-1 text-[11px] uppercase tracking-wider rounded font-medium text-[#d8c1c1] hover:text-white border border-transparent">Cart</button>
+      <button onclick="loadScreen('checkout', this)" class="hud-chip px-2.5 py-1 text-[11px] uppercase tracking-wider rounded font-medium text-[#d8c1c1] hover:text-white border border-transparent">Checkout</button>
+    </nav>
+
+    <!-- Controls (Theme Dropdown for Medium/Small Screens + Device Viewport & Direct Open) -->
+    <div class="flex items-center gap-2 sm:gap-3">
+      <!-- Theme Dropdown on compact screens -->
+      <div class="xl:hidden">
+        <select onchange="applyTheme(this.value)" class="bg-[#141211] text-secondary-container text-xs border border-[#352f2c] rounded px-2 py-1.5 focus:outline-none font-semibold">
+          <option value="vaanika">🎨 Vaanika (Burgundy+Saffron)</option>
+          <option value="zaiqa">🎨 Zaiqa (Orange+Black+White)</option>
+          <option value="sira">🎨 Sira (Indigo+Lime)</option>
+          <option value="kavya">🎨 Kavya (Plum+Pink)</option>
+          <option value="aruna">🎨 Aruna (Cobalt+Terracotta)</option>
+        </select>
+      </div>
+
+      <!-- Screen Dropdown Selector for non-2xl screens -->
+      <div class="2xl:hidden">
+        <select onchange="loadScreen(this.value)" id="mobile-screen-select" class="bg-[#141211] text-[#fff8f4] text-xs border border-[#352f2c] rounded px-2.5 py-1.5 focus:outline-none">
+          <option value="home">🏡 Home Experience</option>
+          <option value="shop">🛍️ Shop All Products</option>
+          <option value="collections">📦 Collections & Categories</option>
+          <option value="product">🌶️ Single Product (Kashmiri Chilli)</option>
+          <option value="recipes">📖 Pure Veg Monographs</option>
+          <option value="recipe-detail">🍲 Royal Subz Dum Biryani</option>
+          <option value="our-story">🌿 Our Story & Provenance</option>
+          <option value="search">🔍 Search Results</option>
+          <option value="cart">🛒 Cart Drawer</option>
+          <option value="checkout">💳 Estate Checkout</option>
+          <option value="confirmation">✅ Order Confirmation</option>
+          <option value="contact">🛎️ Concierge & Contact</option>
+        </select>
+      </div>
+
+      <!-- Mobile/Tablet/Desktop Switcher -->
+      <div class="hidden sm:flex items-center bg-[#141211] p-1 rounded-lg border border-[#352f2c]">
+        <button title="Mobile View (390px)" onclick="setDevice('mobile', this)" class="p-1.5 text-[#a89b94] hover:text-white rounded transition-colors">
+          <span class="material-symbols-outlined text-[18px]">smartphone</span>
+        </button>
+        <button title="Tablet View (768px)" onclick="setDevice('tablet', this)" class="p-1.5 text-[#a89b94] hover:text-white rounded transition-colors">
+          <span class="material-symbols-outlined text-[18px]">tablet</span>
+        </button>
+        <button title="Full Desktop View" onclick="setDevice('desktop', this)" class="p-1.5 text-secondary-container bg-primary-container rounded transition-colors">
+          <span class="material-symbols-outlined text-[18px]">desktop_windows</span>
+        </button>
+      </div>
+
+      <!-- Quick Open in New Tab -->
+      <a id="open-new-tab-btn" href="vaanika_artisanal_spices_homepage/code.html" target="_blank" class="flex items-center gap-1.5 px-3 py-1.5 bg-primary-container hover:brightness-110 text-secondary-container text-xs font-semibold uppercase tracking-wider rounded border border-secondary-container/30 transition-all shadow-sm" title="Open active screen directly in a full new tab">
+        <span class="hidden sm:inline">Direct Tab</span>
+        <span class="material-symbols-outlined text-[14px]">open_in_new</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- WORKSPACE VIEWPORT CONTAINER -->
+  <main class="flex-1 w-full bg-[#0c0a09] flex items-center justify-center p-0 sm:p-3 overflow-hidden">
+    <div id="viewport-frame" class="iframe-wrapper w-full h-full bg-[#fff8f4] shadow-2xl border border-[#352f2c] overflow-hidden flex flex-col relative">
+      <iframe id="main-frame" src="vaanika_artisanal_spices_homepage/code.html" class="w-full h-full border-0 flex-1 bg-surface"></iframe>
+    </div>
+  </main>
+
+  <script>
+    const screens = {
+      'home': 'vaanika_artisanal_spices_homepage/code.html',
+      'shop': 'vaanika_artisanal_spices_shop_all_products/code.html',
+      'collections': 'vaanika_artisanal_spices_collections_categories/code.html',
+      'product': 'vaanika_artisanal_spices_kashmiri_red_chilli_powder/code.html',
+      'recipes': 'vaanika_artisanal_spices_recipes_culinary_monographs/code.html',
+      'recipe-detail': 'vaanika_artisanal_spices_royal_chicken_biryani_recipe_monograph/code.html',
+      'our-story': 'vaanika_artisanal_spices_about_our_story/code.html',
+      'search': 'vaanika_artisanal_spices_search_results/code.html',
+      'cart': 'vaanika_artisanal_spices_shopping_cart_mini_cart_drawer/code.html',
+      'checkout': 'vaanika_artisanal_spices_checkout/code.html',
+      'confirmation': 'vaanika_artisanal_spices_order_confirmation/code.html',
+      'contact': 'vaanika_artisanal_spices_contact_concierge/code.html'
+    };
+
+    let activeScreenKey = 'home';
+
+    function loadScreen(key, btn) {
+      if (!screens[key]) return;
+      activeScreenKey = key;
+      const iframe = document.getElementById('main-frame');
+      iframe.src = screens[key];
+      document.getElementById('open-new-tab-btn').href = screens[key];
+
+      const select = document.getElementById('mobile-screen-select');
+      if (select) select.value = key;
+
+      if (btn) {
+        document.querySelectorAll('.hud-chip').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+      }
+    }
+
+    // Sync theme to iframe on load
+    document.getElementById('main-frame').addEventListener('load', () => {
+      const currentTheme = getSavedTheme();
+      const iframe = document.getElementById('main-frame');
+      if (iframe && iframe.contentWindow) {
+        iframe.contentWindow.postMessage({ type: 'THEME_SYNC', theme: currentTheme }, '*');
+      }
+    });
+
+    function setDevice(type, btn) {
+      const frame = document.getElementById('viewport-frame');
+      btn.parentElement.querySelectorAll('button').forEach(b => {
+        b.classList.remove('text-secondary-container', 'bg-primary-container');
+        b.classList.add('text-[#a89b94]');
+      });
+      btn.classList.add('text-secondary-container', 'bg-primary-container');
+      btn.classList.remove('text-[#a89b94]');
+
+      if (type === 'mobile') {
+        frame.style.maxWidth = '390px';
+        frame.style.height = '844px';
+        frame.style.borderRadius = '36px';
+        frame.style.borderWidth = '10px';
+        frame.style.borderColor = '#2c2522';
+        frame.style.boxShadow = '0 25px 50px -12px rgba(0, 0, 0, 0.7)';
+      } else if (type === 'tablet') {
+        frame.style.maxWidth = '768px';
+        frame.style.height = '1024px';
+        frame.style.borderRadius = '24px';
+        frame.style.borderWidth = '8px';
+        frame.style.borderColor = '#2c2522';
+        frame.style.boxShadow = '0 25px 50px -12px rgba(0, 0, 0, 0.7)';
+      } else {
+        frame.style.maxWidth = '100%';
+        frame.style.height = '100%';
+        frame.style.borderRadius = '0px';
+        frame.style.borderWidth = '1px';
+        frame.style.borderColor = '#352f2c';
+        frame.style.boxShadow = 'none';
+      }
+    }
+  </script>
+</body>
+</html>

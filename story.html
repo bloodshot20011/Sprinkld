@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0" name="viewport"/>
+  <title>Our Story & Single-Estate Provenance — Sprinkled Spices</title>
+  
+  <!-- Typography & Icons -->
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="theme-styles.css"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: '#f97316',
+            'primary-container': '#ea580c',
+            secondary: '#121212',
+            'secondary-container': '#1e1e1e',
+            'accent-gold': '#fb923c',
+            surface: '#ffffff',
+            'surface-container': '#fbf9f6',
+            'on-surface': '#121212',
+            'on-surface-variant': '#555555'
+          },
+          fontFamily: {
+            display: ['Playfair Display', 'serif'],
+            body: ['Plus Jakarta Sans', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+  <script src="store-engine.js" defer></script>
+</head>
+<body class="bg-surface text-on-surface antialiased font-body selection:bg-orange-500 selection:text-white">
+
+  <!-- TOP PROMO STRIP -->
+  <div class="bg-black text-white py-2 px-3 sm:px-8 text-xs flex items-center justify-between border-b border-white/10 z-40 relative">
+    <div class="hidden md:flex items-center gap-3.5 text-white/80">
+      <a href="#" class="hover:text-orange-400 transition-colors"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#" class="hover:text-orange-400 transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#" class="hover:text-orange-400 transition-colors"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+    <div class="flex-1 text-center font-bold tracking-wider uppercase text-[10px] sm:text-xs text-orange-300">
+      🌱 100% PURE VEGETARIAN · ETHICAL DIRECT FARMGATE CONTRACTS
+    </div>
+    <div class="hidden sm:flex items-center gap-4 text-[11px] font-semibold">
+      <a href="tel:+919685140374" class="hidden sm:flex items-center gap-1.5 hover:text-orange-400 text-white">
+        <span class="material-symbols-outlined text-[14px]">call</span> +91 9685140374
+      </a>
+      <a href="shop.html" class="px-2.5 py-1 bg-orange-500 text-white hover:bg-orange-600 rounded-full font-bold uppercase tracking-wider text-[10px] transition-colors">
+        Shop Spices
+      </a>
+    </div>
+  </div>
+
+  <!-- GLASSMORPHISM NAVBAR -->
+  <header class="glass-nav sticky top-0 z-40 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 py-3 sm:py-3.5 flex items-center justify-between gap-3 sm:gap-6">
+      <a href="index.html" class="flex items-center gap-2.5 sm:gap-3 group flex-shrink-0">
+        <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-2xl bg-black text-white flex items-center justify-center font-display font-bold text-lg sm:text-xl shadow-md border-2 border-orange-500 group-hover:scale-105 transition-transform">
+          <span class="text-orange-400 font-extrabold">S</span>
+        </div>
+        <div class="flex flex-col">
+          <div class="flex items-center gap-1.5 sm:gap-2">
+            <span class="font-display text-xl sm:text-2xl font-bold tracking-tight text-gray-950 leading-none">Sprinkled</span>
+            <span class="px-1.5 py-0.5 bg-orange-100 text-orange-950 text-[8px] sm:text-[9px] font-extrabold rounded-full uppercase tracking-wider border border-orange-200">100% Veg</span>
+          </div>
+          <span class="text-[9px] sm:text-[10px] tracking-[0.16em] sm:tracking-[0.2em] uppercase text-gray-500 font-semibold mt-0.5">The Art of Pure Terroir Spices</span>
+        </div>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-7 text-xs font-bold uppercase tracking-wider text-gray-800">
+        <a href="index.html" class="hover:text-orange-600 transition-colors pb-1">Home</a>
+        <a href="shop.html" class="hover:text-orange-600 transition-colors pb-1">All Spices</a>
+        <a href="shop.html" class="hover:text-orange-600 transition-colors pb-1">Single Terroirs</a>
+        <a href="shop.html" class="hover:text-orange-600 transition-colors pb-1">Gift Vaults</a>
+        <a href="story.html" class="text-orange-600 border-b-2 border-orange-500 pb-1">Provenance</a>
+      </nav>
+
+      <div class="flex items-center gap-2 sm:gap-3 flex-shrink-0">
+        <button onclick="toggleCartDrawer(true)" class="bg-black hover:bg-gray-900 text-white px-3 sm:px-4 py-2 sm:py-2.5 rounded-full flex items-center gap-2 shadow-md hover:shadow-orange-500/20 border border-white/10 transition-all font-semibold">
+          <span class="material-symbols-outlined text-base sm:text-lg text-orange-400">shopping_cart</span>
+          <span class="cart-header-btn-text text-[11px] sm:text-xs tracking-wider font-bold">₹1,248 (2)</span>
+        </button>
+
+        <button id="mobile-menu-trigger" class="lg:hidden p-2 rounded-xl bg-gray-100 text-gray-800 hover:bg-orange-50 flex items-center justify-center">
+          <span class="material-symbols-outlined text-xl sm:text-2xl">menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- SLIDE-OVER LUXURY CART DRAWER -->
+  <div id="cart-drawer" class="fixed inset-0 z-50 pointer-events-none opacity-0 transition-opacity duration-300">
+    <div onclick="toggleCartDrawer(false)" class="absolute inset-0 bg-black/60 backdrop-blur-sm"></div>
+    <div id="cart-drawer-panel" class="absolute top-0 right-0 w-full sm:w-[420px] h-full bg-white shadow-2xl flex flex-col justify-between transform translate-x-full transition-transform duration-300 ease-in-out border-l border-gray-200">
+      <div class="p-4 sm:p-5 border-b border-gray-100 flex items-center justify-between bg-gray-50">
+        <div class="flex items-center gap-2">
+          <div class="w-8 h-8 rounded-full bg-orange-500 text-white flex items-center justify-center shadow-sm">
+            <span class="material-symbols-outlined text-lg">shopping_bag</span>
+          </div>
+          <h3 class="font-bold text-base text-gray-900">Your Spices Cart</h3>
+        </div>
+        <button onclick="toggleCartDrawer(false)" class="text-gray-400 hover:text-gray-700 p-1">
+          <span class="material-symbols-outlined text-2xl">close</span>
+        </button>
+      </div>
+      <div class="px-4 sm:px-5 py-3 bg-orange-50/70 border-b border-orange-100">
+        <p id="shipping-progress-msg" class="text-xs text-gray-800 mb-1.5 font-medium"></p>
+        <div class="w-full h-2 bg-gray-200 rounded-full overflow-hidden">
+          <div id="shipping-progress-bar" class="h-full bg-orange-500 transition-all duration-300 rounded-full" style="width: 0%"></div>
+        </div>
+      </div>
+      <div id="cart-drawer-items" class="p-4 sm:p-5 flex-1 overflow-y-auto space-y-3"></div>
+      <div class="p-4 sm:p-5 bg-gray-50 border-t border-gray-100 space-y-3">
+        <div class="flex justify-between items-center">
+          <span class="text-xs uppercase font-bold text-gray-500 tracking-wider">Subtotal</span>
+          <span class="cart-subtotal-val font-display text-2xl text-gray-900 font-bold">₹0.00</span>
+        </div>
+        <button onclick="alert('Order Placed Successfully! Your climate-sealed Sprinkled pure vegetarian spices will be dispatched via express courier.')" class="w-full text-center bg-black hover:bg-orange-600 text-white py-3.5 rounded-xl font-bold text-xs uppercase tracking-widest transition-all shadow-lg border border-orange-500/30">
+          Proceed to Checkout →
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Drawer -->
+  <div id="mobile-nav-drawer" class="fixed inset-0 z-50 pointer-events-none opacity-0 transition-opacity duration-300">
+    <div id="mobile-nav-close" class="absolute inset-0 bg-black/60 backdrop-blur-sm"></div>
+    <div id="mobile-nav-panel" class="absolute top-0 left-0 w-72 h-full bg-white shadow-2xl p-6 flex flex-col justify-between transform -translate-x-full transition-transform duration-300 ease-in-out">
+      <div class="space-y-6">
+        <div class="flex items-center justify-between pb-4 border-b border-gray-100">
+          <span class="font-display font-bold text-lg text-gray-950">Sprinkled</span>
+          <button onclick="document.getElementById('mobile-nav-close').click()" class="text-gray-400 hover:text-gray-800">
+            <span class="material-symbols-outlined text-2xl">close</span>
+          </button>
+        </div>
+        <div class="flex flex-col space-y-3 text-sm font-bold uppercase tracking-wider text-gray-800">
+          <a href="index.html" class="hover:text-orange-600 py-1.5 border-b border-gray-50">Home</a>
+          <a href="shop.html" class="hover:text-orange-600 py-1.5 border-b border-gray-50">Shop Spices</a>
+          <a href="shop.html" class="hover:text-orange-600 py-1.5 border-b border-gray-50">Single Terroirs</a>
+          <a href="shop.html" class="hover:text-orange-600 py-1.5 border-b border-gray-50">Gift Vaults</a>
+          <a href="story.html" class="text-orange-600 py-1.5 border-b border-orange-100">Our Provenance</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STORY HERO SECTION -->
+  <section class="relative bg-gradient-to-r from-black via-gray-950 to-black text-white py-14 sm:py-20 px-4 sm:px-12 overflow-hidden border-b border-gray-800">
+    <div class="max-w-4xl mx-auto space-y-4 sm:space-y-5 relative z-10 text-center">
+      <span class="inline-block text-xs uppercase tracking-widest text-orange-400 font-bold bg-orange-500/10 px-4 py-1.5 rounded-full border border-orange-500/30">Our Provenance & Heritage</span>
+      <h1 class="font-display text-2xl sm:text-5xl lg:text-6xl text-white leading-tight font-bold">
+        Preserving the Living Heritage of Indian Botanical Terroirs
+      </h1>
+      <p class="text-xs sm:text-base text-gray-300 max-w-2xl mx-auto leading-relaxed font-light">
+        For centuries, industrial spice commodity supply chains have blended lots from dozens of farms, stripped volatile essential oils, and prioritized shelf life over aromatic potency. Sprinkled exists to restore the pure single-estate standard.
+      </p>
+    </div>
+  </section>
+
+  <!-- THE THREE CORE PILLARS -->
+  <main class="w-full py-12 sm:py-20 px-4 sm:px-12 bg-white">
+    <div class="max-w-5xl mx-auto space-y-10 sm:space-y-16">
+      
+      <!-- Pillar 1: Radical Directness -->
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-6 sm:gap-8 items-center bg-[#fbf9f6] rounded-2xl sm:rounded-3xl p-5 sm:p-10 border border-gray-200 shadow-sm">
+        <div class="md:col-span-5 bg-white p-6 sm:p-8 rounded-xl sm:rounded-2xl border border-gray-200 flex flex-col items-center justify-center text-center shadow-md">
+          <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-orange-50 text-orange-600 flex items-center justify-center mb-3 sm:mb-4 shadow-inner">
+            <span class="material-symbols-outlined text-2xl sm:text-3xl">handshake</span>
+          </div>
+          <h4 class="font-display text-xl sm:text-2xl text-gray-950 font-bold">3.5× Fairer Farmgate</h4>
+          <p class="text-xs text-gray-600 mt-1.5 sm:mt-2">Direct contracts with master heritage growers across Kashmir, Kerala, and Tamil Nadu.</p>
+        </div>
+        <div class="md:col-span-7 space-y-2.5 sm:space-y-3">
+          <span class="text-xs uppercase text-orange-600 font-bold tracking-wider">Pillar 01 · Radical Directness</span>
+          <h3 class="font-display text-xl sm:text-3xl text-gray-950 font-bold">Bypassing the Commodity Auctions</h3>
+          <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">
+            By funding regenerative soil practices and paying our partner farming families months in advance of the harvest, we secure the first canopy pick of every crop — unblended, untampered, and brimming with natural piperine, crocin, and curcumin.
+          </p>
+        </div>
+      </div>
+
+      <!-- Pillar 2: Botanical Integrity -->
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-6 sm:gap-8 items-center bg-[#fbf9f6] rounded-2xl sm:rounded-3xl p-5 sm:p-10 border border-gray-200 shadow-sm">
+        <div class="md:col-span-7 space-y-2.5 sm:space-y-3 order-2 md:order-1">
+          <span class="text-xs uppercase text-orange-600 font-bold tracking-wider">Pillar 02 · Botanical Integrity</span>
+          <h3 class="font-display text-xl sm:text-3xl text-gray-950 font-bold">Cold Stone Milling & Micro-Batches</h3>
+          <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">
+            High-speed steel industrial pulverizers generate temperatures exceeding 80°C, destroying delicate floral aromatics before spices ever reach a kitchen. Sprinkled stone-mills all whole spices slowly under 32°C in small 15kg micro-batches.
+          </p>
+        </div>
+        <div class="md:col-span-5 bg-white p-6 sm:p-8 rounded-xl sm:rounded-2xl border border-gray-200 flex flex-col items-center justify-center text-center shadow-md order-1 md:order-2">
+          <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-rose-50 text-rose-600 flex items-center justify-center mb-3 sm:mb-4 shadow-inner">
+            <span class="material-symbols-outlined text-2xl sm:text-3xl">science</span>
+          </div>
+          <h4 class="font-display text-xl sm:text-2xl text-gray-950 font-bold">&lt; 32°C Micro-Milled</h4>
+          <p class="text-xs text-gray-600 mt-1.5 sm:mt-2">Zero thermal degradation of volatile terpene and aromatic phenol compounds.</p>
+        </div>
+      </div>
+
+      <!-- Pillar 3: Pure Vegetarian Dedication -->
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-6 sm:gap-8 items-center bg-[#fbf9f6] rounded-2xl sm:rounded-3xl p-5 sm:p-10 border border-gray-200 shadow-sm">
+        <div class="md:col-span-5 bg-white p-6 sm:p-8 rounded-xl sm:rounded-2xl border border-gray-200 flex flex-col items-center justify-center text-center shadow-md">
+          <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-3 sm:mb-4 shadow-inner">
+            <span class="material-symbols-outlined text-2xl sm:text-3xl">verified</span>
+          </div>
+          <h4 class="font-display text-xl sm:text-2xl text-gray-950 font-bold">100% Satvic Standard</h4>
+          <p class="text-xs text-gray-600 mt-1.5 sm:mt-2">Dedicated vegetarian facility with absolute zero cross-contamination risk.</p>
+        </div>
+        <div class="md:col-span-7 space-y-2.5 sm:space-y-3">
+          <span class="text-xs uppercase text-orange-600 font-bold tracking-wider">Pillar 03 · Pure Vegetarian Dedication</span>
+          <h3 class="font-display text-xl sm:text-3xl text-gray-950 font-bold">Sanctified Purity Standards</h3>
+          <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">
+            Every botanical batch is handled exclusively in dedicated vegetarian processing facilities, sealed in recyclably shielded glass jars, and tested for heavy metals, pesticides, and artificial coloring agents.
+          </p>
+        </div>
+      </div>
+
+      <!-- Terroir Map Summary Strip -->
+      <div class="bg-black text-white rounded-2xl sm:rounded-3xl p-6 sm:p-12 space-y-4 sm:space-y-6 shadow-xl border border-gray-800">
+        <div class="max-w-2xl space-y-1.5 sm:space-y-2">
+          <span class="text-xs font-mono uppercase text-orange-400 font-bold">Terroir Network</span>
+          <h3 class="font-display text-2xl sm:text-3xl font-bold">Our Exclusive Harvest Origins</h3>
+          <p class="text-xs sm:text-sm text-gray-300 leading-relaxed">Each Sprinkled harvest jar carries a verifiable estate stamp documenting GPS coordinates, harvest month, and laboratory compound percentages.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 pt-4 border-t border-gray-800">
+          <div class="space-y-1">
+            <span class="text-orange-400 font-bold text-sm">Pampore, Kashmir Valley</span>
+            <p class="text-xs text-gray-400">Mogra Saffron (1,600m altitude)</p>
+          </div>
+          <div class="space-y-1">
+            <span class="text-orange-400 font-bold text-sm">Wayanad, Kerala</span>
+            <p class="text-xs text-gray-400">Extra Bold TGSEB Black Pepper</p>
+          </div>
+          <div class="space-y-1">
+            <span class="text-orange-400 font-bold text-sm">Cardamom Hills, Idukki</span>
+            <p class="text-xs text-gray-400">8mm+ Green Cardamom Pods</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <a href="https://wa.me/919685140374?text=Hi%20Sprinkled%20team,%20I%20have%20an%20inquiry%20about%20your%20single-estate%20spice%20provenance." target="_blank" class="whatsapp-floating-btn" title="Chat on WhatsApp (+91 9685140374)">
+    <i class="fa-brands fa-whatsapp text-2xl"></i>
+  </a>
+
+  <!-- FOOTER -->
+  <footer class="bg-black text-white py-10 sm:py-12 px-5 sm:px-12 border-t border-gray-900">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between text-xs text-gray-400 text-center sm:text-left gap-4 sm:gap-0">
+      <p>© 2026 Sprinkled Artisanal Spices Pvt. Ltd. 100% Pure Vegetarian Certified.</p>
+      <div class="flex flex-wrap justify-center sm:justify-start items-center gap-4 sm:gap-6">
+        <a href="index.html" class="hover:text-white">Home</a>
+        <a href="shop.html" class="hover:text-white">Shop All Spices</a>
+        <a href="shop.html" class="hover:text-white">Gift Vaults</a>
+        <a href="story.html" class="hover:text-white font-bold text-orange-400">Our Story & Provenance</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

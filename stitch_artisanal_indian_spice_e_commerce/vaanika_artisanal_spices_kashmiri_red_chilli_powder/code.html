@@ -1,0 +1,1251 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-secondary-fixed-variant": "#6d3a00", "outline": "#867273", "inverse-primary": "#ffb2b7", "inverse-surface": "#32302e", "error-container": "#ffdad6", "surface-container-high": "#ede7e3", "on-secondary-container": "#6d3a00", "on-tertiary-fixed-variant": "#753137", "primary-fixed-dim": "#ffb2b7", "on-surface": "#1d1b19", "on-error": "#ffffff", "surface-dim": "#dfd9d5", "tertiary-fixed-dim": "#ffb3b6", "surface-variant": "#e7e1de", "on-secondary": "#ffffff", "outline-variant": "#d8c1c1", "on-surface-variant": "#534343", "on-primary-container": "#c8767c", "primary-container": "#4a121a", "tertiary": "#2e0006", "on-primary": "#ffffff", "secondary-fixed": "#ffdcc2", "secondary-fixed-dim": "#ffb77a", "secondary": "#8f4e00", "on-tertiary-container": "#cb757a", "tertiary-container": "#4c1018", "on-primary-fixed-variant": "#733239", "background": "#fff8f4", "tertiary-fixed": "#ffdada", "surface-tint": "#90494f", "on-error-container": "#93000a", "primary-fixed": "#ffdadb", "on-secondary-fixed": "#2e1500", "primary": "#2e0007", "on-primary-fixed": "#3b0710", "on-tertiary": "#ffffff", "on-background": "#1d1b19", "surface-bright": "#fff8f4", "surface-container-lowest": "#ffffff", "error": "#ba1a1a", "secondary-container": "#fea047", "surface-container": "#f3ede9", "inverse-on-surface": "#f6efec", "surface": "#fff8f4", "on-tertiary-fixed": "#3d050e", "surface-container-highest": "#e7e1de", "surface-container-low": "#f9f2ef" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xl": "4rem", "gutter": "1.5rem", "margin": "1.25rem", "space-md": "1.25rem", "space-xs": "0.375rem", "space-sm": "0.75rem", "space-lg": "2.25rem", "gutter-desktop": "2.5rem", "margin-desktop": "4rem" }, "fontFamily": { "body-sm": ["Plus Jakarta Sans"], "label-caps": ["Plus Jakarta Sans"], "subheading": ["Playfair Display"], "display-hero": ["Playfair Display"], "headline-lg": ["Playfair Display"], "body-md": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Playfair Display"], "body-lg": ["Plus Jakarta Sans"], "headline-md": ["Playfair Display"], "headline-sm": ["Playfair Display"], "display-hero-mobile": ["Playfair Display"], "label-sm": ["Plus Jakarta Sans"] }, "fontSize": { "body-sm": ["13px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "400" }], "label-caps": ["11px", { "lineHeight": "16px", "letterSpacing": "0.14em", "fontWeight": "600" }], "subheading": ["19px", { "lineHeight": "28px", "letterSpacing": "0.02em", "fontWeight": "400" }], "display-hero": ["64px", { "lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "400" }], "headline-lg": ["44px", { "lineHeight": "52px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "body-md": ["15px", { "lineHeight": "24px", "letterSpacing": "0.005em", "fontWeight": "400" }], "headline-lg-mobile": ["30px", { "lineHeight": "38px", "letterSpacing": "0em", "fontWeight": "400" }], "body-lg": ["17px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-md": ["32px", { "lineHeight": "40px", "letterSpacing": "0em", "fontWeight": "500" }], "headline-sm": ["24px", { "lineHeight": "32px", "letterSpacing": "0.01em", "fontWeight": "600" }], "display-hero-mobile": ["38px", { "lineHeight": "46px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "label-sm": ["12px", { "lineHeight": "18px", "letterSpacing": "0.04em", "fontWeight": "500" }] } } } };</script><link rel="stylesheet" href="../theme-styles.css"/>
+<script src="../theme-manager.js"></script>
+</head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-7xl mx-auto px-margin lg:px-margin-desktop flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-sm"><img alt="A refined, minimalist luxury wordmark and insignia for 'MASALA VAULT' artisanal Indian spices, featuring an elegant monogram emblem with botanical spice star anise/clove motifs and timeless serif lettering.. Brand logo. - Primary color: #4a121a
+- Font: playfairDisplay
+- Mode: light
+- Roundness: rounded-lg
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1U7umTVxr7A_QAstDKrJBl6jpxejtiF_7gLzXm0ixYON8uRvVXETcymHjliPJZT2Eh7qznUdVBFBY4fEyUn8PxUOggGZsHwyePDfLOBxq2ZPam4Dl2CmjnobTD2rfV_2Wlw5jMu0caGvHAAFWIQ9xwcnskkoqvKSi54JrUngvSVhmkEUBvGZP6dtTuqeYaDYjhzkkhMcy8TtmuZAW4mJsX3tO5DP879AVnvZt1jX3SYk2y3A-yHyVwkkw"/><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-medium hidden sm:inline" class="brand-dynamic-name">VAANIKA</span></div><nav class="hidden md:flex items-center gap-space-lg" data-active-classes="text-primary font-semibold"><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface transition-colors" data-path="shop" href="#">Shop</a><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface transition-colors" data-path="collections" href="#">Collections</a><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface transition-colors" data-path="recipes" href="#">Recipes</a><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface transition-colors" data-path="our-story" href="#">Our Story</a></nav><div class="flex items-center gap-space-md"><button aria-label="Search spices" class="text-on-surface-variant hover:text-on-surface transition-colors flex items-center justify-center" type="button"><span class="material-symbols-outlined text-[22px]">search</span></button><button aria-label="Cart with 4 items" class="relative text-on-surface-variant hover:text-on-surface transition-colors flex items-center justify-center" type="button"><span class="material-symbols-outlined text-[22px]">shopping_bag</span><span class="absolute -top-1.5 -right-2 bg-secondary-container text-on-secondary-container font-label-caps text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold">4</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-background"><div class="flex flex-col w-full">
+<!-- Top Archival Breadcrumb Bar -->
+<div class="w-full bg-surface-container-low py-space-sm">
+<div class="max-w-7xl mx-auto px-margin lg:px-margin-desktop flex flex-wrap items-center justify-between gap-y-2">
+<nav aria-label="Breadcrumb" class="flex items-center gap-space-xs font-label-caps text-label-caps uppercase text-on-surface-variant tracking-wider">
+<a class="hover:text-primary transition-colors" href="#">Home</a>
+<span class="text-outline-variant">/</span>
+<a class="hover:text-primary transition-colors" href="#">Shop</a>
+<span class="text-outline-variant">/</span>
+<a class="hover:text-primary transition-colors" href="#">Ground Spices</a>
+<span class="text-outline-variant">/</span>
+<span class="text-primary font-bold">Kashmiri Red Chilli Powder</span>
+</nav>
+<div class="flex items-center gap-2 bg-surface-container-highest/80 px-3 py-1 rounded">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-caps text-[10px] tracking-widest text-on-surface-variant uppercase">
+          LOT NO. 2026-KR04 · PAMPORE VALLEY, KASHMIR
+        </span>
+</div>
+</div>
+</div>
+<!-- Primary Product Section -->
+<section class="w-full py-space-lg lg:py-space-xl bg-background">
+<div class="max-w-7xl mx-auto px-margin lg:px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop">
+<!-- Left: Gallery Column (approx 55% -> col-span-7) -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<!-- Main Product Display Card -->
+<div class="relative w-full aspect-[4/3] sm:aspect-[5/4] bg-surface-container overflow-hidden group">
+<img class="w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105" data-alt="Artisanal amber glass apothecary jar of Kashmiri red chilli powder with minimal cream paper label and dark walnut lid, placed on an authentic dark slate slab surrounded by sun-dried crimson chilli pods and star anise in soft natural morning window light, high contrast luxury culinary photography" id="mainProductImg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbTaddV9907ddRxm2pnNMWUVLBZ4unFboz_CAnB7_J1P3zRmrktDMEoYQrZFc_QDQ9PvuxL4FYQ9z8ebH4UPD1AEC5BykqI7gHXjHaGi1K8HVvR2NE5DI0rWGVZ9dMg8VDANlnLiVLeVcVttKdDoAGd8ySvurMnz9fIRE_rLdHlEKrOrZ8VxfmCQhPhswNvCRjU15xj9QLfULFVyngMCTmYu9zC_RrYg33ayYFgoTch2Z76uM7-S-w"/>
+<!-- Origin Stamp Badge -->
+<div class="absolute top-4 left-4 bg-surface/95 backdrop-blur-sm px-3 py-2 flex flex-col gap-0.5 shadow-sm">
+<span class="font-label-caps text-[10px] tracking-widest text-secondary font-bold uppercase">Estate Harvest</span>
+<span class="font-label-caps text-[9px] text-on-surface-variant">Cold Stone Ground • Oct 2025</span>
+</div>
+<!-- Zoom affordance indicator -->
+<button aria-label="Inspect texture in high resolution" class="absolute bottom-4 right-4 bg-surface/90 hover:bg-surface text-on-surface p-2.5 rounded-full backdrop-blur-sm transition-all shadow-sm flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">zoom_in</span>
+</button>
+<!-- Navigation Chevrons -->
+<button aria-label="Previous image" class="absolute left-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-surface/80 hover:bg-surface text-on-surface flex items-center justify-center backdrop-blur-sm transition-opacity opacity-80 hover:opacity-100 shadow-sm" id="prevGalleryBtn">
+<span class="material-symbols-outlined text-[20px]">chevron_left</span>
+</button>
+<button aria-label="Next image" class="absolute right-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-surface/80 hover:bg-surface text-on-surface flex items-center justify-center backdrop-blur-sm transition-opacity opacity-80 hover:opacity-100 shadow-sm" id="nextGalleryBtn">
+<span class="material-symbols-outlined text-[20px]">chevron_right</span>
+</button>
+</div>
+<!-- Thumbnails Row -->
+<div class="grid grid-cols-4 gap-space-sm" id="thumbGallery">
+<button class="thumb-btn relative aspect-square bg-surface-container overflow-hidden group transition-all ring-2 ring-primary" data-alt="Artisanal amber glass apothecary jar of Kashmiri red chilli powder with minimal cream paper label and dark walnut lid, placed on an authentic dark slate slab surrounded by sun-dried crimson chilli pods and star anise in soft natural morning window light, high contrast luxury culinary photography" data-src="placeholder" onclick="changeActiveImage(0)">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform" data-alt="Amber glass spice jar with label for Kashmiri chilli" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaEsjyqGI1x5dJntb1qyQ3U8EYelNIa2HtU1QWUHz9P0RiDihU94JhDg3ckevcc_Quiv9cHm_s_O-WKmN4CFj8gKTbAZwMhqn3oYU2LCYoWewRSQxGrDUR5g_picrPmr0MfeUe0YJ1F5uc9cHPpFXrbH9QlLsY-x2VS4_ppYvnpHvtuuw5_5sPXVGK2A5oY7mAxsLEsrM1Sthsh68awTeF-kzF-fDG-U73Rm-Y1uP0fLVPxNrBXpvV"/>
+<div class="absolute inset-0 bg-primary/10"></div>
+</button>
+<button class="thumb-btn relative aspect-square bg-surface-container overflow-hidden group transition-all" data-alt="Extreme macro shot of pure vibrant Kashmiri red chilli powder showing fine granular texture and glistening natural oleoresin oils on a dark rough ceramic spoon under warm editorial studio illumination" data-src="placeholder" onclick="changeActiveImage(1)">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform" data-alt="Macro fine texture of vibrant red ground chilli powder" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpDnpNFZrIaKMfJLQCBZKKSZHWCnXhunavyEKzR64U2UxXcM7e7NQFgItpHQlabwZIYamAj3ZFXgutRPYRFMArNFE8nt30fmr_sztAWXkYCjFcHRmPDiQLC5xtOrgz8JUpQ4qiScyYMH9AVdmRDNmZpCaY1WB6xm_hK0DefQF-BWr2QAsmB1K0iug_ZuAAvM1TkVzzwAc11aDdaado9cEkyj1afeU1k74qWr707Ew5hTUj2ixtuHLe"/>
+</button>
+<button class="thumb-btn relative aspect-square bg-surface-container overflow-hidden group transition-all" data-alt="Dried whole Kashmiri chilli pods with characteristic deep wrinkles and rich crimson coloration laid out in natural Pampore sunlight on textured terracotta tiles" data-src="placeholder" onclick="changeActiveImage(2)">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform" data-alt="Sun-dried whole wrinkled Kashmiri chilli pods" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDgpCa7_WuTmD4pyJGFdMBzX0HIxkAvuweiHSEwcXoUBLM4U6Xiy8YoE5krUCM7Dqxq3B7xZ5Cri2jMwfe4GTUi3UrMCQ5N5RpCux7ZaOgVWh5NPJM4cz1_0IkHkU6qIJLKKnHKy3gDAqus8laIVQAxn1U-pc-nigBGFDa4HydrJg2SpvWO7TBctbAImlwiQyGJ9zNyw8RGmbaXW72Jkv_8SCzYNDNoa1SZS1PKA64e7VP46qf0JTp"/>
+</button>
+<button class="thumb-btn relative aspect-square bg-surface-container overflow-hidden group transition-all" data-alt="Sensory culinary application of Kashmiri chilli blooming in molten golden cow ghee inside a vintage brass bowl with gentle steam, dramatic top-down lighting on dark kitchen slate" data-src="placeholder" onclick="changeActiveImage(3)">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform" data-alt="Kashmiri chilli blooming in sizzling ghee in brass bowl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKh-yl3ZpPu4k_yR3kPncPYBYl4dcfO6JlvOVBa-8VdDx-AoZtmiIb5Wgtb6uWRDyV__SGYGEMfL5KA5mJz1JDTea9L1zbX3yXLbjH_mHk89IsETNFSUreYr2fgoXlc_Tz-OzcHzd-Qeo6FJVf4dllcQI6yF9t6Z9geVQP0JKya6Lwv9sV0k6O_3ot9WvhlfgHww0QFDk8dWxoj3rhWNrNQQe_7If3ZM1CRjApctniolrhyDdKaz0S"/>
+</button>
+</div>
+<!-- Quality Guarantee Badges Underneath Gallery -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-xs bg-surface-container-low p-space-sm mt-space-xs">
+<div class="flex items-center gap-2 p-2 bg-surface">
+<span class="material-symbols-outlined text-secondary text-[20px]">ac_unit</span>
+<div class="flex flex-col">
+<span class="font-label-caps text-[10px] text-primary uppercase font-bold">Cold Milled</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">&lt;35°C Low-RPM</span>
+</div>
+</div>
+<div class="flex items-center gap-2 p-2 bg-surface">
+<span class="material-symbols-outlined text-secondary text-[20px]">verified</span>
+<div class="flex flex-col">
+<span class="font-label-caps text-[10px] text-primary uppercase font-bold">Zero Aflatoxin</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Batch Certified</span>
+</div>
+</div>
+<div class="flex items-center gap-2 p-2 bg-surface">
+<span class="material-symbols-outlined text-secondary text-[20px]">palette</span>
+<div class="flex flex-col">
+<span class="font-label-caps text-[10px] text-primary uppercase font-bold">Pure Color</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">No Dyes or Sudan</span>
+</div>
+</div>
+<div class="flex items-center gap-2 p-2 bg-surface">
+<span class="material-symbols-outlined text-secondary text-[20px]">recycling</span>
+<div class="flex flex-col">
+<span class="font-label-caps text-[10px] text-primary uppercase font-bold">Amber Glass</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">100% Recyclable</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Right: Purchasing Specs Column (approx 45% -> col-span-5) -->
+<div class="lg:col-span-5 flex flex-col">
+<!-- Category & Grade -->
+<div class="flex items-center gap-space-xs mb-space-xs">
+<span class="font-label-caps text-label-caps text-secondary font-bold uppercase tracking-widest">GROUND SPICES</span>
+<span class="text-outline-variant font-body-sm">•</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest">GRADE AA DEGI</span>
+</div>
+<!-- Product Title -->
+<h1 class="font-headline-lg text-headline-lg-mobile sm:text-headline-lg text-primary uppercase tracking-tight leading-tight mb-space-xs">
+            Kashmiri Red Chilli Powder
+          </h1>
+<!-- Sensory Descriptor -->
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-sm leading-relaxed">
+            Rich colour, delicate heat and deep natural aroma. Sun-dried in Pampore valleys and slow cold-stone milled to protect natural oleoresin pigments.
+          </p>
+<!-- Reviews Summary Pill -->
+<div class="flex items-center gap-space-sm mb-space-md">
+<div aria-label="4.8 out of 5 stars" class="flex text-secondary-container items-center">
+<span class="material-symbols-outlined text-[17px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[17px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[17px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[17px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[17px]" style="font-variation-settings: 'FILL' 1;">star_half</span>
+</div>
+<span class="font-label-caps text-label-caps text-primary font-bold">4.8</span>
+<span class="text-outline-variant font-body-sm">•</span>
+<a class="font-label-caps text-label-caps text-on-surface-variant underline underline-offset-4 hover:text-primary transition-colors uppercase" href="#customer-reviews">
+              126 Verified Reviews
+            </a>
+</div>
+<!-- Price Row -->
+<div class="flex flex-wrap items-baseline gap-space-sm bg-surface-container-low p-space-sm mb-space-md">
+<span class="font-headline-lg text-headline-lg text-primary font-normal" id="displayPrice">₹249</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Inclusive of all taxes</span>
+<span class="ml-auto inline-flex items-center gap-1.5 px-2.5 py-1 bg-surface-container-highest text-secondary font-label-caps text-[10px] tracking-wider uppercase font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> In Stock · Dispatch within 24h
+            </span>
+</div>
+<!-- Feature Highlights Grid -->
+<div class="grid grid-cols-2 gap-space-xs mb-space-md bg-surface p-space-sm shadow-sm">
+<div class="flex items-start gap-2 p-1.5">
+<span class="material-symbols-outlined text-secondary text-[18px] mt-0.5">flare</span>
+<div>
+<span class="font-label-caps text-[11px] text-primary uppercase block font-bold">Rich Colour</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant">Deep crimson ASTA 140+</span>
+</div>
+</div>
+<div class="flex items-start gap-2 p-1.5">
+<span class="material-symbols-outlined text-secondary text-[18px] mt-0.5">local_fire_department</span>
+<div>
+<span class="font-label-caps text-[11px] text-primary uppercase block font-bold">Mild Heat</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant">1,500 - 2,500 SHU</span>
+</div>
+</div>
+<div class="flex items-start gap-2 p-1.5">
+<span class="material-symbols-outlined text-secondary text-[18px] mt-0.5">spa</span>
+<div>
+<span class="font-label-caps text-[11px] text-primary uppercase block font-bold">Naturally Aromatic</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant">Cold-milled volatile oils</span>
+</div>
+</div>
+<div class="flex items-start gap-2 p-1.5">
+<span class="material-symbols-outlined text-secondary text-[18px] mt-0.5">terrain</span>
+<div>
+<span class="font-label-caps text-[11px] text-primary uppercase block font-bold">Carefully Sourced</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant">Pampore Valley, Kashmir</span>
+</div>
+</div>
+</div>
+<!-- Pack Size Selector -->
+<div class="mb-space-md">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-caps text-label-caps text-primary uppercase tracking-wider font-bold">Select Pack Size</span>
+<span class="font-label-caps text-label-caps text-secondary uppercase font-bold" id="selectedWeightLabel">100g Apothecary Jar</span>
+</div>
+<div class="grid grid-cols-3 sm:grid-cols-5 gap-2">
+<button class="pack-size-btn flex flex-col items-center justify-center p-2.5 bg-surface hover:bg-surface-container transition-all" onclick="selectPackSize(50, 145, '50g Trial Pouch', this)">
+<span class="font-label-caps text-[11px] font-bold text-on-surface uppercase">50g</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">₹145</span>
+</button>
+<button class="pack-size-btn active flex flex-col items-center justify-center p-2.5 bg-primary text-on-primary shadow-sm transition-all" onclick="selectPackSize(100, 249, '100g Apothecary Jar', this)">
+<span class="font-label-caps text-[11px] font-bold uppercase text-on-primary">100g</span>
+<span class="font-body-sm text-[11px] text-surface-variant">₹249</span>
+</button>
+<button class="pack-size-btn flex flex-col items-center justify-center p-2.5 bg-surface hover:bg-surface-container transition-all" onclick="selectPackSize(250, 560, '250g Culinary Refill', this)">
+<span class="font-label-caps text-[11px] font-bold text-on-surface uppercase">250g</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">₹560</span>
+</button>
+<button class="pack-size-btn flex flex-col items-center justify-center p-2.5 bg-surface hover:bg-surface-container transition-all" onclick="selectPackSize(500, 990, '500g Master Pantry', this)">
+<span class="font-label-caps text-[11px] font-bold text-on-surface uppercase">500g</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">₹990</span>
+</button>
+<button class="pack-size-btn flex flex-col items-center justify-center p-2.5 bg-surface hover:bg-surface-container transition-all" onclick="selectPackSize(1000, 1850, '1kg Estate Keepsake Tin', this)">
+<span class="font-label-caps text-[11px] font-bold text-on-surface uppercase">1kg Tin</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">₹1,850</span>
+</button>
+</div>
+</div>
+<!-- Quantity & Purchase CTAs -->
+<div class="flex flex-col sm:flex-row items-stretch gap-space-sm mb-space-md">
+<!-- Stepper -->
+<div class="flex items-center justify-between bg-surface-container px-3 py-2 sm:w-32">
+<button aria-label="Decrease quantity" class="w-8 h-8 flex items-center justify-center text-primary hover:text-secondary font-bold text-lg transition-colors" onclick="decrementQty()">-</button>
+<span class="font-label-caps text-body-md font-bold text-primary" id="qtyDisplay">1</span>
+<button aria-label="Increase quantity" class="w-8 h-8 flex items-center justify-center text-primary hover:text-secondary font-bold text-lg transition-colors" onclick="incrementQty()">+</button>
+</div>
+<!-- Primary Add to Cart -->
+<button class="flex-1 bg-primary text-on-primary px-space-lg py-3.5 font-label-caps text-label-caps uppercase tracking-widest hover:bg-primary-container transition-all flex items-center justify-center gap-2 shadow-md group" id="addToCartBtn" onclick="handleAddToCart()">
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-0.5 transition-transform">shopping_bag</span>
+<span id="cartBtnText">ADD TO CART</span>
+</button>
+<!-- Buy Now CTA -->
+<button class="sm:flex-initial bg-secondary text-on-secondary px-space-lg py-3.5 font-label-caps text-label-caps uppercase tracking-widest hover:bg-on-secondary-fixed-variant transition-colors flex items-center justify-center shadow-sm" onclick="handleBuyNow()">
+              BUY NOW
+            </button>
+</div>
+<!-- Pincode Delivery Checker -->
+<div class="bg-surface-container p-space-sm mb-space-sm">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-caps text-label-caps text-primary uppercase font-bold tracking-wider">CHECK DELIVERY</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Standard dispatch &lt; 24h</span>
+</div>
+<div class="flex gap-2 mb-2">
+<input class="flex-1 bg-surface text-on-surface font-body-sm px-space-sm py-2 focus:outline-none focus:bg-surface-container-lowest" id="pincodeInput" maxlength="6" placeholder="Enter your 6-digit PIN code" type="text"/>
+<button class="bg-primary text-on-primary px-space-md py-2 font-label-caps text-label-caps uppercase tracking-wider hover:bg-primary-container transition-colors" onclick="verifyPincode()">
+                CHECK
+              </button>
+</div>
+<div class="flex items-center gap-2 text-secondary font-body-sm text-[12px]" id="pincodeResult">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span>Delivery available • Estimated delivery: 2–4 business days via Climate-Safe Express</span>
+</div>
+</div>
+<!-- Trust Badges Under PIN -->
+<div class="grid grid-cols-3 gap-2 py-space-xs text-center text-on-surface-variant font-label-caps text-[10px] uppercase tracking-wider">
+<div class="flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-secondary">lock</span>
+<span>Secure Packaging</span>
+</div>
+<div class="flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-secondary">published_with_changes</span>
+<span>Easy Returns</span>
+</div>
+<div class="flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-secondary">encrypted</span>
+<span>100% Encrypted</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Editorial Section: "ABOUT THIS SPICE" -->
+<section class="w-full bg-surface-container py-space-xl">
+<div class="max-w-7xl mx-auto px-margin lg:px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-center">
+<div class="lg:col-span-5 flex flex-col gap-space-sm">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest font-bold">MONOGRAPH 004</span>
+<h2 class="font-headline-lg text-headline-lg-mobile sm:text-headline-lg text-primary tracking-tight">
+            About This Spice
+          </h2>
+<div class="w-12 h-0.5 bg-secondary"></div>
+<p class="font-subheading text-subheading text-on-surface leading-relaxed mt-space-xs italic font-normal">
+            "Prized for its luminous scarlet lacquer and gentle, warming sweetness without the searing burn of commercial hybrids."
+          </p>
+</div>
+<div class="lg:col-span-7">
+<div class="bg-surface p-space-lg shadow-sm space-y-space-md">
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+              Kashmiri Red Chilli Powder is prized for its vibrant natural colour and balanced, nuanced warmth without aggressive pungency. Carefully hand-harvested in the autumn mist of Kashmir and slow stone-pulverized below 35°C, it preserves delicate aromatics, carotenoids, and volatile oils that define authentic Indian culinary artistry.
+            </p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Unlike industrial chilli powders that rely on Sudan dyes or heat-generating metallic pulverizers that cook out volatile flavour compounds, our Pampore lot is treated as an aromatic botanical. It yields an astonishing ASTA color score above 140, saturating curries, roasts, and gravies in brilliant amber-red while keeping capsaicin at a mellow 2,000 Scoville Heat Units.
+            </p>
+<div class="grid grid-cols-3 gap-space-sm pt-space-xs">
+<div class="p-space-sm bg-surface-container-low">
+<span class="font-label-caps text-[10px] text-on-surface-variant block uppercase">Estate Elevation</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">1,600m</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant block mt-0.5">Pampore High Plateaus</span>
+</div>
+<div class="p-space-sm bg-surface-container-low">
+<span class="font-label-caps text-[10px] text-on-surface-variant block uppercase">Oleoresin Depth</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">142 ASTA</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant block mt-0.5">Pure Natural Pigment</span>
+</div>
+<div class="p-space-sm bg-surface-container-low">
+<span class="font-label-caps text-[10px] text-on-surface-variant block uppercase">Stone Mill RPM</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">&lt; 40 RPM</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant block mt-0.5">Friction-Free Churn</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- The Flavour Profile (Sensory Meters & Terroir) -->
+<section class="w-full bg-background py-space-xl">
+<div class="max-w-7xl mx-auto px-margin lg:px-margin-desktop">
+<div class="text-center max-w-2xl mx-auto mb-space-lg">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest font-bold block mb-space-xs">Organoleptic Analysis</span>
+<h2 class="font-headline-lg text-headline-lg-mobile sm:text-headline-lg text-primary tracking-tight">The Flavour Profile</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+          Laboratory assayed &amp; certified by our master sommelier for culinary balance and sensory clarity.
+        </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop">
+<!-- Sensory Meters (Left 6 cols) -->
+<div class="lg:col-span-6 bg-surface-container p-space-lg shadow-sm flex flex-col justify-between">
+<div class="space-y-space-md">
+<!-- Meter: Heat -->
+<div>
+<div class="flex justify-between items-center mb-1.5">
+<span class="font-label-caps text-label-caps text-primary uppercase font-bold">Heat Level</span>
+<span class="font-label-caps text-label-caps text-secondary uppercase font-bold">Mild Warmth (●●○○○)</span>
+</div>
+<div class="h-2 w-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-secondary" style="width: 38%;"></div>
+</div>
+<span class="font-body-sm text-[12px] text-on-surface-variant mt-1 block">1,500 – 2,500 Scoville Heat Units (SHU). Zero palate numbness.</span>
+</div>
+<!-- Meter: Aroma -->
+<div>
+<div class="flex justify-between items-center mb-1.5">
+<span class="font-label-caps text-label-caps text-primary uppercase font-bold">Aroma Intesity</span>
+<span class="font-label-caps text-label-caps text-secondary uppercase font-bold">Fragrant Fruit &amp; Earth (●●●●○)</span>
+</div>
+<div class="h-2 w-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-secondary" style="width: 82%;"></div>
+</div>
+<span class="font-body-sm text-[12px] text-on-surface-variant mt-1 block">Sun-cured dried apricots, mild tobacco leaf, rich sweet bell pepper.</span>
+</div>
+<!-- Meter: Colour -->
+<div>
+<div class="flex justify-between items-center mb-1.5">
+<span class="font-label-caps text-label-caps text-primary uppercase font-bold">Colour Value</span>
+<span class="font-label-caps text-label-caps text-secondary uppercase font-bold">Intense Crimson (●●●●●)</span>
+</div>
+<div class="h-2 w-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-primary" style="width: 98%;"></div>
+</div>
+<span class="font-body-sm text-[12px] text-on-surface-variant mt-1 block">ASTA 140+. Unrivaled red saturation in sauces, fats, and stocks.</span>
+</div>
+<!-- Meter: Sweetness -->
+<div>
+<div class="flex justify-between items-center mb-1.5">
+<span class="font-label-caps text-label-caps text-primary uppercase font-bold">Natural Sweetness</span>
+<span class="font-label-caps text-label-caps text-secondary uppercase font-bold">Sun-Cured Fructose (●●○○○)</span>
+</div>
+<div class="h-2 w-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-secondary-container" style="width: 45%;"></div>
+</div>
+<span class="font-body-sm text-[12px] text-on-surface-variant mt-1 block">High residual fruit sugars developed during slow Himalayan sun-curing.</span>
+</div>
+</div>
+<!-- Tasting Notes Summary -->
+<div class="mt-space-md p-space-sm bg-surface">
+<span class="font-label-caps text-[11px] text-primary uppercase font-bold block mb-1">Sommelier Tasting Notes</span>
+<p class="font-body-md text-body-md text-on-surface-variant italic">
+              "Opens with a fragrant flush of dried red currants and sun-baked earth. Melts into hot fat with round, mild warmth, slight natural apple-skin sweetness, and zero throat-catching bitterness."
+            </p>
+</div>
+</div>
+<!-- Terroir & Botanical Certificate Block (Right 6 cols) -->
+<div class="lg:col-span-6 bg-surface p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-sm mb-space-sm">
+<div>
+<span class="font-label-caps text-[10px] text-secondary uppercase tracking-widest font-bold">ARCHIVAL VAULT CERTIFICATE</span>
+<h3 class="font-headline-sm text-headline-sm text-primary uppercase mt-0.5">Botanical &amp; Terroir Monograph</h3>
+</div>
+<div class="w-12 h-12 bg-surface-container-high rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-[24px]">verified_user</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="p-space-sm bg-surface-container-low">
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase block">Botanical Taxon</span>
+<span class="font-body-md text-primary font-bold">Capsicum annuum</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant block">var. longum (Pampore heirloom)</span>
+</div>
+<div class="p-space-sm bg-surface-container-low">
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase block">Geographic Terroir</span>
+<span class="font-body-md text-primary font-bold">Pampore Karewa Soil</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant block">Himalayan Saffron Plateaus</span>
+</div>
+<div class="p-space-sm bg-surface-container-low">
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase block">Curing Protocol</span>
+<span class="font-body-md text-primary font-bold">Roof Sun-Drying</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant block">18 Days under dry alpine air</span>
+</div>
+<div class="p-space-sm bg-surface-container-low">
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase block">Milling Process</span>
+<span class="font-body-md text-primary font-bold">Natural Granite Stones</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant block">Water-cooled below 35°C</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between text-on-surface-variant font-label-caps text-[11px]">
+<span>COLLECTIVE: PAMPORE ARTISANAL GROWERS</span>
+<span class="text-primary font-bold">PURITY ASSAY: 100% PASSED</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- How to Use It (Culinary Techniques Grid) -->
+<section class="w-full bg-surface-container-low py-space-xl">
+<div class="max-w-7xl mx-auto px-margin lg:px-margin-desktop">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-lg gap-space-sm">
+<div>
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest font-bold block mb-space-xs">Culinary Monograph</span>
+<h2 class="font-headline-lg text-headline-lg-mobile sm:text-headline-lg text-primary tracking-tight">How To Use It</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          Unleash the full potential of natural carotenoids and essential oils through temperature-disciplined culinary techniques.
+        </p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Technique 1 -->
+<div class="bg-surface overflow-hidden shadow-sm flex flex-col group">
+<div class="w-full aspect-[4/3] bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Rich traditional Kashmiri Dum Aloo simmering in an antique heavy copper handi pot with vibrant crimson gravy glistening in soft candle-lit Indian dining ambience" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_KAoXzNsmI0x3exKWLqtzWraCZxvYsRMeKnDV4CpcEARHmp_0XNRJIOlC0u5jvX7Voht4o1a6sWm0BKKLSUEiQugPekfQbonoG5KaDa_K1ya4E4pNZeHgjmccVxBc14Q2JDMiOabGJpG0d9SYdwE9sL7UB9JYch6BWMn88e-1jq_b6kIbW_yfmUaoMo9EgJLrsoQvk7M8y6gNCP6OK0g182dnf-2hgmyECc7RaHQvfDBqWpds_Erg"/>
+</div>
+<div class="p-space-md flex flex-col flex-1">
+<span class="font-label-caps text-[10px] text-secondary uppercase tracking-wider font-bold mb-1">Method 01 • Simmer</span>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Dum Aloo &amp; Curries</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Bloom in hot ghee with hing and ground fennel. Imparts a radiant red lacquer to golden baby potatoes, paneer, roasted cauliflower, or braised lentils without scorched or acidic notes.
+            </p>
+</div>
+</div>
+<!-- Technique 2 -->
+<div class="bg-surface overflow-hidden shadow-sm flex flex-col group">
+<div class="w-full aspect-[4/3] bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Tandoori style paneer and bell pepper skewers coated in deep red natural yoghurt marinade spiced with Kashmiri chilli resting on black cast iron grill with light smoke" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDyIC2k1xqRS70nOF55nIOIpjvm7td76qcpSAe4rpAT2XYW_S-zm56PqMcWgIP7z35mgGt3W8zQ-00HzKe1jkIh7pXD56TVpYDnIV6bVDbl-ewnQoqKZgd_6ByVThORkUOtZrkJ7c-Zxk3R7X7_VaFn-v8guM0fnaOS3tnABlx_vI4tuCNnRZlZpGor3gDaGSha9sWlWTjOOu5sTPitLit1Cjx9aGDsL1jJQ5S9zP0W0iEwoy2SiA5"/>
+</div>
+<div class="p-space-md flex flex-col flex-1">
+<span class="font-label-caps text-[10px] text-secondary uppercase tracking-wider font-bold mb-1">Method 02 • Marinade</span>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Tandoori &amp; Marinades</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Whisk with thick hung curd, cold-pressed mustard oil, and crushed garlic. Delivers that signature deep crimson hue naturally without artificial food dyes.
+            </p>
+</div>
+</div>
+<!-- Technique 3 -->
+<div class="bg-surface overflow-hidden shadow-sm flex flex-col group">
+<div class="w-full aspect-[4/3] bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Hot yellow lentil tadka dal in a rustic ceramic bowl being drizzled with sizzling tempered ghee infused with whole cumin and bright red chilli powder" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBax-sNfbPL5p6KtoPD0ZC6jud532pW8eWBkxUY1gVimB_SX33bvxcJGKp-mvQokZ8Y9alsUoW0vX60OC5LLHiHix7XwuzsQDLPGQ_LKvjnL3p3-hg8w612Ef1IjeN2hA4dwzcH3inq_p6G7xuepbod6iGjAckg8F_fYle3dGD5hE4KwKgLvf39hYw_gP4v4q5-FWoD45LVj3exJ-fpa8B1Jl7u2rtgj0X_zwJ3gq_FREqcA1U5L-5y"/>
+</div>
+<div class="p-space-md flex flex-col flex-1">
+<span class="font-label-caps text-[10px] text-secondary uppercase tracking-wider font-bold mb-1">Method 03 • Temper</span>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Dal Tadka &amp; Tempered Oils</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Add to sizzling ghee or sesame oil right off the heat before pouring over yellow lentils or stewed greens. Instantly releases sweet paprika aromatics.
+            </p>
+</div>
+</div>
+<!-- Technique 4 -->
+<div class="bg-surface overflow-hidden shadow-sm flex flex-col group">
+<div class="w-full aspect-[4/3] bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Oven roasted root vegetables and golden spiced lotus root chips dusted with fine red chilli powder and fresh herbs on parchment paper" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDB7HQi05Hpel_msSZPFf4mIldbdxfaJ3zRR2qIdIdjIMivE9CxiOHWlDqcTtYjFrzMxdtMbexDha-C5jbQWYyYj3u97q3F8X4wNQoTDTtnvALXfBHHyWf05sq2rZazPh7irWF8PuVSspyPWItriCVOrBdWZX1GDEKxjcD22Sgg30QWNOfaFNOUJyzuNPBLea7vNTtKwUoTtwjH9c6luQBoJx9H6VOoin75F_xg0p1Y4JNB7D5p30lN"/>
+</div>
+<div class="p-space-md flex flex-col flex-1">
+<span class="font-label-caps text-[10px] text-secondary uppercase tracking-wider font-bold mb-1">Method 04 • Finishing</span>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Dry Rubs &amp; Crisp Roasts</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Dust over roasted sweet potatoes, crispy lotus stem, or spiced almonds. Provides an electric scarlet crust with mellow, warm earthiness.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Ingredients & Information Archival Tabs -->
+<section class="w-full bg-background py-space-xl">
+<div class="max-w-7xl mx-auto px-margin lg:px-margin-desktop">
+<div class="bg-surface p-space-lg shadow-sm">
+<!-- Tab Navigation Buttons -->
+<div class="flex flex-wrap items-center gap-2 pb-space-sm mb-space-md">
+<button class="tab-trigger px-space-md py-2 font-label-caps text-label-caps uppercase tracking-wider bg-primary text-on-primary transition-all" onclick="switchTab('tab-desc', this)">
+            Description
+          </button>
+<button class="tab-trigger px-space-md py-2 font-label-caps text-label-caps uppercase tracking-wider bg-surface-container text-on-surface-variant hover:text-primary transition-all" onclick="switchTab('tab-ingredients', this)">
+            Ingredients
+          </button>
+<button class="tab-trigger px-space-md py-2 font-label-caps text-label-caps uppercase tracking-wider bg-surface-container text-on-surface-variant hover:text-primary transition-all" onclick="switchTab('tab-nutrition', this)">
+            Nutrition
+          </button>
+<button class="tab-trigger px-space-md py-2 font-label-caps text-label-caps uppercase tracking-wider bg-surface-container text-on-surface-variant hover:text-primary transition-all" onclick="switchTab('tab-storage', this)">
+            Archival Storage
+          </button>
+</div>
+<!-- Tab Content 1: Description -->
+<div class="tab-panel space-y-space-sm" id="tab-desc">
+<h3 class="font-headline-sm text-headline-sm text-primary">The Heritage of Kashmiri Degi Mirch</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Grown in the alluvial soils of Jammu and Kashmir where crisp mountain air and sharp diurnal temperature variations stimulate high concentration of carotenoid pigments (capsanthin and capsorubin). Unlike standard commercial ground red pepper, authentic Kashmiri degi chilli is famed for its non-irritating, gentle Scoville rating, rendering it suitable for children, sensitive diners, and opulent feast dishes that demand luminous coloration without punishing piquancy.
+          </p>
+</div>
+<!-- Tab Content 2: Ingredients -->
+<div class="tab-panel hidden space-y-space-sm" id="tab-ingredients">
+<h3 class="font-headline-sm text-headline-sm text-primary">Single-Estate Botanical Purity</h3>
+<div class="bg-surface-container-low p-space-md">
+<span class="font-label-caps text-label-caps text-secondary uppercase font-bold block mb-1">Ingredient Statement</span>
+<p class="font-body-lg text-primary font-medium">100% Whole Kashmiri Red Chillies (Capsicum annuum var. longum).</p>
+<p class="font-body-sm text-on-surface-variant mt-2">Zero salt, zero preservatives, zero anti-caking agents, zero artificial coloring (No Sudan I-IV, No Metanil Yellow, No Added Oil).</p>
+</div>
+<div class="text-on-surface-variant font-body-sm">
+<p>• Allergen Statement: Naturally gluten-free. Processed in a dedicated spice facility free from nuts, dairy, and soy.</p>
+</div>
+</div>
+<!-- Tab Content 3: Nutrition -->
+<div class="tab-panel hidden" id="tab-nutrition">
+<h3 class="font-headline-sm text-headline-sm text-primary mb-space-sm">Nutritional Facts (Per 100g)</h3>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-sm">
+<div class="bg-surface-container p-space-sm">
+<span class="font-label-caps text-[10px] text-on-surface-variant block uppercase">Energy</span>
+<span class="font-headline-sm text-primary font-bold">282 kcal</span>
+</div>
+<div class="bg-surface-container p-space-sm">
+<span class="font-label-caps text-[10px] text-on-surface-variant block uppercase">Dietary Fibre</span>
+<span class="font-headline-sm text-primary font-bold">34.8 g</span>
+</div>
+<div class="bg-surface-container p-space-sm">
+<span class="font-label-caps text-[10px] text-on-surface-variant block uppercase">Protein</span>
+<span class="font-headline-sm text-primary font-bold">12.1 g</span>
+</div>
+<div class="bg-surface-container p-space-sm">
+<span class="font-label-caps text-[10px] text-on-surface-variant block uppercase">Vitamin A (Beta-Carotene)</span>
+<span class="font-headline-sm text-primary font-bold">2,160 μg</span>
+</div>
+</div>
+<p class="font-body-sm text-[12px] text-on-surface-variant mt-space-sm">
+            *Values derived from batch lot lab testing. High in natural antioxidants and Vitamin C precursors.
+          </p>
+</div>
+<!-- Tab Content 4: Storage -->
+<div class="tab-panel hidden space-y-space-sm" id="tab-storage">
+<h3 class="font-headline-sm text-headline-sm text-primary">Preserving Volatile Carotenoids</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Natural red carotenoids are sensitive to prolonged UV rays and ambient humidity. Store in this airtight amber glass jar away from direct stove-top steam. Always use a dry wooden or brass spoon when measuring.
+          </p>
+<div class="p-space-sm bg-surface-container flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[28px]">inventory_2</span>
+<div>
+<span class="font-label-caps text-label-caps text-primary uppercase font-bold">Recommended Life</span>
+<span class="font-body-sm text-on-surface-variant block">Optimal flavor retention within 12 months from milling date.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- From Source to Pack (Storytelling Sequence) -->
+<section class="w-full bg-surface-container py-space-xl">
+<div class="max-w-7xl mx-auto px-margin lg:px-margin-desktop">
+<div class="max-w-2xl mb-space-lg">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest font-bold block mb-space-xs">Traceability Journey</span>
+<h2 class="font-headline-lg text-headline-lg-mobile sm:text-headline-lg text-primary tracking-tight">From Source To Pack</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+          A four-stage harvest and preservation continuum governed by traditional mountain wisdom.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Step 01 -->
+<div class="bg-surface p-space-md shadow-sm relative flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-headline-sm text-secondary font-bold">01</span>
+<span class="font-label-caps text-[10px] bg-surface-container px-2 py-1 uppercase text-on-surface-variant">Source</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary mb-2">Canopy Pluck</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Harvested by hand in early autumn across the terrace farms of Pampore. Only fully ripe, deep crimson pods are plucked from the stems.
+            </p>
+</div>
+<div class="mt-space-md pt-space-xs text-on-surface-variant font-label-caps text-[10px]">
+            • Sept - Oct Harvest
+          </div>
+</div>
+<!-- Step 02 -->
+<div class="bg-surface p-space-md shadow-sm relative flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-headline-sm text-secondary font-bold">02</span>
+<span class="font-label-caps text-[10px] bg-surface-container px-2 py-1 uppercase text-on-surface-variant">Select</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary mb-2">Terracotta Sunning</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Spread on traditional terracotta mats under dry Himalayan sunlight for up to 18 days, naturally evaporating moisture while locking in fruit sugars.
+            </p>
+</div>
+<div class="mt-space-md pt-space-xs text-on-surface-variant font-label-caps text-[10px]">
+            • 8% Target Moisture
+          </div>
+</div>
+<!-- Step 03 -->
+<div class="bg-surface p-space-md shadow-sm relative flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-headline-sm text-secondary font-bold">03</span>
+<span class="font-label-caps text-[10px] bg-surface-container px-2 py-1 uppercase text-on-surface-variant">Craft</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary mb-2">Granite Stone Mill</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Pulverized at low RPMs on natural granite wheels. The temperature never exceeds 35°C, ensuring essential aromatic oils remain unvaporized.
+            </p>
+</div>
+<div class="mt-space-md pt-space-xs text-on-surface-variant font-label-caps text-[10px]">
+            • Zero Thermal Degradation
+          </div>
+</div>
+<!-- Step 04 -->
+<div class="bg-surface p-space-md shadow-sm relative flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-headline-sm text-secondary font-bold">04</span>
+<span class="font-label-caps text-[10px] bg-surface-container px-2 py-1 uppercase text-on-surface-variant">Pack</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary mb-2">Amber Apothecary Vault</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Sealed into thick ultraviolet-shielding amber glass containers with natural wood seals, maintaining garden freshness to your culinary kitchen.
+            </p>
+</div>
+<div class="mt-space-md pt-space-xs text-on-surface-variant font-label-caps text-[10px]">
+            • Nitrogen Flushed Hermetic Seal
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- Customer Reviews Section -->
+<section class="w-full bg-background py-space-xl" id="customer-reviews">
+<div class="max-w-7xl mx-auto px-margin lg:px-margin-desktop">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-lg gap-space-sm">
+<div>
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest font-bold block mb-space-xs">Patron Accolades</span>
+<h2 class="font-headline-lg text-headline-lg-mobile sm:text-headline-lg text-primary tracking-tight">What Our Customers Say</h2>
+</div>
+<button class="self-start md:self-auto bg-primary text-on-primary px-space-md py-3 font-label-caps text-label-caps uppercase tracking-wider hover:bg-primary-container transition-colors shadow-sm">
+          Write A Review
+        </button>
+</div>
+<!-- Ratings Breakdown & Filter Row -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop mb-space-lg bg-surface p-space-lg shadow-sm">
+<!-- Aggregate Score -->
+<div class="lg:col-span-4 flex flex-col justify-center items-center text-center p-space-md bg-surface-container-low">
+<span class="font-display-hero text-[56px] leading-none text-primary font-bold">4.8</span>
+<div aria-label="4.8 stars" class="flex text-secondary-container my-2">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star_half</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Based on 126 verified gourmand reviews</span>
+<span class="font-label-caps text-[10px] text-secondary font-bold uppercase mt-1">98% Recommendation Rate</span>
+</div>
+<!-- Rating Progress Bars -->
+<div class="lg:col-span-8 flex flex-col justify-center space-y-2">
+<div class="flex items-center gap-3">
+<span class="font-label-caps text-[11px] text-on-surface w-12 font-bold">5 Star</span>
+<div class="flex-1 h-2 bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-secondary" style="width: 86%;"></div>
+</div>
+<span class="font-label-caps text-[11px] text-on-surface-variant w-8 text-right">108</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="font-label-caps text-[11px] text-on-surface w-12 font-bold">4 Star</span>
+<div class="flex-1 h-2 bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-secondary" style="width: 11%;"></div>
+</div>
+<span class="font-label-caps text-[11px] text-on-surface-variant w-8 text-right">14</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="font-label-caps text-[11px] text-on-surface w-12 font-bold">3 Star</span>
+<div class="flex-1 h-2 bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-secondary" style="width: 2%;"></div>
+</div>
+<span class="font-label-caps text-[11px] text-on-surface-variant w-8 text-right">3</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="font-label-caps text-[11px] text-on-surface w-12 font-bold">2 Star</span>
+<div class="flex-1 h-2 bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-secondary" style="width: 1%;"></div>
+</div>
+<span class="font-label-caps text-[11px] text-on-surface-variant w-8 text-right">1</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="font-label-caps text-[11px] text-on-surface w-12 font-bold">1 Star</span>
+<div class="flex-1 h-2 bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-secondary" style="width: 0%;"></div>
+</div>
+<span class="font-label-caps text-[11px] text-on-surface-variant w-8 text-right">0</span>
+</div>
+<!-- Quick Filter Buttons -->
+<div class="flex flex-wrap gap-2 pt-2">
+<button class="px-2.5 py-1 text-[11px] font-label-caps uppercase bg-primary text-on-primary">All (126)</button>
+<button class="px-2.5 py-1 text-[11px] font-label-caps uppercase bg-surface-container hover:bg-surface-container-high text-on-surface-variant">5 Star (108)</button>
+<button class="px-2.5 py-1 text-[11px] font-label-caps uppercase bg-surface-container hover:bg-surface-container-high text-on-surface-variant">4 Star (14)</button>
+<button class="px-2.5 py-1 text-[11px] font-label-caps uppercase bg-surface-container hover:bg-surface-container-high text-on-surface-variant">With Images (28)</button>
+</div>
+</div>
+</div>
+<!-- 3 Featured Customer Review Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Review Card 1 -->
+<div class="bg-surface p-space-md shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<div class="flex text-secondary-container">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-body-sm text-[11px] text-on-surface-variant">3 days ago</span>
+</div>
+<h4 class="font-headline-sm text-[18px] text-primary mb-1">"The colour on my Rogan Josh was breathtaking"</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Standard supermarket Kashmiri chillies are diluted with generic teja chillies and artificial colour. Vaanika's batch gave my curry a stunning natural ruby sheen without blinding my guests with sharp heat. Exceptional amber jar presentation as well.
+            </p>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between">
+<div>
+<span class="font-label-caps text-label-caps text-primary uppercase font-bold block">Chef Raghavendra N.</span>
+<span class="font-body-sm text-[11px] text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">verified</span> Verified Epicure
+              </span>
+</div>
+<span class="font-label-caps text-[10px] text-on-surface-variant">500g Jar</span>
+</div>
+</div>
+<!-- Review Card 2 -->
+<div class="bg-surface p-space-md shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<div class="flex text-secondary-container">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-body-sm text-[11px] text-on-surface-variant">2 weeks ago</span>
+</div>
+<h4 class="font-headline-sm text-[18px] text-primary mb-1">"A sweet, gentle fruitiness you can taste"</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              When you open the lid, you are hit with sun-cured dried fruit, almost like dehydrated plums, before any heat registers. We used it in our tandoor marinade and the flavor is nuanced and delicate.
+            </p>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between">
+<div>
+<span class="font-label-caps text-label-caps text-primary uppercase font-bold block">Malini Sen</span>
+<span class="font-body-sm text-[11px] text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">verified</span> Verified Buyer
+              </span>
+</div>
+<span class="font-label-caps text-[10px] text-on-surface-variant">100g Jar</span>
+</div>
+</div>
+<!-- Review Card 3 -->
+<div class="bg-surface p-space-md shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<div class="flex text-secondary-container">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star_half</span>
+</div>
+<span class="font-body-sm text-[11px] text-on-surface-variant">1 month ago</span>
+</div>
+<h4 class="font-headline-sm text-[18px] text-primary mb-1">"Remarkable difference when bloomed in ghee"</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              I bloom a teaspoon right as the tadka finishes. It doesn't scorch or turn brown like cheaper powders. The color stays pristine crimson. Highly recommended for daily dal and gravies.
+            </p>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between">
+<div>
+<span class="font-label-caps text-label-caps text-primary uppercase font-bold block">Arjun Varma</span>
+<span class="font-body-sm text-[11px] text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">verified</span> Verified Buyer
+              </span>
+</div>
+<span class="font-label-caps text-[10px] text-on-surface-variant">250g Jar</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Frequently Asked Questions (Accordion) -->
+<section class="w-full bg-surface-container py-space-xl">
+<div class="max-w-4xl mx-auto px-margin lg:px-margin-desktop">
+<div class="text-center mb-space-lg">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest font-bold block mb-space-xs">Curator Knowledge</span>
+<h2 class="font-headline-lg text-headline-lg-mobile sm:text-headline-lg text-primary tracking-tight">Frequently Asked Questions</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+          Everything you need to know about provenance, pungency levels, and pantry preservation.
+        </p>
+</div>
+<div class="space-y-space-xs" id="faqAccordion">
+<!-- Item 1 -->
+<div class="bg-surface shadow-sm overflow-hidden">
+<button class="w-full p-space-md flex items-center justify-between text-left group" onclick="toggleFaq(this)">
+<span class="font-headline-sm text-[18px] text-primary group-hover:text-secondary transition-colors">Is this spice suitable for everyday cooking?</span>
+<span class="material-symbols-outlined text-primary group-hover:text-secondary transition-transform duration-300">expand_more</span>
+</button>
+<div class="faq-content hidden px-space-md pb-space-md text-on-surface-variant font-body-md text-body-md leading-relaxed">
+            Yes, precisely. Authentic Kashmiri chilli is favored for daily use across Indian homes because it adds generous, appetizing natural red color to gravies, dals, and vegetable stir-fries without making dishes aggressively hot for children or sensitive family members.
+          </div>
+</div>
+<!-- Item 2 -->
+<div class="bg-surface shadow-sm overflow-hidden">
+<button class="w-full p-space-md flex items-center justify-between text-left group" onclick="toggleFaq(this)">
+<span class="font-headline-sm text-[18px] text-primary group-hover:text-secondary transition-colors">How spicy is Kashmiri Red Chilli Powder?</span>
+<span class="material-symbols-outlined text-primary group-hover:text-secondary transition-transform duration-300">expand_more</span>
+</button>
+<div class="faq-content hidden px-space-md pb-space-md text-on-surface-variant font-body-md text-body-md leading-relaxed">
+            It is on the mild end of the Scoville heat scale, measuring between 1,500 and 2,500 SHU. By comparison, Guntur chillies reach 35,000–45,000 SHU and standard cayenne reaches 30,000–50,000 SHU. You can use 2 to 3 tablespoons without causing palate distress.
+          </div>
+</div>
+<!-- Item 3 -->
+<div class="bg-surface shadow-sm overflow-hidden">
+<button class="w-full p-space-md flex items-center justify-between text-left group" onclick="toggleFaq(this)">
+<span class="font-headline-sm text-[18px] text-primary group-hover:text-secondary transition-colors">Why is the color so rich without artificial dyes?</span>
+<span class="material-symbols-outlined text-primary group-hover:text-secondary transition-transform duration-300">expand_more</span>
+</button>
+<div class="faq-content hidden px-space-md pb-space-md text-on-surface-variant font-body-md text-body-md leading-relaxed">
+            Kashmir's microclimate features cold nights and intense high-altitude UV sunshine during harvest, which triggers high synthesis of capsanthin and capsorubin carotenoids. Our low-rpm granite milling keeps temperatures below 35°C, preventing these fragile pigment molecules from burning.
+          </div>
+</div>
+<!-- Item 4 -->
+<div class="bg-surface shadow-sm overflow-hidden">
+<button class="w-full p-space-md flex items-center justify-between text-left group" onclick="toggleFaq(this)">
+<span class="font-headline-sm text-[18px] text-primary group-hover:text-secondary transition-colors">How should I store it to preserve aroma?</span>
+<span class="material-symbols-outlined text-primary group-hover:text-secondary transition-transform duration-300">expand_more</span>
+</button>
+<div class="faq-content hidden px-space-md pb-space-md text-on-surface-variant font-body-md text-body-md leading-relaxed">
+            Keep it sealed in our apothecary amber glass jar, which shields it from light wavelengths that bleach natural red pigments. Store in a dark pantry or cupboard away from direct steam from your cooktop.
+          </div>
+</div>
+<!-- Item 5 -->
+<div class="bg-surface shadow-sm overflow-hidden">
+<button class="w-full p-space-md flex items-center justify-between text-left group" onclick="toggleFaq(this)">
+<span class="font-headline-sm text-[18px] text-primary group-hover:text-secondary transition-colors">What is the shelf life?</span>
+<span class="material-symbols-outlined text-primary group-hover:text-secondary transition-transform duration-300">expand_more</span>
+</button>
+<div class="faq-content hidden px-space-md pb-space-md text-on-surface-variant font-body-md text-body-md leading-relaxed">
+            Our Kashmiri Red Chilli Powder maintains its peak aromatic volatility and color depth for 12 months from the milling date. After 12 months, it remains safe for consumption, though oleoresin intensity naturally softens.
+          </div>
+</div>
+<!-- Item 6 -->
+<div class="bg-surface shadow-sm overflow-hidden">
+<button class="w-full p-space-md flex items-center justify-between text-left group" onclick="toggleFaq(this)">
+<span class="font-headline-sm text-[18px] text-primary group-hover:text-secondary transition-colors">Is this product vegetarian and pesticide-tested?</span>
+<span class="material-symbols-outlined text-primary group-hover:text-secondary transition-transform duration-300">expand_more</span>
+</button>
+<div class="faq-content hidden px-space-md pb-space-md text-on-surface-variant font-body-md text-body-md leading-relaxed">
+            Yes, 100% vegan, pure single-ingredient, certified non-GMO, and third-party laboratory tested for over 140 pesticide residues, aflatoxins, and heavy metals.
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- "YOU MAY ALSO LIKE" (Related Products) -->
+<section class="w-full bg-background py-space-xl">
+<div class="max-w-7xl mx-auto px-margin lg:px-margin-desktop">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-lg gap-space-sm">
+<div>
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest font-bold block mb-space-xs">Complimentary Vaults</span>
+<h2 class="font-headline-lg text-headline-lg-mobile sm:text-headline-lg text-primary tracking-tight">You May Also Like</h2>
+</div>
+<a class="font-label-caps text-label-caps text-primary hover:text-secondary uppercase tracking-widest transition-colors flex items-center gap-1" href="#">
+          View All Single-Estate Spices <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Related 1 -->
+<div class="bg-surface shadow-sm flex flex-col group">
+<div class="w-full aspect-[4/5] bg-surface-container overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Artisanal amber jar of bright golden yellow Salem turmeric powder on dark slate beside whole dried golden turmeric rhizomes, warm natural side lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8fokhLHJ691U2PIwrGmNJyfFZBhEtsSI6aX-w8djMKIeVvk8bi6wsTkRy6oWcxTK_0g0Xr7uFtI0-Boxu-c967152ao5GTGid1vjgy9N0U0Q7FhauHamiBhr8dQ_zEbKFvyGS-KKv6TW_n6OjCnf-y_R0x40asGzOreAUqpRzZhZY0liqdf66jHr8sSy7EtXExXMJxBPGlksP7bUw08BsjHaGrLuB4Pj-sw5FBpsm0s1ScxYYJJlE"/>
+<span class="absolute top-3 left-3 bg-surface/90 font-label-caps text-[9px] uppercase tracking-wider px-2 py-1 text-primary font-bold">Curcumin 5.2%</span>
+</div>
+<div class="p-space-sm flex flex-col flex-1">
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase tracking-wider mb-1">Salem, Tamil Nadu</span>
+<h3 class="font-headline-sm text-[18px] text-primary group-hover:text-secondary transition-colors mb-1">Salem Turmeric Powder</h3>
+<div class="flex items-center gap-1 text-secondary-container text-[12px] mb-2">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-caps text-primary font-bold">4.9</span>
+<span class="text-on-surface-variant font-body-sm text-[11px]">(88)</span>
+</div>
+<div class="mt-auto flex items-center justify-between pt-2">
+<span class="font-headline-sm text-[18px] text-primary font-normal">₹195</span>
+<button class="bg-surface-container hover:bg-primary hover:text-on-primary text-primary px-3 py-1.5 font-label-caps text-[10px] tracking-wider uppercase transition-colors">
+                ADD TO CART
+              </button>
+</div>
+</div>
+</div>
+<!-- Related 2 -->
+<div class="bg-surface shadow-sm flex flex-col group">
+<div class="w-full aspect-[4/5] bg-surface-container overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Amber glass apothecary jar filled with bold black tellicherry peppercorns on rustic dark wood background with cracked peppercorns on brass spoon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7CZfjNhLdPm-xNIy81WnUD-3b_KKqlIs9dJb-S9fksEMSrnVyalS6yhbrg2ClxEnklzw2ps_OIbKSPMbb0JbXEWQpqEfa35n4lXvNjBbQ4jSgVNM3PPbFMk3XddgRgfB91K8jvizd4P_3opYcVbIszE4uoOuElyaUf2w9T8JpkTcQ7YNZru00JxDNp19ZAdePp3h0Qy_NJHR_MN1WqI1iEiIxVmsF2mHEeucZZHCtbPAhGq8fx6dt"/>
+<span class="absolute top-3 left-3 bg-surface/90 font-label-caps text-[9px] uppercase tracking-wider px-2 py-1 text-primary font-bold">Tellicherry TGSEB</span>
+</div>
+<div class="p-space-sm flex flex-col flex-1">
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase tracking-wider mb-1">Wayanad, Kerala</span>
+<h3 class="font-headline-sm text-[18px] text-primary group-hover:text-secondary transition-colors mb-1">Malabar Black Pepper</h3>
+<div class="flex items-center gap-1 text-secondary-container text-[12px] mb-2">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-caps text-primary font-bold">5.0</span>
+<span class="text-on-surface-variant font-body-sm text-[11px]">(142)</span>
+</div>
+<div class="mt-auto flex items-center justify-between pt-2">
+<span class="font-headline-sm text-[18px] text-primary font-normal">₹290</span>
+<button class="bg-surface-container hover:bg-primary hover:text-on-primary text-primary px-3 py-1.5 font-label-caps text-[10px] tracking-wider uppercase transition-colors">
+                ADD TO CART
+              </button>
+</div>
+</div>
+</div>
+<!-- Related 3 -->
+<div class="bg-surface shadow-sm flex flex-col group">
+<div class="w-full aspect-[4/5] bg-surface-container overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Artisanal blend of whole royal spices including green cardamom, mace, cinnamon, star anise on dark stone background inside vintage brass bowl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbxhjM8CiKtLHV2i0WFM26v3peXkE_kwOOEH-4emH1RniH6RV7LTI9IzBiOqkOG0xycZ6j3tMmt9KoCxoaHkAViMPj3vFx6QZORftvhGuCYnOloa8YpGrbNfZm9aduivaernw06Gl-KYuxdfRuk-xo_RBkw_EwrJalE9Hx_ZHb8cyDu24mtCmhK4CaMPpIUxjZA1LcFtPgbXySymy-_hwkYJXuEXI7vhMRjBah_ol7R6FzMGgeRANk"/>
+<span class="absolute top-3 left-3 bg-surface/90 font-label-caps text-[9px] uppercase tracking-wider px-2 py-1 text-primary font-bold">16 Royal Botanicals</span>
+</div>
+<div class="p-space-sm flex flex-col flex-1">
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase tracking-wider mb-1">Lucknow Heritage</span>
+<h3 class="font-headline-sm text-[18px] text-primary group-hover:text-secondary transition-colors mb-1">Awadhi Garam Masala</h3>
+<div class="flex items-center gap-1 text-secondary-container text-[12px] mb-2">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-caps text-primary font-bold">4.8</span>
+<span class="text-on-surface-variant font-body-sm text-[11px]">(96)</span>
+</div>
+<div class="mt-auto flex items-center justify-between pt-2">
+<span class="font-headline-sm text-[18px] text-primary font-normal">₹340</span>
+<button class="bg-surface-container hover:bg-primary hover:text-on-primary text-primary px-3 py-1.5 font-label-caps text-[10px] tracking-wider uppercase transition-colors">
+                ADD TO CART
+              </button>
+</div>
+</div>
+</div>
+<!-- Related 4 -->
+<div class="bg-surface shadow-sm flex flex-col group">
+<div class="w-full aspect-[4/5] bg-surface-container overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="High aromatic small grain cumin seeds resting on rustic dark slate plate with gentle natural dust and linen napkin" src="https://lh3.googleusercontent.com/aida-public/AB6AXuChnXGyOAir22iy76rBJgq4UGLVoHGS9orShp5zfCyylkFg9ZON-5lahlWRBxqnAZcvKNbVWuZWJHVx3eIbuTuV2kouIFgsH0LeWhxrUTW4WwVjTQ20HZcbbgNhzL___o0JIEQhChGpH890ir_a5Lypcc_y7xhBvaSog-IwOQtyR2kj0ttd6co0JAA9k4a8T0x5WkKNrBDE_AXmKZzMrgn-5SrrLJgW3wCDUo755jWoUL9turdQuOP4"/>
+<span class="absolute top-3 left-3 bg-surface/90 font-label-caps text-[9px] uppercase tracking-wider px-2 py-1 text-primary font-bold">High Volatile Oil</span>
+</div>
+<div class="p-space-sm flex flex-col flex-1">
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase tracking-wider mb-1">Nagaur, Rajasthan</span>
+<h3 class="font-headline-sm text-[18px] text-primary group-hover:text-secondary transition-colors mb-1">Nagaur Cumin Seeds</h3>
+<div class="flex items-center gap-1 text-secondary-container text-[12px] mb-2">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-caps text-primary font-bold">4.9</span>
+<span class="text-on-surface-variant font-body-sm text-[11px]">(67)</span>
+</div>
+<div class="mt-auto flex items-center justify-between pt-2">
+<span class="font-headline-sm text-[18px] text-primary font-normal">₹210</span>
+<button class="bg-surface-container hover:bg-primary hover:text-on-primary text-primary px-3 py-1.5 font-label-caps text-[10px] tracking-wider uppercase transition-colors">
+                ADD TO CART
+              </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- "COMPLETE YOUR SPICE SHELF" (Bundle collection box) -->
+<section class="w-full bg-surface-container py-space-xl">
+<div class="max-w-7xl mx-auto px-margin lg:px-margin-desktop">
+<div class="bg-primary text-on-primary p-space-lg lg:p-space-xl shadow-xl relative overflow-hidden">
+<!-- Ambient decorative backdrop circle -->
+<div class="absolute -right-16 -top-16 w-80 h-80 bg-secondary-container/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-center relative z-10">
+<div class="lg:col-span-7 space-y-space-sm">
+<span class="font-label-caps text-label-caps text-secondary-fixed uppercase tracking-widest font-bold">Curated Foundation</span>
+<h2 class="font-headline-lg text-headline-lg-mobile sm:text-headline-lg text-surface-bright tracking-tight leading-tight">
+              Complete Your Spice Shelf: "The Everyday Indian Kitchen"
+            </h2>
+<p class="font-body-lg text-surface-variant leading-relaxed">
+              Elevate your daily cooking repertoire with our four fundamental pillars: Kashmiri Red Chilli, Salem High-Curcumin Turmeric, Nagaur Aromatic Cumin, and Awadhi Garam Masala. Packaged in full-sized keepsake apothecary jars.
+            </p>
+<div class="flex flex-wrap items-center gap-space-sm pt-space-xs">
+<span class="font-headline-lg text-headline-lg text-secondary-fixed font-normal">₹1,190</span>
+<span class="font-body-sm text-surface-variant/80 line-through">₹1,440</span>
+<span class="bg-secondary-fixed text-on-secondary-fixed font-label-caps text-[10px] font-bold px-2 py-0.5 uppercase tracking-wider">Save 18%</span>
+</div>
+</div>
+<div class="lg:col-span-5 flex flex-col sm:flex-row lg:flex-col gap-space-sm justify-end">
+<button class="bg-secondary hover:bg-secondary-fixed hover:text-on-secondary-fixed text-on-secondary px-space-lg py-4 font-label-caps text-label-caps uppercase tracking-widest transition-all shadow-md flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[18px]">shopping_basket</span>
+              ADD BUNDLE TO CART
+            </button>
+<a class="bg-transparent hover:bg-surface/10 text-surface-bright px-space-lg py-3.5 font-label-caps text-label-caps uppercase tracking-widest text-center transition-colors flex items-center justify-center gap-1" href="#">
+              Explore Full Collection →
+            </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter Banner: Bring Better Flavour Home -->
+<section class="w-full bg-surface py-space-xl">
+<div class="max-w-4xl mx-auto px-margin lg:px-margin-desktop text-center space-y-space-sm">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest font-bold block">The Epistolary Spice Gazette</span>
+<h2 class="font-headline-lg text-headline-lg-mobile sm:text-headline-lg text-primary tracking-tight">
+        Bring Better Flavour Home.
+      </h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl mx-auto">
+        Receive seasonal harvest announcements, private tasting lot releases, and rare botanical monograph essays directly to your inbox.
+      </p>
+<form class="flex flex-col sm:flex-row gap-2 max-w-md mx-auto pt-space-xs" onsubmit="handleNewsletter(event)">
+<input class="flex-1 bg-surface-container text-on-surface placeholder:text-on-surface-variant/60 font-body-sm px-space-md py-3 focus:outline-none focus:bg-surface-container-low" id="newsletterEmail" placeholder="Enter your email address" required="" type="email"/>
+<button class="bg-primary hover:bg-primary-container text-on-primary px-space-lg py-3 font-label-caps text-label-caps uppercase tracking-widest transition-colors shadow-sm" type="submit">
+          SUBSCRIBE
+        </button>
+</form>
+<p class="hidden text-secondary font-body-sm text-[12px] pt-1" id="newsletterSuccess">
+        ✓ You are enrolled in the Curator's Gazette. Welcome to Vaanika.
+      </p>
+</div>
+</section>
+<!-- Dynamic Cart Toast Notification -->
+<div class="fixed bottom-6 right-6 z-50 bg-primary text-on-primary px-space-md py-space-sm shadow-xl flex items-center gap-3 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none" id="cartToast">
+<span class="material-symbols-outlined text-secondary-fixed text-[20px]">check_circle</span>
+<div>
+<span class="font-label-caps text-label-caps uppercase block tracking-wider font-bold">Added To Vault Cart</span>
+<span class="font-body-sm text-[12px] text-surface-variant" id="toastDetails">1x Kashmiri Red Chilli Powder (100g)</span>
+</div>
+</div>
+</div>
+<!-- Interactive Client-side Script -->
+<script>
+  // State
+  let currentPackPrice = 249;
+  let currentPackWeight = "100g Apothecary Jar";
+  let quantity = 1;
+
+  // Gallery Array
+  const galleryImages = [
+    {
+      src: "placeholder",
+      alt: "Artisanal amber glass apothecary jar of Kashmiri red chilli powder with minimal cream paper label and dark walnut lid, placed on an authentic dark slate slab surrounded by sun-dried crimson chilli pods and star anise in soft natural morning window light, high contrast luxury culinary photography"
+    },
+    {
+      src: "placeholder",
+      alt: "Extreme macro shot of pure vibrant Kashmiri red chilli powder showing fine granular texture and glistening natural oleoresin oils on a dark rough ceramic spoon under warm editorial studio illumination"
+    },
+    {
+      src: "placeholder",
+      alt: "Dried whole Kashmiri chilli pods with characteristic deep wrinkles and rich crimson coloration laid out in natural Pampore sunlight on textured terracotta tiles"
+    },
+    {
+      src: "placeholder",
+      alt: "Sensory culinary application of Kashmiri chilli blooming in molten golden cow ghee inside a vintage brass bowl with gentle steam, dramatic top-down lighting on dark kitchen slate"
+    }
+  ];
+  let currentImgIndex = 0;
+
+  function changeActiveImage(index) {
+    currentImgIndex = index;
+    const mainImg = document.getElementById('mainProductImg');
+    if (!mainImg) return;
+    
+    mainImg.src = galleryImages[index].src;
+    mainImg.setAttribute('data-alt', galleryImages[index].alt);
+
+    // Update thumbnail highlights
+    const buttons = document.querySelectorAll('#thumbGallery .thumb-btn');
+    buttons.forEach((btn, i) => {
+      if (i === index) {
+        btn.classList.add('ring-2', 'ring-primary');
+      } else {
+        btn.classList.remove('ring-2', 'ring-primary');
+      }
+    });
+  }
+
+  // Next / Prev Gallery
+  const prevBtn = document.getElementById('prevGalleryBtn');
+  const nextBtn = document.getElementById('nextGalleryBtn');
+
+  if (prevBtn && nextBtn) {
+    prevBtn.addEventListener('click', () => {
+      currentImgIndex = (currentImgIndex - 1 + galleryImages.length) % galleryImages.length;
+      changeActiveImage(currentImgIndex);
+    });
+
+    nextBtn.addEventListener('click', () => {
+      currentImgIndex = (currentImgIndex + 1) % galleryImages.length;
+      changeActiveImage(currentImgIndex);
+    });
+  }
+
+  // Pack Size Selection
+  function selectPackSize(weight, price, label, el) {
+    currentPackPrice = price;
+    currentPackWeight = label;
+
+    document.getElementById('displayPrice').textContent = '₹' + price.toLocaleString('en-IN');
+    document.getElementById('selectedWeightLabel').textContent = label;
+
+    // Reset styles
+    const allPills = document.querySelectorAll('.pack-size-btn');
+    allPills.forEach(pill => {
+      pill.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm');
+      pill.classList.add('bg-surface');
+      const textSpan = pill.querySelector('span:first-child');
+      const subSpan = pill.querySelector('span:last-child');
+      if (textSpan) textSpan.classList.remove('text-on-primary');
+      if (subSpan) subSpan.classList.remove('text-surface-variant');
+    });
+
+    // Active pill style
+    el.classList.remove('bg-surface');
+    el.classList.add('bg-primary', 'text-on-primary', 'shadow-sm');
+    const activeText = el.querySelector('span:first-child');
+    const activeSub = el.querySelector('span:last-child');
+    if (activeText) activeText.classList.add('text-on-primary');
+    if (activeSub) activeSub.classList.add('text-surface-variant');
+  }
+
+  // Quantity Stepper
+  function incrementQty() {
+    quantity++;
+    document.getElementById('qtyDisplay').textContent = quantity;
+  }
+
+  function decrementQty() {
+    if (quantity > 1) {
+      quantity--;
+      document.getElementById('qtyDisplay').textContent = quantity;
+    }
+  }
+
+  // Add to Cart Interaction & Toast
+  function handleAddToCart() {
+    const btn = document.getElementById('addToCartBtn');
+    const text = document.getElementById('cartBtnText');
+    const toast = document.getElementById('cartToast');
+    const toastDetails = document.getElementById('toastDetails');
+
+    text.textContent = 'ADDING...';
+
+    setTimeout(() => {
+      text.textContent = 'ADDED TO CART';
+      btn.classList.add('bg-secondary');
+
+      if (toastDetails) {
+        toastDetails.textContent = `${quantity}x Kashmiri Red Chilli Powder (${currentPackWeight})`;
+      }
+
+      if (toast) {
+        toast.classList.remove('translate-y-24', 'opacity-0');
+        toast.classList.add('translate-y-0', 'opacity-100');
+        setTimeout(() => {
+          toast.classList.remove('translate-y-0', 'opacity-100');
+          toast.classList.add('translate-y-24', 'opacity-0');
+          text.textContent = 'ADD TO CART';
+          btn.classList.remove('bg-secondary');
+        }, 3200);
+      }
+    }, 400);
+  }
+
+  function handleBuyNow() {
+    handleAddToCart();
+    // Smooth transition simulation to checkout
+    setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, 500);
+  }
+
+  // Pincode Verification
+  function verifyPincode() {
+    const input = document.getElementById('pincodeInput');
+    const result = document.getElementById('pincodeResult');
+    if (!input || !result) return;
+
+    if (input.value.trim().length === 6 && !isNaN(input.value)) {
+      result.innerHTML = `
+        <span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+        <span>Eligible for Express Air Dispatch to PIN ${input.value} &bull; Est. delivery in 48 hours</span>
+      `;
+      result.classList.remove('text-on-surface-variant');
+      result.classList.add('text-secondary');
+    } else {
+      result.innerHTML = `
+        <span class="material-symbols-outlined text-[16px] text-error">info</span>
+        <span>Please enter a valid 6-digit postal code</span>
+      `;
+      result.classList.remove('text-secondary');
+      result.classList.add('text-error');
+    }
+  }
+
+  // Archival Information Tabs
+  function switchTab(tabId, btn) {
+    const panels = document.querySelectorAll('.tab-panel');
+    panels.forEach(panel => panel.classList.add('hidden'));
+
+    const activePanel = document.getElementById(tabId);
+    if (activePanel) activePanel.classList.remove('hidden');
+
+    const triggers = document.querySelectorAll('.tab-trigger');
+    triggers.forEach(t => {
+      t.classList.remove('bg-primary', 'text-on-primary');
+      t.classList.add('bg-surface-container', 'text-on-surface-variant');
+    });
+
+    btn.classList.remove('bg-surface-container', 'text-on-surface-variant');
+    btn.classList.add('bg-primary', 'text-on-primary');
+  }
+
+  // Accordion FAQ toggle
+  function toggleFaq(button) {
+    const content = button.nextElementSibling;
+    const icon = button.querySelector('.material-symbols-outlined');
+
+    if (content.classList.contains('hidden')) {
+      content.classList.remove('hidden');
+      if (icon) icon.style.transform = 'rotate(180deg)';
+    } else {
+      content.classList.add('hidden');
+      if (icon) icon.style.transform = 'rotate(0deg)';
+    }
+  }
+
+  // Newsletter Submission
+  function handleNewsletter(e) {
+    e.preventDefault();
+    const success = document.getElementById('newsletterSuccess');
+    const input = document.getElementById('newsletterEmail');
+    if (success && input) {
+      success.classList.remove('hidden');
+      input.value = '';
+    }
+  }
+</script></main><footer class="w-full bg-inverse-surface text-inverse-on-surface"><div class="max-w-7xl mx-auto px-margin lg:px-margin-desktop pt-space-xl pb-space-lg"><div class="grid grid-cols-1 md:grid-cols-12 gap-gutter-desktop pb-space-lg"><div class="md:col-span-5 space-y-space-md"><span class="font-headline-sm text-headline-sm text-surface tracking-tight block" class="brand-dynamic-name">VAANIKA</span><p class="font-body-md text-body-md text-surface-variant max-w-sm">Purveyors of single-estate Indian spices, wild botanicals, and hand-foraged aromatics harvested in rhythm with the monsoons.</p><div class="pt-space-xs"><p class="font-label-caps text-label-caps uppercase tracking-widest text-secondary-fixed-dim mb-space-xs">Curator's Gazette</p><form class="flex max-w-sm"><input class="bg-surface-dim/20 text-inverse-on-surface placeholder:text-surface-variant/60 font-body-sm text-body-sm px-space-md py-space-sm flex-1 focus:outline-none focus:bg-surface-dim/30" placeholder="Enter your epistolary address" type="email"/><button aria-label="Subscribe" class="bg-secondary text-on-secondary px-space-md py-space-sm font-label-caps text-label-caps uppercase transition-colors hover:bg-secondary-fixed hover:text-on-secondary-fixed flex items-center justify-center" type="submit"><span class="material-symbols-outlined text-[18px]">arrow_forward</span></button></form></div></div><div class="md:col-span-2 space-y-space-sm"><h4 class="font-label-caps text-label-caps uppercase tracking-wider text-secondary-fixed">Vaults</h4><ul class="space-y-space-xs"><li class="font-body-sm text-body-sm text-surface-variant hover:text-surface transition-colors"><a data-path="shop" href="#">Single-Estate Malabar</a></li><li class="font-body-sm text-body-sm text-surface-variant hover:text-surface transition-colors"><a data-path="shop" href="#">Pampore Saffron</a></li><li class="font-body-sm text-body-sm text-surface-variant hover:text-surface transition-colors"><a data-path="shop" href="#">Guntur Sun-Dried</a></li><li class="font-body-sm text-body-sm text-surface-variant hover:text-surface transition-colors"><a data-path="collections" href="#">Artisanal Masalas</a></li><li class="font-body-sm text-body-sm text-surface-variant hover:text-surface transition-colors"><a data-path="collections" href="#">Private Reserve 2024</a></li></ul></div><div class="md:col-span-2 space-y-space-sm"><h4 class="font-label-caps text-label-caps uppercase tracking-wider text-secondary-fixed">Provenance</h4><ul class="space-y-space-xs"><li class="font-body-sm text-body-sm text-surface-variant hover:text-surface transition-colors"><a data-path="our-story" href="#">The Terroir Journal</a></li><li class="font-body-sm text-body-sm text-surface-variant hover:text-surface transition-colors"><a data-path="our-story" href="#">Farmer Collectives</a></li><li class="font-body-sm text-body-sm text-surface-variant hover:text-surface transition-colors"><a data-path="recipes" href="#">Culinary Monograph</a></li><li class="font-body-sm text-body-sm text-surface-variant hover:text-surface transition-colors"><a data-path="our-story" href="#">Harvest Epistles</a></li><li class="font-body-sm text-body-sm text-surface-variant hover:text-surface transition-colors"><a data-path="our-story" href="#">Laboratory Purity</a></li></ul></div><div class="md:col-span-3 space-y-space-sm"><h4 class="font-label-caps text-label-caps uppercase tracking-wider text-secondary-fixed">Concierge</h4><p class="font-body-sm text-body-sm text-surface-variant">Private culinary commissions and restaurant allocations managed through our master blender.</p><p class="font-label-sm text-label-sm text-surface-variant">concierge@vaanikaspices.com</p><div class="flex items-center gap-space-sm pt-space-xs"><span class="font-label-caps text-label-caps text-secondary-fixed-dim uppercase">Estate Batch Lot No. 841</span></div></div></div><div class="pt-space-md flex flex-col md:flex-row items-center justify-between gap-space-sm"><p class="font-body-sm text-body-sm text-surface-variant/80">© 2025 Vaanika Artisanal Spices. All rights reserved.</p><div class="flex items-center gap-space-md"><span class="font-label-caps text-label-caps text-surface-variant/80 uppercase cursor-pointer hover:text-surface transition-colors">Archival Registry</span><span class="font-label-caps text-label-caps text-surface-variant/80 uppercase cursor-pointer hover:text-surface transition-colors">Ethical Provenance</span><span class="font-label-caps text-label-caps text-surface-variant/80 uppercase cursor-pointer hover:text-surface transition-colors">Terms of Allocation</span></div></div></div></footer></body></html>
