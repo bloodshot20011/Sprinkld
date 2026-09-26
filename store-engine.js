@@ -1,8 +1,9 @@
 /**
- * Sprinkled Artisanal Spices — Core Store Engine
+ * Sprinkld Artisanal Spices — Core Store Engine
  * Features:
  * - Slide-over Cart Drawer & Free Shipping Meter
  * - Mobile 2-Card Grid Support
+ * - 200g Eco-Seal Powdered Spice Packets
  * - Press & Hold / Click & Hold Floating Description Tooltip
  */
 
@@ -10,7 +11,7 @@
 // 1. BRAND CONFIGURATION
 // ==========================================
 const SPRINKLED_CONFIG = {
-  name: 'Sprinkled',
+  name: 'Sprinkld',
   tagline: 'The Art of Pure Terroir Spices',
   primaryColor: '#f97316',
   secondaryColor: '#121212'
@@ -21,14 +22,14 @@ const SPRINKLED_CONFIG = {
 // ==========================================
 let cart = [
   {
-    id: 'tellicherry-pepper',
-    name: 'Tellicherry Extra Bold Black Pepper',
-    terroir: 'Wayanad, Kerala · Lot 14',
-    weight: '85g Glass Jar',
-    price: 349.00,
-    originalPrice: 420.00,
+    id: 'packet-lal-mirch',
+    name: 'Kashmiri Lal Mirch Powder (200g)',
+    terroir: 'Kashmir Valley',
+    weight: '200gm Packet',
+    price: 249.00,
+    originalPrice: 320.00,
     qty: 1,
-    image: 'assets/product_pepper.jpg'
+    image: 'assets/packet_lal_mirch.jpg'
   },
   {
     id: 'kashmiri-saffron',
@@ -44,7 +45,7 @@ let cart = [
 
 function initCart() {
   try {
-    const saved = localStorage.getItem('sprinkled_cart');
+    const saved = localStorage.getItem('sprinkld_cart') || localStorage.getItem('sprinkled_cart');
     if (saved) {
       const parsed = JSON.parse(saved);
       if (Array.isArray(parsed)) cart = parsed;
@@ -55,7 +56,7 @@ function initCart() {
 
 function saveCart() {
   try {
-    localStorage.setItem('sprinkled_cart', JSON.stringify(cart));
+    localStorage.setItem('sprinkld_cart', JSON.stringify(cart));
   } catch (e) {}
   updateCartUI();
 }
