@@ -80,19 +80,17 @@
   <!-- 2. GLASSMORPHISM NAVBAR (STICKY FROSTED) -->
   <!-- ========================================== -->
   <header class="glass-nav sticky top-0 z-40 transition-all duration-300">
-    <div class="max-w-7xl mx-auto px-4 sm:px-8 py-3 sm:py-3.5 flex items-center justify-between gap-3 sm:gap-6">
+    <div class="max-w-7xl mx-auto px-3 sm:px-8 py-2.5 sm:py-3.5 flex items-center justify-between gap-2 sm:gap-6">
       
       <!-- Brand Logo -->
-      <a href="index.html" class="flex items-center gap-2.5 sm:gap-3 group flex-shrink-0">
-        <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-2xl bg-black text-white flex items-center justify-center font-display font-bold text-lg sm:text-xl shadow-md border-2 border-orange-500 group-hover:scale-105 transition-transform">
-          <span class="text-orange-400 font-extrabold">S</span>
-        </div>
+      <a href="index.html" class="flex items-center gap-2 sm:gap-3 group flex-shrink-0">
+        <img src="assets/sprinkld_logo.jpg" alt="Sprinkld Logo" class="w-9 h-9 sm:w-11 sm:h-11 rounded-xl object-contain border border-orange-200/90 shadow-sm bg-white p-0.5 group-hover:scale-105 transition-transform"/>
         <div class="flex flex-col">
-          <div class="flex items-center gap-1.5 sm:gap-2">
-            <span class="font-display text-xl sm:text-2xl font-bold tracking-tight text-gray-950 leading-none">Sprinkld</span>
-            <span class="px-1.5 py-0.5 bg-orange-100 text-orange-950 text-[8px] sm:text-[9px] font-extrabold rounded-full uppercase tracking-wider border border-orange-200">100% Veg</span>
+          <div class="flex items-center gap-1 sm:gap-2">
+            <span class="font-display text-lg sm:text-2xl font-bold tracking-tight text-gray-950 leading-none">Sprinkld</span>
+            <span class="px-1.5 py-0.5 bg-orange-100 text-orange-950 text-[7px] sm:text-[9px] font-extrabold rounded-full uppercase tracking-wider border border-orange-200">100% Veg</span>
           </div>
-          <span class="text-[9px] sm:text-[10px] tracking-[0.16em] sm:tracking-[0.2em] uppercase text-gray-500 font-semibold mt-0.5">The Art of Pure Terroir Spices</span>
+          <span class="text-[8px] sm:text-[10px] tracking-[0.14em] sm:tracking-[0.2em] uppercase text-gray-500 font-semibold mt-0.5">Artisanal Terroir Spices</span>
         </div>
       </a>
 
@@ -109,7 +107,7 @@
       <!-- Center Search Bar (Pill Glass, Tablet & Desktop) -->
       <div class="hidden md:flex flex-1 max-w-xs lg:max-w-sm mx-2">
         <div class="relative w-full flex items-center">
-          <input type="text" placeholder="Search Lal Mirch, Haldi, Dhaniya, Garam Masala..." class="w-full bg-white/90 backdrop-blur-sm border border-gray-300/80 rounded-full pl-4 pr-10 py-2 text-xs text-gray-900 focus:outline-none focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 shadow-inner transition-all"/>
+          <input type="text" placeholder="Search Lal Mirch, Haldi, Dhaniya..." class="w-full bg-white/90 backdrop-blur-sm border border-gray-300/80 rounded-full pl-4 pr-10 py-2 text-xs text-gray-900 focus:outline-none focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 shadow-inner transition-all"/>
           <a href="shop.html" class="absolute right-1 w-7 h-7 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center transition-colors shadow-sm">
             <span class="material-symbols-outlined text-sm">search</span>
           </a>
@@ -117,19 +115,19 @@
       </div>
 
       <!-- Right Action Utilities -->
-      <div class="flex items-center gap-2 sm:gap-3 flex-shrink-0">
+      <div class="flex items-center gap-1.5 sm:gap-3 flex-shrink-0">
         <a href="shop.html" class="hidden sm:flex items-center justify-center w-9 h-9 rounded-full bg-white/80 hover:bg-orange-50 text-gray-700 hover:text-orange-600 border border-gray-200 shadow-sm transition-all" title="Wishlist">
           <span class="material-symbols-outlined text-lg">favorite_border</span>
         </a>
 
         <!-- Cart Button -->
-        <button onclick="toggleCartDrawer(true)" class="bg-black hover:bg-gray-900 text-white px-3 sm:px-4 py-2 sm:py-2.5 rounded-full flex items-center gap-2 shadow-md hover:shadow-orange-500/20 border border-white/10 transition-all font-semibold">
+        <button onclick="toggleCartDrawer(true)" class="bg-black hover:bg-gray-900 text-white px-2.5 sm:px-4 py-2 sm:py-2.5 rounded-full flex items-center gap-1.5 sm:gap-2 shadow-md hover:shadow-orange-500/20 border border-white/10 transition-all font-semibold">
           <span class="material-symbols-outlined text-base sm:text-lg text-orange-400">shopping_cart</span>
-          <span class="cart-header-btn-text text-[11px] sm:text-xs tracking-wider font-bold">₹1,248 (2)</span>
+          <span class="cart-header-btn-text text-[10px] sm:text-xs tracking-wider font-bold">₹1,248 (2)</span>
         </button>
 
         <!-- Mobile Menu Trigger -->
-        <button id="mobile-menu-trigger" class="lg:hidden p-2 rounded-xl bg-gray-100 text-gray-800 hover:bg-orange-50 flex items-center justify-center" aria-label="Open Navigation Menu">
+        <button id="mobile-menu-trigger" class="lg:hidden p-1.5 sm:p-2 rounded-xl bg-gray-100 text-gray-800 hover:bg-orange-50 flex items-center justify-center" aria-label="Open Navigation Menu">
           <span class="material-symbols-outlined text-xl sm:text-2xl">menu</span>
         </button>
       </div>
@@ -137,11 +135,11 @@
     </div>
 
     <!-- Mobile Search Bar (Visible on Mobile Screens under Header) -->
-    <div class="px-4 pb-2.5 pt-1 md:hidden">
+    <div class="px-3 pb-2 pt-0.5 md:hidden">
       <div class="relative w-full flex items-center">
-        <input type="text" placeholder="Search pure spices, 200g packets..." class="w-full bg-white border border-gray-200 rounded-full pl-4 pr-10 py-2 text-xs text-gray-900 focus:outline-none focus:border-orange-500 shadow-inner"/>
-        <a href="shop.html" class="absolute right-1 w-7 h-7 bg-orange-500 text-white rounded-full flex items-center justify-center shadow-sm">
-          <span class="material-symbols-outlined text-sm">search</span>
+        <input type="text" placeholder="Search pure spices, 200g packets..." class="w-full bg-white border border-gray-200 rounded-full pl-3.5 pr-9 py-1.5 text-xs text-gray-900 focus:outline-none focus:border-orange-500 shadow-inner"/>
+        <a href="shop.html" class="absolute right-1 w-6 h-6 bg-orange-500 text-white rounded-full flex items-center justify-center shadow-sm">
+          <span class="material-symbols-outlined text-xs">search</span>
         </a>
       </div>
     </div>
@@ -155,9 +153,7 @@
     <div id="cart-drawer-panel" class="absolute top-0 right-0 w-full sm:w-[420px] h-full bg-white shadow-2xl flex flex-col justify-between transform translate-x-full transition-transform duration-300 ease-in-out border-l border-gray-200">
       <div class="p-4 sm:p-5 border-b border-gray-100 flex items-center justify-between bg-gray-50">
         <div class="flex items-center gap-2">
-          <div class="w-8 h-8 rounded-full bg-orange-500 text-white flex items-center justify-center shadow-sm">
-            <span class="material-symbols-outlined text-lg">shopping_bag</span>
-          </div>
+          <img src="assets/sprinkld_logo.jpg" alt="Sprinkld" class="w-8 h-8 rounded-lg object-contain border border-orange-200 bg-white p-0.5"/>
           <h3 class="font-bold text-base text-gray-900">Your Spices Cart</h3>
         </div>
         <button onclick="toggleCartDrawer(false)" class="text-gray-400 hover:text-gray-700 p-1">
@@ -196,9 +192,7 @@
       <div class="space-y-6">
         <div class="flex items-center justify-between pb-4 border-b border-gray-100">
           <div class="flex items-center gap-2">
-            <div class="w-8 h-8 rounded-xl bg-black text-white flex items-center justify-center font-display font-bold text-sm border border-orange-500">
-              <span class="text-orange-400">S</span>
-            </div>
+            <img src="assets/sprinkld_logo.jpg" alt="Sprinkld Logo" class="w-8 h-8 rounded-lg object-contain border border-orange-200 bg-white p-0.5"/>
             <span class="font-display font-bold text-lg text-gray-950">Sprinkld</span>
           </div>
           <button onclick="document.getElementById('mobile-nav-close').click()" class="text-gray-400 hover:text-gray-800">
@@ -216,11 +210,6 @@
       </div>
       <div class="pt-6 border-t border-gray-100 text-xs text-gray-500 space-y-2">
         <p class="font-bold text-gray-900">Sprinkld Artisanal Spices</p>
-        <p class="text-[11px] text-emerald-700 font-semibold">🌱 100% Pure Vegetarian Certified</p>
-        <p class="text-[11px] text-gray-600">Tel: +91 9685140374</p>
-      </div>
-    </div>
-  </div>
         <p class="text-[11px] text-emerald-700 font-semibold">🌱 100% Pure Vegetarian Certified</p>
         <p class="text-[11px] text-gray-600">Tel: +91 9685140374</p>
       </div>
@@ -484,7 +473,10 @@
 
       </div>
 
+      </div>
     </div>
+  </section>
+
   <!-- ========================================== -->
   <!-- 5.5 ARTISANAL GROUND SPICE PACKETS (200g ECO POUCHES) -->
   <!-- ========================================== -->
@@ -505,11 +497,11 @@
         </div>
       </div>
 
-      <!-- 2 Cards on Mobile (Amazon Style), 5 Cards on Desktop -->
-      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-5">
+      <!-- Uniform 2 Cards on Mobile (Amazon Style), 5 Cards on Desktop -->
+      <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-5">
         
         <!-- Packet 1: Lal Mirch -->
-        <div class="product-card bg-[#fbf9f6] p-2.5 sm:p-4 rounded-xl sm:rounded-2xl border border-gray-200/80 flex flex-col justify-between relative shadow-sm cursor-pointer select-none hover:border-orange-300 transition-all"
+        <div class="product-card bg-[#fbf9f6] p-2.5 sm:p-4 rounded-xl sm:rounded-2xl border border-gray-200/80 flex flex-col justify-between relative shadow-sm cursor-pointer select-none hover:border-orange-300 transition-all h-full"
              data-title="Kashmiri Lal Mirch Powder (200g)"
              data-terroir="Pampore & Jammu Valley · Kashmir"
              data-full-desc="100% pure stemless Kashmiri red chillies, stone-milled under 32°C in micro-batches. Packed in a 200gm freshness-lock resealable zipper packet. Delivers deep crimson natural colour with mild, sweet warmth and zero artificial dye."
@@ -517,7 +509,7 @@
           <span class="absolute top-2.5 left-2.5 sm:top-4 sm:left-4 px-1.5 sm:px-2 py-0.5 bg-orange-500 text-white text-[8px] sm:text-[9px] font-extrabold uppercase rounded-full shadow-md z-10">200g Pouch</span>
           
           <div>
-            <div class="product-image-frame w-full h-36 sm:h-48 rounded-lg bg-white mb-2 sm:mb-3 border border-gray-100 flex items-center justify-center p-1 sm:p-2">
+            <div class="product-image-frame w-full h-32 sm:h-44 rounded-lg bg-white mb-2 sm:mb-3 border border-gray-100 flex items-center justify-center p-1 sm:p-2">
               <img src="assets/packet_lal_mirch.jpg" alt="Sprinkld Lal Mirch 200g Packet" class="w-full h-full object-contain"/>
             </div>
 
@@ -544,7 +536,7 @@
         </div>
 
         <!-- Packet 2: Haldi -->
-        <div class="product-card bg-[#fbf9f6] p-2.5 sm:p-4 rounded-xl sm:rounded-2xl border border-gray-200/80 flex flex-col justify-between relative shadow-sm cursor-pointer select-none hover:border-orange-300 transition-all"
+        <div class="product-card bg-[#fbf9f6] p-2.5 sm:p-4 rounded-xl sm:rounded-2xl border border-gray-200/80 flex flex-col justify-between relative shadow-sm cursor-pointer select-none hover:border-orange-300 transition-all h-full"
              data-title="Lakadong Turmeric Powder (200g)"
              data-terroir="Jaintia Hills · Meghalaya"
              data-full-desc="World-renowned Lakadong turmeric powder containing >7.5% natural bio-active curcumin. Single-estate stone-ground in micro-batches and sealed in an airtight 200gm ziplock pouch for radiant golden purity."
@@ -552,7 +544,7 @@
           <span class="absolute top-2.5 left-2.5 sm:top-4 sm:left-4 px-1.5 sm:px-2 py-0.5 bg-orange-500 text-white text-[8px] sm:text-[9px] font-extrabold uppercase rounded-full shadow-md z-10">200g Pouch</span>
           
           <div>
-            <div class="product-image-frame w-full h-36 sm:h-48 rounded-lg bg-white mb-2 sm:mb-3 border border-gray-100 flex items-center justify-center p-1 sm:p-2">
+            <div class="product-image-frame w-full h-32 sm:h-44 rounded-lg bg-white mb-2 sm:mb-3 border border-gray-100 flex items-center justify-center p-1 sm:p-2">
               <img src="assets/packet_haldi.jpg" alt="Sprinkld Haldi 200g Packet" class="w-full h-full object-contain"/>
             </div>
 
@@ -579,7 +571,7 @@
         </div>
 
         <!-- Packet 3: Dhaniya -->
-        <div class="product-card bg-[#fbf9f6] p-2.5 sm:p-4 rounded-xl sm:rounded-2xl border border-gray-200/80 flex flex-col justify-between relative shadow-sm cursor-pointer select-none hover:border-orange-300 transition-all"
+        <div class="product-card bg-[#fbf9f6] p-2.5 sm:p-4 rounded-xl sm:rounded-2xl border border-gray-200/80 flex flex-col justify-between relative shadow-sm cursor-pointer select-none hover:border-orange-300 transition-all h-full"
              data-title="Single-Origin Coriander Powder (200g)"
              data-terroir="Ramganj Mandi · Rajasthan"
              data-full-desc="Cold-milled whole coriander seeds with unextracted natural aromatic oils. Delivers fresh citrusy top notes and deep earthen warmth. Packed in a 200gm freshness ziplock pouch."
@@ -587,7 +579,7 @@
           <span class="absolute top-2.5 left-2.5 sm:top-4 sm:left-4 px-1.5 sm:px-2 py-0.5 bg-orange-500 text-white text-[8px] sm:text-[9px] font-extrabold uppercase rounded-full shadow-md z-10">200g Pouch</span>
           
           <div>
-            <div class="product-image-frame w-full h-36 sm:h-48 rounded-lg bg-white mb-2 sm:mb-3 border border-gray-100 flex items-center justify-center p-1 sm:p-2">
+            <div class="product-image-frame w-full h-32 sm:h-44 rounded-lg bg-white mb-2 sm:mb-3 border border-gray-100 flex items-center justify-center p-1 sm:p-2">
               <img src="assets/packet_dhaniya.jpg" alt="Sprinkld Dhaniya 200g Packet" class="w-full h-full object-contain"/>
             </div>
 
@@ -614,7 +606,7 @@
         </div>
 
         <!-- Packet 4: Garam Masala -->
-        <div class="product-card bg-[#fbf9f6] p-2.5 sm:p-4 rounded-xl sm:rounded-2xl border border-gray-200/80 flex flex-col justify-between relative shadow-sm cursor-pointer select-none hover:border-orange-300 transition-all"
+        <div class="product-card bg-[#fbf9f6] p-2.5 sm:p-4 rounded-xl sm:rounded-2xl border border-gray-200/80 flex flex-col justify-between relative shadow-sm cursor-pointer select-none hover:border-orange-300 transition-all h-full"
              data-title="Royal Roasted Garam Masala (200g)"
              data-terroir="12-Spice Master Estate Blend"
              data-full-desc="12 royal whole spices roasted on iron tava and slow-ground into a deeply fragrant finishing blend. Packed in a 200gm aroma packet. Elevates curries, dals, and gravies with intense aroma."
@@ -622,7 +614,7 @@
           <span class="absolute top-2.5 left-2.5 sm:top-4 sm:left-4 px-1.5 sm:px-2 py-0.5 bg-orange-500 text-white text-[8px] sm:text-[9px] font-extrabold uppercase rounded-full shadow-md z-10">200g Pouch</span>
           
           <div>
-            <div class="product-image-frame w-full h-36 sm:h-48 rounded-lg bg-white mb-2 sm:mb-3 border border-gray-100 flex items-center justify-center p-1 sm:p-2">
+            <div class="product-image-frame w-full h-32 sm:h-44 rounded-lg bg-white mb-2 sm:mb-3 border border-gray-100 flex items-center justify-center p-1 sm:p-2">
               <img src="assets/packet_garam_masala.jpg" alt="Sprinkld Garam Masala 200g Packet" class="w-full h-full object-contain"/>
             </div>
 
@@ -649,7 +641,7 @@
         </div>
 
         <!-- Packet 5: Poha Masala -->
-        <div class="product-card bg-[#fbf9f6] p-2.5 sm:p-4 rounded-xl sm:rounded-2xl border border-gray-200/80 flex flex-col justify-between relative shadow-sm cursor-pointer select-none hover:border-orange-300 transition-all col-span-2 sm:col-span-1"
+        <div class="product-card bg-[#fbf9f6] p-2.5 sm:p-4 rounded-xl sm:rounded-2xl border border-gray-200/80 flex flex-col justify-between relative shadow-sm cursor-pointer select-none hover:border-orange-300 transition-all h-full"
              data-title="Indori Jeeravan Poha Masala (200g)"
              data-terroir="Malwa Heritage · Indore"
              data-full-desc="The authentic Indori Jeeravan secret seasoning containing 16 roasted digestive spices including amchur, black salt, roasted cumin, clove, and dry ginger. Sealed in a 200gm fresh ziplock packet."
@@ -657,7 +649,7 @@
           <span class="absolute top-2.5 left-2.5 sm:top-4 sm:left-4 px-1.5 sm:px-2 py-0.5 bg-orange-500 text-white text-[8px] sm:text-[9px] font-extrabold uppercase rounded-full shadow-md z-10">200g Pouch</span>
           
           <div>
-            <div class="product-image-frame w-full h-36 sm:h-48 rounded-lg bg-white mb-2 sm:mb-3 border border-gray-100 flex items-center justify-center p-1 sm:p-2">
+            <div class="product-image-frame w-full h-32 sm:h-44 rounded-lg bg-white mb-2 sm:mb-3 border border-gray-100 flex items-center justify-center p-1 sm:p-2">
               <img src="assets/packet_poha_masala.jpg" alt="Sprinkld Poha Masala 200g Packet" class="w-full h-full object-contain"/>
             </div>
 
@@ -752,9 +744,7 @@
       <!-- Brand Info -->
       <div class="space-y-3 sm:space-y-4">
         <div class="flex items-center gap-3">
-          <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-2xl bg-orange-500 text-white flex items-center justify-center font-display font-bold text-lg sm:text-xl shadow-md border border-white/20">
-            <span class="font-extrabold text-black">S</span>
-          </div>
+          <img src="assets/sprinkld_logo.jpg" alt="Sprinkld Logo" class="w-10 h-10 rounded-2xl object-contain border border-white/20 bg-white p-0.5 shadow-md"/>
           <span class="font-display text-xl sm:text-2xl font-bold text-white">Sprinkld</span>
         </div>
         <p class="text-xs text-gray-400 leading-relaxed">
